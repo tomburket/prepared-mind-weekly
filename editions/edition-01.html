@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader — March 5, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111;
+    --ink-mid: #3a3a3a;
+    --ink-light: #666666;
+    --rule: #d8d8d8;
+    --accent: #c0392b;        /* brighter red — passes contrast on white */
+    --accent-dark: #8b1a13;   /* for use reversed on dark bg */
+    --bg: #f9f8f5;
+    --card: #ffffff;
+    --tag-ai: #dce8ff;
+    --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8;
+    --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0;
+    --tag-market-text: #8b4400;
+    --tag-board: #ecdff5;
+    --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3;
+    --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec;
+    --tag-culture-text: #004d43;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* HEADER */
+  .masthead {
+    background: #1a1a1a;
+    color: white;
+    padding: 28px 20px 24px;
+  }
+
+  .masthead-date {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #f0c040;
+    margin-bottom: 8px;
+  }
+
+  .masthead-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .masthead-meta {
+    font-size: 13px;
+    color: #bbbbbb;
+    font-weight: 400;
+  }
+
+  /* SUMMARY STRIP */
+  .summary-strip {
+    background: #2a2a2a;      /* dark strip — gold numbers pop cleanly */
+    padding: 16px 20px;
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .summary-strip::-webkit-scrollbar { display: none; }
+
+  .summary-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .summary-pill-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f0c040;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .summary-pill-label {
+    font-size: 13px;
+    color: #cccccc;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  /* SECTION NAV */
+  .section-nav {
+    background: white;
+    border-bottom: 2px solid var(--rule);
+    padding: 0 20px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .section-nav::-webkit-scrollbar { display: none; }
+
+  .nav-item {
+    display: block;
+    padding: 16px 18px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: var(--ink-light);
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .nav-item:first-child { padding-left: 0; }
+
+  .nav-item:hover {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 18px 56px;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 32px 0 14px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 20px;
+  }
+
+  .section-number {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    color: var(--ink-light);
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+  }
+
+  /* ITEM CARD */
+  .item-card {
+    background: var(--card);
+    border-radius: 4px;
+    padding: 22px 22px 20px;
+    margin-bottom: 16px;
+    border: 1px solid var(--rule);
+    transition: border-color 0.15s;
+  }
+
+  .item-card:active {
+    border-color: #aaaaaa;
+  }
+
+  .item-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .item-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+  .tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+
+  .item-headline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+  }
+
+  .item-source {
+    font-size: 14px;
+    color: var(--ink-light);
+    font-weight: 400;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .item-summary {
+    font-size: 17px;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .implication-block {
+    background: #f2f1ed;
+    border-left: 4px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .implication-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .implication-text {
+    font-size: 17px;
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .item-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--ink-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .item-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* DIVIDER */
+  hr.section-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 8px 0 4px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 28px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .footer strong {
+    color: white;
+    font-weight: 500;
+  }
+
+  /* SCROLL TO TOP */
+  .back-to-top {
+    display: block;
+    text-align: center;
+    padding: 24px 0 8px;
+    font-size: 15px;
+    color: var(--ink-light);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  @media (min-width: 640px) {
+    .masthead { padding: 40px 32px 32px; }
+    .masthead-title { font-size: 28px; }
+    .content { padding: 0 28px 72px; }
+    .item-card { padding: 28px 28px 24px; }
+    .item-headline { font-size: 22px; }
+    .item-summary { font-size: 18px; }
+    .implication-text { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-date">March 5, 2026</div>
+  <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+  <div class="masthead-meta">9 Items &nbsp;•&nbsp; Food, Grocery, Business, Tech, Oddly Interesting</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">AI &amp; Operations</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">People First</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Board &amp; Governance</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">CEO Market</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">Cultural Signal</div>
+  </div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <a class="nav-item" href="#ai">AI &amp; Ops</a>
+  <a class="nav-item" href="#people">People First</a>
+  <a class="nav-item" href="#board">Board</a>
+  <a class="nav-item" href="#search">CEO Market</a>
+  <a class="nav-item" href="#culture">Culture</a>
+</nav>
+
+<main class="content">
+
+  <!-- SECTION 1: AI & Operations -->
+  <section id="ai">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">AI &amp; Operations</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI · Ops</span>
+        <div class="item-headline">AI Becomes the Store Manager's Quiet Co-Pilot</div>
+      </div>
+      <div class="item-source">Grocery Dive · Feb. 25, 2026</div>
+      <div class="item-summary">Grocers are shifting AI from customer-facing experiments into back-end workflows — labor planning, inventory, task management at store level. Kroger's "Sage" assistant consolidates schedules, time-off, paystubs, and performance insights into a single interface for frontline associates and managers.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The real AI frontier is managerial plumbing. Value here depends on organizational design and line-leader capability — not the sophistication of the model.</div>
+      </div>
+      <a class="item-link" href="https://www.grocerydive.com/news/grocery-ai-frontline-workers-store-level-associates-technology-retail-media/813196/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI · Labor</span>
+        <div class="item-headline">India Built the World's Back Office. AI Is Starting to Shrink It.</div>
+      </div>
+      <div class="item-source">The New York Times · Feb. 27, 2026</div>
+      <div class="item-summary">AI is automating the white-collar work that made India's $300 billion outsourcing industry — six million jobs — the envy of the developing world. Tata Consultancy Services has shed more than 20,000 workers from its 2022 peak. One startup replaced 65 human recruiters with AI voice agents; headcount is heading to 25 even as revenue grows. University placement rates are falling. The country is racing to adapt before the displacement outruns the upskilling.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The clearest large-scale evidence yet that AI displacement of knowledge work is real, not projected. Physical operations don't offshore and don't automate cleanly. The operator's advantage gets stronger, not weaker.</div>
+      </div>
+      <a class="item-link" href="https://www.nytimes.com/2026/02/27/technology/india-technology-jobs-ai.html" target="_blank" rel="noopener">Read at NYT ↗</a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: People First -->
+  <section id="people">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">People First</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-people">Workforce</span>
+        <div class="item-headline">Three in Four Retail Workers Use AI. Fewer Than One in Three Know What They're Doing.</div>
+      </div>
+      <div class="item-source">IHL Group / LinkedIn · March 2, 2026</div>
+      <div class="item-summary">A 2026 retail transformation study finds roughly 75% of retail workers now touch AI-enabled tools, but fewer than a third feel they understand how to use them effectively. About 15% of retail IT budgets now go to AI — often without equivalent investment in frontline training.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The AI bottleneck is capability, not exposure. A CEO who invests in comprehension and confidence at the edge will out-execute peers chasing feature counts.</div>
+      </div>
+      <a class="item-link" href="https://www.linkedin.com/pulse/three-four-workers-use-ai-fewer-than-1-3-know-what-doing-greg-buzek-bzdke" target="_blank" rel="noopener">Read at LinkedIn ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-people">Culture</span>
+        <div class="item-headline">Small Rituals Are What Hold Frontline Teams Together Under Pressure</div>
+      </div>
+      <div class="item-source">Moonstar Workforce Advisory · Dec. 16, 2025</div>
+      <div class="item-summary">High-performing retailers are pairing AI-driven tools with deliberate cultural practices — daily huddles, micro-celebrations, peer support routines — as frontline resilience mechanisms during technology change and demand spikes. The finding: these rituals matter as much as pay and scheduling in keeping teams engaged.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Ritual design is a leadership competency, not a soft perk. When the operating environment is continuously reshaped by data and automation, the CEO who builds cultural shock absorbers wins on retention and execution.</div>
+      </div>
+      <a class="item-link" href="https://moonstar.ai/the-biggest-retail-workforce-trends-to-watch-in-2026/" target="_blank" rel="noopener">Read at Moonstar ↗</a>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Board & Governance -->
+  <section id="board">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Board &amp; Governance</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Governance</span>
+        <div class="item-headline">Harvard Tells Boards: Treat AI as an Ongoing Risk-Strategy Loop</div>
+      </div>
+      <div class="item-source">Harvard Corporate Governance Forum · Feb. 10, 2026</div>
+      <div class="item-summary">Governance experts urge boards to integrate AI into recurring strategy and risk cycles — not one-off tech presentations. The piece stresses understanding the second-order impacts of AI on culture, incentives, and misconduct risk.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The governance community just caught up to what operators already know: AI risk lives in people and culture, not servers.</div>
+      </div>
+      <a class="item-link" href="https://corpgov.law.harvard.edu/2026/02/11/board-governance-in-2026/" target="_blank" rel="noopener">Read at Harvard Law ↗</a>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CEO Market -->
+  <section id="search">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">CEO Market Intelligence</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">Search</span>
+        <div class="item-headline">February C-Suite Moves: Operators with Data Fluency Are Winning the Search</div>
+      </div>
+      <div class="item-source">Grocery Dive · March 1, 2026</div>
+      <div class="item-summary">February saw Kroger name Greg Foran as CEO after a long search, alongside senior moves at Target and Sprouts in COO, merchandising, and customer roles. The pattern: boards are privileging large-scale retail execution experience paired with customer insight and data-driven merchandising.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The Foran hire confirms the archetype: operator-plus-customer credentials, not pure financial engineering. The profile boards are building toward looks a lot like yours.</div>
+      </div>
+      <a class="item-link" href="https://www.grocerydive.com/news/top-grocery-executive-changes-february-2026/813480/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">Search</span>
+        <div class="item-headline">CEO Churn Continues — Boards Are Searching for Leaders Who Can Hold Three Things at Once</div>
+      </div>
+      <div class="item-source">NRF / Reuters · Jan. 6–12, 2026</div>
+      <div class="item-summary">Retail analysts expect continued CEO turnover through 2026, building on a volatile 2025. The framing from both NRF and Reuters is consistent: boards are replacing leaders who can't simultaneously manage tariff pressure, volatile consumer demand, and technology-driven transformation. The bar isn't any one of those — it's all three.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The churn environment is the opportunity. Boards doing these searches are explicitly describing a profile built for complexity and instability — someone who has navigated all three pressures simultaneously, not sequentially.</div>
+      </div>
+      <a class="item-link" href="https://nrf.com/blog/10-trends-and-predictions-for-retail-in-2026" target="_blank" rel="noopener">Read at NRF ↗</a>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Cultural Signal -->
+  <section id="culture">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Cultural Signal</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture</span>
+        <div class="item-headline">The Seahawks Didn't Just Win the Super Bowl. They Inherited a Culture and Upgraded It.</div>
+      </div>
+      <div class="item-source">The Athletic (NYT) · Feb. 10, 2026</div>
+      <div class="item-summary">Coach Mike Macdonald was hired to bring new energy while explicitly preserving core cultural principles built under Pete Carroll — including "Always Compete." Consultants worked with him to articulate the culture in his own voice rather than starting from scratch or coasting on legacy slogans.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The winning play is heritage-plus-upgrade, not scorched earth. This is a sharp analog for turnaround work — honoring what functions while rewriting the operating language for a new era. Blog post material.</div>
+      </div>
+      <a class="item-link" href="https://www.nytimes.com/athletic/7033901/2026/02/10/the-seahawks-didnt-just-win-the-super-bowl-they-did-something-even-more-challenging/" target="_blank" rel="noopener">Read at The Athletic ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture</span>
+        <div class="item-headline">Kansas City Just Became the Base Camp Capital of the World Cup. Nobody Saw It Coming.</div>
+      </div>
+      <div class="item-source">KCUR · March 5, 2026</div>
+      <div class="item-summary">Kansas City — the smallest of the 16 World Cup host cities — has landed four national team base camps: Argentina, England, Netherlands, and Algeria. The region outcompeted cities with larger populations, bigger media markets, and more event experience. The answer is 15 years and $650 million in soccer infrastructure, combined with aggressive, unified civic leadership that opened a fourth base camp site to meet demand.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Long-term infrastructure investment plus disciplined execution beats size. A smaller market that wants it more, prepares longer, and shows up unified will outcompete a bigger one that assumes the job is already theirs.</div>
+      </div>
+      <a class="item-link" href="https://www.kcur.org/sports/2026-03-05/kansas-city-world-cup-base-camp-games" target="_blank" rel="noopener">Read at KCUR ↗</a>
+    </div>
+  </section>
+
+  <a href="#" class="back-to-top">↑ Back to top</a>
+
+</main>
+
+<footer class="footer">
+  <strong>The Prepared Mind, Weekly Reader</strong><br>
+  Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+  March 5, 2026 · Edition No. 1
+</footer>
+
+</body>
+</html>
