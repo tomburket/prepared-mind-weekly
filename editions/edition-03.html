@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader â April 3, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111;
+    --ink-mid: #3a3a3a;
+    --ink-light: #666666;
+    --rule: #d8d8d8;
+    --accent: #c0392b;
+    --accent-dark: #8b1a13;
+    --bg: #f9f8f5;
+    --card: #ffffff;
+    --tag-ai: #dce8ff;
+    --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8;
+    --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0;
+    --tag-market-text: #8b4400;
+    --tag-board: #ecdff5;
+    --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3;
+    --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec;
+    --tag-culture-text: #004d43;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .masthead {
+    background: #1a1a1a;
+    color: white;
+    padding: 28px 20px 24px;
+  }
+
+  .masthead-date {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #f0c040;
+    margin-bottom: 8px;
+  }
+
+  .masthead-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .masthead-meta {
+    font-size: 13px;
+    color: #bbbbbb;
+    font-weight: 400;
+  }
+
+  .summary-strip {
+    background: #2a2a2a;
+    padding: 16px 20px;
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .summary-strip::-webkit-scrollbar { display: none; }
+
+  .summary-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .summary-pill-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f0c040;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .summary-pill-label {
+    font-size: 13px;
+    color: #cccccc;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .section-nav {
+    background: white;
+    border-bottom: 2px solid var(--rule);
+    padding: 0 20px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .section-nav::-webkit-scrollbar { display: none; }
+
+  .nav-item {
+    display: block;
+    padding: 16px 18px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: var(--ink-light);
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .nav-item:first-child { padding-left: 0; }
+
+  .nav-item:hover {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 18px 56px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 32px 0 14px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 20px;
+  }
+
+  .section-number {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    color: var(--ink-light);
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+  }
+
+  .item-card {
+    background: var(--card);
+    border-radius: 4px;
+    padding: 22px 22px 20px;
+    margin-bottom: 16px;
+    border: 1px solid var(--rule);
+    transition: border-color 0.15s;
+  }
+
+  .item-card:active {
+    border-color: #aaaaaa;
+  }
+
+  .item-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .item-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+  .tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+
+  .item-headline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+  }
+
+  .item-source {
+    font-size: 14px;
+    color: var(--ink-light);
+    font-weight: 400;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .item-summary {
+    font-size: 17px;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .implication-block {
+    background: #f2f1ed;
+    border-left: 4px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .implication-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .implication-text {
+    font-size: 17px;
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .item-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--ink-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .item-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  hr.section-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 8px 0 4px;
+  }
+
+  .footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 28px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .footer strong {
+    color: white;
+    font-weight: 500;
+  }
+
+  .back-to-top {
+    display: block;
+    text-align: center;
+    padding: 24px 0 8px;
+    font-size: 15px;
+    color: var(--ink-light);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  @media (min-width: 640px) {
+    .masthead { padding: 40px 32px 32px; }
+    .masthead-title { font-size: 28px; }
+    .content { padding: 0 28px 72px; }
+    .item-card { padding: 28px 28px 24px; }
+    .item-headline { font-size: 22px; }
+    .item-summary { font-size: 18px; }
+    .implication-text { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-date">April 3, 2026</div>
+  <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+  <div class="masthead-meta">8 Items &nbsp;â¢&nbsp; Food, Grocery, AI, Governance, Space, Oddly Interesting</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">AI &amp; Operations</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">CEO Market</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Board &amp; Governance</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">The Workforce</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Cultural Signal</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Oddly Interesting</div>
+  </div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <a class="nav-item" href="#ai">AI &amp; Ops</a>
+  <a class="nav-item" href="#ceo">CEO Market</a>
+  <a class="nav-item" href="#board">Board</a>
+  <a class="nav-item" href="#workforce">Workforce</a>
+  <a class="nav-item" href="#culture">Culture</a>
+  <a class="nav-item" href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+  <!-- SECTION 1: AI & Operations -->
+  <section id="ai">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">AI &amp; Operations</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI &middot; Grocery</span>
+        <div class="item-headline">AI Grocery Shopping Is Shifting From Search to Autopilot. Baskets Will Never Be the Same.</div>
+      </div>
+      <div class="item-source">Grocery Doppio Â· Feb. 19, 2026</div>
+      <div class="item-summary">Albertsons, Kroger and Instacart have each launched AI-powered shopping assistants that don't help customers find products â they assemble the trip. The system interprets household routines, dietary constraints and budget signals, then builds a complete or near-complete basket. Grocery Doppio's research frames the shift: digital accounts for roughly 13% of total grocery sales, but nearly 70% of grocery trips are already digitally influenced before anyone reaches a shelf. Omnichannel shoppers spend about 1.5 times more than single-channel shoppers. And more than 80% of grocers remain dissatisfied with online profitability. The question is no longer whether shoppers will delegate decisions to AI. It's who controls the logic that governs the basket.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">When the system builds the basket, loyalty shifts from the store to the algorithm. A grocer who doesn't own the decision architecture is renting shelf space inside someone else's intelligence.</div>
+      </div>
+      <a class="item-link" href="https://www.grocerydoppio.com/articles/ai-grocery-shopping-is-shifting-from-search-to-autopilot-what-that-means-for-baskets-loyalty-and-trade-offs" target="_blank" rel="noopener">Read at Grocery Doppio â</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI &middot; Workforce</span>
+        <div class="item-headline">C.H. Robinson Cut 31% of Its Workforce. Then It Won an Innovation Award.</div>
+      </div>
+      <div class="item-source">Star Tribune (Patrick Kennedy) Â· March 31, 2026</div>
+      <div class="item-summary">Since 2022, C.H. Robinson has reduced employment from 17,399 to 11,855 â a 31% cut â while deploying hundreds of agentic AI agents across its logistics operations. The agents open and sort emailed freight orders, classify freight, and book pickup and drop-off appointments. Productivity is up 40%. The company recently offered voluntary buyout packages to 160 high-level managers; 26 accepted, with nine months' severance. Fast Company named C.H. Robinson to its 2026 Most Innovative Companies list for its "Lean AI" approach. CEO Dave Bozeman, recruited from Amazon and Ford, has restructured the company to decouple operating costs from shipment volumes â meaning the headcount doesn't come back when the market recovers. Another $50â75 million in restructuring charges are planned over the next three years.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The precondition for replacing a workforce is redescribing its work as process: open, sort, classify, book. Once human judgment gets reclassified as "manually intensive," the automation is almost inevitable. The management buyouts are the second signal â when the work underneath you is automated, supervision loses its reason to exist. The question nobody in the innovation award is asking: what institutional knowledge walked out with those 5,500 people?</div>
+      </div>
+      <a class="item-link" href="https://www.startribune.com/ch-robinson-trims-high-level-managers-as-part-of-ai-cuts/601638317" target="_blank" rel="noopener">Read at Star Tribune â</a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CEO Market Intelligence -->
+  <section id="ceo">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">CEO Market Intelligence</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">CEO &middot; Turnaround</span>
+        <div class="item-headline">Target's New CEO Says the Problem Isn't Strategy. It's Candor.</div>
+      </div>
+      <div class="item-source">Fortune (Phil Wahba) Â· March 6, 2026</div>
+      <div class="item-summary">Michael Fiddelke took over as Target CEO on February 1 after four straight quarters of declining comparable sales. At the company's investor day, he was blunt: "We used to be strong and a pacesetter. We haven't been for the last few years." His diagnosis is cultural, not strategic â Target's management ranks avoided straight talk, problems festered, and the company lost its identity. He's committing $6 billion to the fix: expanding the Good &amp; Gather food brand (now $4 billion in revenue), overhauling home goods, ramping store staffing, and using technology to chase apparel trends on four-to-six-week cycles. An analyst asked why investors should trust a 23-year company lifer to fix problems that developed partly on his watch. Fiddelke's answer: institutional knowledge and deep operational understanding are the advantage, not the liability.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">A Fortune 50 CEO just told Wall Street that the turnaround starts with honesty, not a new strategy deck. "I lead with a ton of candor. You can't solve a problem you're not talking about." The grocery expansion and staffing investment are the moves. The culture diagnosis is the bet.</div>
+      </div>
+      <a class="item-link" href="https://fortune.com/2026/03/06/target-ceo-michael-fiddelke-leadership-turnaround/" target="_blank" rel="noopener">Read at Fortune â</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">CEO &middot; Retail</span>
+        <div class="item-headline">The Retail CEO's Job Is Getting Measurably Harder. Here's the Data.</div>
+      </div>
+      <div class="item-source">Bain &amp; Company Â· January 2026</div>
+      <div class="item-summary">Bain's 2026 retail executive agenda opens with two numbers: the S&amp;P Retail Index grew just 12% over the past three years while the broader S&amp;P rose 21%, and CEO turnover among the top 100 retailers hit 22% over the same period â up from 17% previously. Their diagnosis: AI is muddying strategy rather than sharpening it. Cost reduction comes at the expense of innovation, customer experience and employee engagement. When AI improves one element while quietly undermining others, teams start making conflicting choices. Bain's prescription: AI should be "a serious partner that amplifies human insight yet is firmly constrained by human values" â neither autopilot nor a neglected tool. The CHRO letter flags that U.S. labor supply is expected to grow only 4% by 2050, down from 19% average over the past 25 years.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">One in five retail CEOs turned over in three years. The index is underperforming. And the top consultancy in the space just told leadership teams that the real AI risk isn't falling behind â it's losing strategic coherence while racing to deploy.</div>
+      </div>
+      <a class="item-link" href="https://www.bain.com/insights/2026-retail-executive-agenda/" target="_blank" rel="noopener">Read at Bain â</a>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Board & Governance -->
+  <section id="board">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Board &amp; Governance</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Governance &middot; AI</span>
+        <div class="item-headline">53% of Institutional Investors Just Flagged the Same AI Risk. It's Not Cybersecurity.</div>
+      </div>
+      <div class="item-source">EY Center for Board Matters Â· Feb. 24, 2026</div>
+      <div class="item-summary">Between October and December 2025, EY spoke with stewardship leaders from institutional investors representing $55 trillion in assets under management. Over half â 53% â raised concerns about AI's impact on the workforce, specifically the risk that replacing entry-level work erodes the talent pipeline for future leadership. They called it "brain drain." Investors also want boards to sharpen their skills matrices beyond generic "technology" listings and to show evidence of ongoing AI education â not a one-hour annual presentation. The meta-twist: these same investors are accelerating their own AI adoption, using it to scan disclosures, map director connections, assess director quality and deepen company performance analysis. Some are exploring proprietary AI proxy voting agents.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The people who decide whether a CEO keeps their job are now asking specifically about workforce protection and talent pipeline risk. And they're building AI tools to evaluate the answers. The prepared version of a board conversation about AI looks very different from the improvised one.</div>
+      </div>
+      <a class="item-link" href="https://www.ey.com/en_us/board-matters/ai-governance-board-response-to-investor-expectations" target="_blank" rel="noopener">Read at EY â</a>
+    </div>
+  </section>
+
+  <!-- SECTION 4: The Workforce -->
+  <section id="workforce">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">The Workforce</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-people">Workforce &middot; Institutional Knowledge</span>
+        <div class="item-headline">A 40-Year-Old Piece of Shuttle Hardware Just Saved the Artemis II Launch. One Person Knew Where It Was.</div>
+      </div>
+      <div class="item-source">NASA / CBS News / National Geographic Â· April 1, 2026</div>
+      <div class="item-summary">Minutes before the Artemis II launch window opened on April 1, engineers discovered a problem with the Flight Termination System â the safety mechanism that allows the range to destroy the rocket if it veers off course. The range was listed No-Go. The solution: the launch director authorized an operator to retrieve a piece of Shuttle-era hardware from the Vehicle Assembly Building â a tool designed to verify FTS integrity â and use it to clear the system. The operator knew where the 40-year-old tool was stored and how to run it. The range turned green in roughly 15 minutes. Artemis II launched on time. Behind that save is a workforce that nearly didn't exist. When the Shuttle program ended in 2011, Kennedy Space Center's contractor headcount dropped from 15,000 to 7,000. NASA estimated 28,000 jobs lost nationwide. One month before this launch, NASA Administrator Jared Isaacman acknowledged that "core competencies have been eroded or lost over the years."</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The most sophisticated rocket program in the world almost missed its launch window. What saved it wasn't a new system or an AI agent. It was one person's accumulated knowledge of where a 40-year-old tool lived and what it did. Institutional memory isn't a line item. It's the thing that works when everything else fails.</div>
+      </div>
+      <a class="item-link" href="https://www.nasa.gov/news-release/liftoff-nasa-launches-astronauts-on-historic-artemis-moon-mission/" target="_blank" rel="noopener">Read at NASA â</a>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Cultural Signal -->
+  <section id="culture">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Cultural Signal</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Space &middot; People First</span>
+        <div class="item-headline">"Those People? We Work for Them Too."</div>
+      </div>
+      <div class="item-source">Space.com Â· Sept. 2025 / PBS &amp; AP Â· March 2026</div>
+      <div class="item-summary">Victor Glover is the first person of color to travel beyond low Earth orbit. Before every launch â and for years, every Monday on his drive to work â he listens to Gil Scott-Heron's "Whitey on the Moon" and Marvin Gaye's "Make Me Wanna Holler." He describes them as songs from a white-dominated era that capture what the space program did well and what it did poorly. He tells the story of the Apollo 11 launch in 1969, when civil rights leader Ralph Abernathy led roughly 500 protesters â mostly Black Americans â to the gates of Kennedy Space Center with two mules and a wooden wagon. NASA Administrator Thomas Paine walked down to meet them. By the end of the conversation, the protesters prayed for the astronauts' safety. Glover's reflection: "They talked, and they heard, and were heard. And I think that is a lesson." On the song: "That community didn't feel heard. And so it's a reminder to me that there are more perspectives and more stories out there than you'll hear from the people cheering for NASA on a regular basis. But those people? We work for them too."</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The first person of color to leave Earth orbit carries the tension between what the program accomplished and who it left behind â and treats that tension as fuel rather than contradiction. People First doesn't mean everyone agrees. It means everyone counts.</div>
+      </div>
+      <a class="item-link" href="https://www.space.com/space-exploration/artemis-2-pilot-victor-glover-whitey-on-the-moon-" target="_blank" rel="noopener">Read at Space.com â</a>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Oddly Interesting -->
+  <section id="oddly">
+    <div class="section-header">
+      <span class="section-number">06</span>
+      <h2 class="section-title">Oddly Interesting</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Engineering &middot; Storytelling</span>
+        <div class="item-headline">Ford Put Its Engineers on Camera. No Actors. No Scripts. Just the People Who Do the Work.</div>
+      </div>
+      <div class="item-source">Ford From the Road Â· March 5, 2026</div>
+      <div class="item-summary">Ford is back on the Formula 1 grid for the first time in over 20 years, partnered with Oracle Red Bull Racing, and the company decided its biggest marketing moment shouldn't look like marketing. Instead of running standard commercials during the Apple TV broadcast, Ford is airing a "micro-docuseries" across the race weekend â sequential stories that progress from Friday practice through the Sunday Grand Prix. The faces on screen are Ford's actual engineers: the F1 powertrain lead, the off-road suspension team, the people testing every weld and every line of code. No actors. The technology transfer is concrete â former F1 aerodynamicists are making Ford's new electric truck more than 15% more aerodynamic than any other pickup, translating racing performance into range and cost savings for a work vehicle.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">In an edition full of AI decomposing human work into machine-executable steps, the closer is a company that bet its biggest marketing moment on putting the humans back on camera. The most compelling way to sell engineering turned out to be showing the engineers.</div>
+      </div>
+      <a class="item-link" href="https://www.fromtheroad.ford.com/us/en/articles/2026/ford-racing-micro-docuseries-apple-tv" target="_blank" rel="noopener">Read at Ford â</a>
+    </div>
+  </section>
+
+  <a href="#" class="back-to-top">â Back to top</a>
+
+</main>
+
+<footer class="footer">
+  <strong>The Prepared Mind, Weekly Reader</strong><br>
+  Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+  April 3, 2026 Â· Edition No. 3
+  <br><a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions â</a>
+</footer>
+
+</body>
+</html>
