@@ -3,15 +3,15 @@
 <head>
 <!--
   EDITION METADATA
-  edition: 4
-  date: April 10, 2026
-  cards: 7
-  sections: AI & Ops, CEO Market Intel, Board & Governance, Cultural Signal, Oddly Interesting
+  edition: 5
+  date: April 17, 2026
+  cards: 8
+  sections: AI & Ops, Board & Governance, Cultural Signal, Oddly Interesting
   template_version: v1
 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Prepared Mind, Weekly Reader — April 10, 2026</title>
+<title>The Prepared Mind, Weekly Reader — April 17, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -25,12 +25,18 @@
     --accent-dark: #8b1a13;
     --bg: #f9f8f5;
     --card: #ffffff;
-    --tag-ai: #dce8ff;      --tag-ai-text: #0d3f8f;
-    --tag-people: #d6f0d8;  --tag-people-text: #1a5c1e;
-    --tag-market: #fdecd0;  --tag-market-text: #8b4400;
-    --tag-board: #ecdff5;   --tag-board-text: #4a0e7a;
-    --tag-search: #fad9e3;  --tag-search-text: #8b0033;
-    --tag-culture: #cff0ec; --tag-culture-text: #004d43;
+    --tag-ai: #dce8ff;
+    --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8;
+    --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0;
+    --tag-market-text: #8b4400;
+    --tag-board: #ecdff5;
+    --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3;
+    --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec;
+    --tag-culture-text: #004d43;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -44,12 +50,12 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* HEADER */
   .masthead {
     background: #1a1a1a;
     color: white;
     padding: 28px 20px 24px;
   }
-
   .masthead-date {
     font-size: 11px;
     font-weight: 500;
@@ -58,7 +64,6 @@
     color: #f0c040;
     margin-bottom: 8px;
   }
-
   .masthead-title {
     font-family: 'Libre Baskerville', serif;
     font-size: 22px;
@@ -70,13 +75,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
   .masthead-meta {
     font-size: 13px;
     color: #bbbbbb;
     font-weight: 400;
   }
 
+  /* SUMMARY STRIP */
   .summary-strip {
     background: #2a2a2a;
     padding: 16px 20px;
@@ -86,211 +91,185 @@
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
-
   .summary-strip::-webkit-scrollbar { display: none; }
-
   .summary-pill {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    white-space: nowrap;
   }
-
   .summary-pill-num {
     font-family: 'Libre Baskerville', serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: #f0c040;
     line-height: 1;
-    flex-shrink: 0;
   }
-
   .summary-pill-label {
-    font-size: 13px;
-    color: #cccccc;
-    font-weight: 400;
-    line-height: 1;
-    white-space: nowrap;
-  }
-
-  .section-nav {
-    background: white;
-    border-bottom: 2px solid var(--rule);
-    padding: 0 20px;
-    display: flex;
-    gap: 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  }
-
-  .section-nav::-webkit-scrollbar { display: none; }
-
-  .nav-item {
-    display: block;
-    padding: 16px 18px 14px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 0.3px;
-    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #cccccc;
+    line-height: 1.3;
+  }
+
+  /* NAV */
+  .section-nav {
+    background: var(--card);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 20px;
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     color: var(--ink-light);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
     white-space: nowrap;
-    border-bottom: 3px solid transparent;
-    transition: color 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+    transition: background 0.15s, color 0.15s;
+  }
+  .section-nav a:hover {
+    background: var(--ink);
+    color: white;
+    border-color: var(--ink);
   }
 
-  .nav-item:first-child { padding-left: 0; }
-
-  .nav-item:hover {
-    color: var(--ink);
-    border-bottom-color: var(--accent);
-  }
-
+  /* CONTENT */
   .content {
-    max-width: 680px;
+    max-width: 740px;
     margin: 0 auto;
-    padding: 0 18px 56px;
+    padding: 40px 20px 72px;
   }
 
+  /* SECTION */
+  section { margin-bottom: 8px; }
   .section-header {
     display: flex;
     align-items: baseline;
-    gap: 12px;
-    padding: 32px 0 14px;
-    border-bottom: 2px solid var(--ink);
+    gap: 14px;
     margin-bottom: 20px;
+    padding-top: 44px;
   }
-
   .section-number {
     font-family: 'Libre Baskerville', serif;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--ink-light);
-    font-weight: 400;
-    letter-spacing: 1px;
+    flex-shrink: 0;
   }
-
   .section-title {
     font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--ink);
     letter-spacing: -0.2px;
   }
+  .section-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0 0 0 0;
+  }
 
+  /* CARD */
   .item-card {
     background: var(--card);
-    border-radius: 4px;
-    padding: 22px 22px 20px;
-    margin-bottom: 16px;
     border: 1px solid var(--rule);
-    transition: border-color 0.15s;
+    border-radius: 4px;
+    padding: 24px 22px 20px;
+    margin-bottom: 16px;
   }
-
-  .item-card:active { border-color: #aaaaaa; }
-
-  .item-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
-
+  .item-header { margin-bottom: 6px; }
   .item-tag {
     display: inline-block;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 4px 10px;
+    padding: 3px 8px;
     border-radius: 2px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    margin-top: 3px;
+    margin-bottom: 10px;
   }
-
-  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
-  .tag-people { background: var(--tag-people); color: var(--tag-people-text); }
-  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .tag-ai    { background: var(--tag-ai);    color: var(--tag-ai-text); }
   .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
-  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
   .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+  .tag-search  { background: var(--tag-search);  color: var(--tag-search-text); }
+  .tag-people  { background: var(--tag-people);  color: var(--tag-people-text); }
+  .tag-market  { background: var(--tag-market);  color: var(--tag-market-text); }
 
   .item-headline {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.3;
     color: var(--ink);
-    letter-spacing: -0.3px;
+    margin-bottom: 8px;
   }
-
   .item-source {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
     color: var(--ink-light);
-    font-weight: 400;
+    text-transform: uppercase;
     margin-bottom: 14px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--rule);
   }
-
   .item-summary {
     font-size: 17px;
-    color: var(--ink-mid);
     line-height: 1.65;
-    margin-bottom: 16px;
-    font-weight: 400;
+    color: var(--ink-mid);
+    margin-bottom: 18px;
   }
-
   .implication-block {
-    background: #f2f1ed;
-    border-left: 4px solid var(--accent);
-    padding: 14px 16px;
-    border-radius: 0 3px 3px 0;
+    border-left: 3px solid var(--accent);
+    padding-left: 14px;
+    margin-bottom: 18px;
   }
-
   .implication-label {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
-
   .implication-text {
     font-size: 17px;
-    color: var(--ink);
     line-height: 1.6;
-    font-weight: 400;
+    color: var(--ink);
   }
-
   .item-link {
     display: inline-block;
-    margin-top: 14px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.2px;
+  }
+  .item-link:hover { text-decoration: underline; }
+
+  /* BACK TO TOP */
+  .back-to-top {
+    display: block;
+    text-align: center;
+    margin-top: 48px;
+    font-size: 13px;
+    font-weight: 500;
     color: var(--ink-light);
     text-decoration: none;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 2px;
-    transition: color 0.15s, border-color 0.15s;
+    letter-spacing: 0.5px;
   }
+  .back-to-top:hover { color: var(--ink); }
 
-  .item-link:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-  }
-
-  hr.section-rule {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 8px 0 4px;
-  }
-
+  /* FOOTER */
   .footer {
     background: #1a1a1a;
     color: #999;
@@ -300,26 +279,12 @@
     text-align: center;
     line-height: 1.8;
   }
-
-  .footer strong {
-    color: white;
-    font-weight: 500;
-  }
-
-  .back-to-top {
-    display: block;
-    text-align: center;
-    padding: 24px 0 8px;
-    font-size: 15px;
-    color: var(--ink-light);
-    text-decoration: none;
-    letter-spacing: 0.5px;
-  }
+  .footer strong { color: white; font-weight: 500; }
 
   @media (min-width: 640px) {
     .masthead { padding: 40px 32px 32px; }
     .masthead-title { font-size: 28px; }
-    .content { padding: 0 28px 72px; }
+    .content { padding: 48px 28px 72px; }
     .item-card { padding: 28px 28px 24px; }
     .item-headline { font-size: 22px; }
     .item-summary { font-size: 18px; }
@@ -330,9 +295,9 @@
 <body>
 
 <header class="masthead">
-  <div class="masthead-date">April 10, 2026</div>
+  <div class="masthead-date">April 17, 2026</div>
   <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
-  <div class="masthead-meta">7 Items &nbsp;•&nbsp; AI, Retail, Governance, Space, Archaeology</div>
+  <div class="masthead-meta">8 Items &nbsp;•&nbsp; AI, Governance, Science, Culture, Oddly Interesting</div>
 </header>
 
 <div class="summary-strip" aria-label="Coverage summary">
@@ -341,187 +306,186 @@
     <div class="summary-pill-label">AI &amp; Ops</div>
   </div>
   <div class="summary-pill">
-    <div class="summary-pill-num">2</div>
-    <div class="summary-pill-label">CEO Market</div>
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Board &amp;<br>Governance</div>
   </div>
   <div class="summary-pill">
-    <div class="summary-pill-num">1</div>
-    <div class="summary-pill-label">Board &amp; Governance</div>
-  </div>
-  <div class="summary-pill">
-    <div class="summary-pill-num">1</div>
-    <div class="summary-pill-label">Cultural Signal</div>
+    <div class="summary-pill-num">4</div>
+    <div class="summary-pill-label">Cultural<br>Signal</div>
   </div>
   <div class="summary-pill">
     <div class="summary-pill-num">2</div>
-    <div class="summary-pill-label">Oddly Interesting</div>
+    <div class="summary-pill-label">Oddly<br>Interesting</div>
   </div>
 </div>
 
 <nav class="section-nav" aria-label="Jump to section">
-  <a class="nav-item" href="#ai">AI &amp; Ops</a>
-  <a class="nav-item" href="#search">CEO Market</a>
-  <a class="nav-item" href="#board">Board</a>
-  <a class="nav-item" href="#culture">Culture</a>
-  <a class="nav-item" href="#oddly">Oddly Interesting</a>
+  <a href="#ai">AI &amp; Ops</a>
+  <a href="#board">Board &amp; Governance</a>
+  <a href="#culture">Cultural Signal</a>
+  <a href="#oddly">Oddly Interesting</a>
 </nav>
 
 <main class="content">
 
-  <!-- SECTION 1: AI & Operations -->
+  <!-- AI & OPS -->
   <section id="ai">
     <div class="section-header">
       <span class="section-number">01</span>
-      <h2 class="section-title">AI &amp; Operations</h2>
+      <span class="section-title">AI &amp; Ops</span>
     </div>
+    <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
         <span class="item-tag tag-ai">AI · Ops</span>
-        <div class="item-headline">McKinsey Studied 20 AI Leaders. The Ones Winning Concentrated on One to Three Domains — Not Use-Case Lists.</div>
+        <div class="item-headline">Stanford Studied 51 Enterprise AI Deployments. The Hard Part Was Never the Model.</div>
       </div>
-      <div class="item-source">McKinsey Quarterly · April 7, 2026</div>
-      <div class="item-summary">McKinsey's AI Transformation Manifesto, drawn from the second edition of <em>Rewired</em>, examined 20 companies across industries that have proved themselves leaders in AI deployment. On average, their AI-driven transformations delivered a 20% EBITDA uplift, reached breakeven in one to two years, and generated $3 of incremental EBITDA for every $1 invested. The common pattern: these companies concentrated their efforts on one to three business domains rather than spreading across dozens of pilots. Their advantage came not from the technology itself — broadly available to everyone — but from how fast they applied it to real problems at scale. McKinsey reports having no single success story where senior business leaders were not in the driver's seat.</div>
+      <div class="item-source">Stanford Digital Economy Lab · April 2026</div>
+      <div class="item-summary">Researchers at Stanford's Digital Economy Lab interviewed executives and project leaders across 51 enterprise AI deployments in 41 organizations — cases that had moved beyond pilot stage and delivered measurable business value. Their finding: 77% of the hardest challenges were invisible costs — change management, data quality, and process redesign. Technology was consistently described as the easiest part. In 61% of cases, a prior failed AI project preceded the successful one, and those failures almost always stemmed from teams treating AI as a technology project rather than a process and change management project. A regional supermarket chain that deployed agentic AI to replace its human procurement function entirely saw waste fall 40%, stockouts drop 80%, and EBITDA margin double — not because of the model, but because the use case had clear success criteria and recoverable errors.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The 20% EBITDA number is a filter. It separates operators who have reorganized their business around a few AI-driven leverage points from those still running pilot portfolios and calling it a strategy. For a grocery or distribution CEO, the question is whether AI investment is organized around the two or three places where the economics actually bend — replenishment, labor deployment, shrink — or scattered across a dozen initiatives that each move the needle a fraction of a point.</div>
+        <div class="implication-text">The organizations pulling ahead aren't running better models. They're redesigning workflows, clearing organizational blockers weekly, and tying adoption to corporate OKRs. The durable advantage is in the orchestration layer — the process and the people — not the algorithm.</div>
       </div>
-      <a class="item-link" href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-ai-transformation-manifesto" target="_blank" rel="noopener">Read at McKinsey ↗</a>
+      <a class="item-link" href="https://digitaleconomy.stanford.edu/app/uploads/2026/03/EnterpriseAIPlaybook_PereiraGraylinBrynjolfsson.pdf" target="_blank" rel="noopener">Read at Stanford Digital Economy Lab ↗</a>
     </div>
   </section>
 
-  <hr class="section-rule">
-
-  <!-- SECTION 2: CEO Market Intel -->
-  <section id="search">
-    <div class="section-header">
-      <span class="section-number">02</span>
-      <h2 class="section-title">CEO Market Intelligence</h2>
-    </div>
-
-    <div class="item-card">
-      <div class="item-header">
-        <span class="item-tag tag-market">CEO Market</span>
-        <div class="item-headline">Bain Found a 5x Experimentation Gap Between Retail Leaders and Laggards. The C-Suite Structure Is the Reason.</div>
-      </div>
-      <div class="item-source">Bain &amp; Company · January 2026</div>
-      <div class="item-summary">Bain's 2026 retail executive agenda examined what separates retailers gaining market share from those losing it. The gap isn't strategy documents — it's operating behavior. Retailers classified as leaders are five times more likely to run consistent, structured experimentation and four times more likely to treat AI as a core capability rather than a project. The report argues that winning leadership teams function as aligned systems rather than groups of individuals dividing and conquering, with close CMO–CIO partnerships specifically cited as an enabler of modernized operating models.</div>
-      <div class="implication-block">
-        <div class="implication-label">Why it matters</div>
-        <div class="implication-text">Most grocery C-suites can name their AI pilots. Fewer can point to a standing experimentation system with cross-functional ownership and closed feedback loops. The 5x gap suggests the differentiator isn't what you're testing — it's whether testing is a culture or a calendar item. For a CEO building a leadership team, the question is whether your CMO and CIO are co-owning outcomes or running parallel agendas.</div>
-      </div>
-      <a class="item-link" href="https://www.bain.com/insights/2026-retail-executive-agenda/" target="_blank" rel="noopener">Read at Bain ↗</a>
-    </div>
-
-    <div class="item-card">
-      <div class="item-header">
-        <span class="item-tag tag-market">CEO Market</span>
-        <div class="item-headline">Three Fortune 500 CEO Exits Have One Thing in Common. AI Is Now the Dividing Line Between Leadership Eras.</div>
-      </div>
-      <div class="item-source">Fortune (Ruth Umoh) · March 30, 2026</div>
-      <div class="item-summary">Coca-Cola, Walmart, and Adobe have all framed recent CEO transitions explicitly around AI readiness. Coca-Cola's James Quincey linked his departure to the company's "next wave of growth," and the incoming CEO's first structural move was creating a chief digital officer role reporting directly to him. Walmart's Doug McMillon described his successor John Furner — a 30-year insider who started as an hourly associate — as uniquely capable of leading the company's next AI-driven transformation. Adobe's outgoing CEO wrote that "the next era of creativity is being written right now — shaped by AI." Fortune's Ruth Umoh argues boards are no longer looking for CEOs who can talk about AI. They want leaders who can reorganize large companies around faster decision-making and AI-enabled operating models.</div>
-      <div class="implication-block">
-        <div class="implication-label">Why it matters</div>
-        <div class="implication-text">When three blue-chip boards independently frame their CEO transitions around the same variable — not margin, not geographic expansion, not M&amp;A, but AI readiness — it stops being coincidence and starts being a selection criterion. The Walmart succession is particularly telling: Furner is only the sixth CEO in 62 years, developed entirely from within, with a one-year advisory bridge and an immediate cascade of internal promotions beneath him. That's not disruption. That's designed continuity with a new mandate.</div>
-      </div>
-      <a class="item-link" href="https://fortune.com/article/coca-cola-walmart-and-adobe-ceo-shakeups-ai/" target="_blank" rel="noopener">Read at Fortune ↗</a>
-    </div>
-  </section>
-
-  <hr class="section-rule">
-
-  <!-- SECTION 3: Board & Governance -->
+  <!-- BOARD & GOVERNANCE -->
   <section id="board">
     <div class="section-header">
-      <span class="section-number">03</span>
-      <h2 class="section-title">Board &amp; Governance</h2>
+      <span class="section-number">02</span>
+      <span class="section-title">Board &amp; Governance</span>
     </div>
+    <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
-        <span class="item-tag tag-board">Board · AI</span>
-        <div class="item-headline">65% of Investors Want Board-Level AI Oversight. Only 28% of the S&amp;P 100 Actually Deliver It.</div>
+        <span class="item-tag tag-board">Governance</span>
+        <div class="item-headline">61% of Consumer Markets Directors Say at Least One Board Member Should Be Replaced. AI Readiness Is the Reason.</div>
       </div>
-      <div class="item-source">Harvard Law School Forum on Corporate Governance (Sarah Wenger / Glass Lewis) · March 11, 2026</div>
-      <div class="item-summary">A Glass Lewis analysis of S&amp;P 100 proxy statements found that only 54% of companies disclose board-level oversight of AI, and just 28% disclose both oversight and a formal AI policy. Meanwhile, 65% of surveyed U.S. investors say all companies should provide clear disclosure of the board's oversight of AI governance and ethics. The gap is producing shareholder pressure: nine of 29 technology-related proposals in the 2025 proxy season explicitly addressed AI. The piece profiles three S&amp;P 100 companies with sharply different approaches. Lockheed Martin, which distributes AI oversight across three committees and identifies AI-skilled directors in its skills matrix, received zero AI-related shareholder proposals. Meta, despite designating oversight to a committee, faced multiple proposals drawing high unaffiliated shareholder support masked by its dual-class structure.</div>
+      <div class="item-source">PwC · February 26, 2026</div>
+      <div class="item-summary">PwC's 2025 Annual Corporate Directors Survey, covering 67 directors on public consumer markets company boards, found that 61% believe at least one director on their board should be replaced — raising the question of whether current members are equipped to lead in the AI era. Nearly every major consumer markets company is deploying AI, PwC notes, but fewer can articulate how their tools are governed, how they're trained and validated, or who is accountable when systems go off course. Boards are being told they can no longer delegate AI oversight to the CIO or CMO. Supply chain oversight remains a board priority — 52% of directors say they discuss it at every meeting — but only 26% have conducted tabletop exercises to prepare for supply chain disruptions.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The Lockheed example is the operational signal. A defense contractor with deep AI exposure and zero shareholder proposals on AI — because the governance was visible, specific, and preemptive. For any CEO walking into a new board conversation, the competitive frame isn't "do we have an AI strategy?" It's whether the proxy statement can withstand the scrutiny that 65% of the investor base is now applying.</div>
+        <div class="implication-text">The governance gap isn't about technology fluency. It's about whether a board can ask the right questions when management brings an AI deployment for approval — and hold the answer to account. Sixty-one percent of directors think their own boards aren't there yet.</div>
       </div>
-      <a class="item-link" href="https://corpgov.law.harvard.edu/2026/03/11/us-ai-oversight-through-three-lenses-investor-expectations-the-sp-100-and-company-specific-analysis/" target="_blank" rel="noopener">Read at Harvard Law ↗</a>
+      <a class="item-link" href="https://www.pwc.com/us/en/services/governance-insights-center/library/annual-corporate-directors-survey/consumer-markets.html" target="_blank" rel="noopener">Read at PwC ↗</a>
     </div>
   </section>
 
-  <hr class="section-rule">
-
-  <!-- SECTION 4: Cultural Signal -->
+  <!-- CULTURAL SIGNAL -->
   <section id="culture">
     <div class="section-header">
-      <span class="section-number">04</span>
-      <h2 class="section-title">Cultural Signal</h2>
+      <span class="section-number">03</span>
+      <span class="section-title">Cultural Signal</span>
+    </div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">The Army Just Approved a New Combat Ration Built on Food Processing Technology That Doesn't Exist in Your Grocery Store Yet</div>
+      </div>
+      <div class="item-source">DEVCOM Soldier Center / Soldier Systems · July 2025</div>
+      <div class="item-summary">In July 2025, the Army's DEVCOM Soldier Center transitioned its new Close Combat Assault Ration to DoD-wide procurement — a compact, high-density individual field ration built on two emerging processing technologies. Vacuum microwave drying removes water uniformly while preserving moisture and nutrient density, producing smaller items that stay palatable under field conditions. Sonic agglomeration uses vibration and compression to bond food molecules without binders, shrinking item size by 30 to 50 percent while maintaining ingredients and nutrition. Both were developed with civilian ration manufacturers and suppliers, funded by the Army to support manufacturing adoption. DEVCOM notes it will continue working with industry to expand menu varieties using these platforms.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The cheese powder in your snack food came from a military lab. So did the retort pouch, the energy bar, and the extended-shelf-life bread. Vacuum microwave drying and sonic agglomeration are the current leading edge of that pipeline. They will reach grocery shelves. The question is which companies get there first.</div>
+      </div>
+      <a class="item-link" href="https://soldiersystems.net/2025/07/25/devcom-soldier-center-transitions-new-individual-field-ration-for-dod-wide-availability/" target="_blank" rel="noopener">Read at Soldier Systems ↗</a>
     </div>
 
     <div class="item-card">
       <div class="item-header">
-        <span class="item-tag tag-culture">Culture · Space</span>
-        <div class="item-headline">The Artemis II Crew Woke Up to "Under Pressure" at 252,000 Miles from Earth. NASA Says the Playlist Tradition Goes Back to Apollo.</div>
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">A NASA Engineer Turned YouTube Creator Just Launched a Free Science Curriculum for Every Public School Teacher in America</div>
       </div>
-      <div class="item-source">CBS News (Melissa Gaffney) · April 8, 2026</div>
-      <div class="item-summary">As the Artemis II crew heads home after becoming the first humans to loop the moon in over half a century, NASA released their wake-up playlist — eight songs selected by the astronauts, including Queen and David Bowie's "Under Pressure," Chappell Roan's "Pink Pony Club," and CeeLo Green's "Working Class Heroes." The tradition dates to the Apollo program, when mission control serenaded returning crews with songs that "seemed appropriate to the occasion." A 1990 NASA letter explained the sole purpose: to promote camaraderie and esprit de corps among astronauts and ground support personnel. Apollo 15's crew had a sense of humor, selecting the theme from <em>2001: A Space Odyssey</em>.</div>
+      <div class="item-source">Good Good Good · April 13, 2026</div>
+      <div class="item-summary">Mark Rober used his TED 2026 talk in Vancouver to announce Class CrunchLabs, a free online STEM curriculum for grades 3 through 8, built around what he calls "hiding the vegetables" — engineering genuine curiosity before delivering the lesson. Rober, a former NASA engineer with a YouTube channel built on elaborate science demonstrations, said he has posted a free science or engineering video once a month for 15 years. The curriculum, backed by roughly $60 million in investment including a $7.2 million anonymous gift, is available at no cost to public school teachers through the CrunchLabs Foundation.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">Four people just traveled farther from Earth than any humans in history. The thing that held the team together wasn't a protocol or a performance metric. It was a playlist — a small, shared ritual that connected the crew to each other and to the ground team 252,000 miles away. Some of the most durable organizational glue is the stuff that never makes it into an operating plan.</div>
+        <div class="implication-text">The distribution problem in education has always been getting the compelling thing in front of the kid who needs it. Rober's bet is that the YouTube attention model translates to the classroom if you give teachers the vehicle.</div>
       </div>
-      <a class="item-link" href="https://www.cbsnews.com/news/nasa-artemis-ii-mission-playlist-moon-music-wake-up-songs/" target="_blank" rel="noopener">Read at CBS News ↗</a>
+      <a class="item-link" href="https://www.goodgoodgood.co/articles/mark-rober-class-crunchlabs-science-curriculum" target="_blank" rel="noopener">Read at Good Good Good ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">The Dams Came Down in 2024. By March 2026, the Salmon Were Already Hatching.</div>
+      </div>
+      <div class="item-source">Klamath Tribes News · Herald and News · November 2024 – March 2026</div>
+      <div class="item-summary">In March 2026, the Klamath Tribes' Ambodat Department — whose name means "in, at, or near the water" — confirmed the first naturally hatched Chinook juveniles in Upper Klamath Lake tributaries in over a century, captured in rotary screw traps on the Sprague and Williamson rivers. The four dams that had blocked them came down in 2024. Adults were detected moving upstream within days of removal. Chairman William Ray Jr. asked tribal members to leave the c'iyaals undisturbed during spawning. The Tribes issued one statement about what the hatch means: "The c'iyaals' survival is not just an environmental story. It is a continuation of our own."</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Juvenile salmon imprint the precise chemical signature of their natal water — a molecular map they carry for life. Remove the barrier, restore the water chemistry, and the navigation system executes. Scientists expected reestablishment to take generations. The fish were two years.</div>
+      </div>
+      <a class="item-link" href="https://www.klamathtribesnews.org/2024/11/01/chinook-salmon-makes-historic-return-to-spencer-creek-in-upper-klamath-river-tributary/" target="_blank" rel="noopener">Read at Klamath Tribes News ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">"Foodie" Is Dead. The Culture It Created Is Now Just Called Tuesday.</div>
+      </div>
+      <div class="item-source">Eater (Jaya Saxena) · September 24, 2025</div>
+      <div class="item-summary">Jaya Saxena traces the full arc: from Craig Claiborne making restaurant reviewing into arts criticism, to Food Network launching in 1993, to Top Chef giving a generation a shared culinary vocabulary, to Instagram flattening a $3 taco and a plate of duck at Momofuku Ko to the same size on a grid. The word "foodie," she argues, died not from failure but from total victory — absorbed so completely into American culture that naming it became redundant. "Now when people say they're a foodie, I'm like, yeah, you, me, and my uncle," says Elazar Sontag, restaurant editor at Bon Appétit. What remains is the underlying premise: that food is worthy of active, curious engagement, regardless of what you call the people who practice it.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The consumer who learned to care where their food came from, who made it, and what made it special is the same consumer who reshaped the grocery store. That shift didn't reverse. It just stopped needing a name.</div>
+      </div>
+      <a class="item-link" href="https://www.eater.com/food-culture/911138/foodie-history-american-food-culture" target="_blank" rel="noopener">Read at Eater ↗</a>
     </div>
   </section>
 
-  <hr class="section-rule">
-
-  <!-- SECTION 5: Oddly Interesting -->
+  <!-- ODDLY INTERESTING -->
   <section id="oddly">
     <div class="section-header">
-      <span class="section-number">05</span>
-      <h2 class="section-title">Oddly Interesting</h2>
+      <span class="section-number">04</span>
+      <span class="section-title">Oddly Interesting</span>
+    </div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">Oddly Interesting</span>
+        <div class="item-headline">The Dodgers Stopped Printing Paper Tickets. A 1986 Expos Stub Is Still in Someone's Wallet.</div>
+      </div>
+      <div class="item-source">The Athletic (Rebecca Tauber) · April 13, 2026</div>
+      <div class="item-summary">Earlier this month, the Los Angeles Dodgers ended paper tickets for season ticket holders, drawing attention to a shift already well underway across professional sports. The Athletic's Rebecca Tauber traces the change through the people who felt it most — including Josée Tellier, who has carried her ticket from a May 1986 Montreal Expos game in her wallet for forty years, tucked next to a photo of her mother. A 1947 ticket stub from Jackie Robinson's debut sold in 2022 for $480,000. A paper ticket from Michael Jordan's first NBA game fetched $468,000 the same year. Meanwhile, fans who asked stadiums for a printed version have sometimes been handed an 8x11 sheet of paper with a QR code on it.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Digital optimized for convenience. It didn't account for what a ticket stub actually is — proof you felt something worth keeping.</div>
+      </div>
+      <a class="item-link" href="https://www.nytimes.com/athletic/7193267/2026/04/13/paper-tickets-collectibles-dodgers/" target="_blank" rel="noopener">Read at The Athletic ↗</a>
     </div>
 
     <div class="item-card">
       <div class="item-header">
         <span class="item-tag tag-search">Oddly Interesting</span>
-        <div class="item-headline">There's a 10,000-Year-Old Civilization Under Lake Huron. Its Tools Don't Match Anything Else Found in the Great Lakes.</div>
+        <div class="item-headline">A College Town in Minnesota Gave Its Viral Recipe to the World. Not You, Starbucks.</div>
       </div>
-      <div class="item-source">Bridge Michigan (Great Lakes News Collaborative) · 2025</div>
-      <div class="item-summary">More than 100 feet beneath present-day Lake Huron, University of Michigan researchers have spent nearly two decades investigating the remains of hunting camps that date to the beginning of the Holocene — roughly 10,000 years ago. The Alpena-Amberley Ridge, once a dry land bridge between Michigan and Ontario, funneled migrating caribou herds and the nomadic hunters who depended on them. The cold water preserved everything: stone tools, organic materials, and rock structures arranged for driving game into kill lanes. Researchers call the site "Pompeii-like" because nothing has been moved or destroyed. The tools recovered are unlike the large spear points found at other Great Lakes sites from the same period. And volcanic obsidian traced to present-day Oregon suggests these people had contact with communities thousands of miles away. Funding for the project is uncertain.</div>
+      <div class="item-source">The Guardian (Rachel Leingang) · April 13, 2026</div>
+      <div class="item-summary">Little Joy Coffee in Northfield, Minnesota — population 20,000, town slogan "cows, colleges, community" — created a raspberry danish latte for spring, posted a video showing exactly how it was made and what it cost, then invited any independent coffee shop on earth to steal the recipe. Hundreds did. The shop's map of participating locations now shows pins on every continent except Antarctica and has logged nearly 2 million views. The latte — raspberry syrup, double espresso, vanilla cream cheese foam, two raspberries on a skewer — costs $8 at the shop and about $2.46 to make at home. Owner Cody Larson's original concern was that no one would actually put it on their menu and the shop would "look like losers." The drink is now their top seller, beating a plain latte.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The oldest thing ever found in the Great Lakes was right there the whole time — under the surface, invisible to everyone driving past Lake Huron on the way to somewhere else. Sometimes the most important history of a place is the one nobody thought to look for.</div>
+        <div class="implication-text">The "DIY or buy" series that launched the drink was built on a straightforward premise: show people what an $8 coffee actually costs to produce. The transparency didn't hurt sales — it generated them. Small independent operators sharing recipes and margin math with each other while the big chains watch from the outside is a different kind of competitive strategy. It worked in Northfield.</div>
       </div>
-      <a class="item-link" href="https://bridgemi.com/michigan-environment-watch/great-lakes-pompeii-lake-hurons-depths-hold-secrets-human-history/" target="_blank" rel="noopener">Read at Bridge Michigan ↗</a>
+      <a class="item-link" href="https://www.theguardian.com/food/2026/apr/13/raspberry-danish-latte-viral-coffee-drink" target="_blank" rel="noopener">Read at The Guardian ↗</a>
     </div>
 
-    <div class="item-card">
-      <div class="item-header">
-        <span class="item-tag tag-search">Oddly Interesting</span>
-        <div class="item-headline">A 15-Minute Video Shows What You'd Actually See Approaching Light Speed. Almost None of It Matches the Movies.</div>
-      </div>
-      <div class="item-source">Aeon (curating ScienceClic / Alessandro Roussel) · April 2026</div>
-      <div class="item-summary">French physicist and visual artist Alessandro Roussel built a 15-minute 3D simulation of what a human would actually experience aboard a spacecraft accelerating toward light speed. The results dismantle nearly every cinematic assumption. Stars don't streak past — they fold forward, compressing the entire sky into a bright disc ahead of you. Colors shift out of the visible spectrum as the Doppler effect turns starlight to ultraviolet and then to radiation. Time dilates: clocks on Earth run faster than yours, and the gap widens as you accelerate. The universe doesn't expand around you. It collapses in front of you. The video walks through aberration of light, the Doppler shift, time dilation, length contraction, and the theoretical possibility of a warp drive — all rendered in polished visuals that make the physics intuitive without simplifying it.</div>
-      <div class="implication-block">
-        <div class="implication-label">Why it matters</div>
-        <div class="implication-text">Fifteen minutes. No agenda, no business application, no action items. Just a deeply humbling reminder that the universe operates on rules we barely understand and our intuitions are mostly wrong. Sometimes that's the most useful thing a leader encounters in a given week.</div>
-      </div>
-      <a class="item-link" href="https://aeon.co/videos/take-a-mind-bending-ride-through-the-cosmos-at-light-speed" target="_blank" rel="noopener">Watch at Aeon ↗</a>
-    </div>
+
   </section>
 
-  <a class="back-to-top" href="#">↑ Back to top</a>
+  <a class="back-to-top" href="#top">↑ Back to top</a>
 
 </main>
 
 <footer class="footer">
   <strong>The Prepared Mind, Weekly Reader</strong><br>
   Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
-  April 10, 2026 · Edition No. 4
+  April 17, 2026 · Edition No. 5
   <br><a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions →</a>
 </footer>
 
