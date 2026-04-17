@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  EDITION METADATA
+  edition: 4
+  date: April 10, 2026
+  cards: 7
+  sections: AI & Ops, CEO Market Intel, Board & Governance, Cultural Signal, Oddly Interesting
+  template_version: v1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader â April 10, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111;
+    --ink-mid: #3a3a3a;
+    --ink-light: #666666;
+    --rule: #d8d8d8;
+    --accent: #c0392b;
+    --accent-dark: #8b1a13;
+    --bg: #f9f8f5;
+    --card: #ffffff;
+    --tag-ai: #dce8ff;      --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8;  --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0;  --tag-market-text: #8b4400;
+    --tag-board: #ecdff5;   --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3;  --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec; --tag-culture-text: #004d43;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .masthead {
+    background: #1a1a1a;
+    color: white;
+    padding: 28px 20px 24px;
+  }
+
+  .masthead-date {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #f0c040;
+    margin-bottom: 8px;
+  }
+
+  .masthead-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .masthead-meta {
+    font-size: 13px;
+    color: #bbbbbb;
+    font-weight: 400;
+  }
+
+  .summary-strip {
+    background: #2a2a2a;
+    padding: 16px 20px;
+    display: flex;
+    gap: 28px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .summary-strip::-webkit-scrollbar { display: none; }
+
+  .summary-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .summary-pill-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f0c040;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .summary-pill-label {
+    font-size: 13px;
+    color: #cccccc;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .section-nav {
+    background: white;
+    border-bottom: 2px solid var(--rule);
+    padding: 0 20px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .section-nav::-webkit-scrollbar { display: none; }
+
+  .nav-item {
+    display: block;
+    padding: 16px 18px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: var(--ink-light);
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .nav-item:first-child { padding-left: 0; }
+
+  .nav-item:hover {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+  }
+
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 18px 56px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 32px 0 14px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 20px;
+  }
+
+  .section-number {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+    color: var(--ink-light);
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+  }
+
+  .item-card {
+    background: var(--card);
+    border-radius: 4px;
+    padding: 22px 22px 20px;
+    margin-bottom: 16px;
+    border: 1px solid var(--rule);
+    transition: border-color 0.15s;
+  }
+
+  .item-card:active { border-color: #aaaaaa; }
+
+  .item-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .item-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+  .tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+
+  .item-headline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+  }
+
+  .item-source {
+    font-size: 14px;
+    color: var(--ink-light);
+    font-weight: 400;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .item-summary {
+    font-size: 17px;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .implication-block {
+    background: #f2f1ed;
+    border-left: 4px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .implication-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .implication-text {
+    font-size: 17px;
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .item-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--ink-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .item-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  hr.section-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 8px 0 4px;
+  }
+
+  .footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 28px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .footer strong {
+    color: white;
+    font-weight: 500;
+  }
+
+  .back-to-top {
+    display: block;
+    text-align: center;
+    padding: 24px 0 8px;
+    font-size: 15px;
+    color: var(--ink-light);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+
+  @media (min-width: 640px) {
+    .masthead { padding: 40px 32px 32px; }
+    .masthead-title { font-size: 28px; }
+    .content { padding: 0 28px 72px; }
+    .item-card { padding: 28px 28px 24px; }
+    .item-headline { font-size: 22px; }
+    .item-summary { font-size: 18px; }
+    .implication-text { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-date">April 10, 2026</div>
+  <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+  <div class="masthead-meta">7 Items &nbsp;â¢&nbsp; AI, Retail, Governance, Space, Archaeology</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">AI &amp; Ops</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">CEO Market</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Board &amp; Governance</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">1</div>
+    <div class="summary-pill-label">Cultural Signal</div>
+  </div>
+  <div class="summary-pill">
+    <div class="summary-pill-num">2</div>
+    <div class="summary-pill-label">Oddly Interesting</div>
+  </div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <a class="nav-item" href="#ai">AI &amp; Ops</a>
+  <a class="nav-item" href="#search">CEO Market</a>
+  <a class="nav-item" href="#board">Board</a>
+  <a class="nav-item" href="#culture">Culture</a>
+  <a class="nav-item" href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+  <!-- SECTION 1: AI & Operations -->
+  <section id="ai">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">AI &amp; Operations</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI Â· Ops</span>
+        <div class="item-headline">McKinsey Studied 20 AI Leaders. The Ones Winning Concentrated on One to Three Domains â Not Use-Case Lists.</div>
+      </div>
+      <div class="item-source">McKinsey Quarterly Â· April 7, 2026</div>
+      <div class="item-summary">McKinsey's AI Transformation Manifesto, drawn from the second edition of <em>Rewired</em>, examined 20 companies across industries that have proved themselves leaders in AI deployment. On average, their AI-driven transformations delivered a 20% EBITDA uplift, reached breakeven in one to two years, and generated $3 of incremental EBITDA for every $1 invested. The common pattern: these companies concentrated their efforts on one to three business domains rather than spreading across dozens of pilots. Their advantage came not from the technology itself â broadly available to everyone â but from how fast they applied it to real problems at scale. McKinsey reports having no single success story where senior business leaders were not in the driver's seat.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The 20% EBITDA number is a filter. It separates operators who have reorganized their business around a few AI-driven leverage points from those still running pilot portfolios and calling it a strategy. For a grocery or distribution CEO, the question is whether AI investment is organized around the two or three places where the economics actually bend â replenishment, labor deployment, shrink â or scattered across a dozen initiatives that each move the needle a fraction of a point.</div>
+      </div>
+      <a class="item-link" href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-ai-transformation-manifesto" target="_blank" rel="noopener">Read at McKinsey â</a>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 2: CEO Market Intel -->
+  <section id="search">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">CEO Market Intelligence</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Bain Found a 5x Experimentation Gap Between Retail Leaders and Laggards. The C-Suite Structure Is the Reason.</div>
+      </div>
+      <div class="item-source">Bain &amp; Company Â· January 2026</div>
+      <div class="item-summary">Bain's 2026 retail executive agenda examined what separates retailers gaining market share from those losing it. The gap isn't strategy documents â it's operating behavior. Retailers classified as leaders are five times more likely to run consistent, structured experimentation and four times more likely to treat AI as a core capability rather than a project. The report argues that winning leadership teams function as aligned systems rather than groups of individuals dividing and conquering, with close CMOâCIO partnerships specifically cited as an enabler of modernized operating models.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Most grocery C-suites can name their AI pilots. Fewer can point to a standing experimentation system with cross-functional ownership and closed feedback loops. The 5x gap suggests the differentiator isn't what you're testing â it's whether testing is a culture or a calendar item. For a CEO building a leadership team, the question is whether your CMO and CIO are co-owning outcomes or running parallel agendas.</div>
+      </div>
+      <a class="item-link" href="https://www.bain.com/insights/2026-retail-executive-agenda/" target="_blank" rel="noopener">Read at Bain â</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Three Fortune 500 CEO Exits Have One Thing in Common. AI Is Now the Dividing Line Between Leadership Eras.</div>
+      </div>
+      <div class="item-source">Fortune (Ruth Umoh) Â· March 30, 2026</div>
+      <div class="item-summary">Coca-Cola, Walmart, and Adobe have all framed recent CEO transitions explicitly around AI readiness. Coca-Cola's James Quincey linked his departure to the company's "next wave of growth," and the incoming CEO's first structural move was creating a chief digital officer role reporting directly to him. Walmart's Doug McMillon described his successor John Furner â a 30-year insider who started as an hourly associate â as uniquely capable of leading the company's next AI-driven transformation. Adobe's outgoing CEO wrote that "the next era of creativity is being written right now â shaped by AI." Fortune's Ruth Umoh argues boards are no longer looking for CEOs who can talk about AI. They want leaders who can reorganize large companies around faster decision-making and AI-enabled operating models.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">When three blue-chip boards independently frame their CEO transitions around the same variable â not margin, not geographic expansion, not M&amp;A, but AI readiness â it stops being coincidence and starts being a selection criterion. The Walmart succession is particularly telling: Furner is only the sixth CEO in 62 years, developed entirely from within, with a one-year advisory bridge and an immediate cascade of internal promotions beneath him. That's not disruption. That's designed continuity with a new mandate.</div>
+      </div>
+      <a class="item-link" href="https://fortune.com/article/coca-cola-walmart-and-adobe-ceo-shakeups-ai/" target="_blank" rel="noopener">Read at Fortune â</a>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 3: Board & Governance -->
+  <section id="board">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Board &amp; Governance</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Board Â· AI</span>
+        <div class="item-headline">65% of Investors Want Board-Level AI Oversight. Only 28% of the S&amp;P 100 Actually Deliver It.</div>
+      </div>
+      <div class="item-source">Harvard Law School Forum on Corporate Governance (Sarah Wenger / Glass Lewis) Â· March 11, 2026</div>
+      <div class="item-summary">A Glass Lewis analysis of S&amp;P 100 proxy statements found that only 54% of companies disclose board-level oversight of AI, and just 28% disclose both oversight and a formal AI policy. Meanwhile, 65% of surveyed U.S. investors say all companies should provide clear disclosure of the board's oversight of AI governance and ethics. The gap is producing shareholder pressure: nine of 29 technology-related proposals in the 2025 proxy season explicitly addressed AI. The piece profiles three S&amp;P 100 companies with sharply different approaches. Lockheed Martin, which distributes AI oversight across three committees and identifies AI-skilled directors in its skills matrix, received zero AI-related shareholder proposals. Meta, despite designating oversight to a committee, faced multiple proposals drawing high unaffiliated shareholder support masked by its dual-class structure.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The Lockheed example is the operational signal. A defense contractor with deep AI exposure and zero shareholder proposals on AI â because the governance was visible, specific, and preemptive. For any CEO walking into a new board conversation, the competitive frame isn't "do we have an AI strategy?" It's whether the proxy statement can withstand the scrutiny that 65% of the investor base is now applying.</div>
+      </div>
+      <a class="item-link" href="https://corpgov.law.harvard.edu/2026/03/11/us-ai-oversight-through-three-lenses-investor-expectations-the-sp-100-and-company-specific-analysis/" target="_blank" rel="noopener">Read at Harvard Law â</a>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 4: Cultural Signal -->
+  <section id="culture">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Cultural Signal</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture Â· Space</span>
+        <div class="item-headline">The Artemis II Crew Woke Up to "Under Pressure" at 252,000 Miles from Earth. NASA Says the Playlist Tradition Goes Back to Apollo.</div>
+      </div>
+      <div class="item-source">CBS News (Melissa Gaffney) Â· April 8, 2026</div>
+      <div class="item-summary">As the Artemis II crew heads home after becoming the first humans to loop the moon in over half a century, NASA released their wake-up playlist â eight songs selected by the astronauts, including Queen and David Bowie's "Under Pressure," Chappell Roan's "Pink Pony Club," and CeeLo Green's "Working Class Heroes." The tradition dates to the Apollo program, when mission control serenaded returning crews with songs that "seemed appropriate to the occasion." A 1990 NASA letter explained the sole purpose: to promote camaraderie and esprit de corps among astronauts and ground support personnel. Apollo 15's crew had a sense of humor, selecting the theme from <em>2001: A Space Odyssey</em>.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Four people just traveled farther from Earth than any humans in history. The thing that held the team together wasn't a protocol or a performance metric. It was a playlist â a small, shared ritual that connected the crew to each other and to the ground team 252,000 miles away. Some of the most durable organizational glue is the stuff that never makes it into an operating plan.</div>
+      </div>
+      <a class="item-link" href="https://www.cbsnews.com/news/nasa-artemis-ii-mission-playlist-moon-music-wake-up-songs/" target="_blank" rel="noopener">Read at CBS News â</a>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- SECTION 5: Oddly Interesting -->
+  <section id="oddly">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Oddly Interesting</h2>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">Oddly Interesting</span>
+        <div class="item-headline">There's a 10,000-Year-Old Civilization Under Lake Huron. Its Tools Don't Match Anything Else Found in the Great Lakes.</div>
+      </div>
+      <div class="item-source">Bridge Michigan (Great Lakes News Collaborative) Â· 2025</div>
+      <div class="item-summary">More than 100 feet beneath present-day Lake Huron, University of Michigan researchers have spent nearly two decades investigating the remains of hunting camps that date to the beginning of the Holocene â roughly 10,000 years ago. The Alpena-Amberley Ridge, once a dry land bridge between Michigan and Ontario, funneled migrating caribou herds and the nomadic hunters who depended on them. The cold water preserved everything: stone tools, organic materials, and rock structures arranged for driving game into kill lanes. Researchers call the site "Pompeii-like" because nothing has been moved or destroyed. The tools recovered are unlike the large spear points found at other Great Lakes sites from the same period. And volcanic obsidian traced to present-day Oregon suggests these people had contact with communities thousands of miles away. Funding for the project is uncertain.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The oldest thing ever found in the Great Lakes was right there the whole time â under the surface, invisible to everyone driving past Lake Huron on the way to somewhere else. Sometimes the most important history of a place is the one nobody thought to look for.</div>
+      </div>
+      <a class="item-link" href="https://bridgemi.com/michigan-environment-watch/great-lakes-pompeii-lake-hurons-depths-hold-secrets-human-history/" target="_blank" rel="noopener">Read at Bridge Michigan â</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-search">Oddly Interesting</span>
+        <div class="item-headline">A 15-Minute Video Shows What You'd Actually See Approaching Light Speed. Almost None of It Matches the Movies.</div>
+      </div>
+      <div class="item-source">Aeon (curating ScienceClic / Alessandro Roussel) Â· April 2026</div>
+      <div class="item-summary">French physicist and visual artist Alessandro Roussel built a 15-minute 3D simulation of what a human would actually experience aboard a spacecraft accelerating toward light speed. The results dismantle nearly every cinematic assumption. Stars don't streak past â they fold forward, compressing the entire sky into a bright disc ahead of you. Colors shift out of the visible spectrum as the Doppler effect turns starlight to ultraviolet and then to radiation. Time dilates: clocks on Earth run faster than yours, and the gap widens as you accelerate. The universe doesn't expand around you. It collapses in front of you. The video walks through aberration of light, the Doppler shift, time dilation, length contraction, and the theoretical possibility of a warp drive â all rendered in polished visuals that make the physics intuitive without simplifying it.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Fifteen minutes. No agenda, no business application, no action items. Just a deeply humbling reminder that the universe operates on rules we barely understand and our intuitions are mostly wrong. Sometimes that's the most useful thing a leader encounters in a given week.</div>
+      </div>
+      <a class="item-link" href="https://aeon.co/videos/take-a-mind-bending-ride-through-the-cosmos-at-light-speed" target="_blank" rel="noopener">Watch at Aeon â</a>
+    </div>
+  </section>
+
+  <a class="back-to-top" href="#">â Back to top</a>
+
+</main>
+
+<footer class="footer">
+  <strong>The Prepared Mind, Weekly Reader</strong><br>
+  Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+  April 10, 2026 Â· Edition No. 4
+  <br><a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions â</a>
+</footer>
+
+</body>
+</html>
