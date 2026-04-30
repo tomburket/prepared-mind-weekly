@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,56 +45,15 @@
   Prepared for Tony Sarsam by Tom Burket, word/cairn
 </footer>
 <script>
-// ============================================================
-// UPDATE THIS ARRAY WHEN YOU PUBLISH A NEW EDITION
-// Most recent edition first. The first entry is treated as current.
-// ============================================================
 const editions = [
-  {
-    number: 6,
-    date: "April 24, 2026",
-    items: 8,
-    topics: "AI, Grocery, Protein, GLP-1, Science, Culture, Oddly Interesting",
-    file: null  // null = current edition lives at root index.html
-  },
-  {
-    number: 5,
-    date: "April 17, 2026",
-    items: 8,
-    topics: "AI, Governance, Science, Culture, Salmon, Oddly Interesting",
-    file: "edition-05.html"
-  },
-  {
-    number: 4,
-    date: "April 10, 2026",
-    items: 7,
-    topics: "AI, Retail, Governance, Space, Archaeology",
-    file: "edition-04.html"
-  },
-  {
-    number: 3,
-    date: "April 3, 2026",
-    items: 8,
-    topics: "Food, Grocery, AI, Governance, Space, Oddly Interesting",
-    file: "edition-03.html"
-  },
-  {
-    number: 2,
-    date: "March 27, 2026",
-    items: 10,
-    topics: "Food, Grocery, Business, Tech, Oddly Interesting",
-    file: "edition-02.html"
-  },
-  {
-    number: 1,
-    date: "March 5, 2026",
-    items: 9,
-    topics: "Food, Grocery, Business, Tech, Oddly Interesting",
-    file: "edition-01.html"
-  }
+  { number: 7, date: "April 30, 2026", items: 13, topics: "AI, Grocery, Leadership, Governance, Culture, Brand, Economics, Oddly Interesting", file: null },
+  { number: 6, date: "April 24, 2026", items: 8, topics: "AI, Grocery, Protein, GLP-1, Science, Culture, Oddly Interesting", file: "edition-06.html" },
+  { number: 5, date: "April 17, 2026", items: 8, topics: "AI, Governance, Science, Culture, Salmon, Oddly Interesting", file: "edition-05.html" },
+  { number: 4, date: "April 10, 2026", items: 7, topics: "AI, Retail, Governance, Space, Archaeology", file: "edition-04.html" },
+  { number: 3, date: "April 3, 2026", items: 8, topics: "Food, Grocery, AI, Governance, Space, Oddly Interesting", file: "edition-03.html" },
+  { number: 2, date: "March 27, 2026", items: 10, topics: "Food, Grocery, Business, Tech, Oddly Interesting", file: "edition-02.html" },
+  { number: 1, date: "March 5, 2026", items: 9, topics: "Food, Grocery, Business, Tech, Oddly Interesting", file: "edition-01.html" }
 ];
-
-// Render
 const list = document.getElementById('edition-list');
 editions.forEach((ed, i) => {
   const isCurrent = i === 0;
@@ -101,15 +61,7 @@ editions.forEach((ed, i) => {
   const a = document.createElement('a');
   a.className = 'edition-card';
   a.href = href;
-  a.innerHTML = `
-    <div class="edition-left">
-      <div class="edition-number">
-        Edition No. ${ed.number}${isCurrent ? '<span class="current-badge">Current</span>' : ''}
-      </div>
-      <div class="edition-date">${ed.date} &middot; ${ed.topics}</div>
-    </div>
-    <div class="edition-count">${ed.items} items</div>
-  `;
+  a.innerHTML = `<div class="edition-left"><div class="edition-number">Edition No. ${ed.number}${isCurrent ? '<span class="current-badge">Current</span>' : ''}</div><div class="edition-date">${ed.date} &middot; ${ed.topics}</div></div><div class="edition-count">${ed.items} items</div>`;
   list.appendChild(a);
 });
 </script>
