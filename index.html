@@ -3,284 +3,71 @@
 <head>
 <!--
   EDITION METADATA
-  edition: 6
-  date: April 24, 2026
-  cards: 8
-  sections: AI & Ops, CEO Market Intel, Cultural Signal, Oddly Interesting
+  edition: 7
+  date: April 30, 2026
+  cards: 13
+  sections: AI & Ops, CEO Market Intel, Board & Governance, Cultural Signal, Oddly Interesting
   template_version: v1
 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Prepared Mind, Weekly Reader — April 24, 2026</title>
+<title>The Prepared Mind, Weekly Reader — April 30, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #111111;
-    --ink-mid: #3a3a3a;
-    --ink-light: #666666;
-    --rule: #d8d8d8;
-    --accent: #c0392b;
-    --accent-dark: #8b1a13;
-    --bg: #f9f8f5;
-    --card: #ffffff;
-    --tag-ai: #dce8ff;
-    --tag-ai-text: #0d3f8f;
-    --tag-people: #d6f0d8;
-    --tag-people-text: #1a5c1e;
-    --tag-market: #fdecd0;
-    --tag-market-text: #8b4400;
-    --tag-board: #ecdff5;
-    --tag-board-text: #4a0e7a;
-    --tag-search: #fad9e3;
-    --tag-search-text: #8b0033;
-    --tag-culture: #cff0ec;
-    --tag-culture-text: #004d43;
+    --ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+    --rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+    --bg: #f9f8f5; --card: #ffffff;
+    --tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0; --tag-market-text: #8b4400;
+    --tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3; --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec; --tag-culture-text: #004d43;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 19px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* HEADER */
-  .masthead {
-    background: #1a1a1a;
-    color: white;
-    padding: 28px 20px 24px;
-  }
-  .masthead-date {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: #f0c040;
-    margin-bottom: 8px;
-  }
-  .masthead-title {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1.15;
-    color: white;
-    margin-bottom: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .masthead-meta {
-    font-size: 13px;
-    color: #bbbbbb;
-    font-weight: 400;
-  }
-
-  /* SUMMARY STRIP */
-  .summary-strip {
-    background: #2a2a2a;
-    padding: 16px 20px;
-    display: flex;
-    gap: 28px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+  body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+  .masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+  .masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+  .masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+  .summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .summary-strip::-webkit-scrollbar { display: none; }
-  .summary-pill {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-  }
-  .summary-pill-num {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #f0c040;
-    line-height: 1;
-  }
-  .summary-pill-label {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #cccccc;
-    line-height: 1.3;
-  }
-
-  /* NAV */
-  .section-nav {
-    background: var(--card);
-    border-bottom: 1px solid var(--rule);
-    padding: 12px 20px;
-    display: flex;
-    gap: 6px;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
+  .summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+  .summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+  .section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
   .section-nav::-webkit-scrollbar { display: none; }
-  .section-nav a {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--ink-light);
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    transition: background 0.15s, color 0.15s;
-  }
-  .section-nav a:hover {
-    background: var(--ink);
-    color: white;
-    border-color: var(--ink);
-  }
-
-  /* CONTENT */
-  .content {
-    max-width: 740px;
-    margin: 0 auto;
-    padding: 40px 20px 72px;
-  }
-
-  /* SECTION */
+  .section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+  .section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+  .content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
   section { margin-bottom: 8px; }
-  .section-header {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 20px;
-    padding-top: 44px;
-  }
-  .section-number {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 13px;
-    color: var(--ink-light);
-    flex-shrink: 0;
-  }
-  .section-title {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--ink);
-    letter-spacing: -0.2px;
-  }
-  .section-rule {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 0 0 0 0;
-  }
-
-  /* CARD */
-  .item-card {
-    background: var(--card);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 24px 22px 20px;
-    margin-bottom: 16px;
-  }
+  .section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+  .section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+  .section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+  .section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+  .item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; }
   .item-header { margin-bottom: 6px; }
-  .item-tag {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 2px;
-    margin-bottom: 10px;
-  }
-  .tag-ai    { background: var(--tag-ai);    color: var(--tag-ai-text); }
+  .item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
   .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
   .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
-  .tag-search  { background: var(--tag-search);  color: var(--tag-search-text); }
-  .tag-people  { background: var(--tag-people);  color: var(--tag-people-text); }
-  .tag-market  { background: var(--tag-market);  color: var(--tag-market-text); }
-
-  .item-headline {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--ink);
-    margin-bottom: 8px;
-  }
-  .item-source {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    color: var(--ink-light);
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-  .item-summary {
-    font-size: 17px;
-    line-height: 1.65;
-    color: var(--ink-mid);
-    margin-bottom: 18px;
-  }
-  .implication-block {
-    border-left: 3px solid var(--accent);
-    padding-left: 14px;
-    margin-bottom: 18px;
-  }
-  .implication-label {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 5px;
-  }
-  .implication-text {
-    font-size: 17px;
-    line-height: 1.6;
-    color: var(--ink);
-  }
-  .item-link {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--accent);
-    text-decoration: none;
-    letter-spacing: 0.2px;
-  }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+  .item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+  .item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+  .implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+  .implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+  .implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+  .item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
   .item-link:hover { text-decoration: underline; }
-
-  /* BACK TO TOP */
-  .back-to-top {
-    display: block;
-    text-align: center;
-    margin-top: 48px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink-light);
-    text-decoration: none;
-    letter-spacing: 0.5px;
-  }
+  .back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
   .back-to-top:hover { color: var(--ink); }
-
-  /* FOOTER */
-  .footer {
-    background: #1a1a1a;
-    color: #999;
-    padding: 28px 20px;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 1.8;
-  }
+  .footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
   .footer strong { color: white; font-weight: 500; }
-
   @media (min-width: 640px) {
     .masthead { padding: 40px 32px 32px; }
     .masthead-title { font-size: 28px; }
@@ -295,184 +82,238 @@
 <body>
 
 <header class="masthead">
-  <div class="masthead-date">April 24, 2026</div>
+  <div class="masthead-date">April 30, 2026</div>
   <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
-  <div class="masthead-meta">8 Items &nbsp;•&nbsp; AI, Grocery, Protein, GLP-1, Science, Culture, Oddly Interesting</div>
+  <div class="masthead-meta">13 Items &nbsp;•&nbsp; AI, Grocery, Leadership, Governance, Culture, Brand, Economics, Oddly Interesting</div>
 </header>
 
 <div class="summary-strip" aria-label="Coverage summary">
-  <div class="summary-pill">
-    <div class="summary-pill-num">1</div>
-    <div class="summary-pill-label">AI &amp; Ops</div>
-  </div>
-  <div class="summary-pill">
-    <div class="summary-pill-num">3</div>
-    <div class="summary-pill-label">CEO Market<br>Intel</div>
-  </div>
-  <div class="summary-pill">
-    <div class="summary-pill-num">3</div>
-    <div class="summary-pill-label">Cultural<br>Signal</div>
-  </div>
-  <div class="summary-pill">
-    <div class="summary-pill-num">1</div>
-    <div class="summary-pill-label">Oddly<br>Interesting</div>
-  </div>
+  <div class="summary-pill"><div class="summary-pill-num">4</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">5</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
 </div>
 
 <nav class="section-nav" aria-label="Jump to section">
-  <a href="#ai">AI &amp; Ops</a>
   <a href="#market">CEO Market Intel</a>
+  <a href="#ai">AI &amp; Ops</a>
+  <a href="#board">Board &amp; Governance</a>
   <a href="#culture">Cultural Signal</a>
   <a href="#oddly">Oddly Interesting</a>
 </nav>
 
 <main class="content">
 
-  <!-- AI & OPS -->
-  <section id="ai">
-    <div class="section-header">
-      <span class="section-number">01</span>
-      <span class="section-title">AI &amp; Ops</span>
-    </div>
+  <!-- CEO MARKET INTEL -->
+  <section id="market">
+    <div class="section-header"><span class="section-number">01</span><span class="section-title">CEO Market Intel</span></div>
     <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
-        <span class="item-tag tag-ai">AI · Supply Chain</span>
-        <div class="item-headline">Hershey Cut $100 Million in Inventory. The Tool Was a Decision-Intelligence AI That Had Never Been Used in CPG at This Scale.</div>
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Kroger's New CEO Just Described a Classic Operations-Led Turnaround. The Board Apparently Agrees.</div>
       </div>
-      <div class="item-source">Supply Chain Dive · Antone Gonsalves · April 16, 2026</div>
-      <div class="item-summary">At its 2026 Investor Day on March 31, Hershey's Chief Supply Chain Officer Jason Reiman told investors the company has deployed decision-intelligence software across its supply chain — and projects $100 million in inventory reduction and $50 million in productivity gains over the next two years. The system gathers and analyzes supply chain data and surfaces alerts for operations managers: when to restock packaging, when production is getting ahead of plan, when demand signals shift. Reiman described it as a shift from reporting what happened to recommending what to do next. The technology is embedded in daily operations across sourcing, manufacturing, delivery, and planning.</div>
+      <div class="item-source">Grocery Dive · Sam Silverstein &amp; Catherine Douglas Moran · March 10, 2026</div>
+      <div class="item-summary">In his first earnings call as CEO of the nation's largest supermarket chain, Greg Foran — who previously ran Walmart U.S. and Air New Zealand — told investors Kroger needs to focus on giving customers "a compelling reason to shop with you by offering great value, great products, and a great experience." He outlined five priorities: sharpen price perception, scale e-commerce toward profitability, expand private label, increase execution speed through a new Global Capability Center, and invest $3.8 to $4 billion in stores. His framing was operational and direct. "Customers need to trust that they're getting a fair deal every time they walk into our stores." Kroger's digital sales have grown more than 16% for five straight quarters, but the business hasn't turned a profit on e-commerce. Foran expects to fix that in the first half of 2026.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">A $100 million inventory reduction target at a major CPG company is a board-level number. The technology is not experimental — it is in production. The question for operators is no longer whether this class of tool works but how fast they are moving toward it.</div>
+        <div class="implication-text">Boards at the largest food retailers are betting on operators, not strategists. Foran's appointment and his first-call language are a data point on what grocery boards currently want at the top.</div>
       </div>
-      <a class="item-link" href="https://www.supplychaindive.com/news/hershey-100m-inventory-cut-supply-chain-tech/816785/" target="_blank" rel="noopener">Read at Supply Chain Dive ↗</a>
+      <a class="item-link" href="https://www.grocerydive.com/news/kroger-fourth-quarter-2025-fresh-ecommerce-private-label-grocery/814127/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">The Grocery Industry Had a Volatile March at the Top. The Pattern Is Worth Watching.</div>
+      </div>
+      <div class="item-source">Grocery Dive · March 31, 2026</div>
+      <div class="item-summary">Grocery Dive catalogued ten senior leadership changes in March alone. The headline move: JJ Fleeman, CEO of Ahold Delhaize USA — parent of Stop &amp; Shop, Food Lion, and Giant — announced he will depart in June to become CEO of Dollar General in January 2027. Dollar General explicitly cited grocery as a growth priority in naming him. At Raley's, CEO Keith Knopf departed abruptly after seven years; owner and chairman Mike Teel stepped back in as chief executive. Heritage Grocers named David Hinojosa as CEO, filling a vacancy open since July 2025. Brookshire Grocery's Brad Brookshire retired after nearly 50 years with the company, replaced on an interim basis by the COO. Brookshire Brothers reorganized its entire C-suite in a single announcement.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">When discounters recruit grocery CEOs and regional chains can't keep the seat filled, the market is telling you something about where the pressure is. The operators who know how to run lean, build culture, and hold margin in a difficult environment are in demand.</div>
+      </div>
+      <a class="item-link" href="https://www.grocerydive.com/news/grocery-store-executive-changes-march-2026/816250/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Consumer Products CEOs Lasted an Average of Six Years Before Exiting. 2025 Was the Worst Turnover Year in Recent Memory.</div>
+      </div>
+      <div class="item-source">Spencer Stuart Consumer Products Leadership Index · March 2026</div>
+      <div class="item-summary">Spencer Stuart's Consumer Products Leadership Index — covering the top 50 global consumer products companies — found that average CEO tenure at time of exit is just six years, compared to nine years for large U.S. companies broadly. In 2025, that pressure became acute: Spencer Stuart's March 2026 report "15 New CEOs, One Turbulent Year" documented the highest CEO turnover in years for the sector, with one-third of external hires being proven CEOs recruited from other consumer products companies — a sign boards are reaching for turnaround experience over internal development. Sixteen of 24 Americas-based consumer products CEOs in the index were COO immediately before being named CEO. Marketing is the dominant functional background — 40% of those COOs came from marketing careers. Technology backgrounds are rising but still thin: technology leaders on the executive teams of the top 50 consumer products companies grew from 25 to 28 between 2023 and 2025.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">When boards are pulling in proven outside CEOs at a record rate and tenures are running six years, the operators who have turned around complex organizations and kept cultures intact are exactly the profile in demand. The question every search committee is asking: who has actually done this before?</div>
+      </div>
+      <a class="item-link" href="https://www.spencerstuart.com/research-and-insight/15-new-ceos-one-turbulent-year-the-top-50-consumer-products-companies-bet-big-on-rapid-change" target="_blank" rel="noopener">Read at Spencer Stuart ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Beyond Meat Is Now Selling Protein Drinks. Impossible Is Thinking About Adding Beef. The Category Reached a Crossroads.</div>
+      </div>
+      <div class="item-source">Food Dive · February 2026 &amp; Wall Street Journal · June 2025</div>
+      <div class="item-summary">In January 2026, Beyond Meat launched Beyond Immerse — sparkling protein beverages with 10 to 20 grams of plant protein per can — and explicitly repositioned as "Beyond The Plant Protein Company." By February, Food Dive reported the beverage line had expanded after a "promising test launch," citing protein drinks as a category that grew 122% between 2020 and 2024. Impossible Foods CEO Peter McGuinness went further in June 2025, telling the Wall Street Journal the company might make "a hybrid burger that's 50% beef" to capture flexitarian consumers — and later told audiences the alt-meat market "was mismarketed and mislaunched." In January 2026, Impossible announced a licensing deal with EQUII, a fermentation startup, to produce high-protein bread and pasta.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The demand signal didn't disappear when plant-based meat peaked. It shifted form. What consumers wanted was protein — and the companies that bet on meat-mimicry are now chasing them sideways into drinks, blends, and grain staples.</div>
+      </div>
+      <a class="item-link" href="https://www.fooddive.com/news/beyond-meat-protein-drink-plant-based-pivot/738291/" target="_blank" rel="noopener">Read at Food Dive ↗</a>
     </div>
   </section>
 
-  <!-- CEO MARKET INTEL -->
-  <section id="market">
-    <div class="section-header">
-      <span class="section-number">02</span>
-      <span class="section-title">CEO Market Intel</span>
-    </div>
+  <!-- AI & OPS -->
+  <section id="ai">
+    <div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
     <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
-        <span class="item-tag tag-market">CEO Market</span>
-        <div class="item-headline">Kroger Took a $2.6 Billion Charge to Walk Back Its Biggest Automation Bet. Here's What It Learned.</div>
+        <span class="item-tag tag-ai">AI · Leadership</span>
+        <div class="item-headline">Kroger Named Its First-Ever Chief Data and AI Officer. The Role Didn't Exist a Year Ago.</div>
       </div>
-      <div class="item-source">Grocery Dive · Peyton Bigora · November 18, 2025</div>
-      <div class="item-summary">In November 2025, Kroger announced it would close three of its Ocado-powered automated fulfillment centers — in Wisconsin, Maryland, and Florida — and take a $2.6 billion impairment charge. The goal: improve e-commerce profitability by $400 million in 2026 by shifting toward in-store fulfillment and third-party delivery partnerships with Instacart, DoorDash, and Uber. The Ocado partnership, launched in 2018, was built on the premise that centralized, highly automated customer fulfillment centers could make online grocery profitable at scale. After a comprehensive review, Kroger concluded the economics didn't hold at the volume and density it had. The pivot is toward capital-light, store-based automation in high-volume markets — essentially the opposite architectural bet.</div>
+      <div class="item-source">Grocery Dive · Sam Silverstein · March 2026</div>
+      <div class="item-summary">Kroger named Milen Mahadevan — president of 84.51°, the company's retail data science subsidiary — to the newly created position of Chief Data and AI Officer, effective March 2026. Mahadevan reports to EVP and Chief Digital and Technology Officer Yael Cosset. The mandate consolidates all of Kroger's data and AI teams under a single leader, with an explicit focus on developing agentic AI capabilities for shopping and business operations. Interim Chairman and CEO Ronald Sargent framed the appointment on the Q4 2025 earnings call as ensuring Kroger has "dedicated leadership to accelerate this work."</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The lesson isn't that automation is wrong. It's that automation sized for a demand curve that didn't materialize locks in costs that stores don't. The physics of grocery e-commerce still haven't been solved. Kroger just paid $2.6 billion to update its assumptions.</div>
+        <div class="implication-text">When the largest pure-play grocery chain in the US creates a Chief Data and AI Officer reporting at the C-suite level, the question for every other grocery board becomes: who owns this function for us — and what does it mean that it isn't a named role yet?</div>
       </div>
-      <a class="item-link" href="https://www.grocerydive.com/news/kroger-ecommerce-profitability-400M-ocado-automated-fulfillmnet-centers-delivery/805781/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+      <a class="item-link" href="https://www.grocerydive.com/news/kroger-chief-data-ai-officer-milen-mahadevan/816890/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
     </div>
 
     <div class="item-card">
       <div class="item-header">
-        <span class="item-tag tag-market">CEO Market</span>
-        <div class="item-headline">Kroger Just Launched 80+ Private Label Protein Products. The Refrigerated Aisle Led All Categories in Private Label Growth Last Year.</div>
+        <span class="item-tag tag-ai">AI · Capex</span>
+        <div class="item-headline">Albertsons Is Spending $2 Billion on AI in Fiscal 2026. Its New CEO Called It the Center of Their Transformation.</div>
       </div>
-      <div class="item-source">Grocery Dive · September 2025 &amp; January 2026</div>
-      <div class="item-summary">Private label set a new unit volume record in 2025 — 68.7 billion units, per PLMA data cited by Grocery Dive in January. The refrigerated department led all categories in private label dollar sales growth at over 6%, followed by beverages at nearly 5%. PLMA President Peggy Davies: "Private label growth reflects a shift in consumer priorities, as retailer-owned brands increasingly compete — and win — on value, quality, health, and sustainability." Kroger made the most explicit strategic move: in September 2025, the company launched Simple Truth Protein — 80+ high-protein meals and snacks across frozen, beverages, chips, and desserts, described by Ann Reed, Group VP of Our Brands, as "the widest private label offering of protein products on the market." Kroger isn't waiting for national brands to lead the protein merchandising shift.</div>
+      <div class="item-source">CIO Dive · April 15, 2026</div>
+      <div class="item-summary">In her Q4 2025 earnings call, Albertsons CEO Susan Morris framed a $2 billion capital expenditure plan — up from $1.84 billion the prior year — explicitly around AI and technology. Four named priority areas: digital customer experience, merchandising intelligence, labor optimization, and supply chain. AI demand forecasting and computer vision are already reducing inventory and fulfillment costs. GenAI scheduling tools are improving labor forecast accuracy. Morris told investors the goal is amplification, not replacement: "Above all, our confidence in the year ahead comes from our people." In March, Albertsons added Brian Rice — McDonald's global CIO — to its board specifically to oversee AI governance. The company is targeting $1.5 billion in cumulative productivity gains over three years.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">Protein has become a cross-category, cross-aisle organizing principle. The retailers who treat it as a standalone department rather than a planogram-wide lens are already behind.</div>
+        <div class="implication-text">When a major grocery chain embeds AI in its capex line, adds a tech board director, and has its CEO name four specific operational domains on an earnings call, the question for every other grocery board becomes: who owns this agenda for us, and what's our number?</div>
       </div>
-      <a class="item-link" href="https://www.grocerydive.com/news/private-label-record-sales-volume-2025-plma-grocery/810093/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+      <a class="item-link" href="https://www.ciodive.com/news/albertsons-spending-plan-scale-ai/817763/" target="_blank" rel="noopener">Read at CIO Dive ↗</a>
     </div>
+  </section>
+
+  <!-- BOARD & GOVERNANCE -->
+  <section id="board">
+    <div class="section-header"><span class="section-number">03</span><span class="section-title">Board &amp; Governance</span></div>
+    <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
-        <span class="item-tag tag-market">CEO Market</span>
-        <div class="item-headline">GLP-1 Users Are Reshaping the Grocery Basket. Smaller Retailers Are Already Moving Fixtures.</div>
+        <span class="item-tag tag-board">Board · AI</span>
+        <div class="item-headline">83% of S&amp;P 500 Companies Now Disclose AI as a Material Risk. Only 3% of Their Directors Disclose AI Expertise.</div>
       </div>
-      <div class="item-source">Grocery Dive · January 2026 &amp; Cornell University / Numerator / Acosta · April 2026</div>
-      <div class="item-summary">As of early 2026, 12.4% of U.S. consumers are on a GLP-1 weight loss drug — approximately 31 million current users, up from 5.8% in 2024, per Hartman Group research cited in FoodNavigator-USA. A Cornell University study analyzing transaction data from 150,000 households found that GLP-1 households reduce grocery spending by 5.3% within six months — with steepest declines in savory snacks and sweets — while outspending non-users by 25% on protein shakes and 9% on meat, beans, and yogurt. Conagra became the first major food company to add GLP-1-friendly labeling in January 2025, adding "On Track" badges to 26 Healthy Choice frozen meals. Anne Mezzenga, co-CEO of Omni Talk, told Grocery Dive that smaller retailers are already "changing their floor plans to highlight higher-protein items in a bid to cater to GLP-1 users" and moving refrigerated units housing protein drinks and yogurts into checkout areas.</div>
+      <div class="item-source">The Conference Board &amp; EY Center for Board Matters · April 2026</div>
+      <div class="item-summary">The Conference Board found that S&amp;P 500 companies disclosing AI as a material risk jumped from 12% in 2023 to 83% in 2025. EY's Center for Board Matters found that Fortune 100 companies assigning AI oversight to a board committee nearly quadrupled in a single year — from 11% in 2024 to 40% in 2025. Yet only 36% of boards have implemented a formal AI governance framework, only 6% have established a dedicated AI committee, and just 2.7% of S&amp;P 500 directors disclose AI expertise. Glass Lewis now requires companies to disclose how boards oversee AI and will review governance practices when insufficient oversight results in material harm to shareholders.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The pharmacist is now influencing what goes in the cart. Grocery operators who wait for this to become obvious at the chain level will be redesigning fixtures two years behind the independents.</div>
+        <div class="implication-text">The board that names AI a risk without building the governance infrastructure to manage it has created a liability, not a disclosure. The CEO who walks in knowing what a formal AI governance framework actually requires — and which directors can assess it — is operating at a different altitude.</div>
       </div>
-      <a class="item-link" href="https://www.grocerydive.com/news/8-top-trends-grocery-industry-2026/807564/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+      <a class="item-link" href="https://corpgov.law.harvard.edu/2026/04/07/top-5-corporate-governance-priorities-for-2026/" target="_blank" rel="noopener">Read at Harvard Law School Forum on Corporate Governance ↗</a>
     </div>
   </section>
 
   <!-- CULTURAL SIGNAL -->
   <section id="culture">
-    <div class="section-header">
-      <span class="section-number">03</span>
-      <span class="section-title">Cultural Signal</span>
-    </div>
+    <div class="section-header"><span class="section-number">04</span><span class="section-title">Cultural Signal</span></div>
     <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
         <span class="item-tag tag-culture">Cultural Signal</span>
-        <div class="item-headline">A Rock Drilled on Mars in 2020 Just Yielded the Most Diverse Collection of Organic Molecules Ever Found There.</div>
+        <div class="item-headline">TED Left Vancouver After 11 Years. The Most Substantive Farewell Came From a Digital Outlet. The Legacy Press Didn't Show Up.</div>
       </div>
-      <div class="item-source">NASA JPL / Nature Communications · April 21, 2026</div>
-      <div class="item-summary">After years of analysis, NASA's Curiosity team published results this week from a Martian rock sample drilled in 2020 at a site once covered by ancient lakes. Of 21 carbon-containing molecules identified, seven were detected for the first time on Mars — including a nitrogen heterocycle, a ring structure considered a chemical precursor to RNA and DNA. Scientists cannot determine whether the molecules were produced by biological or geological processes. Both remain possible. The findings were published Tuesday in Nature Communications.</div>
+      <div class="item-source">Daily Hive · Kenneth Chan · April 18, 2026</div>
+      <div class="item-summary">TED 2026 — themed "All of Us" — was the conference's final year at the Vancouver Convention Centre after an 11-year run that generated more than $16 million annually in regional economic impact. TED head curator Chris Anderson also ended his longtime leadership role, making it a double farewell. The most detailed send-off came from Kenneth Chan at Daily Hive on April 18. The Globe and Mail, Vancouver Sun, CBC, and The Tyee published nothing substantive after the conference closed. Vancouver has secured Web Summit as a successor convention. TED moves to San Diego.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">They drilled the rock in 2020. The paper published in 2026. The answer is still: we don't know. That's not a failure — that's what rigorous science under genuine uncertainty actually looks like.</div>
+        <div class="implication-text">A $16 million annual economic anchor departed and Canada's legacy press didn't file. That's not a story about TED. That's a story about who's paying attention.</div>
       </div>
-      <a class="item-link" href="https://www.jpl.nasa.gov/news/nasas-curiosity-finds-organic-molecules-never-seen-before-on-mars/" target="_blank" rel="noopener">Read at NASA JPL ↗</a>
+      <a class="item-link" href="https://dailyhive.com/vancouver/ted-conference-leaves-vancouver-2026" target="_blank" rel="noopener">Read at Daily Hive ↗</a>
     </div>
 
     <div class="item-card">
       <div class="item-header">
         <span class="item-tag tag-culture">Cultural Signal</span>
-        <div class="item-headline">TED 2026 Recap: What becomes scarce?</div>
+        <div class="item-headline">The Last Time Everyone Watched the Same Thing Was 2014.</div>
       </div>
-      <div class="item-source">Strange Loop (Adam Cunningham) · April 18, 2026</div>
-      <div class="item-summary">Adam Cunningham — Global CEO of Allied Global Marketing and writer of the Substack newsletter Strange Loop — published a 5,000-word post-conference essay on April 18 synthesizing talks by Esther Perel, Jonathan Haidt, Neil Katyal, Steve Huffman, Keke Palmer, and others into a single argument: "Systems are getting better at prediction, automation, simulation and scale. Humans are getting worse at ambiguity, presence, friction, patience and reciprocity." His reading of the "All of Us" theme is implicitly critical — TED 2026 diagnosed what technology is doing to human life with precision and stopped short of any mechanism for collective response. His closing: "The systems are getting better. The real question is whether we get better at being human while they do."</div>
+      <div class="item-source">Hollywood Reporter · Rick Porter · April 18, 2026</div>
+      <div class="item-summary">At the 2014 Oscars, Bradley Cooper's selfie with a group of A-listers became the most retweeted post in Twitter's history. The broadcast drew 43.74 million viewers — the Academy Awards' largest audience in 14 years. Hollywood Reporter's Rick Porter argues that night was the last peak of a shared popular culture. The data supports him. The 2026 Oscars drew 18 million viewers. The Grammys drew 14.4 million. Where 24 network and cable shows averaged 12 million or more viewers in 2013-14, today there are three. The culprit isn't quality — it's choice. Netflix alone released more than 60 English-language scripted series in 2019. Add algorithmic personalization and the result is a media landscape where no two households are necessarily watching anything in common.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The gap between what systems optimize and what humans are actually for keeps widening. TED named it. Nobody answered it.</div>
+        <div class="implication-text">Every brand built in the monoculture era assumed a shared cultural language. That language is gone. The consumer your loyalty program is trying to reach has a completely different media diet than the one sitting two rows over. Brand strategy that doesn't start from fragmentation isn't starting from reality.</div>
       </div>
-      <a class="item-link" href="https://www.strangeloopmedia.com/p/ted-2026-and-the-fight-for-the-human" target="_blank" rel="noopener">Read at Strange Loop ↗</a>
+      <a class="item-link" href="https://www.hollywoodreporter.com/business/digital/monoculture-died-2014-1236545688/" target="_blank" rel="noopener">Read at Hollywood Reporter ↗</a>
     </div>
 
     <div class="item-card">
       <div class="item-header">
         <span class="item-tag tag-culture">Cultural Signal</span>
-        <div class="item-headline">The Dams Came Down in 2024. By March 2026, the Salmon Were Already Hatching.</div>
+        <div class="item-headline">Corporate America Developed an AI Tell. Researchers Found It in 73 Documents in a Single Quarter.</div>
       </div>
-      <div class="item-source">Klamath Tribes News · Herald and News · November 2024 – March 2026</div>
-      <div class="item-summary">In March 2026, the Klamath Tribes' Ambodat Department confirmed the first naturally hatched Chinook juveniles in Upper Klamath Lake tributaries in over a century, captured in rotary screw traps on the Sprague and Williamson rivers. The four dams that had blocked them came down in 2024. Adults were detected moving upstream within days of removal. Chairman William Ray Jr. asked tribal members to leave the c'iyaals undisturbed during spawning. The Tribes issued one statement about what the hatch means: "The c'iyaals' survival is not just an environmental story. It is a continuation of our own."</div>
+      <div class="item-source">The State of Brand · Melissa Rosenthal · April 2026</div>
+      <div class="item-summary">Market intelligence platform AlphaSense analyzed corporate earnings calls, shareholder letters, and SEC filings and found a construction that had appeared rarely across two decades suddenly exploding in Q4 2025: "It's not just X, it's Y." Progressive called its purpose "not just a statement, it's a guiding principle." Royal Caribbean called disruptive technology "not just a tool, it's a capability." Seventy-three documents used the exact construction in Q4 2025 alone. One corporate communications advisor told Barron's it was "one of the biggest tells in AI." Melissa Rosenthal of content platform Outlever calls it the Great Flattening — language models trained on the statistical average of all corporate writing producing the statistical average of all corporate writing.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">Juvenile salmon imprint the precise chemical signature of their natal water — a molecular map they carry for life. Remove the barrier, restore the water chemistry, and the navigation system executes. Scientists expected reestablishment to take generations. The fish were two years.</div>
+        <div class="implication-text">When every company sounds like the average of every other company, sounding like yourself becomes the rarest competitive advantage. The brands that opt out own the next decade.</div>
       </div>
-      <a class="item-link" href="https://www.klamathtribesnews.org/2024/11/01/chinook-salmon-makes-historic-return-to-spencer-creek-in-upper-klamath-river-tributary/" target="_blank" rel="noopener">Read at Klamath Tribes News ↗</a>
+      <a class="item-link" href="https://www.thestateofbrand.com/news/great-flattening-corporate-ai-language-brand-voice-opportunity" target="_blank" rel="noopener">Read at The State of Brand ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">Rome Had a Steam Engine and Never Used It. The 2025 Nobel in Economics Explains Why.</div>
+      </div>
+      <div class="item-source">Nobel Prize in Economic Sciences · October 2025</div>
+      <div class="item-summary">Joel Mokyr of Northwestern University won half of the 2025 Nobel Prize in Economics for explaining why the Industrial Revolution happened in 18th-century Britain and not anywhere else — including Rome, which had a working steam-powered device as early as 25 BC. His answer: sustained growth requires two types of knowledge in active feedback. Propositional knowledge — understanding why something works. Prescriptive knowledge — knowing how to build it. Rome had both but kept them in separate worlds. Philosophers dealt with ideas. Craftsmen dealt with things. They never met. Britain's breakthrough came when they finally did. James Watt, an instrument maker with no university degree, was hired by the University of Glasgow to repair a steam engine for a philosophy class, noticed it was inefficient, and fixed it.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Most AI implementations fail for the same reason Rome never industrialized. The people who understand the systems don't know what the work actually feels like. The people doing the work have no visibility into why the systems behave as they do. No feedback loop. No useful knowledge. The fix isn't more technology — it's the same fix Britain stumbled into: put the ideas people and the things people in the same room.</div>
+      </div>
+      <a class="item-link" href="https://www.nobelprize.org/prizes/economic-sciences/2025/popular-information/" target="_blank" rel="noopener">Read at Nobel Prize ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">Gen Z Interns Are Doing the Math on AI in Real Time. Here's What They Say They're There to Learn.</div>
+      </div>
+      <div class="item-source">KPMG 2026 Winter Intern Pulse Survey · Derek Thomas · March 25, 2026</div>
+      <div class="item-summary">KPMG's 2026 Winter Intern Pulse Survey — 361 interns, released March 25 — found that Gen Z interns ranked hands-on experience, mentoring, and network-building as the most valuable internship outcomes, and said those experiences cannot be digitized. When asked which skills they're focused on demonstrating alongside AI agents: critical thinking first, adaptability second, creative and strategic thinking third. Industry-specific knowledge ranked last. The market context is real: the Federal Reserve Bank of New York puts recent graduate unemployment at 5.7% in Q4 2025, with underemployment at 42.5% — a 5-year high. IBM is moving the other direction, tripling U.S. entry-level hiring in 2026. CHRO Nickle LaMoreaux's argument: not investing in early talent now means a hollowed-out pipeline later. KPMG's Derek Thomas: "Gen Z isn't in denial about what AI means for their careers — they're doing the math in real time."</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The organizations still hiring interns aren't being charitable. They're recognizing that the skills interns are explicitly trying to develop — judgment, adaptability, relational intelligence — are exactly what organizations need more of as AI absorbs the rest.</div>
+      </div>
+      <a class="item-link" href="https://kpmg.com/us/en/media/news/2026-winter-intern-pulse-survey.html" target="_blank" rel="noopener">Read at KPMG ↗</a>
     </div>
   </section>
 
   <!-- ODDLY INTERESTING -->
   <section id="oddly">
-    <div class="section-header">
-      <span class="section-number">04</span>
-      <span class="section-title">Oddly Interesting</span>
-    </div>
+    <div class="section-header"><span class="section-number">05</span><span class="section-title">Oddly Interesting</span></div>
     <hr class="section-rule">
 
     <div class="item-card">
       <div class="item-header">
         <span class="item-tag tag-search">Oddly Interesting</span>
-        <div class="item-headline">A Medieval Football Game With No Rules, No Referee, and No Time Limit Just Completed Its 2026 Season in Workington, England</div>
+        <div class="item-headline">"Foodie" Is Dead. Here's What Killed It.</div>
       </div>
-      <div class="item-source">The Athletic · Rob Tanner · April 17, 2026</div>
-      <div class="item-summary">Uppies and Downies has been played in this coastal town in northwest England since the 17th century — through both world wars, every year until the pandemic. No rules, no boundaries, no time limit, unlimited players. The two-pound ball is stitched from cow leather and stuffed with wool flock. Victory requires throwing it in the air three times. This year's deciding game ran from daylight into darkness before Sam Williamson slipped out of the scrummage undetected, hid the ball in his trousers, ate a sweet to look casual, jumped into a stream, scratched through a thorny thicket, and ran to the goal. The mines and docks that once divided the two teams are long gone.</div>
+      <div class="item-source">Eater · Jaya Saxena · September 24, 2025</div>
+      <div class="item-summary">Jaya Saxena's essay in Eater traces the arc of "foodie" from its emergence in the early 1980s — coined by Gael Greene and Paul Levy as a slightly self-mocking label for people who cared too much about food — to its current status as a term nobody wants. The word once carried genuine cultural weight: an identity, a community, a set of shared references. It died the way most cultural markers die, not with a single blow but through overuse, brand capture, and the algorithmic flattening of taste into content. Saxena's argument: "foodie" didn't just get tired. It got replaced by something more specific and more honest — people who care about where their food comes from, how it was made, and who made it, without needing a label to prove it.</div>
       <div class="implication-block">
         <div class="implication-label">Why it matters</div>
-        <div class="implication-text">The mines closed. The docks closed. Easter still comes.</div>
+        <div class="implication-text">When a cultural category collapses, the consumers it described don't disappear. They redistribute. The question for grocery operators is where the people who used to call themselves foodies ended up — and whether your assortment strategy can find them.</div>
       </div>
-      <a class="item-link" href="https://www.nytimes.com/athletic/7196519/2026/04/17/uppies-and-downies-the-medieval-football-game-that-has-no-rules-and-no-time-limit/" target="_blank" rel="noopener">Read at The Athletic ↗</a>
+      <a class="item-link" href="https://www.eater.com/2025/9/24/foodie-word-history-death" target="_blank" rel="noopener">Read at Eater ↗</a>
     </div>
   </section>
 
@@ -483,7 +324,7 @@
 <footer class="footer">
   <strong>The Prepared Mind, Weekly Reader</strong><br>
   Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
-  April 24, 2026 · Edition No. 6
+  April 30, 2026 · Edition No. 7
   <br><a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions →</a>
 </footer>
 
