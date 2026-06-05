@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  EDITION METADATA
+  edition: 9
+  date: May 22, 2026
+  cards: 10
+  sections: Board & Governance, AI & Ops, Cultural Signal, CEO Market Intel
+  template_version: v1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader — May 22, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+    --rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+    --bg: #f9f8f5; --card: #ffffff;
+    --tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0; --tag-market-text: #8b4400;
+    --tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3; --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec; --tag-culture-text: #004d43;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+  .masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+  .masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+  .masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+  .summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .summary-strip::-webkit-scrollbar { display: none; }
+  .summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+  .summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+  .section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+  .section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+  .content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+  section { margin-bottom: 8px; }
+  .section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+  .section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+  .section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+  .section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+  .item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; }
+  .item-header { margin-bottom: 6px; }
+  .item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+  .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+  .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+  .item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+  .item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+  .implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+  .implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+  .implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+  .item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+  .item-link:hover { text-decoration: underline; }
+  .back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+  .back-to-top:hover { color: var(--ink); }
+  .footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+  .footer strong { color: white; font-weight: 500; }
+  @media (min-width: 640px) {
+    .masthead { padding: 40px 32px 32px; }
+    .masthead-title { font-size: 28px; }
+    .content { padding: 48px 28px 72px; }
+    .item-card { padding: 28px 28px 24px; }
+    .item-headline { font-size: 22px; }
+    .item-summary { font-size: 18px; }
+    .implication-text { font-size: 18px; }
+  }
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+  <div class="masthead-date">May 22, 2026</div>
+  <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+  <div class="masthead-meta">10 Items &nbsp;•&nbsp; AI, Governance, Grocery, Leadership, Culture</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">5</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <a href="#board">Board &amp; Governance</a>
+  <a href="#ai">AI &amp; Ops</a>
+  <a href="#culture">Cultural Signal</a>
+  <a href="#market">CEO Market Intel</a>
+</nav>
+
+<main class="content">
+
+  <!-- BOARD & GOVERNANCE -->
+  <section id="board">
+    <div class="section-header"><span class="section-number">01</span><span class="section-title">Board &amp; Governance</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Governance</span>
+        <div class="item-headline">1891 to 2026: The Catholic Church Connects the Industrial Revolution to the AI Revolution</div>
+      </div>
+      <div class="item-source">Vatican News · May 18, 2026</div>
+      <div class="item-summary">Pope Leo XIV will personally present <em>Magnifica Humanitas: On the Protection of the Human Person in the Age of Artificial Intelligence</em> at 11:30 a.m. Rome time on Monday, May 25 — breaking precedent for an encyclical release. The document was signed May 15, the 135th anniversary of <em>Rerum Novarum</em>, the 1891 encyclical that established the Catholic Church's framework for thinking about labor, capital and human dignity during the Industrial Revolution. <em>Magnifica Humanitas</em> is the first major papal teaching document specifically on artificial intelligence. Christopher Olah, Anthropic co-founder and head of its interpretability research, sits on the dais alongside Cardinal Victor Manuel Fernández, Cardinal Michael Czerny and theologians from Durham University and Santa Clara.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">A first encyclical signals priorities of a pontificate. Leo XIV is choosing AI. The text will tell us what the Catholic Church's social teaching tradition has to say to engineers, executives and policymakers shaping the next industrial transition.</div>
+      </div>
+      <a class="item-link" href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html" target="_blank" rel="noopener">Read at Vatican News ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Governance</span>
+        <div class="item-headline">Anthropic's "Soul Document" Has Two Catholic Clergy as Consultants</div>
+      </div>
+      <div class="item-source">Detroit Catholic · May 21, 2026</div>
+      <div class="item-summary">Anthropic published the Claude Constitution on January 21, 2026 — an 80-page governing document Anthropic internally calls a "soul document." The acknowledgments listed 15 external contributors. Two were Catholic clergy: Father Brendan McGuire, a Los Altos pastor with a Master's in Computer Science, a Trinity College Dublin engineering background and a former Silicon Valley career; and Bishop Paul Tighe, secretary of the Vatican's Dicastery for Culture and Education and the Holy See's leading voice on technology. Co-founder Christopher Olah reached out to McGuire directly; McGuire told <em>The Observer</em> that Anthropic "basically were asking for direct help from the Vatican… because the industry was going so fast down this road."</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Frontier AI labs typically reach for ethicists, philosophers and policy specialists when writing governance documents. Anthropic reached for two Catholic clergy with technical backgrounds and a bridge to a 2,000-year-old moral tradition. Every other AI lab will be asked, soon and publicly, what tradition it consulted when writing its own governing constraints.</div>
+      </div>
+      <a class="item-link" href="https://www.detroitcatholic.com/news/what-is-anthropic-a-look-at-the-company-joining-pope-leo-for-ai-encyclical-release" target="_blank" rel="noopener">Read at Detroit Catholic ↗</a>
+    </div>
+  </section>
+
+  <!-- AI & OPS -->
+  <section id="ai">
+    <div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI · Ops</span>
+        <div class="item-headline">Three Companies Are Selling the Cure for Failed AI Adoption: Play</div>
+      </div>
+      <div class="item-source">Forbes · Michael Ashley · April 29, 2026</div>
+      <div class="item-summary">Michael Ashley profiles three companies treating corporate AI adoption as comedy and play. It Writes Itself, the husband-and-wife AI performance company founded by Mike Jacobson and Sami Kriegstein Jacobson, has scaled from NYC pubs to corporate stages including Meta, Unilever and Disney. Second City Works, the Chicago improv institute's corporate arm, teaches executives through improv fundamentals. LEGO Serious Play, developed at IMD in the 1990s, has been quietly used in boardrooms for three decades. The shared claim: adults adopt new capabilities the way children do — through play, not instruction. The piece sits against MIT NANDA's <em>The GenAI Divide</em>, which found a pronounced split between the few organizations getting value from AI and the many stuck in initiatives that never launch. Kriegstein Jacobson, in Ashley's piece: <em>"Exploration can unlock something that instruction cannot: ownership."</em></div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The companies stuck in failed AI initiatives are running mandates, training budgets and consultant invoices. The ones crossing into actual adoption are letting people play with the tools before asking them to perform with them. The failure isn't technological. It's about how humans take ownership of unfamiliar capability.</div>
+      </div>
+      <a class="item-link" href="https://www.forbes.com/sites/michaelashley/2026/04/29/the-secret-to-ai-adoption-make-it-fun/" target="_blank" rel="noopener">Read at Forbes ↗</a>
+    </div>
+  </section>
+
+  <!-- CULTURAL SIGNAL -->
+  <section id="culture">
+    <div class="section-header"><span class="section-number">03</span><span class="section-title">Cultural Signal</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture</span>
+        <div class="item-headline">The Most Advanced Weather Models in the World Are Inputs. Colored Pencils Detail the Outputs.</div>
+      </div>
+      <div class="item-source">The New York Times · May 18, 2026</div>
+      <div class="item-summary">The NOAA Storm Prediction Center in Norman, Oklahoma, runs the most advanced severe-weather modeling stack in the world — ensemble forecasts, radar networks, satellite arrays, machine-learning convective models. When a serious tornado threat is unfolding, the forecasters reach for colored pencils. The hand-drawn outline, sketched on a printed base map by a senior meteorologist, becomes the authoritative product. The tech is input. The pencil is the decision. The agency also rolled out three new conditional intensity tiers in March, addressing a long-standing flaw in how its maps signaled tail risk — the prior "hatched" overlay looked the same for an EF2 tornado and an EF5.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The forecasters didn't replace the pencil when the models got better. They use the models to inform the pencil. The deepest expertise in the room is the part that decides what the data means when the consequences are catastrophic — not the data itself.</div>
+      </div>
+      <a class="item-link" href="https://www.nytimes.com/2026/05/18/weather/nws-storm-prediction-center-maps-forecast.html" target="_blank" rel="noopener">Read at The New York Times ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture</span>
+        <div class="item-headline">A George Mason VP and Chief AI Officer Tells Parents the Question They're Asking Is the Wrong One</div>
+      </div>
+      <div class="item-source">Substack · Amarda Shehu · May 2026</div>
+      <div class="item-summary">Amarda Shehu — Vice President, Chief AI Officer and Professor of Computer Science at George Mason University — published an essay on her Substack arguing the American university has been telling two incompatible stories: formation of judgment, and a credential for the labor market. AI is forcing the choice. Shehu cites Forrester's 2026 <em>Future of Work</em> report finding 55% of employers regret AI-driven layoffs, with roughly half projected to be reversed, and Burning Glass Institute data putting the value of a bachelor's degree at a 30-year low. She writes from a dual vantage point: she runs AI deployment for a public research university serving 40,000 students, and she is the parent of a child entering the labor market she is writing about. Her central refusal: <em>"The discipline name on the diploma is not the unit of analysis. The formation the student undergoes inside it is."</em> And: <em>"If a job is a task that can be fully digitized, it is done."</em></div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Shehu is writing about universities, but the diagnostic generalizes. Every institution selling a credential the labor market is repricing — degree program, certification, role, function — is being asked the same question. The institutions that resolve it by naming what they actually deliver are positioned differently from the ones still hedging.</div>
+      </div>
+      <a class="item-link" href="https://amardashehu.substack.com/p/what-the-university-is-now-for" target="_blank" rel="noopener">Read at Substack ↗</a>
+    </div>
+  </section>
+
+  <!-- CEO MARKET INTEL -->
+  <section id="market">
+    <div class="section-header"><span class="section-number">04</span><span class="section-title">CEO Market Intel</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Food Prices Are Up, But the Iran War's Actual Mechanism Is in the Fertilizer the Farmer Hasn't Yet Bought</div>
+      </div>
+      <div class="item-source">Bloomberg · Eleanor Thornber · May 8, 2026</div>
+      <div class="item-summary">The UN Food and Agriculture Organization's food commodity index rose 1.6% in April — the third consecutive monthly gain, the highest reading in over three years, 2.0% above year-ago levels. Bloomberg's Eleanor Thornber covers the data and the Iran-war framing. The more interesting beat is buried inside the article. FAO Chief Economist Máximo Torero notes the index reflects already-produced commodities: <em>"The agri-food industry is resilient for now because they are selling what they already produced."</em> The real supply shock — diesel and fertilizer flows through the Strait of Hormuz — affects what farmers can plant for the 2026 crop, which determines the 2027 harvest. Torero's threshold: <em>"If this goes to day 90, the possibility of a food crisis will be significantly higher in late 2026 and in 2027."</em> The war is in its 10th week. Day 90 falls in late May.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The visible food-price headline is about already-produced commodities and a multi-causal index. The story that hasn't reached the headline yet is the planting decision farmers are making right now, with diesel and fertilizer at war-time prices, about what to grow for next year. Operators reading the April data as the Iran war's food-price impact may be reading it backwards.</div>
+      </div>
+      <a class="item-link" href="https://www.bloomberg.com/news/articles/2026-05-08/food-prices-rise-to-highest-in-three-years-on-iran-war-costs" target="_blank" rel="noopener">Read at Bloomberg ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">UNFI's Q2: Sales Down 2.6%, EBITDA Up 23.4%. The Strategy Behind the Numbers.</div>
+      </div>
+      <div class="item-source">Grocery Dive · Sam Silverstein and Catherine Douglas Moran · March 10, 2026</div>
+      <div class="item-summary">UNFI's Q2 FY26: net sales down 2.6% to $7.9 billion, adjusted EBITDA up 23.4% to $179 million, adjusted EPS $0.62 against expectations of $0.51, net leverage down a full turn year-over-year to 2.7x. CEO Sandy Douglas exited the Allentown distribution center and consolidated volume into modern facilities — taking the revenue hit for operational discipline. Two rollouts are doing the work. RELEX, UNFI's AI demand-forecasting platform, is on track for full network coverage by year-end. Lean Daily Management is in 36 distribution centers. Together they have delivered 15% less food waste and 10% more throughput across the network over two years. UMN, UNFI's Swiftly-powered retail media network, is built for the more than 30,000 retail locations UNFI serves — letting independent grocers play the digital ad game Kroger and Walmart play.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Three companies are running different bets on what AI is <em>for</em>. Walmart trains its workforce to apply it internally. Kroger names a Chief Data and AI Officer to centralize it. UNFI sells it to the independent grocer ecosystem. Three theses about who captures the value: the workforce, the C-suite or the customer.</div>
+      </div>
+      <a class="item-link" href="https://www.grocerydive.com/news/unfi-q2-2026-earnings-net-sales/814375/" target="_blank" rel="noopener">Read at Grocery Dive ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Terry Smith Held Unilever for 16 Years. The McCormick Deal Made Him Sell.</div>
+      </div>
+      <div class="item-source">City AM · Ali Lyon · May 12, 2026</div>
+      <div class="item-summary">Unilever "appears to have abandoned its promised operational focus in favour of activist-driven break-ups." That's how Terry Smith explained selling his Fundsmith Equity Fund's entire 16-year position in Unilever last month — citing the company's $44.8 billion combination with McCormick announced March 31. Smith singled out McCormick "whose management and returns we do not rate highly." The deal is structured as a Reverse Morris Trust: McCormick is the legal acquirer, but Unilever and its shareholders end up owning 65% of the combined company. Fundsmith is one of Britain's most-respected long-only funds — £12.5 billion under management — and Unilever was a top-10 holding for more than 15 years. The tie-up was reportedly spearheaded by activist investor Nelson Peltz; Unilever shares fell 7% on announcement.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Smith's critique isn't about deal mechanics or McCormick's competence. It's that Unilever stopped doing what it said it would do. The most disciplined long-only investor in CPG just concluded that a company's promised operating discipline isn't worth holding when activist pressure can override it.</div>
+      </div>
+      <a class="item-link" href="https://www.cityam.com/star-stockpicker-dumps-unilever-stake/" target="_blank" rel="noopener">Read at City AM ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">The Bill for Nashville's "It City" Strategy Just Came Due — for the Businesses That Were Already There</div>
+      </div>
+      <div class="item-source">Fox17 Nashville · May 2026</div>
+      <div class="item-summary">The Nashville Property Tax Coalition — approximately 300 business and property owners — warned in May that at least half could fail within two years. The cause: a 2025 county-wide reappraisal producing a 45% median property value increase, combined with a Metro Council decision to set the tax rate 26% above the revenue-neutral certified rate. For specific commercial properties, the increases were far higher. ACME Feed &amp; Seed, the iconic Lower Broadway venue, faces a tax jump from roughly $129,000 to $589,000–$600,000. Coalition organizer Christian Paro: <em>"This is a real-time unfolding crisis that will get exponentially worse throughout this year."</em> Meanwhile Oracle — the marquee 2021 relocation that committed to 8,500 jobs by 2031 — has logged a net gain of just seven jobs since 2022 per Nashville Business Journal reporting, with about 800 workers in Nashville and SEC filings still listing Austin, Texas as headquarters.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Every transformation strategy chooses who absorbs the cost of the transition. Nashville's brand is "headquarters city, business-friendly, talent magnet." Its operating reality is "incentives for the new arrivals, structural tax pressure on the operators who built the place." The 300-business coalition forced the math into public view.</div>
+      </div>
+      <a class="item-link" href="https://fox17.com/fox-17-investigates/300-nashville-businesses-say-property-tax-is-jeopardizing-the-future-property-taxes-in-tn" target="_blank" rel="noopener">Read at Fox17 Nashville ↗</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">From 35% to 85%: How Toyota's San Antonio Plant Rebuilt Retention, and What It's Now Bidding For</div>
+      </div>
+      <div class="item-source">San Antonio Report · Iris Dimmick · April 18, 2026</div>
+      <div class="item-summary">Toyota Motor Manufacturing Texas saw retention drop to 35% in 2023, a crisis felt across U.S. manufacturing during that period. The recovery wasn't an HR campaign. The company restructured training, support and feedback loops; launched mentorship and technical training programs; and built a "Welding Dojo" using augmented reality to let trainees practice technique before live welding. Retention recovered to 80% in 2024 and 2025, and to 85% in 2026. On May 15, 2026, Toyota filed Project Orca with the Texas Comptroller's Office — a proposed $2 billion expansion adding 2,000 jobs at $88,000 average annual wage, with construction beginning in 2026 and production targeted for 2030. Toyota disclosed it is evaluating "other candidate sites," with those negotiations confidential.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">A 35-to-85 retention recovery isn't an HR story. It's an operational rigor story disguised as workforce development — and Toyota is now using it as collateral for the next investment decision. The plants that rebuild retention through training infrastructure earn the right to bid for expansion. The plants that don't, lose the bid to plants that did.</div>
+      </div>
+      <a class="item-link" href="https://sanantonioreport.org/toyota-after-dark-officials-talk-workforce-virtual-training-tools-during-nighttime-tour-of-southside-factory/" target="_blank" rel="noopener">Read at San Antonio Report ↗</a>
+    </div>
+  </section>
+
+  <a class="back-to-top" href="#top">↑ Back to top</a>
+
+</main>
+
+<footer class="footer">
+  <strong>The Prepared Mind, Weekly Reader</strong><br>
+  Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+  May 22, 2026 · Edition No. 9
+  <br><a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions →</a>
+</footer>
+
+</body>
+</html>
