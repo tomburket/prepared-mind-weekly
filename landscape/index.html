@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>PMWR Landscape</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============ PMWR DIAL — change these two lines to retune ============
+   ACTIVE threads below. To run T10 (grocery basket) or T11 (tariffs),
+   add 't10' / 't11' to the ACTIVE set in the script. S5 spine vs secondary
+   is set by tier:'spine' on s5 in the THREADS data. ==================== */
+:root{
+  --cream:#efe9da; --cream-2:#e6e0d0; --paper:#f4f1ea;
+  --ink:#1f1c16; --ink-2:#534d40; --ink-3:#8a8372;
+  --rule:#d8d1bf; --rule-2:#e6e0d1;
+  --accent:#a9742a; --accent-2:#c79447;
+  --field:#15140f; --field-2:#1e1c15; --star:#efe9da;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%}
+body{
+  background:var(--cream); color:var(--ink);
+  font-family:"Inter",system-ui,sans-serif; font-size:16px; line-height:1.5;
+  -webkit-font-smoothing:antialiased; overflow:hidden;
+}
+#app{position:fixed;inset:0;max-width:480px;margin:0 auto;background:var(--cream);
+  overflow:hidden;box-shadow:0 0 60px rgba(0,0,0,.08)}
+.view{position:absolute;inset:0;display:flex;flex-direction:column;
+  background:var(--cream);will-change:transform,opacity}
+.scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+
+/* ---- transitions ---- */
+.view{transition:transform .34s cubic-bezier(.4,0,.2,1),opacity .34s}
+.enter-right{transform:translateX(100%)}
+.enter-left{transform:translateX(-26%);opacity:.6}
+.exit-left{transform:translateX(-26%);opacity:.6}
+.exit-right{transform:translateX(100%)}
+.fade-in{opacity:0}
+@media (prefers-reduced-motion:reduce){.view{transition:none}}
+
+/* ---- top bar ---- */
+.bar{display:flex;align-items:center;gap:12px;padding:14px 18px 12px;
+  border-bottom:1px solid var(--rule);background:var(--cream);flex:none;min-height:54px}
+.bar.dark{background:var(--field);border-bottom:1px solid #2a2820}
+.back{appearance:none;background:none;border:0;cursor:pointer;padding:4px;margin:-4px;
+  color:var(--ink-2);display:flex;align-items:center;font-size:15px;font-family:inherit}
+.bar.dark .back{color:#c9c3b2}
+.back svg{width:18px;height:18px}
+.bar-title{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3)}
+.bar.dark .bar-title{color:#8b8674}
+.bar-mast{font-family:"Newsreader",serif;font-weight:500;font-size:17px;color:var(--ink)}
+
+/* ============ EDITION VIEW ============ */
+.ed-head{padding:26px 22px 18px;border-bottom:1px solid var(--rule)}
+.ed-kicker{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.ed-title{font-family:"Newsreader",serif;font-weight:500;font-size:30px;line-height:1.08;
+  letter-spacing:.004em;margin:0 0 8px}
+.ed-date{font-size:13.5px;color:var(--ink-2)}
+.ed-note{font-size:12.5px;color:var(--ink-3);margin-top:14px;line-height:1.5}
+
+/* ---- altitude switcher ---- */
+.altbar{display:flex;gap:0;margin-top:18px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.altbar button{flex:1;appearance:none;background:none;border:0;cursor:pointer;padding:12px 4px;
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-3);border-right:1px solid var(--rule)}
+.altbar button:last-child{border-right:0}
+.altbar button.active{color:var(--accent)}
+.altbar button:not(.active):hover{color:var(--ink)}
+
+/* ---- pathway directory ---- */
+.dir-head{padding:24px 22px 14px;border-bottom:1px solid var(--rule)}
+.dir-kick{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.dir-title{font-family:"Newsreader",serif;font-weight:500;font-size:26px;margin:0 0 6px}
+.dir-sub{font-size:13px;color:var(--ink-2)}
+.dir-group{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);padding:20px 22px 6px}
+.dir-row{display:flex;align-items:center;gap:13px;padding:15px 22px;border-bottom:1px solid var(--rule-2);cursor:pointer}
+.dir-row:hover{background:var(--paper)}
+.dir-dot{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:0 0 8px currentColor}
+.dir-body{flex:1;min-width:0}
+.dir-name{font-family:"Newsreader",serif;font-size:16.5px;line-height:1.25;color:var(--ink)}
+.dir-meta{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.06em;color:var(--ink-3);margin-top:4px}
+.dir-arr{color:var(--accent);font-size:14px;flex:none}
+
+.card{padding:22px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:11px;display:flex;gap:8px;flex-wrap:wrap}
+.eyebrow .sec{color:var(--accent)}
+.eyebrow .sep{color:var(--rule)}
+.card h2{font-family:"Newsreader",serif;font-weight:500;font-size:21px;line-height:1.22;
+  margin:0 0 10px;letter-spacing:.003em;color:var(--ink)}
+.card .sum{font-size:14.5px;line-height:1.55;color:var(--ink-2);margin:0 0 14px}
+.card .src{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
+  letter-spacing:.02em;margin-bottom:16px}
+
+/* ---- the foot-line cue ---- */
+.footline{appearance:none;width:100%;text-align:left;cursor:pointer;
+  background:none;border:0;border-top:1px solid var(--rule-2);padding:13px 0 2px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;
+  display:flex;align-items:center;gap:9px;color:var(--accent);font-family:inherit}
+.footline{font-family:"IBM Plex Mono",monospace}
+.footline:hover{color:var(--ink)}
+.footline .ftxt{flex:1;line-height:1.4}
+.footline .arr{font-size:13px}
+.footline.loose{color:var(--ink-3)}
+.footline.loose:hover{color:var(--accent)}
+.fork-label{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--accent);border-top:1px solid var(--rule-2);padding-top:13px;margin-bottom:-2px}
+.footline.forked{border-top:0;padding-top:9px}
+.fork-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.edge.fork{stroke:rgba(201,148,71,.45);stroke-width:1.1;stroke-dasharray:1 5}
+.edge.fork.lit{stroke:rgba(214,176,99,.9);stroke-width:1.5}
+
+/* ============ STREAM VIEW ============ */
+.stream-head{padding:24px 22px 18px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.stream-tier{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+.stream-dot{width:9px;height:9px;border-radius:50%;box-shadow:0 0 8px currentColor}
+.stream-title{font-family:"Newsreader",serif;font-weight:500;font-size:25px;line-height:1.12;
+  margin:0 0 9px;color:var(--ink)}
+.stream-blurb{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:0 0 18px}
+.connect-btn{appearance:none;background:var(--field);color:var(--cream);border:0;cursor:pointer;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  padding:11px 16px;border-radius:2px;display:inline-flex;align-items:center;gap:9px;font-family:inherit}
+.connect-btn:hover{background:#23211a}
+.connect-btn .glyph{font-size:14px}
+
+.stream-list{padding:6px 0 40px}
+.s-item{display:flex;gap:14px;padding:16px 22px;border-bottom:1px solid var(--rule-2);
+  cursor:pointer;align-items:flex-start;position:relative}
+.s-item:hover{background:var(--paper)}
+.s-item.here{background:var(--cream-2)}
+.s-rail{flex:none;width:14px;display:flex;flex-direction:column;align-items:center;padding-top:5px}
+.s-node{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none;z-index:1}
+.s-item.here .s-node{box-shadow:0 0 0 4px var(--cream-2),0 0 0 5px var(--accent)}
+.s-line{position:absolute;top:0;bottom:0;left:28px;width:1px;background:var(--rule)}
+.s-item:first-child .s-line{top:21px}
+.s-item:last-child .s-line{bottom:auto;height:21px}
+.s-body{flex:1;min-width:0}
+.s-ed{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+.s-head{font-family:"Newsreader",serif;font-size:16px;line-height:1.28;color:var(--ink)}
+.s-here-tag{font-family:"IBM Plex Mono",monospace;font-size:8.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);margin-top:5px}
+
+/* ============ CARD (full) VIEW ============ */
+.full-scroll{padding:26px 24px 48px}
+.full-eyebrow{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:flex;gap:8px;flex-wrap:wrap}
+.full-eyebrow .sep{color:var(--rule)}
+.full h1{font-family:"Newsreader",serif;font-weight:500;font-size:27px;line-height:1.16;
+  margin:0 0 18px;letter-spacing:.003em}
+.full .sum{font-size:15.5px;line-height:1.62;color:var(--ink-2);margin:0 0 22px}
+.full .src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);
+  border-top:1px solid var(--rule);padding-top:16px;margin-bottom:22px}
+
+/* ============ MAP VIEW ============ */
+.map-wrap{flex:1;position:relative;background:radial-gradient(150% 64% at 50% 104%,rgba(150,116,66,.20),transparent 58%),radial-gradient(120% 92% at 50% 22%,#221d14,var(--field) 60%,#0f0e0a);overflow:hidden;touch-action:none}
+.map-svg{width:100%;height:100%;display:block}
+.edge{stroke:rgba(239,233,218,.14);stroke-width:1;fill:none}
+.edge.lit{stroke-width:1.7;opacity:.95}
+.node-dot{fill:var(--star)}
+.node-ring{fill:none;stroke:rgba(239,233,218,.5);stroke-width:1.1}
+.node-lbl{font-family:"Inter",sans-serif;font-size:10px;fill:rgba(239,233,218,.5);pointer-events:none}
+.node.dim .node-dot,.node.dim .node-ring,.node.dim .node-lbl{opacity:.16}
+.node.here .node-dot{fill:var(--accent-2)}
+.node.pulse{animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.node.pulse{animation:none}}
+.map-legend{position:absolute;left:0;right:0;bottom:0;padding:14px 18px 18px;
+  background:linear-gradient(transparent,rgba(16,15,11,.92)34%);display:flex;flex-direction:column;gap:3px}
+.map-thread-name{font-family:"Newsreader",serif;font-size:18px;color:var(--cream);margin-bottom:2px}
+.map-hint{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.04em;color:#8b8674;line-height:1.5}
+.map-ctrls{position:absolute;right:14px;top:14px;display:flex;flex-direction:column;gap:8px}
+.map-ctrls button{width:38px;height:38px;border-radius:50%;border:1px solid #3a372c;
+  background:rgba(30,28,21,.8);color:var(--cream);font-size:18px;cursor:pointer;font-family:inherit;
+  display:flex;align-items:center;justify-content:center}
+.map-ctrls button:active{background:#2a2820}
+.map-tip{position:absolute;top:14px;left:14px;font-family:"IBM Plex Mono",monospace;
+  font-size:10px;letter-spacing:.04em;color:#8b8674;max-width:55%;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+"use strict";
+/* ===================== DATA ===================== */
+const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25"};
+
+const THREADS={
+  s1:{name:"AI is an operating discipline, not a model",short:"AI Ops Discipline",tier:"spine",color:"#d2a857",
+     blurb:"The model is the easy part. Across fifteen weeks the same finding keeps arriving: value is won in process, data and people \u2014 including the live disagreement over who AI is for, the workforce, the C-suite or the customer."},
+  s2:{name:"What boards now want at the top",short:"CEOs / Boards",tier:"spine",color:"#cd8366",
+     blurb:"The executive market repricing around operators who can transform, not strategists who can present. AI-readiness and turnaround experience as the new selection criteria."},
+  s3:{name:"Boards racing to govern AI",short:"AI Governance",tier:"spine",color:"#7f97b5",
+     blurb:"The governance layer scrambling to catch up \u2014 the widening gap between naming AI a risk and building the oversight to manage it."},
+  s4:{name:"Presence as a Virtue",tier:"spine",color:"#79ab93",
+     blurb:"Synthesis is commoditized, so the work that survives is the work it can't reach \u2014 judgment, field contact, the decision under consequence."},
+  s5:{name:"Culture is the operating layer",short:"Culture Operating Layer",tier:"spine",color:"#c58fa8",
+     blurb:"People First in the wild \u2014 culture and ritual as the durable infrastructure under performance, not a soft perk."},
+  t7:{name:"Enduring Faith Traditions",tier:"secondary",color:"#ad93c6",
+     blurb:"The oldest institution making the weightiest intervention on the newest thing \u2014 and that argument escaping the cathedral into the culture."},
+  t8:{name:"The Human Cost of AI Deployment",short:"AI Human Costs",tier:"secondary",color:"#c9a06a",
+     blurb:"The bill attached to the efficiency everyone's chasing \u2014 institutional memory walking out, the bench not getting built, the bottom rungs sawed off."},
+  t9:{name:"The Long Arc of Automation",tier:"secondary",color:"#8f9bab",
+     blurb:"The oldest story in industry \u2014 the assembly line, the dock, the route \u2014 driven by a new engine. AI is the latest accelerant, not the origin."},
+  t10:{name:"Remaking the Grocery Basket",tier:"secondary",color:"#b9a14e",
+     blurb:"A drug remaking demand, and the industry contorting to follow. GLP-1 is the engine; protein and the alt-meat pivot are the response."},
+  t11:{name:"Input-cost shocks",tier:"secondary",color:"#b08a6a",
+     blurb:"Tariffs and the Iran war working through the food P&L."},
+  t12:{name:"Sports, Hearts & Minds",tier:"secondary",color:"#6fae93",
+     blurb:"Sport as a vehicle for meaning and belonging \u2014 and what happens to that meaning when money floods in or reprices it."},
+  t13:{name:"Civics Today",tier:"secondary",color:"#84a8c6",
+     blurb:"Civic memory and how a republic transmits it. Not the anniversary; the remembering."},
+  t14:{name:"Space",tier:"secondary",color:"#9090c8",
+     blurb:"The briefing's signature curiosity \u2014 the place it keeps returning to, the way it returns to baseball."}
+};
+
+/* Which threads are switched on. Drop t10/t11 = their cards fall to the curious half.
+   Add 't10','t11' here to run them. */
+const ACTIVE=new Set(["s1","s2","s3","s4","s5","t7","t8","t9","t10","t12","t13","t14"]);
+
+const CARDS=[
+ {id:"e1c1",ed:1,sec:"AI & Ops",tag:"signal",h:"AI Becomes the Store Manager's Quiet Co-Pilot",src:"Grocery Dive \u00b7 Feb 25",t:"s1",s:"The first card of the briefing: AI showing up as an assistant on the floor, not a moonshot."},
+ {id:"e1c2",ed:1,sec:"AI & Ops",tag:"signal",h:"India Built the World's Back Office. AI Is Starting to Shrink It.",src:"The New York Times \u00b7 Feb 27",t:"t8",s:"The first sign of the cost side: the entry-level cognitive work that builds a bench, eroding."},
+ {id:"e1c3",ed:1,sec:"People First",tag:"data",h:"Three in Four Retail Workers Use AI. Fewer Than One in Three Know What They're Doing.",src:"IHL Group \u00b7 Mar 2",t:"curious",s:"Adoption without understanding \u2014 a one-off signal that never recurred."},
+ {id:"e1c4",ed:1,sec:"People First",tag:"culture",h:"Small Rituals Are What Hold Frontline Teams Together Under Pressure",src:"Moonstar \u00b7 Dec 16",t:"s5",s:"Ritual as infrastructure \u2014 the People First path's opening note."},
+ {id:"e1c5",ed:1,sec:"Board & Governance",tag:"framework",h:"Harvard Tells Boards: Treat AI as an Ongoing Risk-Strategy Loop",src:"Harvard Gov. Forum \u00b7 Feb 10",t:"s3",s:"The governance scramble begins: boards told AI is continuous, not a one-time review."},
+ {id:"e1c6",ed:1,sec:"CEO Market",tag:"moves",h:"February C-Suite Moves: Operators with Data Fluency Are Winning the Search",src:"Grocery Dive \u00b7 Mar 1",t:"s2",s:"The repricing of the top job, first read: operators with data fluency get the call."},
+ {id:"e1c7",ed:1,sec:"CEO Market",tag:"churn",h:"CEO Churn Continues \u2014 Boards Want Leaders Who Hold Three Things at Once",src:"NRF / Reuters \u00b7 Jan",t:"s2",s:"The profile boards now want: operator, strategist, and AI-literate at once."},
+ {id:"e1c8",ed:1,sec:"Cultural Signal",tag:"culture",h:"The Seahawks Didn't Just Win. They Inherited a Culture and Upgraded It.",src:"The Athletic \u00b7 Feb 10",t:"s5",s:"Heritage-plus-upgrade \u2014 the turnaround done without burning the culture down."},
+ {id:"e1c9",ed:1,sec:"Cultural Signal",tag:"sport",h:"Kansas City Just Became the Base Camp Capital of the World Cup",src:"KCUR \u00b7 Mar 5",t:"t12",s:"Civic belonging through sport \u2014 a mid-size city's improbable turn on the world stage."},
+
+ {id:"e2c1",ed:2,sec:"AI & Ops",tag:"signal",h:"Walmart Installs Digital Price Tags Nationwide. 24 States Want to Ban Them.",src:"Grocery Dive \u00b7 Mar",t:"curious",s:"Surveillance-pricing politics \u2014 a vivid one-off with no sibling card."},
+ {id:"e2c2",ed:2,sec:"AI & Ops",tag:"data",h:"Only 1 in 5 Supply Chain Leaders Reports Real Value From AI",src:"BCG \u00b7 Feb",t:"s1",s:"The recurring finding: most AI value isn't landing, because the hard part isn't the model."},
+ {id:"e2c3",ed:2,sec:"AI & Ops",tag:"signal",h:"The First Real Agentic Use Case in Supply Chain: Autonomous Replenishment",src:"Inbound Logistics \u00b7 Jan",t:"t9",s:"Automation crossing from advice into action \u2014 the system places the order itself."},
+ {id:"e2c4",ed:2,sec:"The Workforce",tag:"labor",h:"3,800 Workers Just Shut Down One of America's Largest Beef Plants",src:"AP / Reuters \u00b7 Mar 16",t:"curious",s:"A labor flashpoint that stood alone."},
+ {id:"e2c5",ed:2,sec:"The Workforce",tag:"signal",h:"Walmart Is Training 1.6 Million Workers on AI. Not Replacing Them.",src:"Fortune / Inc. \u00b7 Feb",t:"s1",s:"Walmart's bet on the workforce \u2014 one answer to who AI is for."},
+ {id:"e2c6",ed:2,sec:"Board & Governance",tag:"data",h:"Investors Managing $55 Trillion Just Told Boards What They Expect on AI",src:"EY \u00b7 Feb",t:"s3",s:"The capital markets put AI oversight on the board agenda."},
+ {id:"e2c7",ed:2,sec:"CEO Market",tag:"org",h:"The Grocery Leadership Bench Is Being Reimagined. Five Roles.",src:"The Carlisle Group \u00b7 Jan",t:"curious",s:"An org-design read that didn't recur as a thread."},
+ {id:"e2c8",ed:2,sec:"Cultural Signal",tag:"sport",h:"NIL Killed the Cinderella. The Bracket Knows It.",src:"ESPN / USA Today \u00b7 Mar",t:"t12",s:"Money dismantles the underdog \u2014 the cold side of sport's meaning."},
+ {id:"e2c9",ed:2,sec:"Oddly Interesting",tag:"culture",h:"The Lost Art of Talking to Strangers",src:"The Guardian \u00b7 Feb",t:"curious",s:"A loose end, kept on purpose."},
+ {id:"e2c10",ed:2,sec:"Oddly Interesting",tag:"culture",h:"How Far Back in Time Could You Understand English?",src:"Dead Language Society",t:"curious",s:"Pure curiosity \u2014 the half that keeps the briefing curious."},
+
+ {id:"e3c1",ed:3,sec:"AI & Ops",tag:"signal",h:"AI Grocery Shopping Is Shifting From Search to Autopilot",src:"Grocery Doppio \u00b7 Feb 19",t:"curious",s:"Consumer AI moving to autopilot \u2014 a one-off signal this week."},
+ {id:"e3c2",ed:3,sec:"AI & Ops",tag:"signal",h:"C.H. Robinson Cut 31% of Its Workforce. Then It Won an Innovation Award.",src:"Star Tribune \u00b7 Mar 31",t:"t9",s:"Automation as replacement, stated plainly \u2014 and rewarded for it."},
+ {id:"e3c3",ed:3,sec:"CEO Market",tag:"profile",h:"Target's New CEO Says the Problem Isn't Strategy. It's Candor.",src:"Fortune \u00b7 Mar 6",t:"s2",s:"The operator's diagnosis: culture and candor, not a new deck."},
+ {id:"e3c4",ed:3,sec:"CEO Market",tag:"data",h:"The Retail CEO's Job Is Getting Measurably Harder. Here's the Data.",src:"Bain \u00b7 Jan",t:"s2",s:"The quantified case that the top job's difficulty is rising."},
+ {id:"e3c5",ed:3,sec:"Board & Governance",tag:"data",h:"53% of Institutional Investors Flag the Same AI Risk. Not Cybersecurity.",src:"EY \u00b7 Feb 24",t:"s3",s:"Investors name talent erosion, not security, as the AI risk that worries them."},
+ {id:"e3c6",ed:3,sec:"The Workforce",tag:"space",h:"A 40-Year-Old Piece of Shuttle Hardware Just Saved the Artemis II Launch",src:"NASA / CBS \u00b7 Apr 1",t:"t14",s:"Space, and the one engineer who knew where the decades-old tool was."},
+ {id:"e3c7",ed:3,sec:"Cultural Signal",tag:"space",h:"\u201cThose People? We Work for Them Too.\u201d \u2014 Victor Glover",src:"Space.com \u00b7 Sep",t:"t14",s:"An astronaut, about to round the Moon, framing himself in service to the public."},
+ {id:"e3c8",ed:3,sec:"Oddly Interesting",tag:"culture",h:"Ford Put Its Engineers on Camera. No Actors. No Scripts.",src:"Ford From the Road \u00b7 Mar 5",t:"curious",s:"A curiosity about authenticity in corporate voice."},
+
+ {id:"e4c1",ed:4,sec:"AI & Ops",tag:"data",h:"McKinsey Studied 20 AI Leaders. The Winners Concentrated on 1 to 3 Domains.",src:"McKinsey \u00b7 Apr 7",t:"s1",s:"Focus over breadth \u2014 the operating-discipline finding, again."},
+ {id:"e4c2",ed:4,sec:"CEO Market",tag:"data",h:"Bain Found a 5x Experimentation Gap Between Retail Leaders and Laggards",src:"Bain \u00b7 Jan",t:"curious",s:"A striking gap stat that ran as a one-off."},
+ {id:"e4c3",ed:4,sec:"CEO Market",tag:"churn",h:"Three Fortune 500 CEO Exits Have One Thing in Common. AI Is the Dividing Line.",src:"Fortune \u00b7 Mar 30",t:"s2",s:"AI-readiness becomes the line between staying and going at the top."},
+ {id:"e4c4",ed:4,sec:"Board & Governance",tag:"data",h:"65% of Investors Want Board-Level AI Oversight. Only 28% of the S&P 100 Deliver.",src:"Harvard Law \u00b7 Mar 11",t:"s3",s:"The want-versus-have gap in AI governance, quantified."},
+ {id:"e4c5",ed:4,sec:"Cultural Signal",tag:"space",h:"The Artemis II Crew Woke Up to \u201cUnder Pressure\u201d at 252,000 Miles",src:"CBS News \u00b7 Apr 8",t:"t14",s:"Ritual and morale in space \u2014 the wake-up song as a thread of its own."},
+ {id:"e4c6",ed:4,sec:"Oddly Interesting",tag:"culture",h:"There's a 10,000-Year-Old Civilization Under Lake Huron",src:"Bridge Michigan \u00b7 2025",t:"curious",s:"Deep-time curiosity, gloriously unconnected to anything else."},
+ {id:"e4c7",ed:4,sec:"Oddly Interesting",tag:"science",h:"A 15-Minute Video Shows What You'd Actually See Approaching Light Speed",src:"Aeon \u00b7 Apr",t:"curious",s:"Relativity visualized \u2014 space-adjacent, but off any path for now."},
+
+ {id:"e5c1",ed:5,sec:"AI & Ops",tag:"data",h:"Stanford Studied 51 Enterprise AI Deployments. The Model Was Never the Hard Part.",src:"Stanford \u00b7 Apr",t:"s1",s:"The thesis in one headline: the org, not the model, is where AI value is won or lost."},
+ {id:"e5c2",ed:5,sec:"Board & Governance",tag:"data",h:"61% of Consumer Markets Directors Say a Board Member Should Be Replaced",src:"PwC \u00b7 Feb 26",t:"s3",s:"Boards turning the AI-readiness lens on themselves."},
+ {id:"e5c3",ed:5,sec:"Cultural Signal",tag:"science",h:"The Army Approved a New Combat Ration Built on Food Tech Not in Your Store Yet",src:"DEVCOM \u00b7 Jul",t:"curious",s:"Food science from an unexpected direction \u2014 a one-off."},
+ {id:"e5c4",ed:5,sec:"Cultural Signal",tag:"culture",h:"A NASA Engineer Turned YouTuber Launched a Free Science Curriculum",src:"Good Good Good \u00b7 Apr 13",t:"curious",s:"Mark Rober's curriculum \u2014 a curiosity about teaching, not space."},
+ {id:"e5c5",ed:5,sec:"Cultural Signal",tag:"culture",h:"The Dams Came Down in 2024. By March 2026 the Salmon Were Already Hatching.",src:"Klamath Tribes News",t:"curious",s:"Restoration faster than anyone predicted \u2014 a standalone wonder."},
+ {id:"e5c6",ed:5,sec:"Cultural Signal",tag:"culture",h:"\u201cFoodie\u201d Is Dead. The Culture It Created Is Now Just Called Tuesday.",src:"Eater \u00b7 Sep",t:"curious",s:"A culture essay that stands on its own."},
+ {id:"e5c7",ed:5,sec:"Oddly Interesting",tag:"sport",h:"The Dodgers Stopped Printing Paper Tickets. A 1986 Stub Is Still in a Wallet.",src:"The Athletic \u00b7 Apr 13",t:"t12",s:"The ticket stub as proof you felt something worth keeping \u2014 sport as memory."},
+ {id:"e5c8",ed:5,sec:"Oddly Interesting",tag:"culture",h:"A College Town in Minnesota Gave Its Viral Recipe to the World",src:"The Guardian \u00b7 Apr 13",t:"curious",s:"Little Joy Coffee's open-sourced latte \u2014 generosity as a curiosity."},
+
+ {id:"e6c1",ed:6,sec:"AI & Ops",tag:"signal",h:"Hershey Cut $100 Million in Inventory With Decision-Intelligence AI at New Scale",src:"Supply Chain Dive \u00b7 Apr 16",t:"s1",s:"AI value landing where the discipline is real \u2014 inventory, not hype."},
+ {id:"e6c2",ed:6,sec:"CEO Market",tag:"signal",h:"Kroger Took a $2.6 Billion Charge to Walk Back Its Biggest Automation Bet",src:"Grocery Dive \u00b7 Nov",t:"curious",s:"Automation overreach, written down \u2014 a cautionary one-off."},
+ {id:"e6c3",ed:6,sec:"CEO Market",tag:"signal",h:"Kroger Just Launched 80+ Private Label Protein Products",src:"Grocery Dive \u00b7 Sep",t:"t10",s:"The store answering the protein shift \u2014 part of the remade-basket beat."},
+ {id:"e6c4",ed:6,sec:"CEO Market",tag:"data",h:"GLP-1 Users Are Reshaping the Grocery Basket. Retailers Are Moving Fixtures.",src:"Cornell / Numerator \u00b7 Apr",t:"t10",s:"The engine of the remade basket: a drug rewriting demand."},
+ {id:"e6c5",ed:6,sec:"Cultural Signal",tag:"space",h:"A Rock Drilled on Mars in 2020 Just Yielded Its Most Diverse Organic Molecules",src:"NASA JPL / Nature \u00b7 Apr 21",t:"t14",s:"Patience and uncertainty at the edge of the solar system."},
+ {id:"e6c6",ed:6,sec:"Cultural Signal",tag:"essay",h:"The Best Writing on TED 2026 Found a Through-Line the Conference Didn't Name",src:"Strange Loop \u00b7 Apr 18",t:"s4",s:"Systems get better at prediction; humans get worse at presence. The thread's first card."},
+ {id:"e6c8",ed:6,sec:"Oddly Interesting",tag:"sport",h:"A Medieval Football Game With No Rules Just Finished Its 2026 Season",src:"The Athletic \u00b7 Apr 17",t:"t12",s:"Uppies and Downies: the mines closed, the game didn't \u2014 belonging that outlasts its reason."},
+
+ {id:"e7c1",ed:7,sec:"CEO Market",tag:"profile",h:"Kroger's New CEO Just Described a Classic Operations-Led Turnaround",src:"Grocery Dive \u00b7 Mar 10",t:"s2",s:"Foran names the operator's playbook \u2014 and the board agrees."},
+ {id:"e7c2",ed:7,sec:"CEO Market",tag:"churn",h:"The Grocery Industry Had a Volatile March at the Top",src:"Grocery Dive \u00b7 Mar 31",t:"s2",s:"The churn pattern, mid-stream \u2014 worth watching as it builds."},
+ {id:"e7c3",ed:7,sec:"CEO Market",tag:"data",h:"Consumer Products CEOs Lasted Six Years. 2025 Was the Worst Turnover Year.",src:"Spencer Stuart \u00b7 Mar",t:"s2",s:"The data under the churn: tenure compressing across the sector."},
+ {id:"e7c4",ed:7,sec:"CEO Market",tag:"signal",h:"Beyond Meat Is Now Selling Protein Drinks. Impossible Is Thinking About Beef.",src:"Food Dive / WSJ \u00b7 Feb",t:"t10",s:"The category contorts to follow the protein shift."},
+ {id:"e7c5",ed:7,sec:"AI & Ops",tag:"signal",h:"Kroger Named Its First-Ever Chief Data and AI Officer. The Role Didn't Exist a Year Ago.",src:"Grocery Dive \u00b7 Mar",t:"s1",s:"Kroger's bet on the C-suite \u2014 centralize AI under a senior owner."},
+ {id:"e7c6",ed:7,sec:"AI & Ops",tag:"signal",h:"Albertsons Is Spending $2 Billion on AI in Fiscal 2026",src:"CIO Dive \u00b7 Apr 15",t:"curious",s:"A big number that ran on its own this week."},
+ {id:"e7c7",ed:7,sec:"Board & Governance",tag:"data",h:"83% of S&P 500 Disclose AI as Material Risk. Only 3% of Directors Disclose AI Expertise.",src:"Conference Board / EY \u00b7 Apr",t:"s3",s:"The disclosure-versus-expertise gap at its widest."},
+ {id:"e7c8",ed:7,sec:"Cultural Signal",tag:"essay",h:"TED Left Vancouver After 11 Years. The Best Farewell Came From a Digital Outlet.",src:"Daily Hive \u00b7 Apr 18",t:"curious",s:"An era's end, marked from an unexpected place."},
+ {id:"e7c9",ed:7,sec:"Cultural Signal",tag:"culture",h:"The Last Time Everyone Watched the Same Thing Was 2014",src:"Hollywood Reporter \u00b7 Apr 18",t:"curious",s:"The monoculture's date of death \u2014 a one-off."},
+ {id:"e7c10",ed:7,sec:"Cultural Signal",tag:"essay",h:"Corporate America Developed an AI Tell. Researchers Found It in 73 Documents.",src:"State of Brand \u00b7 Apr",t:"s4",s:"The Great Flattening \u2014 when everything sounds the same, presence is the differentiator."},
+ {id:"e7c11",ed:7,sec:"Cultural Signal",tag:"essay",h:"Rome Had a Steam Engine and Never Used It. The 2025 Nobel Explains Why.",src:"Nobel Prize \u00b7 Oct",t:"s4",s:"Mokyr on why knowing isn't doing \u2014 the human judgment that turns capability into use."},
+ {id:"e7c12",ed:7,sec:"Cultural Signal",tag:"data",h:"Gen Z Interns Are Doing the Math on AI in Real Time",src:"KPMG \u00b7 Mar 25",t:"t8",s:"The entry-level rung, watching the ladder being pulled up under them."},
+ {id:"e7c13b",ed:7,sec:"Oddly Interesting",tag:"culture",h:"\u201cFoodie\u201d Is Dead. Here's What Killed It.",src:"Eater \u00b7 Sep",t:"dup",s:""},
+
+ {id:"e8c1",ed:8,sec:"CEO Market",tag:"signal",h:"Walmart's AI Chief Outearned the CEO. The Bigger Number Is the Hiring Inducement.",src:"WWD \u00b7 Apr",t:"curious",s:"What AI leadership now costs \u2014 a striking comp signal."},
+ {id:"e8c2",ed:8,sec:"CEO Market",tag:"signal",h:"The Iran War Hit Aluminum. Aluminum Hits Cans. Cans Hit Margin.",src:"Packaging Dive \u00b7 Apr 9",t:"t11",s:"The input-cost chain traced link by link."},
+ {id:"e8c3",ed:8,sec:"CEO Market",tag:"signal",h:"A 55-Store Regional Chain Showed How Mid-Market Operators Get Heard",src:"The Shelby Report \u00b7 Apr 23",t:"curious",s:"Vallarta's playbook for punching above its size."},
+ {id:"e8c4",ed:8,sec:"CEO Market",tag:"signal",h:"Kraft Heinz Bet $600M Against the CPG Cost-Cutting Consensus",src:"FoodNavigator \u00b7 May 6",t:"curious",s:"A contrarian capital allocation, and its first earnings print."},
+ {id:"e8c5",ed:8,sec:"CEO Market",tag:"data",h:"A Peer-Reviewed Model Quantifies What Autonomous Trucks Do to Domestic Trade",src:"J. of Regional Science \u00b7 May",t:"t9",s:"Automation's reach measured \u2014 driverless freight reshaping the map of trade."},
+ {id:"e8c6",ed:8,sec:"AI & Ops",tag:"signal",h:"Walmart Is Training All 2.1 Million Employees on AI",src:"CIO Dive \u00b7 Apr 23",t:"s1",s:"Walmart's workforce bet, scaled up \u2014 the same wager, bigger."},
+ {id:"e8c7",ed:8,sec:"Board & Governance",tag:"signal",h:"MIT's President Tells Her Community the Federal Pipeline Is Shrinking",src:"MIT \u00b7 May 14",t:"t8",s:"The talent supply contracting at the source."},
+ {id:"e8c8",ed:8,sec:"Cultural Signal",tag:"data",h:"Companies Laying Off Workers for AI Show the Remaining Workers Are Working More",src:"Business Insider \u00b7 May 2",t:"curious",s:"The hidden cost of the headcount story."},
+ {id:"e8c9",ed:8,sec:"Cultural Signal",tag:"essay",h:"A Veteran Strategist's Read on What Survives When AI Raises the Floor",src:"StratMonday \u00b7 May 10",t:"s4",s:"Cotton's test: could this have come only from someone doing the work? The fingerprint card."},
+ {id:"e8c10",ed:8,sec:"Cultural Signal",tag:"data",h:"White-Collar Workers Are Dissolving the Workday. Frontline Workers Can't.",src:"AP \u00b7 Mar 19",t:"curious",s:"Two labor markets pulling apart \u2014 a one-off observation."},
+ {id:"e8c11",ed:8,sec:"Cultural Signal",tag:"essay",h:"The World Cup Is Becoming a Testbed for Journalism Experiments",src:"Nieman Lab \u00b7 May 4",t:"curious",s:"Mega-events as windows of permission \u2014 a transformation idea, not a sport one."},
+
+ {id:"e9c1",ed:9,sec:"Board & Governance",tag:"essay",h:"1891 to 2026: The Catholic Church Connects the Industrial Revolution to the AI One",src:"Vatican News \u00b7 May 18",t:"t7",s:"The Rerum Novarum parallel \u2014 a 2,000-year institution speaking to the newest disruption."},
+ {id:"e9c2",ed:9,sec:"Board & Governance",tag:"signal",h:"Anthropic's \u201cSoul Document\u201d Has Two Catholic Clergy as Consultants",src:"Detroit Catholic \u00b7 May 21",t:"t7",s:"The Church and the labs in the same room over AI's values."},
+ {id:"e9c3",ed:9,sec:"AI & Ops",tag:"essay",h:"Three Companies Are Selling the Cure for Failed AI Adoption: Play",src:"Forbes \u00b7 Apr 29",t:"s1",s:"The adoption problem is human, not technical \u2014 again."},
+ {id:"e9c4",ed:9,sec:"Cultural Signal",tag:"essay",h:"The World's Most Advanced Weather Models Are Inputs. Colored Pencils Detail the Outputs.",src:"The New York Times \u00b7 May 18",t:"s4",s:"The pencil is the decision \u2014 the human judgment downstream of the machine."},
+ {id:"e9c5",ed:9,sec:"Cultural Signal",tag:"essay",h:"A Chief AI Officer Tells Parents the Question They're Asking Is Wrong",src:"Substack (Shehu) \u00b7 May",t:"t8",s:"Formation, not credential \u2014 what's lost when the rungs disappear."},
+ {id:"e9c6",ed:9,sec:"CEO Market",tag:"signal",h:"Food Prices Are Up, But the Iran War's Actual Mechanism Is in the Fertilizer",src:"Bloomberg \u00b7 May 8",t:"t11",s:"The input-cost shock, traced upstream to fertilizer."},
+ {id:"e9c7",ed:9,sec:"CEO Market",tag:"signal",h:"UNFI's Q2: Sales Down 2.6%, EBITDA Up 23.4%. The Strategy Behind the Numbers.",src:"Grocery Dive \u00b7 Mar 10",t:"s1",s:"UNFI's bet on the customer \u2014 selling AI tools out to independent grocers."},
+ {id:"e9c8",ed:9,sec:"CEO Market",tag:"signal",h:"Terry Smith Held Unilever for 16 Years. The McCormick Deal Made Him Sell.",src:"City AM \u00b7 May 12",t:"s2",s:"An activist's patience runs out \u2014 the market disciplining the top."},
+ {id:"e9c9",ed:9,sec:"CEO Market",tag:"signal",h:"The Bill for Nashville's \u201cIt City\u201d Strategy Just Came Due",src:"Fox17 \u00b7 May",t:"curious",s:"A growth strategy's hangover \u2014 a one-off."},
+ {id:"e9c10",ed:9,sec:"CEO Market",tag:"signal",h:"From 35% to 85%: How Toyota's San Antonio Plant Rebuilt Retention",src:"San Antonio Report \u00b7 Apr 18",t:"s5",s:"Culture as operating rigor \u2014 retention rebuilt deliberately."},
+
+ {id:"e10c1",ed:10,sec:"Tariff Watch",tag:"data",h:"Volpe: Tariff Pass-Through Hits 4\u20134.5% by Year-End as Input Costs Converge",src:"FoodNavigator \u00b7 May 15",t:"t11",s:"The tariff math, quantified to the P&L."},
+ {id:"e10c2",ed:10,sec:"CEO Market",tag:"signal",h:"Walmart Wins the Tariff Year While Peers Stall \u2014 the Gap Is Data, Not Just Scale",src:"Reuters \u00b7 May 19",t:"t11",s:"Who absorbs a cost shock best \u2014 and why it's a data story."},
+ {id:"e10c3",ed:10,sec:"AI & Ops",tag:"signal",h:"Mondelez: AI-Enabled DCs and a Deliberate Retreat From Complex State-of-the-Art Lines",src:"Supply Chain Dive \u00b7 May 19",t:"s1",s:"Simpler lines, smarter DCs \u2014 the discipline of subtraction."},
+ {id:"e10c4",ed:10,sec:"AI & Ops",tag:"signal",h:"Amazon's Voice-Commerce Move Resets the AI-Shopping Bar \u2014 the Moat Is the Shopper Graph",src:"Retail Dive \u00b7 May 14",t:"t9",s:"Automation reaching the customer, and the data that makes it stick."},
+ {id:"e10c5",ed:10,sec:"Board & Governance",tag:"data",h:"Heidrick: One in Three US CEOs Lacks the Capabilities the Next Two to Three Years Require",src:"Heidrick \u00b7 May 12",t:"s2",s:"The structural backdrop to the churn \u2014 a third of CEOs short of future-fit."},
+ {id:"e10c6",ed:10,sec:"Cultural Signal",tag:"essay",h:"The Dignity Argument Moves From Theology Into AI Alignment",src:"Notre Dame News \u00b7 May 25",t:"t7",s:"Worth rests on who you are, not what you can do \u2014 theology crossing into alignment."},
+ {id:"e10c7",ed:10,sec:"Cultural Signal",tag:"essay",h:"Three Rationalizations That Destroy Change Leaders \u2014 and How AI Makes Each Easier",src:"Fast Company \u00b7 May 28",t:"curious",s:"A leadership caution that ran on its own."},
+ {id:"e10c8",ed:10,sec:"Oddly Interesting",tag:"space",h:"The Next Era of Sample-Return Missions Runs From Tanegashima and Wenchang",src:"Space.com \u00b7 Dec",t:"t14",s:"Space capability diffusing \u2014 the new launch map."},
+
+ {id:"e11c1",ed:11,sec:"AI & Ops",tag:"data",h:"Retail/CPG AI Adoption Hits 91% \u2014 and Operators Urge Starting With \u201cBoring Use Cases\u201d",src:"NVIDIA \u00b7 Jan 7",t:"s1",s:"Adoption is near-total; the edge is in the unglamorous, well-run deployments."},
+ {id:"e11c2",ed:11,sec:"AI & Ops",tag:"signal",h:"Ford Energy Launches, Redirecting Kentucky Battery Capacity to Data Centers",src:"Fast Company \u00b7 May 28",t:"curious",s:"A pivot with no sibling \u2014 capacity following the money to compute."},
+ {id:"e11c3",ed:11,sec:"The Workforce",tag:"signal",h:"As Channels Converged, the CCO Role Moved Up the C-Suite \u2014 and Salaries Followed",src:"WSJ \u00b7 Jun 8",t:"curious",s:"The comms chief rising \u2014 a one-off org signal."},
+ {id:"e11c4",ed:11,sec:"Board & Governance",tag:"essay",h:"Liaquat Ahamed: the AI Capex Boom's Funding Echoes the 1870s Railroad Bonds",src:"Fortune \u00b7 Jun 2",t:"curious",s:"A historian's warning about how the buildout is financed."},
+ {id:"e11c5",ed:11,sec:"Oddly Interesting",tag:"sport",h:"Refereeing Becomes a Real-Time Data System at the 2026 World Cup",src:"Fox Sports \u00b7 Oct",t:"s4",t2:"t12",s:"The 500 Hz ball \u2014 human judgment progressively replaced by real-time data. Presence, contested \u2014 and a fork into sport."},
+ {id:"e11c6",ed:11,sec:"Cultural Signal",tag:"essay",h:"Cave Art Logistics Imply the Deep-Time Origins of Hierarchy",src:"The Guardian \u00b7 Jun 2",t:"curious",s:"Organization older than writing \u2014 a deep-time curiosity."},
+ {id:"e11c7",ed:11,sec:"Cultural Signal",tag:"culture",h:"\u201cLove My Woke Pope\u201d: the First AI Encyclical Crosses Into Mass Culture",src:"Associated Press \u00b7 Jun 2",t:"t7",s:"The argument leaving the cathedral \u2014 doctrine landing in the meme stream."},
+ {id:"e11c8",ed:11,sec:"Cultural Signal",tag:"sport",h:"FIFA's India Broadcast Deal Closes 10 Days Before Kickoff at Half the Asking Price",src:"Reuters \u00b7 Jun 1",t:"t12",s:"The math reprices the meaning \u2014 perceived value is what moved the number."},
+ {id:"e11c9",ed:11,sec:"Cultural Signal",tag:"culture",h:"Are You Featured in the Special Report? (Father's Day Dad Texts)",src:"NYT Well \u00b7 Jun 13",t:"curious",s:"A small, warm curiosity about how fathers text."},
+
+ {id:"e12c1",ed:12,sec:"AI & Ops",tag:"signal",h:"You Can Now Map What AI Reads. In Finance, It Isn't the Names You'd Expect.",src:"Muck Rack \u00b7 Jun 17",t:"curious",s:"AI's reading list, made visible \u2014 a one-off this week."},
+ {id:"e12c2",ed:12,sec:"CEO Market",tag:"signal",h:"Canada Bets $3.2 Billion the Fix for Grocery Prices Is Wholesale Infrastructure",src:"CBC \u00b7 Jun 11",t:"curious",s:"A structural policy bet, standing alone."},
+ {id:"e12c3",ed:12,sec:"CEO Market",tag:"signal",h:"An Iced-Tea Startup Built National DSD Before Raising Its Series C",src:"Food Business News \u00b7 Jun 2",t:"curious",s:"Ryl's DSD-first build \u2014 lands on Tony's career, but a single card can't thread."},
+ {id:"e12c4",ed:12,sec:"Board & Governance",tag:"signal",h:"Walmart Shareholders Decline to Require an AI-Worker Report \u2014 by a 95% Margin",src:"Reuters \u00b7 Jun 4",t:"s3",s:"Governance meets its limit \u2014 shareholders decline the AI-and-labor disclosure."},
+ {id:"e12c5",ed:12,sec:"Board & Governance",tag:"essay",h:"The IPO Announcement Has Decoupled From the IPO \u2014 and Become a Branding Event",src:"Fast Company \u00b7 Jun 15",t:"curious",s:"A market ritual mutating \u2014 a one-off."},
+ {id:"e12c6",ed:12,sec:"Cultural Signal",tag:"civic",h:"The 250th Gets Its Bicentennial Minutes \u2014 This Time From a Historian's Own Channel",src:"Letters from an American \u00b7 May",t:"t13",s:"Civic memory taken into a historian's own hands, on her own channel."},
+ {id:"e12c7",ed:12,sec:"Cultural Signal",tag:"civic",h:"The Man Who Has Rehearsed Jefferson's Death for 25 Years Arrives at Its Bicentennial",src:"Oxford American \u00b7 Jun 10",t:"t13",s:"Keeping a founder alive by performance \u2014 transmission as devotion."},
+
+ /* ---- Edition 13 ---- */
+ {id:"e13c1",ed:13,sec:"AI & Ops",tag:"signal",h:"UNFI Puts AI Across Every Distribution Center \u2014 and the Numbers Move",src:"The Motley Fool \u00b7 Jun 9",t:"s1",s:"AI planning live in every DC \u2014 on-time up over 4%, miles per delivery down nearly 5%. The operating-discipline case, made concrete."},
+ {id:"e13c2",ed:13,sec:"AI & Ops",tag:"signal",h:"PepsiCo Runs Driverless Trucks in Its Everyday Network, Not a Pilot",src:"The Wall Street Journal \u00b7 Jun 8",t:"s1",s:"35 driverless trucks in Arizona hauling Frito-Lay to Walmart and Dollar General \u2014 the everyday network, not a demo."},
+ {id:"e13c3",ed:13,sec:"AI & Ops",tag:"signal",h:"FedEx Collapses Two Networks Into One to Pull Out Fixed Cost",src:"CNBC \u00b7 Jun 12",t:"curious",s:"Two delivery networks merged to take out $2 billion in fixed cost. Not an AI story \u2014 a consolidation story, standing on its own."},
+ {id:"e13c4",ed:13,sec:"The Workforce",tag:"data",h:"The Data on Remote Work\u2019s Hidden Cost",src:"The New York Times \u00b7 Jun 17",t:"s4",s:"Remote work explains a third of the 2011\u20132024 mental-health decline \u2014 presence has a measurable value, its absence a measurable cost."},
+ {id:"e13c5",ed:13,sec:"The Workforce",tag:"essay",h:"When Cognition Gets Cheap, What Gets Expensive",src:"The Progress Post \u00b7 Jun",t:"s4",s:"As AI commoditizes cognitive work, the premium moves to presence and relational skill. The presence thesis, argued from the policy side."},
+ {id:"e13c6",ed:13,sec:"CEO Market",tag:"signal",h:"Nestl\u00e9 Takes Full Control of a \u2018Smart Food\u2019 Brand Built for the GLP-1 Shopper",src:"Nestl\u00e9 / Food Dive \u00b7 Jun 3",t:"t10",s:"Nestl\u00e9 buys the rest of a smart-food brand built for people cutting calories on GLP-1 \u2014 the basket remaking itself again."},
+ {id:"e13c7",ed:13,sec:"CEO Market",tag:"sport",h:"Frito-Lay Turns the World Cup Into 40 Flavors",src:"Bakery & Snacks \u00b7 Jun 3",t:"t12",s:"A snack giant turns the tournament into 40 nation-inspired flavors \u2014 the World Cup as a product-development calendar."},
+ {id:"e13c8",ed:13,sec:"CEO Market",tag:"sport",h:"The Brands Riding the World Cup Without Paying for It",src:"Modern Retail \u00b7 Jun 8",t:"t12",s:"Crumbl and Olipop ride World Cup attention without the sponsorship \u2014 proximity as the workaround to FIFA\u2019s fence."},
+ {id:"e13c9",ed:13,sec:"Cultural Signal",tag:"culture",h:"The Cartoonist Who Walked Away at the Top",src:"The Republic of Letters \u00b7 Jun 11",t:"curious",s:"Bill Watterson refused the merchandising fortune and ended Calvin and Hobbes at its peak \u2014 craft over extraction."}
+];
+
+/* drop duplicate markers */
+const CORPUS=CARDS.filter(c=>c.t!=="dup");
+const CURRENT_EDITION=13;
+
+/* ---- derived ---- */
+function effectiveThread(c){ return (c.t!=="curious" && ACTIVE.has(c.t)) ? c.t : null; }
+function pname(tid){ return THREADS[tid].short || THREADS[tid].name; }
+function threadCards(tid){ return CORPUS.filter(c=>c.t===tid).sort((a,b)=>a.ed-b.ed); }
+function curiousCards(){ return CORPUS.filter(c=>!effectiveThread(c)); }
+const byId=Object.fromEntries(CORPUS.map(c=>[c.id,c]));
+
+/* ===================== APP / NAV ===================== */
+const app=document.getElementById("app");
+const reduce=window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+let stack=[]; // view history
+
+function go(viewObj,dir){
+  const prev=app.querySelector(".view");
+  const el=viewObj.el;
+  el.classList.add("view");
+  if(viewObj.dark) {} 
+  app.appendChild(el);
+  if(dir==="push"){
+    el.classList.add("enter-right");
+    requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+      el.classList.remove("enter-right");
+      if(prev){prev.classList.add("exit-left");}
+    });});
+  } else if(dir==="pop"){
+    el.classList.add("enter-left");
+    requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+      el.classList.remove("enter-left");
+      if(prev){prev.classList.add("exit-right");}
+    });});
+  } else { // fade (map)
+    el.classList.add("fade-in");
+    requestAnimationFrame(()=>{requestAnimationFrame(()=>{el.classList.remove("fade-in");});});
+  }
+  const delay=reduce?0:360;
+  if(prev) setTimeout(()=>{ if(prev.parentNode) prev.remove(); },delay);
+}
+
+function push(builder){ const v=builder(); stack.push(builder); go(v,"push"); }
+function pop(){
+  if(stack.length<=1) return;
+  stack.pop();
+  const v=stack[stack.length-1]();
+  go(v,"pop");
+}
+function replaceTop(builder){ stack[stack.length-1]=builder; const v=builder(); go(v,"fade"); }
+
+function backIcon(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>';}
+function el(html){ const d=document.createElement("div"); d.innerHTML=html.trim(); return d.firstElementChild; }
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+
+/* ---- foot-line text ---- */
+function footlineFor(card){
+  const tid=effectiveThread(card);
+  if(!tid){
+    return {loose:true,txt:"Stands alone \u00b7 wander",};
+  }
+  const cards=threadCards(tid);
+  const before=cards.filter(c=>c.ed<card.ed).length;
+  const name=THREADS[tid].name;
+  let phrase;
+  if(before===0) phrase="a new path";
+  else if(before===1) phrase="1 earlier point";
+  else phrase=before+" earlier points";
+  return {loose:false,txt:name+" \u00b7 "+phrase,tid:tid};
+}
+
+function pathBefore(card,tid){ return threadCards(tid).filter(c=>c.ed<card.ed).length; }
+function phraseFor(b){ return b===0?"a new path":(b===1?"1 earlier point":b+" earlier points"); }
+
+function renderFootline(card){
+  const wrap=document.createElement("div");
+  const primary=effectiveThread(card);
+  if(!primary){
+    const b=el('<button class="footline loose"><span class="ftxt">Stands alone \u00b7 wander</span><span class="arr">\u2192</span></button>');
+    b.addEventListener("click",()=>{
+      const pool=curiousCards().filter(x=>x.id!==card.id);
+      const next=pool[Math.floor(Math.random()*pool.length)];
+      push(()=>buildCard(next.id,{}));
+    });
+    wrap.appendChild(b); return wrap;
+  }
+  const tids=[primary];
+  if(card.t2 && ACTIVE.has(card.t2)) tids.push(card.t2);
+  const fork=tids.length>1;
+  if(fork) wrap.appendChild(el('<div class="fork-label">This point forks \u2014 two ways on</div>'));
+  tids.forEach(tid=>{
+    const before=pathBefore(card,tid);
+    const dot=fork?'<span class="fork-dot" style="background:'+THREADS[tid].color+'"></span>':'';
+    const b=el('<button class="footline'+(fork?' forked':'')+'"><span class="ftxt">'+dot+esc(pname(tid))+' \u00b7 '+phraseFor(before)+'</span><span class="arr">\u2192</span></button>');
+    b.addEventListener("click",()=>push(()=>buildStream(tid,card.id)));
+    wrap.appendChild(b);
+  });
+  return wrap;
+}
+
+/* ===================== VIEW: EDITION ===================== */
+function buildEdition(){
+  const cards=CORPUS.filter(c=>c.ed===CURRENT_EDITION);
+  const v=el('<div class="view"></div>');
+  v.appendChild(el(
+    '<div class="bar"><span class="bar-mast">The Prepared Mind, Weekly Reader</span></div>'));
+  const sc=el('<div class="scroll"></div>');
+  const head=el(
+    '<div class="ed-head">'+
+    '<div class="ed-kicker">Edition 13</div>'+
+    '<h1 class="ed-title">This week\u2019s briefing</h1>'+
+    '<div class="ed-date">June 25, 2026</div>'+
+    '<div class="ed-note">Each entry below shapes the Prepared Mind. Some stand alone. Others connect across a broader landscape with pathways to follow. Explore. Extend. Keep asking the second question.</div>'+
+    '<div class="altbar">'+
+      '<button class="active" data-alt="points">Points</button>'+
+      '<button data-alt="pathways">Pathways</button>'+
+      '<button data-alt="landscape">Landscape</button>'+
+    '</div>'+
+    '</div>');
+  head.querySelector('[data-alt="pathways"]').addEventListener("click",()=>push(buildPathwayDirectory));
+  head.querySelector('[data-alt="landscape"]').addEventListener("click",()=>push(()=>buildMap(null,null)));
+  sc.appendChild(head);
+  cards.forEach(c=>{
+    const card=el('<div class="card"></div>');
+    card.appendChild(el(
+      '<div class="eyebrow"><span class="sec">'+esc(c.sec)+'</span><span class="sep">/</span><span>'+esc(c.tag)+'</span></div>'+
+      '<h2>'+esc(c.h)+'</h2>'+
+      '<div class="sum">'+esc(c.s)+'</div>'+
+      '<div class="src">'+esc(c.src)+'</div>'));
+    card.appendChild(renderFootline(c));
+    sc.appendChild(card);
+  });
+  v.appendChild(sc);
+  return {el:v};
+}
+
+/* ===================== VIEW: PATHWAY DIRECTORY ===================== */
+function buildPathwayDirectory(){
+  const v=el('<div class="view"></div>');
+  const bar=el('<div class="bar"><button class="back">'+backIcon()+'</button><span class="bar-title">Pathways</span></div>');
+  bar.querySelector(".back").addEventListener("click",pop);
+  v.appendChild(bar);
+  const sc=el('<div class="scroll"></div>');
+  sc.appendChild(el(
+    '<div class="dir-head">'+
+    '<div class="dir-kick">Across the landscape</div>'+
+    '<h2 class="dir-title">Pathways</h2>'+
+    '<div class="dir-sub">Every path running through the briefing. The rest stands alone.</div>'+
+    '</div>'));
+  ["spine","secondary"].forEach(tier=>{
+    const ids=Object.keys(THREADS).filter(t=>ACTIVE.has(t)&&THREADS[t].tier===tier);
+    if(!ids.length)return;
+    sc.appendChild(el('<div class="dir-group">'+(tier==="spine"?"Spine paths":"Secondary paths")+'</div>'));
+    ids.forEach(tid=>{
+      const th=THREADS[tid]; const n=threadCards(tid).length;
+      const row=el('<div class="dir-row">'+
+        '<span class="dir-dot" style="background:'+th.color+';color:'+th.color+'"></span>'+
+        '<div class="dir-body"><div class="dir-name">'+esc(pname(tid))+'</div>'+
+        '<div class="dir-meta">'+n+' points \u00b7 Ed '+threadCards(tid)[0].ed+'\u2013'+threadCards(tid)[n-1].ed+'</div></div>'+
+        '<span class="dir-arr">\u2192</span></div>');
+      row.addEventListener("click",()=>push(()=>buildStream(tid,null)));
+      sc.appendChild(row);
+    });
+  });
+  v.appendChild(sc);
+  return {el:v};
+}
+
+/* ===================== VIEW: STREAM ===================== */
+function buildStream(tid,hereId){
+  const th=THREADS[tid]; const cards=threadCards(tid);
+  const v=el('<div class="view"></div>');
+  const bar=el('<div class="bar"><button class="back">'+backIcon()+'</button><span class="bar-title">Path \u00b7 '+cards.length+' points</span></div>');
+  bar.querySelector(".back").addEventListener("click",pop);
+  v.appendChild(bar);
+  const sc=el('<div class="scroll"></div>');
+  const head=el('<div class="stream-head"></div>');
+  head.appendChild(el(
+    '<div class="stream-tier"><span class="stream-dot" style="background:'+th.color+';color:'+th.color+'"></span>'+th.tier+' path</div>'+
+    '<h2 class="stream-title">'+esc(pname(tid))+'</h2>'+
+    '<p class="stream-blurb">'+esc(th.blurb)+'</p>'));
+  const cbtn=el('<button class="connect-btn">See it on the landscape \u2192</button>');
+  cbtn.addEventListener("click",()=>push(()=>buildMap(tid,hereId)));
+  head.appendChild(cbtn);
+  sc.appendChild(head);
+
+  const list=el('<div class="stream-list"></div>');
+  cards.forEach(c=>{
+    const here=c.id===hereId;
+    const item=el('<div class="s-item'+(here?' here':'')+'">'+
+      '<div class="s-line"></div>'+
+      '<div class="s-rail"><span class="s-node"></span></div>'+
+      '<div class="s-body">'+
+      '<div class="s-ed">Edition '+c.ed+' \u00b7 '+EDITION_DATES[c.ed]+'</div>'+
+      '<div class="s-head">'+esc(c.h)+'</div>'+
+      (here?'<div class="s-here-tag">you\u2019re reading this one</div>':'')+
+      '</div></div>');
+    item.addEventListener("click",()=>push(()=>buildCard(c.id,{thread:tid})));
+    list.appendChild(item);
+  });
+  sc.appendChild(list);
+  v.appendChild(sc);
+  return {el:v};
+}
+
+/* ===================== VIEW: CARD (full) ===================== */
+function buildCard(id,opts){
+  opts=opts||{};
+  const c=byId[id];
+  const v=el('<div class="view"></div>');
+  const bar=el('<div class="bar"><button class="back">'+backIcon()+'</button><span class="bar-title">'+esc(c.sec)+'</span></div>');
+  bar.querySelector(".back").addEventListener("click",pop);
+  v.appendChild(bar);
+  const sc=el('<div class="scroll"></div>');
+  const wrap=el('<div class="full full-scroll"></div>');
+  wrap.appendChild(el(
+    '<div class="full-eyebrow"><span>'+esc(c.sec)+'</span><span class="sep">/</span><span>Edition '+c.ed+'</span><span class="sep">/</span><span>'+EDITION_DATES[c.ed]+'</span></div>'+
+    '<h1>'+esc(c.h)+'</h1>'+
+    '<div class="sum">'+esc(c.s)+'</div>'+
+    '<div class="src">Source &nbsp;\u00b7&nbsp; '+esc(c.src)+'</div>'));
+  wrap.appendChild(renderFootline(c));
+  sc.appendChild(wrap);
+  v.appendChild(sc);
+  return {el:v};
+}
+
+/* ===================== VIEW: LANDSCAPE (terrain + markers) ===================== */
+const CLUSTERS={
+  s3:[250,210],s1:[560,260],
+  t9:[140,470],s2:[440,520],t14:[730,440],
+  s4:[260,770],t8:[560,720],t7:[800,810],
+  s5:[200,1030],t12:[490,1020],t13:[750,1090]
+};
+function buildMap(focusTid,hereId){
+  const v=el('<div class="view"></div>');
+  v.appendChild((()=>{const b=el('<div class="bar dark"><button class="back">'+backIcon()+'</button><span class="bar-title">The landscape</span></div>');b.querySelector(".back").addEventListener("click",pop);return b;})());
+  const wrap=el('<div class="map-wrap"></div>');
+  const W=900,H=1300;
+  const svg=document.createElementNS("http://www.w3.org/2000/svg","svg");
+  svg.setAttribute("class","map-svg");svg.setAttribute("viewBox","0 0 "+W+" "+H);
+  svg.setAttribute("preserveAspectRatio","xMidYMid slice");
+
+  // position nodes
+  const pos={};
+  const activeThreadIds=Object.keys(CLUSTERS).filter(t=>ACTIVE.has(t));
+  activeThreadIds.forEach(tid=>{
+    const c=CLUSTERS[tid]; const cards=threadCards(tid);
+    const n=cards.length; const R=Math.min(95,28+n*9);
+    cards.forEach((card,i)=>{
+      const ang=(i/n)*Math.PI*2 - Math.PI/2;
+      pos[card.id]={x:c[0]+Math.cos(ang)*R*(n>1?1:0),y:c[1]+Math.sin(ang)*R*(n>1?1:0),tid:tid};
+      if(n===1) pos[card.id]={x:c[0],y:c[1],tid:tid};
+    });
+  });
+  // curious scattered around the margins
+  const cur=curiousCards();
+  cur.forEach((card,i)=>{
+    const ang=(i/cur.length)*Math.PI*2;
+    const rx=W/2+Math.cos(ang)*(W*0.52), ry=H/2+Math.sin(ang)*(H*0.46);
+    pos[card.id]={x:Math.max(30,Math.min(W-30,rx)),y:Math.max(70,Math.min(H-40,ry)),tid:null};
+  });
+
+  // edges: chronological chain within each active thread
+  const eg=document.createElementNS("http://www.w3.org/2000/svg","g");
+  activeThreadIds.forEach(tid=>{
+    const cards=threadCards(tid);
+    for(let i=0;i<cards.length-1;i++){
+      const a=pos[cards[i].id],b=pos[cards[i+1].id]; if(!a||!b)continue;
+      const ln=document.createElementNS("http://www.w3.org/2000/svg","line");
+      ln.setAttribute("x1",a.x);ln.setAttribute("y1",a.y);ln.setAttribute("x2",b.x);ln.setAttribute("y2",b.y);
+      ln.setAttribute("class","edge"+(tid===focusTid?" lit":""));
+      if(tid===focusTid) ln.setAttribute("stroke",THREADS[tid].color);
+      else if(focusTid) ln.style.opacity=".18";
+      eg.appendChild(ln);
+    }
+  });
+  // fork edges: a point that sits on two paths branches across the terrain
+  CORPUS.forEach(card=>{
+    if(!(card.t2 && ACTIVE.has(card.t2) && ACTIVE.has(card.t))) return;
+    if(!pos[card.id]) return;
+    let near=null,bd=1e9;
+    threadCards(card.t2).forEach(o=>{ if(o.id!==card.id && pos[o.id]){ const d=Math.abs(o.ed-card.ed); if(d<bd){bd=d;near=o;} } });
+    if(!near) return;
+    const a=pos[card.id], b=pos[near.id];
+    const ln=document.createElementNS("http://www.w3.org/2000/svg","line");
+    ln.setAttribute("x1",a.x);ln.setAttribute("y1",a.y);ln.setAttribute("x2",b.x);ln.setAttribute("y2",b.y);
+    const lit=(focusTid===card.t||focusTid===card.t2);
+    ln.setAttribute("class","edge fork"+(lit?" lit":""));
+    if(focusTid && !lit) ln.style.opacity=".22";
+    eg.appendChild(ln);
+  });
+  svg.appendChild(eg);
+
+  // nodes
+  const ng=document.createElementNS("http://www.w3.org/2000/svg","g");
+  CORPUS.forEach(card=>{
+    const p=pos[card.id]; if(!p)return;
+    const tid=p.tid; const focused=tid===focusTid;
+    const g=document.createElementNS("http://www.w3.org/2000/svg","g");
+    let cls="node"; if(focusTid && !focused) cls+=" dim";
+    if(card.id===hereId) cls+=" here pulse";
+    g.setAttribute("class",cls);
+    g.style.cursor="pointer";
+    const dot=document.createElementNS("http://www.w3.org/2000/svg","circle");
+    dot.setAttribute("cx",p.x);dot.setAttribute("cy",p.y);
+    dot.setAttribute("r",card.id===hereId?6.5:(tid?4.4:3));
+    dot.setAttribute("class","node-dot");
+    if(tid && focused) dot.setAttribute("fill",card.id===hereId?"#c79447":THREADS[tid].color);
+    if(tid && focused && card.id!==hereId) dot.setAttribute("stroke","rgba(239,233,218,.22)"),dot.setAttribute("stroke-width","1");
+    g.appendChild(dot);
+    if(card.id===hereId){
+      const lbl=document.createElementNS("http://www.w3.org/2000/svg","text");
+      lbl.setAttribute("x",p.x+10);lbl.setAttribute("y",p.y+4);
+      lbl.setAttribute("class","node-lbl");lbl.setAttribute("fill","#efe9da");
+      lbl.style.fontSize="11px";
+      lbl.textContent="you are here";
+      g.appendChild(lbl);
+    }
+    g.addEventListener("click",()=>push(()=>buildCard(card.id,{})));
+    ng.appendChild(g);
+  });
+  svg.appendChild(ng);
+  wrap.appendChild(svg);
+
+  // pan/zoom
+  let vb={x:0,y:0,w:W,h:H};
+  // start focused on the thread cluster
+  if(focusTid && CLUSTERS[focusTid]){
+    const c=CLUSTERS[focusTid]; const zw=W*0.62, zh=zw*(H/W)* (H/W>1?1:1);
+    const zhh=zw*(H/W);
+    vb={x:Math.max(0,Math.min(W-zw,c[0]-zw/2)),y:Math.max(0,Math.min(H-zhh,c[1]-zhh/2)),w:zw,h:zhh};
+  }
+  function applyVB(){svg.setAttribute("viewBox",vb.x+" "+vb.y+" "+vb.w+" "+vb.h);}
+  applyVB();
+  let drag=null;
+  wrap.addEventListener("pointerdown",e=>{drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};wrap.setPointerCapture(e.pointerId);});
+  wrap.addEventListener("pointermove",e=>{
+    if(!drag)return;
+    const sx=vb.w/wrap.clientWidth, sy=vb.h/wrap.clientHeight;
+    vb.x=drag.vx-(e.clientX-drag.x)*sx; vb.y=drag.vy-(e.clientY-drag.y)*sy;
+    vb.x=Math.max(-200,Math.min(W+200-vb.w,vb.x)); vb.y=Math.max(-200,Math.min(H+200-vb.h,vb.y));
+    applyVB();
+  });
+  wrap.addEventListener("pointerup",e=>{drag=null;});
+  wrap.addEventListener("pointercancel",()=>{drag=null;});
+  function zoom(f){
+    const cx=vb.x+vb.w/2, cy=vb.y+vb.h/2;
+    vb.w=Math.max(260,Math.min(W*1.3,vb.w*f)); vb.h=vb.w*(H/W);
+    vb.x=cx-vb.w/2; vb.y=cy-vb.h/2; applyVB();
+  }
+  wrap.addEventListener("wheel",e=>{e.preventDefault();zoom(e.deltaY>0?1.12:0.89);},{passive:false});
+
+  const ctrls=el('<div class="map-ctrls"></div>');
+  const zin=el('<button aria-label="Zoom in">+</button>');const zout=el('<button aria-label="Zoom out">\u2212</button>');
+  const zall=el('<button aria-label="Whole landscape" style="font-size:15px">\u2295</button>');
+  zin.addEventListener("click",()=>zoom(0.8));zout.addEventListener("click",()=>zoom(1.25));
+  zall.addEventListener("click",()=>{vb={x:0,y:0,w:W,h:H};applyVB();});
+  ctrls.append(zin,zout,zall);
+  wrap.appendChild(ctrls);
+
+  wrap.appendChild(el('<div class="map-tip">drag to move \u00b7 tap a point to open it \u00b7 \u2295 for the whole landscape</div>'));
+  const leg=el('<div class="map-legend">'+
+    '<div class="map-thread-name" style="color:'+(focusTid?THREADS[focusTid].color:'#efe9da')+'">'+(focusTid?esc(pname(focusTid)):"The whole briefing")+'</div>'+
+    '<div class="map-hint">'+(focusTid?"This path lit. Faded points are everything else across the landscape \u2014 tap any to cross over.":"Every point across the landscape.")+'</div>'+
+    '</div>');
+  wrap.appendChild(leg);
+  v.appendChild(wrap);
+  return {el:v,dark:true};
+}
+
+/* ===================== BOOT ===================== */
+function boot(){
+  push(buildEdition);
+  var m=(location.hash||"").match(/stream=([a-z0-9]+)(?:&from=([a-z0-9]+))?/);
+  if(m && THREADS[m[1]] && ACTIVE.has(m[1])){
+    push(function(){return buildStream(m[1], m[2]||null);});
+  }
+}
+boot();
+</script>
+</body>
+</html>
