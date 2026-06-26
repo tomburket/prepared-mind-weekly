@@ -483,11 +483,11 @@ function buildEdition(){
   sc.appendChild(head);
   cards.forEach(c=>{
     const card=el('<div class="card"></div>');
-    card.appendChild(el(
+    card.innerHTML=
       '<div class="eyebrow"><span class="sec">'+esc(c.sec)+'</span><span class="sep">/</span><span>'+esc(c.tag)+'</span></div>'+
       '<h2>'+esc(c.h)+'</h2>'+
       '<div class="sum">'+esc(c.s)+'</div>'+
-      '<div class="src">'+esc(c.src)+'</div>'));
+      '<div class="src">'+esc(c.src)+'</div>';
     card.appendChild(renderFootline(c));
     sc.appendChild(card);
   });
@@ -536,10 +536,10 @@ function buildStream(tid,hereId){
   v.appendChild(bar);
   const sc=el('<div class="scroll"></div>');
   const head=el('<div class="stream-head"></div>');
-  head.appendChild(el(
+  head.innerHTML=
     '<div class="stream-tier"><span class="stream-dot" style="background:'+th.color+';color:'+th.color+'"></span>'+th.tier+' path</div>'+
     '<h2 class="stream-title">'+esc(pname(tid))+'</h2>'+
-    '<p class="stream-blurb">'+esc(th.blurb)+'</p>'));
+    '<p class="stream-blurb">'+esc(th.blurb)+'</p>';
   const cbtn=el('<button class="connect-btn">See it on the landscape \u2192</button>');
   cbtn.addEventListener("click",()=>push(()=>buildMap(tid,hereId)));
   head.appendChild(cbtn);
@@ -574,11 +574,11 @@ function buildCard(id,opts){
   v.appendChild(bar);
   const sc=el('<div class="scroll"></div>');
   const wrap=el('<div class="full full-scroll"></div>');
-  wrap.appendChild(el(
+  wrap.innerHTML=
     '<div class="full-eyebrow"><span>'+esc(c.sec)+'</span><span class="sep">/</span><span>Edition '+c.ed+'</span><span class="sep">/</span><span>'+EDITION_DATES[c.ed]+'</span></div>'+
     '<h1>'+esc(c.h)+'</h1>'+
     '<div class="sum">'+esc(c.s)+'</div>'+
-    '<div class="src">Source &nbsp;\u00b7&nbsp; '+esc(c.src)+'</div>'));
+    '<div class="src">Source &nbsp;\u00b7&nbsp; '+esc(c.src)+'</div>';
   wrap.appendChild(renderFootline(c));
   sc.appendChild(wrap);
   v.appendChild(sc);
