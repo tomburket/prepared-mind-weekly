@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  EDITION METADATA
+  edition: 12
+  date: June 19, 2026
+  cards: 7
+  sections: AI & Ops, CEO Market Intel, Board & Governance, Cultural Signal
+  template_version: v1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; June 19, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+    --rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+    --bg: #f9f8f5; --card: #ffffff;
+    --tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0; --tag-market-text: #8b4400;
+    --tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3; --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec; --tag-culture-text: #004d43;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+  .masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+  .masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+  .masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+  .summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .summary-strip::-webkit-scrollbar { display: none; }
+  .summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+  .summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+  .section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+  .section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+  .content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+  section { margin-bottom: 8px; }
+  .section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+  .section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+  .section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+  .section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+  .item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; }
+  .item-header { margin-bottom: 6px; }
+  .item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+  .tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+  .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+  .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+  .item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+  .item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+  .implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+  .implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+  .implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+  .item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+  .item-link:hover { text-decoration: underline; }
+  .back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+  .back-to-top:hover { color: var(--ink); }
+  .footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+  .footer strong { color: white; font-weight: 500; }
+  @media (min-width: 640px) {
+    .masthead { padding: 40px 32px 32px; }
+    .masthead-title { font-size: 28px; }
+    .content { padding: 48px 28px 72px; }
+    .item-card { padding: 28px 28px 24px; }
+    .item-headline { font-size: 22px; }
+    .item-summary { font-size: 18px; }
+    .implication-text { font-size: 18px; }
+  }
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+  <div class="masthead-date">June 19, 2026</div>
+  <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+  <div class="masthead-meta">7 Items &nbsp;&bull;&nbsp; AI, Grocery, Governance, Markets, Culture, 250th</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+  <div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <a href="#ai">AI &amp; Ops</a>
+  <a href="#market">CEO Market Intel</a>
+  <a href="#board">Board &amp; Governance</a>
+  <a href="#culture">Cultural Signal</a>
+</nav>
+
+<main class="content">
+
+  <section id="ai">
+    <div class="section-header"><span class="section-number">01</span><span class="section-title">AI &amp; Ops</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI &middot; Signal</span>
+        <div class="item-headline">You can now map what AI reads. In finance, it isn&rsquo;t the names you&rsquo;d expect.</div>
+      </div>
+      <div class="item-source">Generative Pulse by Muck Rack &middot; &ldquo;What Is AI Reading?&rdquo; &middot; June 17, 2026</div>
+      <div class="item-summary">Since July 2025, Generative Pulse by Muck Rack has tracked which sources the major AI models cite, building a recurring &ldquo;What Is AI Reading?&rdquo; study from more than 1 million links pulled by ChatGPT, Claude and Gemini. The latest edition breaks the data out by industry. Finance ranks second of 17 sectors in how often AI answers cite journalism, at about 32%. The mix is its own signal: personal-finance publishers like NerdWallet outrank general news, and the outlets each model favors barely overlap.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">What sits behind an AI answer used to be unknowable. It is now measurable, sector by sector &mdash; and the finance cut shows the models leaning on a different set of sources than a market professional might assume. Whether that citation set hardens or keeps shifting is now a thing that can be watched, not guessed.</div>
+      </div>
+      <a class="item-link" href="https://muckrack.com/blog/what-is-ai-reading-finance" target="_blank" rel="noopener">Read at Muck Rack &#8599;</a>
+    </div>
+  </section>
+
+  <section id="market">
+    <div class="section-header"><span class="section-number">02</span><span class="section-title">CEO Market Intel</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Canada bets $3.2 billion that the fix for grocery prices is wholesale infrastructure, not rebates</div>
+      </div>
+      <div class="item-source">Bloomberg; CBC News &middot; McGregor and Thurton &middot; June 11, 2026</div>
+      <div class="item-summary">Prime Minister Mark Carney launched Canada&rsquo;s first National Food Security Strategy on June 11 in Toronto, committing C$3.2 billion (about US$2.3 billion) over ten years to grocery competition, domestic production, year-round growing and lighter regulation. The centerpiece is a C$1 billion Food-Link Fund to expand the Ontario Food Terminal and build new regional terminals and hubs &mdash; wholesale marketplaces that let independent grocers buy competitively without relying on chains&rsquo; own supply systems. It targets a 15% rise in independents sourcing from terminals within four years, and adds C$130 million for the Competition Bureau. Carney: &ldquo;We are an agricultural superpower. Yet for most Canadians, it doesn&rsquo;t feel like that at the checkout counter,&rdquo; citing grocery prices up nearly 35% since 2019.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The diagnosis is structural, not cyclical: Canada is treating concentration and missing wholesale infrastructure &mdash; not tariffs or inflation &mdash; as the thing to fix, and spending on terminals and hubs rather than consumer rebates. It&rsquo;s a national-scale bet that the supply side is where grocery affordability is won. Whether infrastructure moves prices, and how fast, is the open question.</div>
+      </div>
+      <a class="item-link" href="https://www.cbc.ca/news/politics/food-security-strategy-9.7231361" target="_blank" rel="noopener">Read at CBC News &#8599;</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">An iced tea startup spent two years building national DSD before raising its Series C &mdash; then Hershey lent it Jolly Rancher</div>
+      </div>
+      <div class="item-source">Food Business News; BevNET &middot; June 2, 2026</div>
+      <div class="item-summary">Zero-sugar iced tea brand Ryl closed a $20 million Series C on June 2, led by Purchase Capital. The sequencing is the story: founder Blodin Ukella spent 24 months building a national direct store delivery footprint before raising the capital to fill it &mdash; putting the four-year-old company among a small set of emerging beverage brands with the infrastructure to compete at scale. Per company-cited Circana data, Ryl grew 157% year over year while the $4.5 billion canned and bottled tea category declined 1.8%. Alongside the raise: a multi-year licensing deal with Hershey for the first zero-sugar Jolly Rancher-inspired iced teas &mdash; an incumbent lending a flavor brand rather than buying the challenger.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Two choices run against the current playbook: a capital-intensive DSD network as an emerging brand&rsquo;s moat, when most challengers stay asset-light and rent distribution; and an incumbent licensing its brand into an adjacency rather than buying the challenger. Hershey gets the exposure without the integration, Ryl the flavor equity without the acquisition. New pattern or one-off is the open question.</div>
+      </div>
+      <a class="item-link" href="https://www.foodbusinessnews.net/articles/30433-the-ryl-co-raises-20-million-in-series-c-round" target="_blank" rel="noopener">Read at Food Business News &#8599;</a>
+    </div>
+  </section>
+
+  <section id="board">
+    <div class="section-header"><span class="section-number">03</span><span class="section-title">Board &amp; Governance</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Governance &middot; AI</span>
+        <div class="item-headline">Walmart shareholders decline to require a report on how AI affects workers &mdash; by a 95% margin</div>
+      </div>
+      <div class="item-source">Reuters &middot; Nicholas P. Brown and Juveria Tabassum &middot; June 4, 2026</div>
+      <div class="item-summary">At Walmart&rsquo;s virtual annual meeting on June 4, investors voted down a proposal from the group United for Respect that would have required the company to report on the workforce implications of its growing use of AI and automation. The proposal drew about 4.95% of votes cast. Per the proxy, Walmart has rolled out AI tools for hiring, scheduling, training and task prioritization, expanded warehouse automation, and implemented an algorithmic system that sets hourly employees&rsquo; pay raises. Ava Williams, an overnight worker in Spokane, spoke for the proposal, linking AI-driven standards to injuries, burnout and turnover; frontline-training head Josh Allen said Walmart&rsquo;s approach emphasizes &ldquo;responsible use and human judgment.&rdquo; Walmart is the largest US private employer, at about 1.6 million workers.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The governance story has been about boards being told to oversee AI. This is the first instance where a specific mechanism &mdash; mandatory disclosure of AI&rsquo;s workforce effects &mdash; was put to a vote and rejected, at the company running the sector&rsquo;s most visible workforce-AI deployment. What disclosure boards will accept on AI is the open question.</div>
+      </div>
+      <a class="item-link" href="https://www.reuters.com/legal/litigation/walmart-investors-reject-ai-workplace-report-automation-expands-us-2026-06-04/" target="_blank" rel="noopener">Read at Reuters &#8599;</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-board">Governance</span>
+        <div class="item-headline">The IPO announcement has decoupled from the IPO &mdash; and become a branding event</div>
+      </div>
+      <div class="item-source">Fast Company &middot; Rob Walker &middot; June 15, 2026</div>
+      <div class="item-summary">In his Branded column, Rob Walker argues the initial public offering has quietly split into two functions &mdash; the financial transaction and a publicity ritual that now runs independent of it. The record $1.77 trillion SpaceX listing was as much a branding event as a capital raise, and within the same month both Anthropic and OpenAI filed preliminary IPO paperwork with the SEC while offering almost no detail on timing or pricing. OpenAI&rsquo;s own statement allowed it &ldquo;may be a while.&rdquo; Walker traces the pattern to Netscape&rsquo;s 1995 offering, used &ldquo;almost as a press release,&rdquo; through Facebook and Uber, to an AI wave where merely announcing a potential IPO carries reputational value. His read: signaling IPO readiness has become the way a company declares the sector is real and it is a player &mdash; a trillion-dollar announcement as &ldquo;table stakes.&rdquo;</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The announcement has become a product in itself, separable from whether or when the company actually lists. Walker notes the same names advancing mega-IPO posture are not necessarily profitable, and leaves the bubble question open. For anyone reading corporate signaling, the tell is the widening gap between the publicity event and the financial one.</div>
+      </div>
+      <a class="item-link" href="https://www.fastcompany.com/91559680/how-the-ipo-announcement-became-a-publicity-ritual" target="_blank" rel="noopener">Read at Fast Company &#8599;</a>
+    </div>
+  </section>
+
+  <section id="culture">
+    <div class="section-header"><span class="section-number">04</span><span class="section-title">Cultural Signal</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture &middot; Civic</span>
+        <div class="item-headline">The 250th gets its Bicentennial Minutes &mdash; this time from a historian&rsquo;s own channel</div>
+      </div>
+      <div class="item-source">Letters from an American &middot; Heather Cox Richardson &middot; May 2026</div>
+      <div class="item-summary">Historian Heather Cox Richardson has launched &ldquo;250 to 250,&rdquo; a series of 250 one-minute videos marking the Declaration&rsquo;s 250th anniversary, each spotlighting a person, place or event that built the country. From the intro: &ldquo;the story of America has been one of the constant efforts of Americans &mdash; from all races, ethnicities, genders, and abilities &mdash; to make real the belief that we are all created equal.&rdquo; Early installments are narrated by Cleve Jones, Gov. Maura Healey and Jelani Cobb. Richardson has published Letters from an American nightly since 2019; the newsletter passed 2.6 million subscribers by mid-2025, among the largest on Substack. The format has a precise ancestor: CBS&rsquo;s Bicentennial Minutes, the one-minute segments the network aired from 1974 to 1976 for the country&rsquo;s 200th.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Fifty years apart, the same one-minute format &mdash; and an inverted distribution model. The Bicentennial Minutes needed a broadcast network to reach the country; this version runs on a historian&rsquo;s own channel, carried by an audience she assembled herself. The semiquincentennial arrives July 4, fifteen days after this edition.</div>
+      </div>
+      <a class="item-link" href="https://youtu.be/xrzQjU560Gs" target="_blank" rel="noopener">Watch on YouTube &#8599;</a>
+    </div>
+
+    <div class="item-card">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Culture</span>
+        <div class="item-headline">The man who has rehearsed Jefferson&rsquo;s death for 25 years arrives at its bicentennial</div>
+      </div>
+      <div class="item-source">Oxford American &middot; C.J. Bartunek &middot; June 10, 2026</div>
+      <div class="item-summary">July 4, 2026 carries a double weight at Monticello: the Declaration&rsquo;s 250th and two hundred years since Jefferson died &mdash; July 4, 1826, the document&rsquo;s 50th, with John Adams dying the same day, his last words &ldquo;Thomas Jefferson survives.&rdquo; Oxford American&rsquo;s C.J. Bartunek reports from the mountain, where Bill Barker, who has portrayed Jefferson since 1980, still performs Ginsberg&rsquo;s two-man <em>Jefferson and Adams</em>, set on the last day of both men&rsquo;s lives, with the same cast since 2001. Barker is 73, ten years younger than Jefferson at the end. Monticello historian Andrew Davenport, a descendant of Peter Hemings enslaved at Monticello, offers the reframe: Jefferson was a young millennial&rsquo;s age when he wrote the Declaration. &ldquo;We don&rsquo;t want anyone&rsquo;s three-hundred-year-old worldview. But a vision? Watch out!&rdquo;</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">When children tell Barker-as-Jefferson &ldquo;You&rsquo;re dead!&rdquo;, he asks: &ldquo;If you can read what I have written, am I not still alive?&rdquo; A man who spent a quarter century rehearsing a death arrives at its bicentennial still making the case that words outlive their authors &mdash; as the document&rsquo;s own claim to transcend left or right hangs open.</div>
+      </div>
+      <a class="item-link" href="https://oxfordamerican.org/oa-now/thomas-jefferson-survives" target="_blank" rel="noopener">Read at Oxford American &#8599;</a>
+    </div>
+  </section>
+
+  <a class="back-to-top" href="#top">&#8593; Back to top</a>
+
+</main>
+
+<footer class="footer">
+  <strong>The Prepared Mind, Weekly Reader</strong><br>
+  Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+  June 19, 2026 &middot; Edition No. 12
+  <br><a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+</body>
+</html>
