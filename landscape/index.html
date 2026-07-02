@@ -194,7 +194,7 @@ body{
 <script>
 "use strict";
 /* ===================== DATA ===================== */
-const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25"};
+const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25",14:"July 2"};
 
 const THREADS={
   s1:{name:"AI is an operating discipline, not a model",short:"AI Ops Discipline",tier:"spine",color:"#d2a857",
@@ -358,12 +358,21 @@ const CARDS=[
  {id:"e13c6",ed:13,sec:"CEO Market",tag:"signal",h:"Nestl\u00e9 Takes Full Control of a \u2018Smart Food\u2019 Brand Built for the GLP-1 Shopper",src:"Nestl\u00e9 / Food Dive \u00b7 Jun 3",t:"t10",s:"Nestl\u00e9 buys the rest of a smart-food brand built for people cutting calories on GLP-1 \u2014 the basket remaking itself again.",url:"https://www.foodnavigator.com/Article/2026/06/03/nestle-to-acquire-yfood-smart-food/"},
  {id:"e13c7",ed:13,sec:"CEO Market",tag:"sport",h:"Frito-Lay Turns the World Cup Into 40 Flavors",src:"Bakery & Snacks \u00b7 Jun 3",t:"t12",s:"A snack giant turns the tournament into 40 nation-inspired flavors \u2014 the World Cup as a product-development calendar.",url:"https://www.bakeryandsnacks.com/Article/2026/06/03/world-cup-2026-why-pepsico-mondelez-and-kellanova-are-betting-big/"},
  {id:"e13c8",ed:13,sec:"CEO Market",tag:"sport",h:"The Brands Riding the World Cup Without Paying for It",src:"Modern Retail \u00b7 Jun 8",t:"t12",s:"Crumbl and Olipop ride World Cup attention without the sponsorship \u2014 proximity as the workaround to FIFA\u2019s fence.",url:"https://www.modernretail.co/marketing/brands-are-catching-world-cup-fever-even-without-official-sponsorships/"},
- {id:"e13c9",ed:13,sec:"Cultural Signal",tag:"culture",h:"The Cartoonist Who Walked Away at the Top",src:"The Republic of Letters \u00b7 Jun 11",t:"curious",s:"Bill Watterson refused the merchandising fortune and ended Calvin and Hobbes at its peak \u2014 craft over extraction.",url:"https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of"}
+ {id:"e13c9",ed:13,sec:"Cultural Signal",tag:"culture",h:"The Cartoonist Who Walked Away at the Top",src:"The Republic of Letters \u00b7 Jun 11",t:"curious",s:"Bill Watterson refused the merchandising fortune and ended Calvin and Hobbes at its peak \u2014 craft over extraction.",url:"https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of"},
+ {id:"e14c1",ed:14,sec:"AI & Ops",tag:"signal",h:"Grocery Outlet Hands Its Entire Store to One AI Ordering System",src:"Grocery Dive · Jun 10",t:"s1",s:"The first retailer to run Afresh across every category — the tool that began as produce optimization now places every order in the building."},
+ {id:"e14c2",ed:14,sec:"Tariff Watch",tag:"signal",h:"Canada Reaches for a Safeguard It Has Used Once in 20 Years",src:"The Globe and Mail · Jun 19",t:"t11",s:"A near-dormant WTO safeguard fired provisionally before the tribunal rules — trade diversion landing as sudden duties in a category nobody was watching."},
+ {id:"e14c3",ed:14,sec:"The Workforce",tag:"data",h:"Only 42% of Frontline Workers Think Their Leaders Understand the Job",src:"HR Dive · May 28",t:"t8",s:"Down from 62% two years ago, while executives carry accountability for frontline risk they can't see in real time — the gap widening at both ends."},
+ {id:"e14c4",ed:14,sec:"Board & Governance",tag:"data",h:"82% of Directors Now Use Generative AI for Board Work. 6% Have a Policy for It.",src:"Corporate Board Member · Jun 17",t:"s3",s:"Adoption running well ahead of oversight — sensitive board books already moving through tools no policy governs."},
+ {id:"e14c5",ed:14,sec:"Board & Governance",tag:"essay",h:"When Monitoring Got Cheaper, the U.S. Government Grew — and Loyalty Gave Way to Bureaucracy",src:"Review of Economic Studies · 2026",t:"curious",s:"Railroads cut the cost of monitoring distant officials; org structure followed. The variable is the cost of knowing what subordinates are doing — exactly what an oversight technology lowers."},
+ {id:"e14c6",ed:14,sec:"Cultural Signal",tag:"culture",h:"At the 250th, Two Historians Ask Whether a Caricatured Founder Can Be Restored to Full Complexity",src:"Liveright / Norton · Jun 9",t:"t13",s:"‘Thomas Jefferson Survives’ refuses the easy caricature in either direction — a legacy contested and flattened by others, the problem every builder of something lasting eventually faces."},
+ {id:"e14c7",ed:14,sec:"Cultural Signal",tag:"culture",h:"AI ‘Time-Traveller’ Vloggers Are Pulling Millions to History",src:"The Guardian · May 26",t:"curious",s:"Serious history and synthetic history surging through the same feed — an Oxford historian sees the appeal and the hallucinated Romans in sunglasses both."},
+ {id:"e14c8",ed:14,sec:"CEO Market",tag:"signal",h:"UPS Spends $48M to Own the Cold-Chain Handoff",src:"Fortune · Jun 23",t:"curious",s:"The bet reframes cold-chain competence from a cost to control into an asset to extend — owning every handoff, into adjacencies where a broken chain ruins a biologic, not a pallet of produce."},
+ {id:"e14c9",ed:14,sec:"Oddly Interesting",tag:"signal",h:"Tariffs Are Cancelling Fourth of July Fireworks — in the Year of the 250th",src:"St. Louis Magazine · Jun 24",t:"t11",s:"A consumable bought a year ahead hides the cost of a trade policy until exactly the moment you can't reorder — the lag operators will recognize."}
 ];
 
 /* drop duplicate markers */
 const CORPUS=CARDS.filter(c=>c.t!=="dup");
-const CURRENT_EDITION=13;
+const CURRENT_EDITION=14;
 
 /* ---- derived ---- */
 function effectiveThread(c){ return (c.t!=="curious" && ACTIVE.has(c.t)) ? c.t : null; }
