@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  EDITION METADATA
+  edition: 13
+  date: June 25, 2026
+  cards: 9
+  sections: AI & Ops, The Workforce, CEO Market Intel, Cultural Signal
+  template_version: v2
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; June 25, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+    --rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+    --bg: #f9f8f5; --card: #ffffff;
+    --tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+    --tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+    --tag-market: #fdecd0; --tag-market-text: #8b4400;
+    --tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+    --tag-search: #fad9e3; --tag-search-text: #8b0033;
+    --tag-culture: #cff0ec; --tag-culture-text: #004d43;
+    --tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+  .masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+  .masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+  .masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+  .summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .summary-strip::-webkit-scrollbar { display: none; }
+  .summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+  .summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+  .section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+  .section-nav::-webkit-scrollbar { display: none; }
+  .section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+  .section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+  .content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+  section { margin-bottom: 8px; }
+  .section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+  .section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+  .section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+  .section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+  .item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+  .item-header { margin-bottom: 6px; }
+  .item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+  .tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+  .tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+  .tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+  .tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+  .tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+  .tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+  .tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+  .item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+  .item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+  .item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+  .implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+  .implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+  .implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+  .item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+  .item-link:hover { text-decoration: underline; }
+  .back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+  .back-to-top:hover { color: var(--ink); }
+  .footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+  .footer strong { color: white; font-weight: 500; }
+  @media (min-width: 640px) {
+    .masthead { padding: 40px 32px 32px; }
+    .masthead-title { font-size: 28px; }
+    .content { padding: 48px 28px 72px; }
+    .item-card { padding: 28px 28px 24px; }
+    .item-headline { font-size: 22px; }
+    .item-summary { font-size: 18px; }
+    .implication-text { font-size: 18px; }
+  }
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+  <div class="masthead-date">June 25, 2026</div>
+  <div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+  <div class="masthead-meta">9 Items &nbsp;&bull;&nbsp; AI, Workforce, Grocery, World Cup, Culture</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+  <div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">The<br>Workforce</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+  <div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+  <a href="#ai">AI &amp; Ops</a>
+  <a href="#workforce">The Workforce</a>
+  <a href="#market">CEO Market Intel</a>
+  <a href="#culture">Cultural Signal</a>
+</nav>
+
+<main class="content">
+
+  <!-- AI & OPS -->
+  <section id="ai">
+    <div class="section-header"><span class="section-number">01</span><span class="section-title">AI &amp; Ops</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card" id="c01">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI &middot; Ops</span>
+        <div class="item-headline">UNFI Puts AI Across Every Distribution Center, and the Numbers Move</div>
+      </div>
+      <div class="item-source">The Motley Fool &middot; UNFI Q3 FY2026 Earnings Call Transcript &middot; June 9, 2026</div>
+      <div class="item-summary">United Natural Foods told analysts on its June 9 fiscal third-quarter call that it has extended its AI-driven supply chain and procurement planning platform to all of its distribution centers, with the supplier-facing rollout still underway. CEO Sandy Douglas credited the system, along with wider use of the Samsara fleet-management platform, for better fill rates and tighter inventory. Year to date, on-time deliveries rose more than 4 percent while average miles per delivery fell nearly 5 percent. President and CFO Matteo Tarditi put quarterly sales near $7.7 billion, down 4.2 percent.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The grocery distributor furthest along on AI is also the one posting the plainest before-and-after numbers. Whether the gains hold as the supplier side comes online is the open question.</div>
+      </div>
+      <a class="item-link" href="https://www.fool.com/earnings/call-transcripts/2026/06/09/unfi-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener">Read at The Motley Fool &#8599;</a>
+    </div>
+
+    <div class="item-card" id="c02">
+      <div class="item-header">
+        <span class="item-tag tag-ai">AI &middot; Logistics</span>
+        <div class="item-headline">PepsiCo Runs Driverless Trucks in Its Everyday Network, Not a Pilot</div>
+      </div>
+      <div class="item-source">The Wall Street Journal (Esther Fung) &middot; corroborated by Bakery &amp; Snacks and Inbound Logistics &middot; June 2026</div>
+      <div class="item-summary">PepsiCo is operating 35 fully driverless trucks on public roads in Arizona, part of a 41-truck fleet that also runs in Texas and Arkansas, the Wall Street Journal reported. The trucks haul Frito-Lay products between plants, warehouses and retailers including Walmart and Dollar General, using autonomous technology from Gatik on Isuzu vehicles. PepsiCo went fully driverless on the routes in June 2025, and this month signed a multi-year deal with Gatik to expand to roughly 250 locations. It is the first major US consumer-goods company to run autonomous freight at this scale.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The driverless milestone arrives on short, repeatable middle-mile routes, the least glamorous part of the network. What travels next, and who is still in the cab, is unsettled.</div>
+      </div>
+      <a class="item-link" href="https://www.bakeryandsnacks.com/Article/2026/06/09/doritos-without-drivers-pepsicos-autonomous-truck-experiment-signals-a-new-era-for-logistics/" target="_blank" rel="noopener">Read at Bakery &amp; Snacks &#8599;</a>
+    </div>
+
+    <div class="item-card" id="c03">
+      <div class="item-header">
+        <span class="item-tag tag-ai">Ops &middot; Network</span>
+        <div class="item-headline">FedEx Collapses Two Networks Into One to Pull Out Fixed Cost</div>
+      </div>
+      <div class="item-source">CNBC (Michael Wayland) &middot; corroborated by FedEx newsroom, Supply Chain Dive and FreightWaves &middot; June 2026</div>
+      <div class="item-summary">FedEx is consolidating its historically separate Express and Ground operations into a single pickup-and-delivery network under its Network 2.0 program, closing or merging hundreds of facilities. The company&rsquo;s earlier DRIVE program took roughly $4 billion in cost out of the business by fiscal 2025. FedEx targets another $2 billion in savings from Network 2.0 by fiscal 2027, with planned station closures reaching about 30 percent of facilities. Where the consolidated network is already live, pickup-and-delivery costs are down about 10 percent.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">A company that ran two parallel delivery networks for fifty years is betting that one network, fewer buildings and less duplication is worth $2 billion. The same arithmetic faces any operator still carrying siloed fulfillment.</div>
+      </div>
+      <a class="item-link" href="https://www.supplychaindive.com/news/fedex-network-2-station-closures-2026/812251/" target="_blank" rel="noopener">Read at Supply Chain Dive &#8599;</a>
+    </div>
+  </section>
+
+  <!-- THE WORKFORCE -->
+  <section id="workforce">
+    <div class="section-header"><span class="section-number">02</span><span class="section-title">The Workforce</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card" id="c04">
+      <div class="item-header">
+        <span class="item-tag tag-workforce">Workforce</span>
+        <div class="item-headline">The Data on Remote Work&rsquo;s Hidden Cost</div>
+      </div>
+      <div class="item-source">New York Times opinion (Emanuel and Harrington) &middot; June 17, 2026, on their Science study &ldquo;Home Alone&rdquo; &middot; June 4, 2026</div>
+      <div class="item-summary">A study published in Science on June 4 finds that remote work explains about a third of the decline in US mental health between 2011 and 2024. Drawing on five national surveys of roughly 588,000 workers, economists Natalia Emanuel, Emma Harrington and Amanda Pallais found that people in remote-capable jobs saw a 72 percent rise in the odds of spending an entire workday with no human contact, and did not make up the lost contact after hours. The damage concentrated among those living alone, whose distress rose about twice as much. Writing in the New York Times on June 17, the authors note that workers will forgo 4 to 10 percent of pay to keep working remotely.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">People are paying to keep an arrangement the same researchers tie to their own decline, the kind of slow unwinding <em>Bowling Alone</em> described a generation ago. Whether connection can be rebuilt without taking the flexibility away is left open.</div>
+      </div>
+      <a class="item-link" href="https://www.science.org/doi/10.1126/science.aec7671" target="_blank" rel="noopener">Read the study in Science &#8599;</a>
+    </div>
+
+    <div class="item-card" id="c05">
+      <div class="item-header">
+        <span class="item-tag tag-workforce">Workforce</span>
+        <div class="item-headline">When Cognition Gets Cheap, What Gets Expensive</div>
+      </div>
+      <div class="item-source">Julia Willemyns, co-founder of the Centre for British Progress &middot; Substack &middot; June 2026</div>
+      <div class="item-summary">In an essay titled &ldquo;At Least You&rsquo;re Likable,&rdquo; writer Julia Willemyns argues that as AI drives down the price of cognitive work, the scarce premium moves to human presence and social skill. Building on work by Alex Imas, she contends that relationships, taste and cultural fluency become the differentiator once analytical horsepower is commoditized. Labor research has tracked a rising market value for social skills since the 1980s, even in technical fields.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">If the rewarded skill shifts from what you can figure out to who you can move, the people and the training built for the first world may be aimed at the wrong target. Whether that shift is real or only feels real is not yet settled.</div>
+      </div>
+      <a class="item-link" href="https://juliawillemyns.substack.com/p/at-least-youre-likable" target="_blank" rel="noopener">Read at Substack &#8599;</a>
+    </div>
+  </section>
+
+  <!-- CEO MARKET INTEL -->
+  <section id="market">
+    <div class="section-header"><span class="section-number">03</span><span class="section-title">CEO Market Intel</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card" id="c06">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Nestl&eacute; Takes Full Control of a &ldquo;Smart Food&rdquo; Brand Built for the GLP-1 Shopper</div>
+      </div>
+      <div class="item-source">Nestl&eacute; &middot; corroborated by Food Dive and Food Business News &middot; June 3, 2026</div>
+      <div class="item-summary">Nestl&eacute; announced June 3 that it will acquire the rest of yfood, the German ready-to-drink nutrition brand in which it has held a 49 percent stake since 2023. Founders Benjamin Kremer and Noel Bollmann are departing, with the remaining shares set to transfer July 3. yfood sells in 30 countries across more than 50,000 points of sale and posted about $173 million in 2025 sales. Nestl&eacute; did not disclose terms; the Financial Post reported the deal valued yfood near $523 million. It is the first acquisition under Nestl&eacute; CEO Philipp Navratil.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The thesis under the deal is that people cutting calories on GLP-1 drugs still need nutrients in a convenient form. It is the second better-for-you beverage to cross this briefing in two editions, which says something about where the basket is heading.</div>
+      </div>
+      <a class="item-link" href="https://www.foodnavigator.com/Article/2026/06/03/nestle-to-acquire-yfood-smart-food/" target="_blank" rel="noopener">Read at FoodNavigator &#8599;</a>
+    </div>
+
+    <div class="item-card" id="c07">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">Frito-Lay Turns the World Cup Into 40 Flavors</div>
+      </div>
+      <div class="item-source">Bakery &amp; Snacks, corroborating Sports Business Journal &middot; June 3, 2026</div>
+      <div class="item-summary">As an official sponsor of the 2026 men&rsquo;s and 2027 women&rsquo;s World Cups, PepsiCo&rsquo;s Frito-Lay has built a 40-flavor program inspired by the cuisines of competing nations, among them Argentinian-Style Steak with Chimichurri, Brazilian-Style Garlic Sauce and French Onion Soup. The activation runs portfolio-wide across Lay&rsquo;s, Doritos and Walkers, supported by ticket giveaways. Trade coverage calls it one of the largest tournament-linked flavor programs ever in snacks, sized to a tournament running 104 matches against Qatar 2022&rsquo;s 64.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">A snack company is treating a soccer tournament as a product-development calendar. Whether 40 flavors builds the brand or just crowds the shelf is the bet.</div>
+      </div>
+      <a class="item-link" href="https://www.bakeryandsnacks.com/Article/2026/06/03/world-cup-2026-why-pepsico-mondelez-and-kellanova-are-betting-big/" target="_blank" rel="noopener">Read at Bakery &amp; Snacks &#8599;</a>
+    </div>
+
+    <div class="item-card" id="c08">
+      <div class="item-header">
+        <span class="item-tag tag-market">CEO Market</span>
+        <div class="item-headline">The Brands Riding the World Cup Without Paying for It</div>
+      </div>
+      <div class="item-source">Modern Retail (Gabriela Barkho) &middot; June 8, 2026</div>
+      <div class="item-summary">With official World Cup sponsorships out of reach for most, smaller brands are activating on proximity instead. Crumbl released host-country-inspired cookies on June 7, and Olipop is running a 30-day block party in downtown Dallas alongside its new &ldquo;The Feel Good Soda&rdquo; rebrand, Modern Retail reported. A Bank of America Global Research note cited in the piece projects that 75 percent of the world will engage with the tournament in some way. FIFA&rsquo;s trademark enforcement is the fence these brands work around across the 104 matches from June 11 to July 19.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">The official sponsors paid for the rights, but the unsponsored brands may capture the attention. Where the line between proximity and infringement falls is FIFA&rsquo;s call, and it is watching.</div>
+      </div>
+      <a class="item-link" href="https://www.modernretail.co/marketing/brands-are-catching-world-cup-fever-even-without-official-sponsorships/" target="_blank" rel="noopener">Read at Modern Retail &#8599;</a>
+    </div>
+  </section>
+
+  <!-- CULTURAL SIGNAL -->
+  <section id="culture">
+    <div class="section-header"><span class="section-number">04</span><span class="section-title">Cultural Signal</span></div>
+    <hr class="section-rule">
+
+    <div class="item-card" id="c09">
+      <div class="item-header">
+        <span class="item-tag tag-culture">Cultural Signal</span>
+        <div class="item-headline">The Cartoonist Who Walked Away at the Top</div>
+      </div>
+      <div class="item-source">Matthew Morgan &middot; The Republic of Letters &middot; June 11, 2026</div>
+      <div class="item-summary">A new essay by Matthew Morgan revisits Bill Watterson, who refused nearly all licensing and merchandising of <em>Calvin and Hobbes</em>, ran the strip as a one-man operation and fought his syndicate for creative control and a larger Sunday canvas. He ended the strip on December 31, 1995, at its peak of more than 2,400 newspapers, at age 37, then largely disappeared from public life. By one estimate he left $300 million to $400 million on the table.</div>
+      <div class="implication-block">
+        <div class="implication-label">Why it matters</div>
+        <div class="implication-text">Watterson treated the work as the thing worth protecting and the fortune as the thing worth refusing. It is a question every builder eventually faces, usually with less conviction.</div>
+      </div>
+      <a class="item-link" href="https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of" target="_blank" rel="noopener">Read at The Republic of Letters &#8599;</a>
+    </div>
+  </section>
+
+  <a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+  <strong>The Prepared Mind, Weekly Reader</strong><br>
+  Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+  June 25, 2026 &middot; Edition No. 13
+  <br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+  &nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js" defer></script>
+
+</body>
+</html>
