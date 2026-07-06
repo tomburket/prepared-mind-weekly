@@ -1,0 +1,146 @@
+{
+ "edition": 14,
+ "date_long": "July 2, 2026",
+ "topics": "AI, Trade, Workforce, Governance, Culture, Leadership, Oddly Interesting",
+ "sections": [
+  {
+   "id": "ai",
+   "title": "AI & Ops",
+   "cards": [
+    {
+     "tag_class": "tag-ai",
+     "tag_label": "AI · Ops",
+     "headline": "Grocery Outlet hands its entire store to one AI ordering system — the first retailer to do so",
+     "source": "Grocery Dive · June 10, 2026",
+     "summary": "On June 10 Grocery Outlet said it will run Afresh’s AI ordering across fresh, center store and general merchandise — the first retailer to adopt the vendor’s full-store, multi-category system. Afresh says partners halve order time and average a 3 percent sales lift and 25 percent less shrink; the discounter runs about 550 stores in 16 states on a fast-rotating assortment. Chief store operations officer Frank Kerr cast it as arming the chain’s independent operators to make better daily calls.",
+     "why": "The thing to watch isn’t the deployment, it’s the trajectory — a tool that began as produce optimization is becoming the system that places every order in the building. When the algorithm sets the order and store operators only review what it flags, the open question is what happens to the category-manager judgment that used to be the job.",
+     "url": "https://www.grocerydive.com/news/grocery-outlet-ai-modernize-supply-chain-afresh/822303/",
+     "link_label": "Read at Grocery Dive"
+    }
+   ],
+   "pill": "AI & Ops"
+  },
+  {
+   "id": "tariff",
+   "title": "Tariff Watch",
+   "cards": [
+    {
+     "tag_class": "tag-market",
+     "tag_label": "Tariff Watch",
+     "headline": "Canada reaches for a safeguard it’s used once in 20 years — and fires it before the tribunal rules",
+     "source": "The Globe and Mail · June 19, 2026",
+     "summary": "On June 19 Canada imposed a provisional 10 percent safeguard surtax on canned-vegetable imports, exempting the United States, Mexico, Israel, Chile and developing countries. Safeguards are rare — before this inquiry opened in March, the trade tribunal had launched just one in 20 years — and Ottawa fired this one provisionally, before the tribunal’s September 9 ruling, citing trade diversion. Statistics Canada shows the surge concentrated in a few origins: imports up 179 percent from Thailand, 159 percent from Turkey and 85 percent from Peru.",
+     "why": "The category is narrow and the U.S. is exempt, so the direct cost to a U.S. operator is zero. The signal is the instrument — a government reaching for a near-dormant WTO safeguard and firing it before its own tribunal rules. Trade lawyers read the surge as spillover from the U.S.-Canada tariff fight, diversion landing as sudden duties in a category nobody was watching, which is the part worth filing for anyone sourcing globally.",
+     "url": "https://www.theglobeandmail.com/business/economy/article-ottawa-surtax-imports-canned-vegetables/",
+     "link_label": "Read at The Globe and Mail"
+    }
+   ],
+   "pill": "Tariff\nWatch"
+  },
+  {
+   "id": "workforce",
+   "title": "The Workforce",
+   "cards": [
+    {
+     "tag_class": "tag-workforce",
+     "tag_label": "Workforce",
+     "headline": "Only 42% of frontline workers think their leaders understand the job — down from 62% two years ago",
+     "source": "HR Dive · May 28, 2026",
+     "summary": "A Dayforce survey of more than 5,600 managers, executives and frontline workers found just 42 percent of frontline workers feel leaders understand the problems they face — down from 62 percent in 2024. Seventy-one percent said shift-level problems had them thinking about leaving. On the other side of the gap, 45 percent of executives said they are held accountable for frontline cost risk they cannot see in real time. President and COO Steve Holdridge said the way organizations ask frontline teams to absorb disruption “isn’t sustainable.”",
+     "why": "The gap is widening at both ends — workers feeling less understood while executives carry accountability for decisions they cannot see in real time. A perception gap that large between the floor and the C-suite reads as a retention and compliance exposure before it reads as anything else.",
+     "url": "https://www.hrdive.com/news/the-disconnect-between-front-line-workers-and-leadership-is-growing/821336/",
+     "link_label": "Read at HR Dive"
+    }
+   ],
+   "pill": "The\nWorkforce"
+  },
+  {
+   "id": "board",
+   "title": "Board & Governance",
+   "cards": [
+    {
+     "tag_class": "tag-board",
+     "tag_label": "Board · AI",
+     "headline": "82% of directors now use generative AI for board work. 6% have a policy for it.",
+     "source": "Corporate Board Member · June 17, 2026",
+     "summary": "A Corporate Board Member and Diligent Institute survey of 104 U.S. public-company directors found 82 percent used generative AI for board work in the past six months, up from 66 percent in September 2025. Yet 54 percent say their company offers no guidance on director AI use, and only 6 percent report a board-specific policy. About 30 percent have used the tools to summarize board books — among the most sensitive documents a public company holds. Diligent Institute’s Kira Ciccarelli said directors “are not waiting for perfect governance frameworks to experiment with AI.”",
+     "why": "Adoption is running well ahead of oversight, and the exposure is not hypothetical — sensitive board materials are already moving through tools that, in most cases, no policy governs. The smaller the share of boards with a rule, the more the first real test of this gap arrives as an incident rather than a discussion.",
+     "url": "https://boardmember.com/as-board-ai-use-rises-rules-and-oversight-remain-scarce/",
+     "link_label": "Read at Corporate Board Member"
+    },
+    {
+     "tag_class": "tag-board",
+     "tag_label": "Governance",
+     "headline": "When monitoring got cheaper, the U.S. government grew — and personal loyalty gave way to bureaucracy",
+     "source": "The Review of Economic Studies · 2026",
+     "summary": "In a study newly published in The Review of Economic Studies, economists Nicola Mastrorocco and Edoardo Teso trace the U.S. federal government from 1817 to 1905. They use railroad expansion — which cut the travel time, and so the cost, of monitoring distant officials — to show cause: where monitoring got cheaper, federal presence grew, most sharply in jobs with the worst agency problems, and government built on personal loyalty gave way to modern bureaucracy. It echoes a classic result that high monitoring costs cap how large an organization can grow.",
+     "why": "The variable driving organizational shape here is the cost of knowing what distant subordinates are actually doing — precisely the cost an oversight technology is built to lower. What the history leaves open is what happens to span of control, centralization and the role of personal trust the next time that cost drops sharply.",
+     "url": "https://www.restud.com/state-capacity-as-an-organizational-problem/",
+     "link_label": "Read at The Review of Economic Studies"
+    }
+   ],
+   "pill": "Board &\nGovernance"
+  },
+  {
+   "id": "culture",
+   "title": "Cultural Signal",
+   "cards": [
+    {
+     "tag_class": "tag-culture",
+     "tag_label": "Culture",
+     "headline": "At the 250th, two historians ask whether a caricatured founder can be restored to full complexity",
+     "source": "Liveright / W.W. Norton · June 9, 2026",
+     "summary": "In “Thomas Jefferson Survives,” out June 9 for the Declaration’s 250th, historians Peter S. Onuf and Francis D. Cogliano — with a foreword by Annette Gordon-Reed — set out to recover Jefferson from reductive cliché. Across three essays they trace how his reading of history shaped his response to the crises of his era and how he articulated a national identity in 1776, arguing he held a capacious, optimistic vision even under strain.",
+     "why": "The book’s project is a discipline more than a verdict — refusing the easy caricature in either direction and insisting on the whole, complicated record. A legacy contested and flattened by others is a problem every leader who builds something lasting eventually faces.",
+     "url": "https://wwnorton.com/books/9781324098072",
+     "link_label": "Read at W.W. Norton"
+    },
+    {
+     "tag_class": "tag-culture",
+     "tag_label": "Culture",
+     "headline": "AI “time-traveller” vloggers are pulling millions to history — and an Oxford historian sees the appeal",
+     "source": "The Guardian · May 26, 2026",
+     "summary": "The Guardian reports on a wave of AI-generated “history influencers” who vlog from Tudor London, the Titanic and ancient Rome. The most popular, Chloe VS History, has more than 610,000 Instagram followers and 15 million YouTube views — one Titanic episode drew 4 million. Oxford historian Adam Smith puts the format in the “Horrible Histories” popularizing tradition and sees real potential, while noting the AI still hallucinates — Romans in sunglasses — and won’t replace a monograph or a museum.",
+     "why": "Serious history and synthetic history are surging through the same feed in the same anniversary year. The tension worth holding is Smith’s own: it is doing something different, with a different mood — and the open question is what gets gained and lost when the past arrives this vividly, this cheaply, and this loosely tethered to the record.",
+     "url": "https://www.theguardian.com/technology/2026/may/26/we-can-stitch-together-our-past-the-ai-generated-time-travellers-vlogging-from-history",
+     "link_label": "Read at The Guardian"
+    }
+   ],
+   "pill": "Cultural\nSignal"
+  },
+  {
+   "id": "market",
+   "title": "CEO Market Intel",
+   "cards": [
+    {
+     "tag_class": "tag-market",
+     "tag_label": "CEO Market",
+     "headline": "UPS spends $48M to own the cold-chain handoff — where temperature-sensitive shipments fail",
+     "source": "Fortune · June 23, 2026",
+     "summary": "On June 22 UPS said it will spend $48 million on 27 temperature-controlled cross-dock facilities across the U.S., Europe and Asia, built for the air-to-ground transfer — the handoff where temperature excursions are likeliest. The pitch is a single integrated network that eliminates handoffs between carriers, watched end to end by a 24/7 control tower. The strategic read is the part worth a second look: UPS’s healthcare unit cleared $3 billion in a quarter for the first time this year and has gained share every year since 2021, with CEO Carol Tomé calling healthcare “recession-proof” — a position built by acquisition, including Andlauer Healthcare Group for $1.6 billion.",
+     "why": "The bet reframes cold-chain competence from a cost to control into an asset to extend. UPS is wagering that the failure points are the seams between providers, and that owning every handoff is cheaper than the excursions it prevents. For an operator who already runs temperature-controlled logistics as a shrink discipline, the live question is whether that same capability is a door into adjacencies where a broken chain ruins a biologic, not a pallet of produce.",
+     "url": "https://fortune.com/2026/06/23/ups-invests-50-million-temperature-controlled-facilities-glp-1-boom-healthcare-pivot/",
+     "link_label": "Read at Fortune"
+    }
+   ],
+   "pill": "CEO Market\nIntel"
+  },
+  {
+   "id": "oddly",
+   "title": "Oddly Interesting",
+   "cards": [
+    {
+     "tag_class": "tag-search",
+     "tag_label": "Oddly Interesting",
+     "headline": "Tariffs are cancelling Fourth of July fireworks — in the year of the 250th",
+     "source": "St. Louis Magazine · June 24, 2026",
+     "summary": "With towns planning big for the 250th, U.S. tariffs on Chinese-made fireworks — 25.3 percent on consumer product, 22.4 percent on display — are forcing cancellations. Ferguson, Missouri pulled its July 4 show after its pyrotechnics bill doubled to $40,000. The industry runs on a one-to-two-year order cycle, so pre-tariff inventory has only now sold through and the price hit is landing this year — just as record anniversary demand outstrips the display industry’s capacity.",
+     "why": "The detail operators will recognize is the lag — tariffs set earlier only bite once the pre-bought inventory revolves out, which is why the pain shows up a full season late and all at once. A consumable input bought a year ahead can hide the cost of a trade policy until exactly the moment you cannot reorder.",
+     "url": "https://www.stlmag.com/news/tariffs-hit-fireworks-cancellations/",
+     "link_label": "Read at St. Louis Magazine"
+    }
+   ],
+   "pill": "Oddly\nInteresting"
+  }
+ ]
+}
