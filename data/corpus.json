@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 14,
+ "current_edition": 15,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -15,7 +15,8 @@
   "11": "June 12",
   "12": "June 19",
   "13": "June 25",
-  "14": "July 2"
+  "14": "July 2",
+  "15": "July 10"
  },
  "active_threads": [
   "s1",
@@ -1531,6 +1532,126 @@
    "t": "t11",
    "s": "A consumable bought a year ahead hides the cost of a trade policy until exactly the moment you can't reorder — the lag operators will recognize.",
    "url": "https://www.stlmag.com/news/tariffs-hit-fireworks-cancellations/",
+   "img": null
+  },
+  {
+   "id": "e15c1",
+   "ed": 15,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "Kroger’s first deal since Albertsons collapsed is a $1.65 billion regional one",
+   "src": "AP · Jul 1",
+   "t": "s2",
+   "s": "197 supermarkets and 11 pharmacies, ~$9B sales; first major move since the $25B Albertsons merger was blocked in 2024.",
+   "url": "https://abcnews.com/Business/wireStory/kroger-buying-regional-grocer-pharmacy-retailer-giant-eagle-134370982",
+   "img": null
+  },
+  {
+   "id": "e15c2",
+   "ed": 15,
+   "sec": "AI & Ops",
+   "tag": "essay",
+   "h": "The man selling the shovels says you can offload a job, but never your learning",
+   "src": "The Decoder · Jun 15",
+   "t": "s3",
+   "s": "Essay on X argues durable value is the learning loop on top of models, not model access — as Microsoft sheds $570B on AI capex fears.",
+   "url": "https://the-decoder.com/microsoft-ceo-satya-nadella-warns-of-a-small-number-of-ai-systems-capturing-all-the-economic-returns/",
+   "img": null
+  },
+  {
+   "id": "e15c3",
+   "ed": 15,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "Marriott is putting a third of $1.1 billion into plumbing. The visible edge arrived June 16.",
+   "src": "Hotel Dive · Jun 17",
+   "t": "s1",
+   "s": "Core-systems-first allocation: replatform the plumbing, then let customer-facing AI ride on it.",
+   "url": "https://www.hoteldive.com/news/marriott-debuts-ai-powered-hotel-search-tool-ask-bonvoy/823130/",
+   "img": null
+  },
+  {
+   "id": "e15c4",
+   "ed": 15,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Ford rehired 350 ‘gray beard’ engineers — to teach its AI what the veterans know",
+   "src": "Fortune · Jun 29",
+   "t": "s1",
+   "s": "Automated quality alone underdelivered; veterans retrain the tools. Ford tops 2026 J.D. Power IQS, ~$1B in projected savings.",
+   "url": "https://fortune.com/2026/06/29/ford-ai-hired-human-workers-gray-beards-automation/",
+   "img": null
+  },
+  {
+   "id": "e15c5",
+   "ed": 15,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Rhode Island becomes the first state to write self-checkout staffing into law",
+   "src": "Grocery Dive · Jun 26",
+   "t": "t9",
+   "s": "One staffed lane per three self-checkouts, effective Jan 1, 2027; monitor relieved of other duties. At least six states weighing similar bills.",
+   "url": "https://www.grocerydive.com/news/rhode-island-first-state-mandate-staffing-ratio-self-checkout-grocery/823872/",
+   "img": null
+  },
+  {
+   "id": "e15c6",
+   "ed": 15,
+   "sec": "Board & Governance",
+   "tag": "civic",
+   "h": "The egg price-fixing case settles: $3.3 million, 53 million eggs and a benchmark lesson",
+   "src": "CBS News · Jun 30",
+   "t": "t10",
+   "s": "DOJ + 17 states allege Cal-Maine, Versova, Hickman’s inflated the Urner Barry egg benchmark 2022–2025; $3.3M and 53M eggs, no admission.",
+   "url": "https://www.cbsnews.com/news/doj-states-secure-proposed-settlement-with-egg-producers-over-price-fixing-investigation/",
+   "img": null
+  },
+  {
+   "id": "e15c7",
+   "ed": 15,
+   "sec": "Cultural Signal",
+   "tag": "sport",
+   "h": "Formula 1’s governing body is writing rules to keep AI from racing the humans out of the sport",
+   "src": "Fast Company · Jul 2",
+   "t": "curious",
+   "s": "The FIA draws a line between the analysis AI absorbs and the judgment that stays human — the operator’s question, with a rulebook.",
+   "url": "https://www.fastcompany.com/91568228/can-formula-1-embrace-ai-without-losing-its-soul",
+   "img": null
+  },
+  {
+   "id": "e15c8",
+   "ed": 15,
+   "sec": "Cultural Signal",
+   "tag": "org",
+   "h": "Four berries. Now the second-highest-earning brand in U.S. supermarkets.",
+   "src": "The New York Times · Jul 7",
+   "t": "t10",
+   "s": "Owns the genetics and the brand, rents out land and labor to growers who take 75–80% of revenue; 4B clamshells, 60 countries.",
+   "url": "https://www.nytimes.com/2026/07/07/dining/driscolls-berries.html",
+   "img": null
+  },
+  {
+   "id": "e15c9",
+   "ed": 15,
+   "sec": "Cultural Signal",
+   "tag": "culture",
+   "h": "Fast Company asked 30 designers what design defines America. One answer: Bazooka gum",
+   "src": "Fast Company · Jul 3",
+   "t": "curious",
+   "s": "The through-line is durability: the script, the bottle, the pink chunk — designs nobody updated.",
+   "url": "https://www.fastcompany.com/91568703/the-designs-that-define-america",
+   "img": null
+  },
+  {
+   "id": "e15c10",
+   "ed": 15,
+   "sec": "Oddly Interesting",
+   "tag": "culture",
+   "h": "Ben & Jerry’s buries its failures under granite — and fans can vote them back",
+   "src": "Ben & Jerry’s · Jul 2",
+   "t": "curious",
+   "s": "A real cemetery in Waterbury, Vt.; 30+ headstones with epitaphs. Resurrection-by-petition is consumer insight in stone.",
+   "url": "https://www.benjerry.com/flavors/flavor-graveyard",
    "img": null
   }
  ]
