@@ -1,0 +1,209 @@
+{
+ "edition": 15,
+ "date_long": "July 10, 2026",
+ "topics": "M&A, AI, Workforce, Governance, Culture, Oddly Interesting",
+ "sections": [
+  {
+   "id": "market",
+   "title": "CEO Market Intel",
+   "pill": "CEO Market\nIntel",
+   "cards": [
+    {
+     "tag_class": "tag-market",
+     "tag_label": "CEO Market",
+     "headline": "Kroger’s first deal since Albertsons collapsed is a $1.65 billion regional one",
+     "source": "AP · July 1, 2026",
+     "summary": "Kroger announced a definitive agreement July 1 to acquire Giant Eagle, the family-owned Pittsburgh-area grocer, for $1.65 billion — $1.25 billion in cash plus roughly $400 million in assumed liabilities. The deal adds 197 supermarkets and 11 standalone pharmacies across northern Ohio, western Pennsylvania, West Virginia, Maryland and Indiana, about $9 billion in annual sales. Giant Eagle keeps its name, headquarters and myPerks loyalty program; closing is expected in 2027, with both companies anticipating limited store divestitures to satisfy regulators. It is Greg Foran’s first acquisition since taking over in February, and Kroger’s first major move since courts blocked its $25 billion Albertsons merger in late 2024. Giant Eagle, Foran said, “expands our reach into attractive adjacent markets.”",
+     "why": "The Albertsons collapse looked like the ceiling on grocery consolidation. This reads like the successor model — regional density, pharmacy attached, a fraction of the antitrust surface. If regulators wave it through, every well-run regional banner in the country just became a candidate.",
+     "url": "https://abcnews.com/Business/wireStory/kroger-buying-regional-grocer-pharmacy-retailer-giant-eagle-134370982",
+     "link_label": "Read at AP",
+     "landscape": {
+      "tag": "moves",
+      "t": "s2",
+      "src_short": "AP · Jul 1",
+      "gloss": "197 supermarkets and 11 pharmacies, ~$9B sales; first major move since the $25B Albertsons merger was blocked in 2024."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai",
+   "title": "AI & Ops",
+   "pill": "AI & Ops",
+   "cards": [
+    {
+     "tag_class": "tag-ai",
+     "tag_label": "AI · Ops",
+     "headline": "The man selling the shovels says you can offload a job, but never your learning",
+     "source": "The Decoder · June 15, 2026",
+     "summary": "Three days before Microsoft closed its worst market month since December 2000, Satya Nadella published an essay on X arguing that an AI economy concentrated in a few frontier models is unstable — and that a company’s durable asset is the learning loop it builds on top of them, where human capital and what he calls token capital compound. “You can offload a task, or even a job, but you can never offload your learning. The future of the firm is the ability to compound that learning across people and AI,” he wrote. The backdrop sharpens the argument: Microsoft shed more than $570 billion in market value in June as investors balked at AI capital spending that Bank of America pegs near $190 billion for 2026.",
+     "why": "The vendor with the largest AI capital budget on earth is telling buyers the durable asset is institutional knowledge, not model access. Read it either way — conviction or positioning — and the frame still moves: the question stops being which model to buy and becomes what the organization learns while using one, and who keeps that learning.",
+     "url": "https://the-decoder.com/microsoft-ceo-satya-nadella-warns-of-a-small-number-of-ai-systems-capturing-all-the-economic-returns/",
+     "link_label": "Read at The Decoder",
+     "landscape": {
+      "tag": "essay",
+      "t": "s3",
+      "src_short": "The Decoder · Jun 15",
+      "gloss": "Essay on X argues durable value is the learning loop on top of models, not model access — as Microsoft sheds $570B on AI capex fears."
+     }
+    },
+    {
+     "tag_class": "tag-ai",
+     "tag_label": "AI · Ops",
+     "headline": "Marriott is putting a third of $1.1 billion into plumbing. The visible edge arrived June 16.",
+     "source": "Hotel Dive · June 17, 2026",
+     "summary": "On its February earnings call, Marriott said it expects to deploy $1.1 billion in investment spending in 2026, with more than a third supporting digital and technology transformation — centered, chief executive Anthony Capuano said, on replatforming its three most important technology systems. The customer-facing edge of that work surfaced June 16, when the company launched Ask Bonvoy, an AI-powered hotel search beta available in U.S. English on its website and apps for a subset of Bonvoy members.",
+     "why": "An adjacent operator answering the same allocation question grocery faces, in the opposite order from most: replatform the core systems first, then let customer-facing AI ride on rails that can hold it. The pilots-first pattern usually stalls at exactly the point Marriott spent on before showing anything.",
+     "url": "https://www.hoteldive.com/news/marriott-debuts-ai-powered-hotel-search-tool-ask-bonvoy/823130/",
+     "link_label": "Read at Hotel Dive",
+     "landscape": {
+      "tag": "signal",
+      "t": "s1",
+      "src_short": "Hotel Dive · Jun 17",
+      "gloss": "Core-systems-first allocation: replatform the plumbing, then let customer-facing AI ride on it."
+     }
+    }
+   ]
+  },
+  {
+   "id": "workforce",
+   "title": "The Workforce",
+   "pill": "The\nWorkforce",
+   "cards": [
+    {
+     "tag_class": "tag-workforce",
+     "tag_label": "Workforce",
+     "headline": "Ford rehired 350 ‘gray beard’ engineers — to teach its AI what the veterans know",
+     "source": "Fortune · June 29, 2026",
+     "summary": "Bloomberg reported June 25 that Ford has spent roughly three years bringing back about 350 veteran engineers — some retirees, some hired from suppliers — after concluding that automated quality systems alone weren’t producing quality vehicles. Charles Poon, vice president of vehicle hardware engineering, said the company “mistakenly” believed that introducing AI and ingesting its design requirements “would produce a high-quality product.” The rehired specialists hunt failure points before parts reach the plant floor, mentor younger engineers and retrain the AI tools themselves; the more than 900 AI inspection cameras stay. The results are on the board: Ford ranked first among mainstream brands in the 2026 J.D. Power Initial Quality Study, up from 10th a year earlier, and chief executive Jim Farley credits falling warranty and recall costs with “hundreds and hundreds of millions” in cost tailwind, with about $1 billion in savings projected this year.",
+     "why": "The instructive part is the direction of the retraining — the veterans retrain the AI, not the other way around. What no model could ingest was the failure memory of people who had been through many product cycles. Ford paid twice to learn which input was missing.",
+     "url": "https://fortune.com/2026/06/29/ford-ai-hired-human-workers-gray-beards-automation/",
+     "link_label": "Read at Fortune",
+     "landscape": {
+      "tag": "labor",
+      "t": "s1",
+      "src_short": "Fortune · Jun 29",
+      "gloss": "Automated quality alone underdelivered; veterans retrain the tools. Ford tops 2026 J.D. Power IQS, ~$1B in projected savings."
+     }
+    },
+    {
+     "tag_class": "tag-workforce",
+     "tag_label": "Workforce",
+     "headline": "Rhode Island becomes the first state to write self-checkout staffing into law",
+     "source": "Grocery Dive · June 26, 2026",
+     "summary": "Gov. Dan McKee signed the Restrictions on Self-Service Checkout Stations Act on June 18, making Rhode Island the first state to regulate self-checkout staffing. Effective Jan. 1, 2027, grocery stores must keep one staffed lane open for every three self-checkout stations in operation — including at least one ADA-compliant staffed lane — and the employee monitoring self-checkout must be relieved of all other duties. Enforcement starts gentle: a written warning first, then fines capped at $500 a day, with exemptions before 8 a.m., after 8 p.m. and during declared emergencies. The law covers any business earning the majority of its gross income from groceries. Passage was lopsided — 60-11 in the House, 32-6 in the Senate — with UFCW Local 328 championing the bill and the Rhode Island Food Dealers Association warning that grocers run on “razor thin margins.” At least six states are weighing similar bills.",
+     "why": "The mechanics are mild; the precedent is the point. Front-end staffing ratios just became something a legislature will write, which moves checkout labor from an operations variable to a compliance line — state by state, each with its own arithmetic.",
+     "url": "https://www.grocerydive.com/news/rhode-island-first-state-mandate-staffing-ratio-self-checkout-grocery/823872/",
+     "link_label": "Read at Grocery Dive",
+     "landscape": {
+      "tag": "labor",
+      "t": "t9",
+      "src_short": "Grocery Dive · Jun 26",
+      "gloss": "One staffed lane per three self-checkouts, effective Jan 1, 2027; monitor relieved of other duties. At least six states weighing similar bills."
+     }
+    }
+   ]
+  },
+  {
+   "id": "board",
+   "title": "Board & Governance",
+   "pill": "Board &\nGovernance",
+   "cards": [
+    {
+     "tag_class": "tag-board",
+     "tag_label": "Governance",
+     "headline": "The egg price-fixing case settles: $3.3 million, 53 million eggs and a benchmark lesson",
+     "source": "CBS News · June 30, 2026",
+     "summary": "The Justice Department and 17 state attorneys general announced proposed settlements June 30 with Cal-Maine Foods, Versova and Hickman’s Egg Ranch over an alleged scheme to inflate Urner Barry’s daily egg-price benchmark from June 2022 to March 2025 — large bids timed just before quotations published, multiple bidders to feign broad demand, bids submitted with no intent to trade. Because billions of eggs are priced off those quotations, the alleged manipulation rippled through retail prices, which peaked at $6.23 a dozen in March 2025 — the same month the investigation opened — and now average about $2.19. The companies admit no wrongdoing; they will donate 53 million eggs to food banks and pay $3.3 million to the states, pending Tunney Act review and a 60-day public comment period. “No product more quintessentially represents affordability than the price Americans pay for eggs,” Associate Attorney General Stanley Woodward said.",
+     "why": "The alleged mechanism wasn’t a back room — it was the benchmark itself, gamed through the front door. Any category that keys contracts to a reported index now has its governance question posed in public: who audits the number the whole market prices against?",
+     "url": "https://www.cbsnews.com/news/doj-states-secure-proposed-settlement-with-egg-producers-over-price-fixing-investigation/",
+     "link_label": "Read at CBS News",
+     "landscape": {
+      "tag": "civic",
+      "t": "t10",
+      "src_short": "CBS News · Jun 30",
+      "gloss": "DOJ + 17 states allege Cal-Maine, Versova, Hickman’s inflated the Urner Barry egg benchmark 2022–2025; $3.3M and 53M eggs, no admission."
+     }
+    }
+   ]
+  },
+  {
+   "id": "culture",
+   "title": "Cultural Signal",
+   "pill": "Cultural\nSignal",
+   "cards": [
+    {
+     "tag_class": "tag-culture",
+     "tag_label": "Culture",
+     "headline": "Formula 1’s governing body is writing rules to keep AI from racing the humans out of the sport",
+     "source": "Fast Company · July 2, 2026",
+     "summary": "As teams fold AI into engineering, strategy and driver prep, the FIA — Formula 1’s governing body — is drafting rules for how AI can be used, phasing in across 2027 and 2028 with an emphasis on keeping car development led mainly by human engineers. The concern mirrors the existing cap on the computing power teams may spend on aerodynamics: left alone, AI would become “a huge area of development, potential spending, and maybe performance differentiation that detracts ultimately from the racing,” says FIA single-seater deputy technical director Dominic Harlow. Inside those lines, teams are already at work — Williams’ driver-performance engineer Russell Paddon uses AI to query years of the team’s own data in seconds, collapsing analysis that once ate 60 percent of his time writing one-off scripts.",
+     "why": "The regulator’s move is a deliberate line between the work AI should absorb and the work that has to stay human to keep the contest worth watching — “the philosophy of maintaining a sporting element rather than machines racing machines.” It’s the same question every operator now faces without a rulebook to draw the line for them: once the tool can do the analysis, what’s the judgment you refuse to hand over.",
+     "url": "https://www.fastcompany.com/91568228/can-formula-1-embrace-ai-without-losing-its-soul",
+     "link_label": "Read at Fast Company",
+     "landscape": {
+      "tag": "sport",
+      "t": "curious",
+      "src_short": "Fast Company · Jul 2",
+      "gloss": "The FIA draws a line between the analysis AI absorbs and the judgment that stays human — the operator’s question, with a rulebook."
+     }
+    },
+    {
+     "tag_class": "tag-culture",
+     "tag_label": "Culture",
+     "headline": "Four berries. Now the second-highest-earning brand in U.S. supermarkets.",
+     "source": "The New York Times · July 7, 2026",
+     "summary": "Driscoll’s, a $7 billion family-controlled company, has become the second-highest-earning brand in American supermarkets behind only Coca-Cola, according to Circana — and it does it without owning farmland. The company owns the genetic material of its berries and the data on how to grow, pick and ship them; it subcontracts the farming to growers worldwide who absorb the capital risk and take 75 to 80 percent of the revenue, while Driscoll’s keeps the breeding, the brand and the distribution. Its cultivars are engineered as much for transport as for taste — the benchmark Maravilla raspberry travels without collapsing but, its own chief raspberry scientist concedes, “doesn’t taste all that good” — and the company now ships four billion clamshells across 60 countries a year. Global berry production has tripled since 2000 and still can’t meet demand.",
+     "why": "The moat isn’t the fruit; it’s the model — own the intellectual property and the shelf, rent out the land and the labor, and a seasonal commodity becomes a branded staple that prices like a small luxury.",
+     "url": "https://www.nytimes.com/2026/07/07/dining/driscolls-berries.html",
+     "link_label": "Read at The New York Times",
+     "landscape": {
+      "tag": "org",
+      "t": "t10",
+      "src_short": "The New York Times · Jul 7",
+      "gloss": "Owns the genetics and the brand, rents out land and labor to growers who take 75–80% of revenue; 4B clamshells, 60 countries."
+     }
+    },
+    {
+     "tag_class": "tag-culture",
+     "tag_label": "Culture",
+     "headline": "Fast Company asked 30 designers what design defines America. One answer: Bazooka gum",
+     "source": "Fast Company · July 3, 2026",
+     "summary": "For July 4 week, Fast Company’s design desk asked more than 30 designers, architects and historians to each name one design that defines America. The answers run from the Constitution’s “We the People” calligraphy — which Brian Collins called the country’s first and most hopeful act of design — to the Eames shell chair, the 1964 Mustang, Airstream trailers, Fiestaware and the national parks. Design historian Steven Heller went smaller: Bazooka bubble gum, “an emblematic pink chunk of chewy pleasure” wrapped around a Bazooka Joe comic. Another contributor pointed out that Coca-Cola still runs cursive handwriting from the 1880s and a bottle shape from World War I.",
+     "why": "The quiet through-line in the answers is durability. In a redesign-everything era, the designs that came to define the country are mostly the ones somebody refused to update — the script, the bottle, the pink chunk. Longevity, it turns out, was the design decision.",
+     "url": "https://www.fastcompany.com/91568703/the-designs-that-define-america",
+     "link_label": "Read at Fast Company",
+     "landscape": {
+      "tag": "culture",
+      "t": "curious",
+      "src_short": "Fast Company · Jul 3",
+      "gloss": "The through-line is durability: the script, the bottle, the pink chunk — designs nobody updated."
+     }
+    }
+   ]
+  },
+  {
+   "id": "oddly",
+   "title": "Oddly Interesting",
+   "pill": "Oddly\nInteresting",
+   "cards": [
+    {
+     "tag_class": "tag-search",
+     "tag_label": "Oddly Interesting",
+     "headline": "Ben & Jerry’s buries its failures under granite — and fans can vote them back",
+     "source": "Ben & Jerry’s · July 2, 2026",
+     "summary": "On a hill above the Ben & Jerry’s factory in Waterbury, Vt., sits an actual cemetery for ice cream. The Flavor Graveyard opened in 1997 with four headstones and now holds more than 30 granite markers, each carved with a discontinued flavor’s name, its years in production and a rhyming epitaph — Wavy Gravy’s insists he “isn’t dead — he lives in California.” Rainforest Crunch (1989–1999) and White Russian (1986–1996) rest there; Schweddy Balls earned a stone after a single 2011 batch, and What a Cluster received a formal funeral in 2015. Early resin markers kept walking away, so the company went to granite. Fans petition for resurrections, and sometimes win: Dublin Mudslide came back from the grave.",
+     "why": "A company that memorializes its discontinued products in granite keeps its failures named, visible and revisitable — and turns the archive over to customers, who curate it by petition. Resurrection-by-demand is consumer insight wearing a headstone.",
+     "url": "https://www.benjerry.com/flavors/flavor-graveyard",
+     "link_label": "Read at Ben & Jerry’s",
+     "landscape": {
+      "tag": "culture",
+      "t": "curious",
+      "src_short": "Ben & Jerry’s · Jul 2",
+      "gloss": "A real cemetery in Waterbury, Vt.; 30+ headstones with epitaphs. Resurrection-by-petition is consumer insight in stone."
+     }
+    }
+   ]
+  }
+ ]
+}
