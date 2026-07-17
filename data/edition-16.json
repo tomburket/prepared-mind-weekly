@@ -1,0 +1,203 @@
+{
+ "edition": 16,
+ "date_long": "July 17, 2026",
+ "topics": "Automation, Workforce, Governance, CEO Market, Culture, Oddly Interesting",
+ "sections": [
+  {
+   "id": "market",
+   "title": "CEO Market Intel",
+   "pill": "CEO Market\nIntel",
+   "cards": [
+    {
+     "tag_class": "tag-market",
+     "tag_label": "CEO Market",
+     "headline": "ADUSA's departing CEO spent 36 years there. His successor has never worked there, and neither has the parent company's.",
+     "source": "Grocery Dive · June 18, 2026",
+     "summary": "Ahold Delhaize's supervisory board nominated Claire Peters CEO of Ahold Delhaize USA, effective September 8, pending shareholder approval at an extraordinary general meeting. Peters most recently served as Amazon's vice president for worldwide fresh, running the North American and international business; before that she held executive roles at Woolworths Group in Australia and spent more than two decades at Tesco, starting as a retail graduate and rising to chief operating officer in Thailand. She succeeds JJ Fleeman, who leaves after 36 years to become Dollar General's CEO on January 1. In early May the same board nominated Thierry Garnier, an outsider from home improvement retail, to succeed Frans Muller as parent-company CEO in April 2027.",
+     "why": "The banners are Food Lion, Giant, Hannaford and Stop & Shop — physical stores, and the revenue engine is the real estate. Amazon's own attempt at a traditional brick-and-mortar grocery chain did not work.",
+     "url": "https://www.grocerydive.com/news/ahold-delhaize-usa-ceo-nominee-former-amazon-fresh-veteran-claire-peters/823251/",
+     "link_label": "Read at Grocery Dive",
+     "landscape": {
+      "tag": "moves",
+      "t": "s2",
+      "src_short": "Grocery Dive · Jun 18",
+      "gloss": "Two outsiders in one quarter at a company that had always promoted from within.",
+      "img": null
+     }
+    },
+    {
+     "tag_class": "tag-market",
+     "tag_label": "CEO Market",
+     "headline": "H-E-B bought 44 acres on I-35. It says it draws plans for every property it buys, to see whether a store would work.",
+     "source": "Supermarket News · July 6, 2026",
+     "summary": "H-E-B purchased 44 acres at I-35 and Yarrington Road in San Marcos, across from a Buc-ee's travel center opening in the coming weeks; site plans put a possible store at 118,000 square feet with more than 1,000 parking spaces. The retailer told the San Antonio Express-News the site has not been officially claimed for an H-E-B store, and that it draws up site plans for all purchased property to establish whether a future location is feasible. It would be the city's fourth: two stores already operate on Hopkins Street, and a third at I-35 and McCarty Lane, 114,000 square feet, opens this fall. Documents also show plans to demolish the Dripping Springs store on U.S. 290 and rebuild at 125,000 square feet, converting the old site to parking, and a Buda store on a former landfill along I-35 that would likewise replace an existing one.",
+     "why": "The land sits unbuilt and unearning for as long as H-E-B wants it to. The chain is privately held; a grocer reporting quarterly would carry that idle capital on a balance sheet other people read.",
+     "url": "https://www.supermarketnews.com/new-stores/h-e-b-is-going-where-the-growing-is-hot-in-texas",
+     "link_label": "Read at Supermarket News",
+     "landscape": {
+      "tag": "moves",
+      "t": "s2",
+      "src_short": "Supermarket News · Jul 6",
+      "gloss": "A private grocer buying corridor land before it decides whether a store fits.",
+      "img": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai",
+   "title": "AI & Ops",
+   "pill": "AI & Ops",
+   "cards": [
+    {
+     "tag_class": "tag-ai",
+     "tag_label": "AI · Ops",
+     "headline": "AWG's first automation retrofit: $110 million into a distribution center it already runs, with all 334 jobs kept",
+     "source": "Grocery Dive · March 26, 2026",
+     "summary": "Associated Wholesale Grocers, the largest U.S. cooperative food wholesaler, said March 24 it will spend $110 million automating ambient operations at its Gulf Coast Division Support Center in Pearl River, Louisiana, a site that currently moves more than 22 million cases of dry grocery a year on fully manual processes. It is the first existing AWG facility to be retrofitted; the co-op's only other automated warehouse, in Hernando, Mississippi, was built new in 2022. All 334 positions stay, with upskilling into technical and automation roles, and Louisiana added a $500,000 performance-based grant. Construction begins January 2027, automation goes in that April, operations start in November.",
+     "why": "Retrofitting a running operation is the harder path — a greenfield build avoids live throughput and legacy racking. In a cooperative, the capital and the disruption land on infrastructure shared by more than 1,100 independent grocers, not one P&L.",
+     "url": "https://www.grocerydive.com/news/associated-wholesale-grocers-distribution-center-rennovation-automation/815711/",
+     "link_label": "Read at Grocery Dive",
+     "landscape": {
+      "tag": "signal",
+      "t": "s1",
+      "src_short": "Grocery Dive · Mar 26",
+      "gloss": "Automation arriving in a co-op's existing building, with every job retained.",
+      "img": null
+     }
+    },
+    {
+     "tag_class": "tag-ai",
+     "tag_label": "AI · Ops",
+     "headline": "Starbucks retired the AI that counted its milk and went back to counting by hand",
+     "source": "CNBC · May 21, 2026",
+     "summary": "Starbucks terminated Automated Counting, a worker-facing AI inventory program, nine months after deploying it across its North American stores, Reuters reported May 21 from an internal newsletter it reviewed and verified with two employees. The tool frequently miscounted and mislabeled items, confusing similar milk types or missing them altogether. Starbucks said the decision came from a move to standardize how inventory is counted across coffeehouses, and that beverage components and milk would now be counted the way every other category is. North American operating margins have fallen to 9.9 percent from 18 percent two years earlier.",
+     "why": "Starbucks had told Reuters the tool improved product availability in stores — one of Brian Niccol's primary store-level measures of progress in his turnaround. A month before it was retired, Morningstar analysts cited AI inventory tracking as a reason restaurant-level margins would improve long-term.",
+     "url": "https://www.cnbc.com/2026/05/21/starbucks-scraps-ai-inventory-tool-across-north-america.html",
+     "link_label": "Read at CNBC",
+     "landscape": {
+      "tag": "signal",
+      "t": "s1",
+      "src_short": "CNBC · May 21",
+      "gloss": "A nationwide AI inventory tool retired nine months in, counting returned to hand.",
+      "t2": "t8",
+      "img": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "workforce",
+   "title": "The Workforce",
+   "pill": "The\nWorkforce",
+   "cards": [
+    {
+     "tag_class": "tag-workforce",
+     "tag_label": "The Workforce",
+     "headline": "Coca-Cola is closing the plant it said it would close in 2023. The city already raised water rates 200 percent.",
+     "source": "Food Dive · June 30, 2026",
+     "summary": "Coca-Cola filed a WARN notice with Massachusetts on June 15 for its Northampton bottling plant, which makes noncarbonated drinks including Minute Maid and Powerade. It cuts 175 jobs, none of them union-represented; layoffs run August 15 through November 30 and the plant closes December 15. The company first announced the closure in 2021, targeting 2023, when the site employed 319. As Northampton's largest water user, the plant paid a commercial rate that held residential bills down, and the city raised base water and sewer rates more than 200 percent in 2023 in anticipation of losing it.",
+     "why": "The closure took five years to arrive and the city had already priced in its absence. State Rep. Lindsay Sabadosa's stated priority for the site is not replacing the jobs but finding a buyer that uses comparable volumes of water.",
+     "url": "https://www.fooddive.com/news/coca-cola-closes-bottling-plant-northampton-massachusetts/824063/",
+     "link_label": "Read at Food Dive",
+     "landscape": {
+      "tag": "labor",
+      "t": "t10",
+      "src_short": "Food Dive · Jun 30",
+      "gloss": "A plant closes on a five-year fuse, and the town's water bill got there first.",
+      "img": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "board",
+   "title": "Board & Governance",
+   "pill": "Board &\nGovernance",
+   "cards": [
+    {
+     "tag_class": "tag-board",
+     "tag_label": "Board · Governance",
+     "headline": "Rhode Island banned the clause that keeps a closed grocery store closed",
+     "source": "Grocery Dive · July 2026",
+     "summary": "Gov. Dan McKee signed S2644/H8106, barring supermarket operators from writing restrictive covenants that prevent competitors from occupying sites they vacate. It took effect immediately and reaches only new covenants; existing ones stand, and under state law run as long as 30 years. The bill was the centerpiece of Lt. Gov. Sabina Matos's Fair Price Grocery Agenda, and was signed ceremonially in Woonsocket, a city of roughly 45,000 served by one supermarket. A Walmart there closed in 2011, kept competitors out for six years, and on selling the building in 2017 attached a 25-year covenant barring grocery use. Washington passed a similar law in March.",
+     "why": "The law reaches only new covenants. The ones that emptied Woonsocket stay on the deeds.",
+     "url": "https://www.grocerydive.com/news/rhode-island-legislation-deed-restrictions-grocery-food-supermarkets/824461/",
+     "link_label": "Read at Grocery Dive",
+     "landscape": {
+      "tag": "civic",
+      "t": "t10",
+      "src_short": "Grocery Dive · Jul",
+      "gloss": "A statute against scorched-earth deed restrictions that cannot touch the existing ones.",
+      "img": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "culture",
+   "title": "Cultural Signal",
+   "pill": "Cultural\nSignal",
+   "cards": [
+    {
+     "tag_class": "tag-culture",
+     "tag_label": "Culture",
+     "headline": "Nobody would buy his engine, so he crashed the Queen's navy",
+     "source": "Aeon · June 8, 2026",
+     "summary": "Bill Hammack, an engineering professor at the University of Illinois Urbana-Champaign, published a video with Aeon on June 8 tracing the steam turbine. Charles Parsons's engine captured an expansion of water into steam roughly 479 times its volume, against the 16-fold the reciprocating engines of the day could use before piston friction consumed the rest. Nobody would buy it. In 1897 he built a ship, Turbinia, and ran it uninvited through the naval review honoring Queen Victoria's Diamond Jubilee. What separated him from the thousands of inventors before him, he said, was \"the data of the physicists\" — nearly thirty years of measurements of the properties of steam, tabulated by Henri Victor Regnault, a French scientist now largely forgotten.",
+     "why": "Parsons discovered nothing about steam. He read thirty years of another man's measurements, and what they gave him was mostly a list of what would not work.",
+     "url": "https://aeon.co/videos/how-an-ancient-curiosity-evolved-to-power-the-modern-world",
+     "link_label": "Watch at Aeon",
+     "landscape": {
+      "tag": "science",
+      "t": "curious",
+      "src_short": "Aeon · Jun 8",
+      "gloss": "The turbine that runs the world was built on a forgotten man's thirty years of tables.",
+      "img": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "oddly",
+   "title": "Oddly Interesting",
+   "pill": "Oddly\nInteresting",
+   "cards": [
+    {
+     "tag_class": "tag-search",
+     "tag_label": "Oddly Interesting",
+     "headline": "Pizza Hut's AI worked. The DoorDash drivers read it faster than the franchisee did.",
+     "source": "Restaurant Business · May 12, 2026",
+     "summary": "Chaac Pizza Northeast, which runs 111 Pizza Huts across New York, New Jersey, Maryland, Pennsylvania and Washington, D.C., sued Pizza Hut on May 6 in the Business Court of Texas for more than $100 million over the mandated Dragontail dispatch system, which Yum Brands acquired in 2021. According to the complaint, Dragontail gave DoorDash drivers live visibility into kitchen timing and tip amounts, and drivers waited up to 15 minutes to batch orders and passed on low-tip ones. Chaac says rack time went from under five minutes to as much as 20, on-time delivery from more than 90 percent to about 50, and that it had been one of the chain's top performers before the rollout. Chaac previously held its own DoorDash contract; Pizza Hut now owns the national one.",
+     "why": "Nothing malfunctioned. The system distributed accurate information to everyone it touched, including a workforce the franchisee does not employ and, once the national contract moved, could no longer screen or call.",
+     "url": "https://www.restaurantbusinessonline.com/technology/franchisee-files-lawsuit-against-pizza-hut-over-mandatory-tech",
+     "link_label": "Read at Restaurant Business",
+     "landscape": {
+      "tag": "signal",
+      "t": "s1",
+      "src_short": "Restaurant Business · May 12",
+      "gloss": "An AI dispatch system worked as designed and the gig drivers optimized against the operator.",
+      "img": null
+     }
+    },
+    {
+     "tag_class": "tag-search",
+     "tag_label": "Oddly Interesting",
+     "headline": "Fifteen CPG chief executives described the leader 2025 would require. It was June 2019.",
+     "source": "Spencer Stuart · June 2019",
+     "summary": "Spencer Stuart published \"The CPG CEO of the Future\" in June 2019, built on interviews with 15 named leaders — among them James Quincey at Coca-Cola, David Taylor at P&G, Alan Jope at Unilever and Grant Reid at Mars — each asked what it would take to be world-class by 2025. The first section is headed \"Safe is now risky.\" The threats it names are startups, shifting shopping habits and consumer demand for personalization. Artificial intelligence appears twice: once as automation in the war for talent, and once in a cited Gartner projection that by 2025 smart robots and drones would take over a third of jobs.",
+     "why": "The ten characteristics it settles on — agile, curious, experimental, comfortable with ambiguity — are a fair description of what the following year actually asked for. The threats it names are not.",
+     "url": "https://www.spencerstuart.com/research-and-insight/the-cpg-ceo-of-the-future",
+     "link_label": "Read at Spencer Stuart",
+     "landscape": {
+      "tag": "data",
+      "t": "s2",
+      "src_short": "Spencer Stuart · Jun 2019",
+      "gloss": "A forecast of the 2025 CPG leader, written nine months before the world it forecast.",
+      "img": null
+     }
+    }
+   ]
+  }
+ ]
+}
