@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 15,
+ "current_edition": 16,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -16,7 +16,8 @@
   "12": "June 19",
   "13": "June 25",
   "14": "July 2",
-  "15": "July 10"
+  "15": "July 10",
+  "16": "July 17"
  },
  "active_threads": [
   "s1",
@@ -1652,6 +1653,115 @@
    "t": "curious",
    "s": "A real cemetery in Waterbury, Vt.; 30+ headstones with epitaphs. Resurrection-by-petition is consumer insight in stone.",
    "url": "https://www.benjerry.com/flavors/flavor-graveyard",
+   "img": null
+  },
+  {
+   "id": "e16c1",
+   "ed": 16,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "ADUSA's departing CEO spent 36 years there. His successor has never worked there, and neither has the parent company's.",
+   "src": "Grocery Dive · Jun 18",
+   "t": "s2",
+   "s": "Two outsiders in one quarter at a company that had always promoted from within.",
+   "url": "https://www.grocerydive.com/news/ahold-delhaize-usa-ceo-nominee-former-amazon-fresh-veteran-claire-peters/823251/",
+   "img": null
+  },
+  {
+   "id": "e16c2",
+   "ed": 16,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "H-E-B bought 44 acres on I-35. It says it draws plans for every property it buys, to see whether a store would work.",
+   "src": "Supermarket News · Jul 6",
+   "t": "s2",
+   "s": "A private grocer buying corridor land before it decides whether a store fits.",
+   "url": "https://www.supermarketnews.com/new-stores/h-e-b-is-going-where-the-growing-is-hot-in-texas",
+   "img": null
+  },
+  {
+   "id": "e16c3",
+   "ed": 16,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "AWG's first automation retrofit: $110 million into a distribution center it already runs, with all 334 jobs kept",
+   "src": "Grocery Dive · Mar 26",
+   "t": "s1",
+   "s": "Automation arriving in a co-op's existing building, with every job retained.",
+   "url": "https://www.grocerydive.com/news/associated-wholesale-grocers-distribution-center-rennovation-automation/815711/",
+   "img": null
+  },
+  {
+   "id": "e16c4",
+   "ed": 16,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "Starbucks retired the AI that counted its milk and went back to counting by hand",
+   "src": "CNBC · May 21",
+   "t": "s1",
+   "t2": "t8",
+   "s": "A nationwide AI inventory tool retired nine months in, counting returned to hand.",
+   "url": "https://www.cnbc.com/2026/05/21/starbucks-scraps-ai-inventory-tool-across-north-america.html",
+   "img": null
+  },
+  {
+   "id": "e16c5",
+   "ed": 16,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Coca-Cola is closing the plant it said it would close in 2023. The city already raised water rates 200 percent.",
+   "src": "Food Dive · Jun 30",
+   "t": "t10",
+   "s": "A plant closes on a five-year fuse, and the town's water bill got there first.",
+   "url": "https://www.fooddive.com/news/coca-cola-closes-bottling-plant-northampton-massachusetts/824063/",
+   "img": null
+  },
+  {
+   "id": "e16c6",
+   "ed": 16,
+   "sec": "Board & Governance",
+   "tag": "civic",
+   "h": "Rhode Island banned the clause that keeps a closed grocery store closed",
+   "src": "Grocery Dive · Jul",
+   "t": "t10",
+   "s": "A statute against scorched-earth deed restrictions that cannot touch the existing ones.",
+   "url": "https://www.grocerydive.com/news/rhode-island-legislation-deed-restrictions-grocery-food-supermarkets/824461/",
+   "img": null
+  },
+  {
+   "id": "e16c7",
+   "ed": 16,
+   "sec": "Cultural Signal",
+   "tag": "science",
+   "h": "Nobody would buy his engine, so he crashed the Queen's navy",
+   "src": "Aeon · Jun 8",
+   "t": "curious",
+   "s": "The turbine that runs the world was built on a forgotten man's thirty years of tables.",
+   "url": "https://aeon.co/videos/how-an-ancient-curiosity-evolved-to-power-the-modern-world",
+   "img": null
+  },
+  {
+   "id": "e16c8",
+   "ed": 16,
+   "sec": "Oddly Interesting",
+   "tag": "signal",
+   "h": "Pizza Hut's AI worked. The DoorDash drivers read it faster than the franchisee did.",
+   "src": "Restaurant Business · May 12",
+   "t": "s1",
+   "s": "An AI dispatch system worked as designed and the gig drivers optimized against the operator.",
+   "url": "https://www.restaurantbusinessonline.com/technology/franchisee-files-lawsuit-against-pizza-hut-over-mandatory-tech",
+   "img": null
+  },
+  {
+   "id": "e16c9",
+   "ed": 16,
+   "sec": "Oddly Interesting",
+   "tag": "data",
+   "h": "Fifteen CPG chief executives described the leader 2025 would require. It was June 2019.",
+   "src": "Spencer Stuart · Jun 2019",
+   "t": "s2",
+   "s": "A forecast of the 2025 CPG leader, written nine months before the world it forecast.",
+   "url": "https://www.spencerstuart.com/research-and-insight/the-cpg-ceo-of-the-future",
    "img": null
   }
  ]
