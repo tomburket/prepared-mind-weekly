@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 16,
+ "current_edition": 17,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -17,7 +17,8 @@
   "13": "June 25",
   "14": "July 2",
   "15": "July 10",
-  "16": "July 17"
+  "16": "July 17",
+  "17": "July 24"
  },
  "active_threads": [
   "s1",
@@ -1762,6 +1763,103 @@
    "t": "s2",
    "s": "A forecast of the 2025 CPG leader, written nine months before the world it forecast.",
    "url": "https://www.spencerstuart.com/research-and-insight/the-cpg-ceo-of-the-future",
+   "img": null
+  },
+  {
+   "id": "e17c1",
+   "ed": 17,
+   "sec": "AI & Ops",
+   "tag": "data",
+   "h": "In one year, the share of food retailers using AI jumped from 47% to 68% — but only 40% run it companywide",
+   "src": "Grocery Dive · Jul 10",
+   "t": "s1",
+   "s": "AI adoption in food retail jumps to two-thirds, but companywide use stalls at 40 percent.",
+   "url": "https://www.grocerydive.com/news/grocers-artificial-intelligence-technology-spending-fmi/824777/",
+   "img": null
+  },
+  {
+   "id": "e17c2",
+   "ed": 17,
+   "sec": "The Workforce",
+   "tag": "signal",
+   "h": "An AI runs Chipotle's hiring up to the offer letter, cutting time-to-hire from 12 days to four",
+   "src": "Fortune · Jun 2",
+   "t": "s1",
+   "t2": "t8",
+   "s": "An AI runs hiring to the offer letter and the saved hours go back to the floor, not out the door.",
+   "url": "https://fortune.com/2026/06/02/chipotle-hiring-ai-assistant-ava-cado-from-12-to-4-days/",
+   "img": null
+  },
+  {
+   "id": "e17c3",
+   "ed": 17,
+   "sec": "Oddly Interesting",
+   "tag": "signal",
+   "h": "WD-40 is a petroleum product before it's a lubricant. Its CFO dated the oil-shock hit to the shelf — then margins rose",
+   "src": "WD-40 · Jul 9",
+   "t": "curious",
+   "s": "A lubricant is a petroleum play; the oil-shock hit was dated to the shelf, then packaging masked it.",
+   "url": "https://s201.q4cdn.com/722056013/files/content_files/Q3-FY26-Earnings-Presentation-Final.pdf",
+   "img": null
+  },
+  {
+   "id": "e17c4",
+   "ed": 17,
+   "sec": "Oddly Interesting",
+   "tag": "labor",
+   "h": "80% of world trade moves by sea, and the fleet is short exactly 39,100 officers — while carrying a surplus of 56,890 crew",
+   "src": "BIMCO/ICS · Jun 25",
+   "t": "curious",
+   "s": "The merchant fleet is short officers and long deckhands at the same time.",
+   "url": "https://www.bimco.org/products/publications/titles/seafarer-workforce-report/",
+   "img": null
+  },
+  {
+   "id": "e17c5",
+   "ed": 17,
+   "sec": "Oddly Interesting",
+   "tag": "data",
+   "h": "The same $5.98 bought a gingham dress in 1922 and an all-silk one in 1928. The price index recorded nothing",
+   "src": "MIT · Jul 16",
+   "t": "curious",
+   "s": "A century of catalog prices shows the index misses what improves when the sticker holds.",
+   "url": "https://veronicabp.github.io/website/VBP_BHW_CostOfLiving.pdf",
+   "img": null
+  },
+  {
+   "id": "e17c6",
+   "ed": 17,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "A phone is a cow",
+   "src": "Georgetown UP · Jun 2",
+   "t": "curious",
+   "s": "The phone reframed as a productive asset; the number that mattered was the slope, not the price.",
+   "url": "https://press.georgetown.edu/Book/A-Phone-Is-a-Cow",
+   "img": null
+  },
+  {
+   "id": "e17c7",
+   "ed": 17,
+   "sec": "Oddly Interesting",
+   "tag": "space",
+   "h": "The first government purchase of a natural resource from space was about four-tenths of a gram",
+   "src": "GeekWire · May 2025",
+   "t": "t14",
+   "s": "The first government purchase of a space resource weighed four-tenths of a gram.",
+   "url": "https://www.geekwire.com/2025/interlune-moon-mining-vermeer-maybell-quantum-doe/",
+   "img": null
+  },
+  {
+   "id": "e17c8",
+   "ed": 17,
+   "sec": "Cultural Signal",
+   "tag": "science",
+   "h": "For 1,700 years Polynesian voyaging stopped at Samoa and Tonga. Then came the driest stretch in 2,000 years",
+   "src": "The Conversation · Jul 12",
+   "t": "curious",
+   "s": "The driest stretch in two millennia lands on the fullest the islands had ever been, next to better boats.",
+   "url": "https://theconversation.com/the-real-mystery-behind-moana-after-1-700-years-why-did-polynesians-suddenly-sail-east-287226",
    "img": null
   }
  ]
