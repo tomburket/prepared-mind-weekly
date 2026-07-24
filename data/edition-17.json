@@ -1,0 +1,172 @@
+{
+  "edition": 17,
+  "date_long": "July 24, 2026",
+  "topics": "AI, Workforce, Shipping, Economics, Space, Culture",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "In one year, the share of food retailers using AI jumped from 47% to 68% — but only 40% run it companywide",
+          "source": "Grocery Dive · July 10, 2026",
+          "summary": "FMI — The Food Industry Association reported in its 77th annual survey that 68 percent of food retailers now employ artificial intelligence, up from 47 percent a year earlier. Generative AI use rose to 59 percent from 43 percent. But the share running generative AI companywide, rather than inside a single function, is 40 percent, and the report describes most deployments concentrated in assortment planning and loss prevention. The survey drew on 70 retailers and wholesalers representing more than 42,000 stores.",
+          "why": "Adoption climbed 21 points in 12 months. The companywide figure, 40 percent, measures depth rather than presence — and it is the smaller number.",
+          "url": "https://www.grocerydive.com/news/grocers-artificial-intelligence-technology-spending-fmi/824777/",
+          "link_label": "Read at Grocery Dive",
+          "landscape": {
+            "tag": "data",
+            "t": "s1",
+            "src_short": "Grocery Dive · Jul 10",
+            "gloss": "AI adoption in food retail jumps to two-thirds, but companywide use stalls at 40 percent.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "An AI runs Chipotle's hiring up to the offer letter, cutting time-to-hire from 12 days to four",
+          "source": "Fortune · June 2, 2026",
+          "summary": "Chipotle has run an AI hiring assistant it calls Ava Cado across its restaurants since October 2024. The tool holds the opening conversation with applicants, answers questions, gathers information, schedules interviews and sends offer letters — while a human manager still chooses who gets hired. Chief Operating Officer Jason Kidd said it cut time-to-hire from 12 days to four, with roughly a third of scheduling now happening after hours. Kidd said the company reinvested the reclaimed hours into the restaurant rather than cutting staff.",
+          "why": "The common story about AI and frontline labor is subtraction. This one runs the other way: the tool absorbed the administrative load and the manager stayed.",
+          "url": "https://fortune.com/2026/06/02/chipotle-hiring-ai-assistant-ava-cado-from-12-to-4-days/",
+          "link_label": "Read at Fortune",
+          "landscape": {
+            "tag": "signal",
+            "t": "s1",
+            "t2": "t8",
+            "src_short": "Fortune · Jun 2",
+            "gloss": "An AI runs hiring to the offer letter and the saved hours go back to the floor, not out the door.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "WD-40 is a petroleum product before it's a lubricant. Its CFO dated the oil-shock hit to the shelf — then margins rose",
+          "source": "WD-40 Q3 Earnings · July 9, 2026",
+          "summary": "On WD-40's fiscal second-quarter call in April, Chief Financial Officer Sara Hyzer told analysts that most of the company's formulations are petroleum-derived, and that with oil rising she had raised the planning assumption to $95 to $115 a barrel. Higher raw-material costs take 90 to 120 days to reach margins, she said, so the hit would not land until the fourth quarter. Three months later, on July 9, gross margin rose 40 basis points to 56.6 percent — carried by cheaper aerosol cans, not the petroleum feedstock. The company raised full-year guidance, and Hyzer kept the warning: full-year margin is still guided down.",
+          "why": "The tailwind was packaging; the petroleum hit Hyzer dated to the fourth quarter is deferred, not gone. A chief financial officer timing a commodity shock to the shelf is the arithmetic every food operator runs in the dark.",
+          "url": "https://s201.q4cdn.com/722056013/files/content_files/Q3-FY26-Earnings-Presentation-Final.pdf",
+          "link_label": "Read at WD-40 Investor Relations",
+          "landscape": {
+            "tag": "signal",
+            "t": "curious",
+            "src_short": "WD-40 · Jul 9",
+            "gloss": "A lubricant is a petroleum play; the oil-shock hit was dated to the shelf, then packaging masked it.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "80% of world trade moves by sea, and the fleet is short exactly 39,100 officers — while carrying a surplus of 56,890 crew",
+          "source": "BIMCO / ICS · June 25, 2026",
+          "summary": "BIMCO and the International Chamber of Shipping publish a census of the people who crew the world merchant fleet every five years. The 2026 edition counts a global supply of 2,565,580 seafarers against demand for 2,547,790 — a rough balance that hides a split. The fleet is short 39,100 officers, the certified deck and engineering ranks that can command a ship, while carrying a surplus of 56,890 ratings, the general crew. The officer gap has widened every cycle, from 16,500 in 2015 to 39,100 now, with engineering and deck officers the hardest to fill.",
+          "why": "What the shipping press rounds off to a seafarer shortage is two numbers pointing opposite ways. The scarce people are the ones qualified to command; the surplus is everyone else.",
+          "url": "https://www.bimco.org/products/publications/titles/seafarer-workforce-report/",
+          "link_label": "Read at BIMCO",
+          "landscape": {
+            "tag": "labor",
+            "t": "curious",
+            "src_short": "BIMCO/ICS · Jun 25",
+            "gloss": "The merchant fleet is short officers and long deckhands at the same time.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "The same $5.98 bought a gingham dress in 1922 and an all-silk one in 1928. The price index recorded nothing",
+          "source": "MIT Working Paper · July 16, 2026",
+          "summary": "Two MIT economists, Veronica Backer-Peral and Benjamin Wittenbrink, digitized 180 Sears catalogs from 1900 to 1990 and pulled 5.1 million product listings, using AI to read the pages at about six cents each. Their working paper estimates that conventional deflators miss roughly half the cumulative rise in prices, because the goods themselves improved: real goods consumption grew about 39 times across the century, far more than the roughly 10 times the standard indexes record. Their example is a dress for stout women listed at $5.98 in the spring catalogs of 1922, 1925 and 1928 — plaid gingham, then silk and wool, then entirely silk. The sticker price never moved.",
+          "why": "The paper is one week old and not yet peer-reviewed, so the numbers may move. What holds is the mechanism: when the object improves and the price stays flat, the index sees nothing happen.",
+          "url": "https://veronicabp.github.io/website/VBP_BHW_CostOfLiving.pdf",
+          "link_label": "Read at MIT",
+          "landscape": {
+            "tag": "data",
+            "t": "curious",
+            "src_short": "MIT · Jul 16",
+            "gloss": "A century of catalog prices shows the index misses what improves when the sticker holds.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "A phone is a cow",
+          "source": "Georgetown University Press · June 2, 2026",
+          "summary": "In \"A Phone Is a Cow,\" economist Philip Auerswald tells the story of Iqbal Quadir, who set out to build a mobile phone company in Bangladesh in the mid-1990s, when income was about $300 a year and a handset cost roughly $400. Grameen Bank was lending village women against a productive asset — a cow — on the logic that the asset's use repays the loan. Quadir's insight was that a phone is that kind of object: a productive asset, not the consumption good the West took it for. Bangladesh now has more mobile phones than people.",
+          "why": "The number that mattered was never the price. Quadir had tried to sell Macintoshes there when the machine cost 20 times a year's income; by the time he started the phone company, the ratio was close to one to one. He was reading the slope.",
+          "url": "https://press.georgetown.edu/Book/A-Phone-Is-a-Cow",
+          "link_label": "Read at Georgetown University Press",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "Georgetown UP · Jun 2",
+            "gloss": "The phone reframed as a productive asset; the number that mattered was the slope, not the price.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "The first government purchase of a natural resource from space was about four-tenths of a gram",
+          "source": "GeekWire · May 7, 2025",
+          "summary": "In May 2025, the Department of Energy's Isotope Program agreed to buy three liters of helium-3 from Interlune, a Seattle company founded in 2020 that has never been to the moon. Delivery is due by April 2029, at roughly today's market price — about $3,000 a liter by Chief Executive Rob Meyerson's figure, which puts the deal near $9,000. Three liters is about four-tenths of a gram; producing it takes close to a swimming pool's volume of lunar regolith. Meyerson said the point was the signal: that the government would buy space resources at all.",
+          "why": "Every account since has led with \"first ever.\" The skeptics note that helium-3 sits in the regolith at parts per billion — the market and the marketing are not yet the same thing.",
+          "url": "https://www.geekwire.com/2025/interlune-moon-mining-vermeer-maybell-quantum-doe/",
+          "link_label": "Read at GeekWire",
+          "landscape": {
+            "tag": "space",
+            "t": "t14",
+            "src_short": "GeekWire · May 2025",
+            "gloss": "The first government purchase of a space resource weighed four-tenths of a gram.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "For 1,700 years Polynesian voyaging stopped at Samoa and Tonga. Then came the driest stretch in 2,000 years",
+          "source": "The Conversation · July 12, 2026",
+          "summary": "Writing in The Conversation, David Sear, Manoj Joshi and Mark Peaple describe the mystery behind \"Moana\": why, after centuries of stability, Polynesian voyagers suddenly began settling islands thousands of kilometers east. Reading hydrogen isotopes locked in ancient swamp and lake mud, the researchers found a sustained severe drought across the southwest tropical Pacific from about 850 to 1200 — the driest the region had been in 2,000 years, arriving when island populations were at their largest. Between 900 and 1100, over roughly a century, double-hulled canoes reached Hawaii, Aotearoa and Rapa Nui.",
+          "why": "For generations the argument was which single factor ended the pause — the canoes, the crowding or the climate. The authors lay the driest stretch in two millennia on top of the fullest the islands had ever been, next to better boats, and decline to rank them.",
+          "url": "https://theconversation.com/the-real-mystery-behind-moana-after-1-700-years-why-did-polynesians-suddenly-sail-east-287226",
+          "link_label": "Read at The Conversation",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "The Conversation · Jul 12",
+            "gloss": "The driest stretch in two millennia lands on the fullest the islands had ever been, next to better boats.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
