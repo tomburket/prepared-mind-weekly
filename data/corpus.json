@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 17,
+ "current_edition": 18,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -18,7 +18,8 @@
   "14": "July 2",
   "15": "July 10",
   "16": "July 17",
-  "17": "July 24"
+  "17": "July 24",
+  "18": "July 31"
  },
  "active_threads": [
   "s1",
@@ -1860,6 +1861,118 @@
    "t": "curious",
    "s": "The driest stretch in two millennia lands on the fullest the islands had ever been, next to better boats.",
    "url": "https://theconversation.com/the-real-mystery-behind-moana-after-1-700-years-why-did-polynesians-suddenly-sail-east-287226",
+   "img": null
+  },
+  {
+   "id": "e18c1",
+   "ed": 18,
+   "sec": "AI & Ops",
+   "tag": "labor",
+   "h": "Thomson Reuters is cutting up to 500 engineering roles and hiring more than 250 senior, “AI-native” ones",
+   "src": "Reuters · Jul 13",
+   "t": "s1",
+   "t2": "t8",
+   "s": "Up to 500 engineering roles cut as AI deploys, against 250+ net-new hires the company calls senior and AI-native.",
+   "url": "https://www.reuters.com/legal/litigation/thomson-reuters-cut-small-number-engineering-jobs-2026-07-13/",
+   "img": null
+  },
+  {
+   "id": "e18c2",
+   "ed": 18,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "Albertsons is consolidating 11 divisions into four and targeting $200 million in run-rate savings by fiscal 2027",
+   "src": "Store Brands · Jul 23",
+   "t": "s2",
+   "t2": "s1",
+   "s": "Eleven divisions into four regions, $200M run-rate savings targeted by FY27, AI stack across 2,244 stores called the foundation.",
+   "url": "https://storebrands.com/albertsons-unveils-aci-edge-operating-model-cuts-11-divisions-4-regions",
+   "img": null
+  },
+  {
+   "id": "e18c3",
+   "ed": 18,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "Conagra is eliminating the chief operating officer role. CEO John Brase held that title at J.M. Smucker until February",
+   "src": "SEC EDGAR · Jul 28",
+   "t": "s2",
+   "s": "COO role eliminated on McGough’s retirement; business unit heads now report to CEO Brase, himself a former COO.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000023217/000002321726000028/tmb-20260724x8k.htm",
+   "img": null
+  },
+  {
+   "id": "e18c4",
+   "ed": 18,
+   "sec": "Board & Governance",
+   "tag": "civic",
+   "h": "New Jersey’s surveillance-pricing law lets shoppers sue directly, and pauses new electronic shelf labels",
+   "src": "NJ Monitor · Jul 23",
+   "t": "s3",
+   "t2": "t10",
+   "s": "First state to give shoppers a private right of action over algorithmic pricing; the same law pauses new electronic shelf labels.",
+   "url": "https://newjerseymonitor.com/2026/07/23/nj-ban-surveillance-pricing-grocery/",
+   "img": null
+  },
+  {
+   "id": "e18c5",
+   "ed": 18,
+   "sec": "Board & Governance",
+   "tag": "moves",
+   "h": "Diageo’s chair is seeking directors with drinks experience. One non-executive on the board has run a spirits company",
+   "src": "Reuters · Jul 21",
+   "t": "s2",
+   "s": "Chair Manzoni seeking directors with drinks-sector experience; one sitting non-executive has run a spirits company.",
+   "url": "https://www.reuters.com/sustainability/boards-policy-regulation/diageo-chair-plans-board-shake-up-ft-reports-2026-07-21/",
+   "img": null
+  },
+  {
+   "id": "e18c6",
+   "ed": 18,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Twenty-six Meta workers say an AI ranking flagged them while they were on leave. The layoffs proceeded July 22",
+   "src": "Reuters · Jul 17",
+   "t": "t8",
+   "t2": "s3",
+   "s": "Restraining order denied; 26 workers allege an AI ranking read leave as missing output. Injunction hearing August 24.",
+   "url": "https://finance.yahoo.com/technology/ai/articles/us-judge-wont-block-meta-174240547.html",
+   "img": null
+  },
+  {
+   "id": "e18c7",
+   "ed": 18,
+   "sec": "Cultural Signal",
+   "tag": "sport",
+   "h": "FIFA and the WTO projected $30.5 billion in US impact. Host agreements assign security, transit and stadium costs to the cities",
+   "src": "US News · Jul 15",
+   "t": "t12",
+   "s": "A $30.5B US projection against host agreements that leave cities the security, transit and stadium costs.",
+   "url": "https://www.usnews.com/news/u-s-news-decision-points/articles/2026-07-15/will-the-world-cup-bring-an-economic-boost-to-host-cities",
+   "img": null
+  },
+  {
+   "id": "e18c8",
+   "ed": 18,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Roman concrete is still sealing its own cracks after 1,900 years. The same reaction rusts the steel in modern concrete",
+   "src": "Smithsonian · Jul 14",
+   "t": "s4",
+   "s": "Carbonation, not the pozzolanic reaction alone, binds Roman concrete — and the same reaction corrodes modern rebar.",
+   "url": "https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/",
+   "img": null
+  },
+  {
+   "id": "e18c9",
+   "ed": 18,
+   "sec": "Oddly Interesting",
+   "tag": "civic",
+   "h": "A 1930 statute was used to impose tariffs for the first time. The dairy proclamation covers 52 tariff lines and $97.2 million of trade",
+   "src": "Fed. Register · Jul 23",
+   "t": "t11",
+   "s": "First tariff ever imposed under Section 338: dairy is 52 lines and $97.2M, motor vehicles 439 lines and $19.3B.",
+   "url": "https://www.federalregister.gov/documents/2026/07/23/2026-14992/imposing-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united",
    "img": null
   }
  ]
