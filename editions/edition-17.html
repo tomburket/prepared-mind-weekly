@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 17
+date: July 24, 2026
+cards: 8
+sections: AI & Ops, The Workforce, Oddly Interesting, Cultural Signal
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; July 24, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">July 24, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">8 Items &nbsp;&bull;&nbsp; AI, Workforce, Shipping, Economics, Space, Culture</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">5</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#ai">AI &amp; Ops</a>
+<a href="#workforce">The Workforce</a>
+<a href="#oddly">Oddly Interesting</a>
+<a href="#culture">Cultural Signal</a>
+</nav>
+
+<main class="content">
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">In one year, the share of food retailers using AI jumped from 47% to 68% &mdash; but only 40% run it companywide</div>
+</div>
+<div class="item-source">Grocery Dive &middot; July 10, 2026</div>
+<div class="item-summary">FMI &mdash; The Food Industry Association reported in its 77th annual survey that 68 percent of food retailers now employ artificial intelligence, up from 47 percent a year earlier. Generative AI use rose to 59 percent from 43 percent. But the share running generative AI companywide, rather than inside a single function, is 40 percent, and the report describes most deployments concentrated in assortment planning and loss prevention. The survey drew on 70 retailers and wholesalers representing more than 42,000 stores.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Adoption climbed 21 points in 12 months. The companywide figure, 40 percent, measures depth rather than presence &mdash; and it is the smaller number.</div>
+</div>
+<a class="item-link" href="https://www.grocerydive.com/news/grocers-artificial-intelligence-technology-spending-fmi/824777/" target="_blank" rel="noopener">Read at Grocery Dive &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">An AI runs Chipotle's hiring up to the offer letter, cutting time-to-hire from 12 days to four</div>
+</div>
+<div class="item-source">Fortune &middot; June 2, 2026</div>
+<div class="item-summary">Chipotle has run an AI hiring assistant it calls Ava Cado across its restaurants since October 2024. The tool holds the opening conversation with applicants, answers questions, gathers information, schedules interviews and sends offer letters &mdash; while a human manager still chooses who gets hired. Chief Operating Officer Jason Kidd said it cut time-to-hire from 12 days to four, with roughly a third of scheduling now happening after hours. Kidd said the company reinvested the reclaimed hours into the restaurant rather than cutting staff.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The common story about AI and frontline labor is subtraction. This one runs the other way: the tool absorbed the administrative load and the manager stayed.</div>
+</div>
+<a class="item-link" href="https://fortune.com/2026/06/02/chipotle-hiring-ai-assistant-ava-cado-from-12-to-4-days/" target="_blank" rel="noopener">Read at Fortune &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">WD-40 is a petroleum product before it's a lubricant. Its CFO dated the oil-shock hit to the shelf &mdash; then margins rose</div>
+</div>
+<div class="item-source">WD-40 Q3 Earnings &middot; July 9, 2026</div>
+<div class="item-summary">On WD-40's fiscal second-quarter call in April, Chief Financial Officer Sara Hyzer told analysts that most of the company's formulations are petroleum-derived, and that with oil rising she had raised the planning assumption to $95 to $115 a barrel. Higher raw-material costs take 90 to 120 days to reach margins, she said, so the hit would not land until the fourth quarter. Three months later, on July 9, gross margin rose 40 basis points to 56.6 percent &mdash; carried by cheaper aerosol cans, not the petroleum feedstock. The company raised full-year guidance, and Hyzer kept the warning: full-year margin is still guided down.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The tailwind was packaging; the petroleum hit Hyzer dated to the fourth quarter is deferred, not gone. A chief financial officer timing a commodity shock to the shelf is the arithmetic every food operator runs in the dark.</div>
+</div>
+<a class="item-link" href="https://s201.q4cdn.com/722056013/files/content_files/Q3-FY26-Earnings-Presentation-Final.pdf" target="_blank" rel="noopener">Read at WD-40 Investor Relations &#8599;</a>
+</div>
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">80% of world trade moves by sea, and the fleet is short exactly 39,100 officers &mdash; while carrying a surplus of 56,890 crew</div>
+</div>
+<div class="item-source">BIMCO / ICS &middot; June 25, 2026</div>
+<div class="item-summary">BIMCO and the International Chamber of Shipping publish a census of the people who crew the world merchant fleet every five years. The 2026 edition counts a global supply of 2,565,580 seafarers against demand for 2,547,790 &mdash; a rough balance that hides a split. The fleet is short 39,100 officers, the certified deck and engineering ranks that can command a ship, while carrying a surplus of 56,890 ratings, the general crew. The officer gap has widened every cycle, from 16,500 in 2015 to 39,100 now, with engineering and deck officers the hardest to fill.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">What the shipping press rounds off to a seafarer shortage is two numbers pointing opposite ways. The scarce people are the ones qualified to command; the surplus is everyone else.</div>
+</div>
+<a class="item-link" href="https://www.bimco.org/products/publications/titles/seafarer-workforce-report/" target="_blank" rel="noopener">Read at BIMCO &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">The same $5.98 bought a gingham dress in 1922 and an all-silk one in 1928. The price index recorded nothing</div>
+</div>
+<div class="item-source">MIT Working Paper &middot; July 16, 2026</div>
+<div class="item-summary">Two MIT economists, Veronica Backer-Peral and Benjamin Wittenbrink, digitized 180 Sears catalogs from 1900 to 1990 and pulled 5.1 million product listings, using AI to read the pages at about six cents each. Their working paper estimates that conventional deflators miss roughly half the cumulative rise in prices, because the goods themselves improved: real goods consumption grew about 39 times across the century, far more than the roughly 10 times the standard indexes record. Their example is a dress for stout women listed at $5.98 in the spring catalogs of 1922, 1925 and 1928 &mdash; plaid gingham, then silk and wool, then entirely silk. The sticker price never moved.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The paper is one week old and not yet peer-reviewed, so the numbers may move. What holds is the mechanism: when the object improves and the price stays flat, the index sees nothing happen.</div>
+</div>
+<a class="item-link" href="https://veronicabp.github.io/website/VBP_BHW_CostOfLiving.pdf" target="_blank" rel="noopener">Read at MIT &#8599;</a>
+</div>
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">A phone is a cow</div>
+</div>
+<div class="item-source">Georgetown University Press &middot; June 2, 2026</div>
+<div class="item-summary">In "A Phone Is a Cow," economist Philip Auerswald tells the story of Iqbal Quadir, who set out to build a mobile phone company in Bangladesh in the mid-1990s, when income was about $300 a year and a handset cost roughly $400. Grameen Bank was lending village women against a productive asset &mdash; a cow &mdash; on the logic that the asset's use repays the loan. Quadir's insight was that a phone is that kind of object: a productive asset, not the consumption good the West took it for. Bangladesh now has more mobile phones than people.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The number that mattered was never the price. Quadir had tried to sell Macintoshes there when the machine cost 20 times a year's income; by the time he started the phone company, the ratio was close to one to one. He was reading the slope.</div>
+</div>
+<a class="item-link" href="https://press.georgetown.edu/Book/A-Phone-Is-a-Cow" target="_blank" rel="noopener">Read at Georgetown University Press &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">The first government purchase of a natural resource from space was about four-tenths of a gram</div>
+</div>
+<div class="item-source">GeekWire &middot; May 7, 2025</div>
+<div class="item-summary">In May 2025, the Department of Energy's Isotope Program agreed to buy three liters of helium-3 from Interlune, a Seattle company founded in 2020 that has never been to the moon. Delivery is due by April 2029, at roughly today's market price &mdash; about $3,000 a liter by Chief Executive Rob Meyerson's figure, which puts the deal near $9,000. Three liters is about four-tenths of a gram; producing it takes close to a swimming pool's volume of lunar regolith. Meyerson said the point was the signal: that the government would buy space resources at all.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Every account since has led with "first ever." The skeptics note that helium-3 sits in the regolith at parts per billion &mdash; the market and the marketing are not yet the same thing.</div>
+</div>
+<a class="item-link" href="https://www.geekwire.com/2025/interlune-moon-mining-vermeer-maybell-quantum-doe/" target="_blank" rel="noopener">Read at GeekWire &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">For 1,700 years Polynesian voyaging stopped at Samoa and Tonga. Then came the driest stretch in 2,000 years</div>
+</div>
+<div class="item-source">The Conversation &middot; July 12, 2026</div>
+<div class="item-summary">Writing in The Conversation, David Sear, Manoj Joshi and Mark Peaple describe the mystery behind "Moana": why, after centuries of stability, Polynesian voyagers suddenly began settling islands thousands of kilometers east. Reading hydrogen isotopes locked in ancient swamp and lake mud, the researchers found a sustained severe drought across the southwest tropical Pacific from about 850 to 1200 &mdash; the driest the region had been in 2,000 years, arriving when island populations were at their largest. Between 900 and 1100, over roughly a century, double-hulled canoes reached Hawaii, Aotearoa and Rapa Nui.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">For generations the argument was which single factor ended the pause &mdash; the canoes, the crowding or the climate. The authors lay the driest stretch in two millennia on top of the fullest the islands had ever been, next to better boats, and decline to rank them.</div>
+</div>
+<a class="item-link" href="https://theconversation.com/the-real-mystery-behind-moana-after-1-700-years-why-did-polynesians-suddenly-sail-east-287226" target="_blank" rel="noopener">Read at The Conversation &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+July 24, 2026 &middot; Edition No. 17
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=17" defer></script>
+
+</body>
+</html>
