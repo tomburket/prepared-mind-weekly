@@ -1,0 +1,206 @@
+{
+  "edition": 18,
+  "date_long": "July 31, 2026",
+  "topics": "AI, Leadership, Governance, Workforce, Trade, Culture",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Thomson Reuters is cutting up to 500 engineering roles and hiring more than 250 senior, “AI-native” ones",
+          "source": "Reuters · July 13, 2026",
+          "summary": "Thomson Reuters told a technology all-hands on July 13 that it was cutting a “small number” of engineering roles as it deploys artificial intelligence across its legal, tax and regulatory products. An employee who attended, speaking anonymously because the meeting was not public, told Reuters the figure could reach 500 — about 5.2 percent of the 9,400-person operations and technology unit. A spokesperson said the company expects to hire more than 250 net-new engineering roles globally over the next two years, “the large majority senior and AI-native.” Thomson Reuters owns Reuters News, which reported the cuts.",
+          "why": "The company is not retraining the engineers it has; it is exchanging one cohort for a smaller and more senior one. The 500 figure came from an employee. The 250 came from the company.",
+          "url": "https://www.reuters.com/legal/litigation/thomson-reuters-cut-small-number-engineering-jobs-2026-07-13/",
+          "link_label": "Read at Reuters",
+          "landscape": {
+            "tag": "labor",
+            "t": "s1",
+            "t2": "t8",
+            "src_short": "Reuters · Jul 13",
+            "gloss": "Up to 500 engineering roles cut as AI deploys, against 250+ net-new hires the company calls senior and AI-native.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Albertsons is consolidating 11 divisions into four and targeting $200 million in run-rate savings by fiscal 2027",
+          "source": "Store Brands · July 23, 2026",
+          "summary": "Albertsons reported first-quarter fiscal 2026 results July 23, with identical sales down 0.8 percent, and announced an operating realignment it calls ACI Edge: 11 operating divisions consolidated into four geographic regions — California, West, South and East — with center-store merchandising centralized under a single enterprise team, targeting $200 million in annual run-rate savings by fiscal 2027. Adjusted earnings per share guidance fell to a range of $1.75 to $1.85 from $2.22 to $2.32, and shares slumped as much as 24.5 percent. On the same earnings call Chief Executive Susan Morris said the company is deploying an AI technology stack across its 2,244 stores in partnership with Google, OpenAI and Microsoft, and described the technology as the foundation of ACI Edge rather than a separate initiative. President and Chief Financial Officer Sharon McCollam announced her retirement the same morning, with a successor search underway.",
+          "why": "Eleven divisions to four moves merchandising judgment from the region toward the center, and the company says the technology is what lets the smaller structure hold. The realignment, the guidance cut and the chief financial officer’s retirement were announced the same morning.",
+          "url": "https://storebrands.com/albertsons-unveils-aci-edge-operating-model-cuts-11-divisions-4-regions",
+          "link_label": "Read at Store Brands",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "t2": "s1",
+            "src_short": "Store Brands · Jul 23",
+            "gloss": "Eleven divisions into four regions, $200M run-rate savings targeted by FY27, AI stack across 2,244 stores called the foundation.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Conagra is eliminating the chief operating officer role. CEO John Brase held that title at J.M. Smucker until February",
+          "source": "SEC EDGAR · July 28, 2026",
+          "summary": "Conagra Brands disclosed in an 8-K filed July 28 that Executive Vice President and Chief Operating Officer Thomas McGough notified the company July 24 of his decision to retire no later than September 4, and that the company will eliminate the chief operating officer position upon his retirement. McGough had been with Conagra nearly two decades. Noelle O’Mara, president of Refrigerated and Frozen, and Jill Dexter, president of Grocery and Snacks, will report directly to President and Chief Executive John Brase, and Burke Raine becomes executive vice president and chief growth officer over Foodservice, International and research and development. Brase became chief executive June 1, succeeding Sean Connolly after more than a decade; until February he was president and chief operating officer of J.M. Smucker.",
+          "why": "The layer being removed is the one Brase occupied at his previous company. Conagra said the change is meant to put business unit leaders closer to the customer.",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000023217/000002321726000028/tmb-20260724x8k.htm",
+          "link_label": "Read at SEC EDGAR",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "SEC EDGAR · Jul 28",
+            "gloss": "COO role eliminated on McGough’s retirement; business unit heads now report to CEO Brase, himself a former COO.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "New Jersey’s surveillance-pricing law lets shoppers sue directly, and pauses new electronic shelf labels",
+          "source": "New Jersey Monitor · July 23, 2026",
+          "summary": "Gov. Mikie Sherrill signed the Fair Price Protection Act on July 23 at a grocery store in Newark, barring retailers and third-party delivery platforms from using a shopper’s purchase history, online activity, real-time location, biometric or genetic data or demographic inferences to charge that person a different price than other customers pay for identical items. New Jersey is the third state to outlaw surveillance pricing and the first to put the claim in the consumer’s hands, through a private right of action under the state Consumer Fraud Act, rather than reserving enforcement to the attorney general. The law takes effect February 1, 2027, carries a $10,000 penalty per violation with treble damages available for willful breaches, and imposes a moratorium on new electronic shelf label installations. The Chamber of Progress said the bill as written would also strip out everyday discounts unless the Legislature amends it later this year.",
+          "why": "Enforcement moved from a state regulator to the individual shopper. The shelf-label moratorium sits inside a pricing-privacy law.",
+          "url": "https://newjerseymonitor.com/2026/07/23/nj-ban-surveillance-pricing-grocery/",
+          "link_label": "Read at New Jersey Monitor",
+          "landscape": {
+            "tag": "civic",
+            "t": "s3",
+            "t2": "t10",
+            "src_short": "NJ Monitor · Jul 23",
+            "gloss": "First state to give shoppers a private right of action over algorithmic pricing; the same law pauses new electronic shelf labels.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Diageo’s chair is seeking directors with drinks experience. One non-executive on the board has run a spirits company",
+          "source": "Reuters · July 21, 2026",
+          "summary": "The Financial Times reported July 21 that Diageo chair John Manzoni is seeking new non-executive directors with commercial experience in drinks or drinks distribution, citing three people familiar with the matter. Reuters, relaying the report, said it could not immediately verify it. The FT noted that the only non-executive director with senior leadership experience at a spirits company is Valérie Chapoulaud-Floquet, former chief executive of Rémy Cointreau, and that Manzoni and Chief Executive Dave Lewis both came to Diageo from outside the drinks trade. A Diageo spokesperson said the board has relevant consumer experience and that Manzoni supports the current board, and Lewis is scheduled to give a strategy update with full-year results August 6.",
+          "why": "The stated criterion is sector experience, not board experience generally. Reuters could not verify the report, and the company disputes the premise.",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/diageo-chair-plans-board-shake-up-ft-reports-2026-07-21/",
+          "link_label": "Read at Reuters",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Reuters · Jul 21",
+            "gloss": "Chair Manzoni seeking directors with drinks-sector experience; one sitting non-executive has run a spirits company.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Twenty-six Meta workers say an AI ranking flagged them while they were on leave. The layoffs proceeded July 22",
+          "source": "Reuters · July 17, 2026",
+          "summary": "US District Judge William Orrick in Oakland denied a temporary restraining order July 17 sought by 26 Meta employees who allege the company’s AI-assisted tools selected them for layoff because they have disabilities or took medical leave, Reuters reported. According to the complaint, the ranking drew on productivity data, keystroke activity and employees’ own use of AI tools, so that time away from work registered as missing output. Orrick found the workers had not shown the irreparable harm required for an emergency order and sent the merits to private arbitration, but wrote that the case raises “serious questions going to the merits” and ordered Meta to explain why four plaintiffs holding employment visas were included. The layoffs are part of a roughly 8,000-person reduction, about 10 percent of Meta’s workforce, announced in April; a preliminary injunction hearing is set for August 24.",
+          "why": "Meta says people, not software, made every decision. The claim is that absence from work and low performance produced the same signal.",
+          "url": "https://finance.yahoo.com/technology/ai/articles/us-judge-wont-block-meta-174240547.html",
+          "link_label": "Read at Reuters",
+          "landscape": {
+            "tag": "labor",
+            "t": "t8",
+            "t2": "s3",
+            "src_short": "Reuters · Jul 17",
+            "gloss": "Restraining order denied; 26 workers allege an AI ranking read leave as missing output. Injunction hearing August 24.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "FIFA and the WTO projected $30.5 billion in US impact. Host agreements assign security, transit and stadium costs to the cities",
+          "source": "US News · July 15, 2026",
+          "summary": "FIFA and the World Trade Organization projected in a March 2025 joint study that the 2026 World Cup would generate about $80 billion in gross global economic impact, $30.5 billion of it in the United States. As the tournament neared its July 19 close, Bank of America reported card spending across the 16 host cities up 6.3 percent year over year, with spending by non-locals up 16.7 percent. Victor Matheson, a sports economist at the College of the Holy Cross, told US News that ticket revenue does not stay where matches are played, and FIFA’s host agreements assign security, transportation, stadium retrofits and fan zones to the cities while retaining ticketing, sponsorship and media revenue. Matheson and Robert Baade of Lake Forest College estimated that the 1994 tournament’s impact fell $5.5 billion to $9.3 billion short of pre-tournament projections.",
+          "why": "The projection reported a single number. The revenue and the costs sat on separate ledgers.",
+          "url": "https://www.usnews.com/news/u-s-news-decision-points/articles/2026-07-15/will-the-world-cup-bring-an-economic-boost-to-host-cities",
+          "link_label": "Read at US News",
+          "landscape": {
+            "tag": "sport",
+            "t": "t12",
+            "src_short": "US News · Jul 15",
+            "gloss": "A $30.5B US projection against host agreements that leave cities the security, transit and stadium costs.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Roman concrete is still sealing its own cracks after 1,900 years. The same reaction rusts the steel in modern concrete",
+          "source": "Smithsonian · July 14, 2026",
+          "summary": "Researchers led by Xiaohong Zhu and Paulo J. M. Monteiro of the University of California, Berkeley sampled concrete from beneath the toilet seats of a communal latrine in the Canopus substructures at Hadrian’s Villa, about 17 miles east of Rome, and published the analysis in Science Advances on July 8. Using synchrotron tomography and multi-scale spectroscopy, they found that calcite — calcium carbonate formed as atmospheric carbon dioxide reacted with lime over centuries — was the primary binding mineral, growing fibrous crystals outward from the volcanic aggregate and bridging microcracks. They chose the latrine because it had never been restored, unlike the temples and aqueducts repaired for centuries: “Nobody restores a latrine,” Monteiro told Scientific American. Monteiro also noted that the same carbonation lowers the pH of modern concrete, stripping the alkalinity that shields reinforcing steel from rust.",
+          "why": "Modern concrete usually degrades within about 100 years. Roman concrete carries no reinforcing steel, and the reaction that has been sealing it since Hadrian is the one that corrodes ours.",
+          "url": "https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/",
+          "link_label": "Read at Smithsonian",
+          "landscape": {
+            "tag": "science",
+            "t": "s4",
+            "src_short": "Smithsonian · Jul 14",
+            "gloss": "Carbonation, not the pozzolanic reaction alone, binds Roman concrete — and the same reaction corrodes modern rebar.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "A 1930 statute was used to impose tariffs for the first time. The dairy proclamation covers 52 tariff lines and $97.2 million of trade",
+          "source": "Federal Register · July 23, 2026",
+          "summary": "President Trump signed three proclamations July 20 under Section 338 of the Tariff Act of 1930, imposing an additional 50 percent ad valorem duty — the statutory maximum — on Canadian dairy, alcoholic beverages and motor vehicles, effective 12:01 a.m. Eastern time August 19. The dairy proclamation, published in the Federal Register as Proclamation 11047, finds that Canada grants European Union exporters more favorable access to its cheese import quotas than US exporters receive; it covers 52 HTSUS subheadings, under which the United States imported $97.2 million from Canada in 2024. The motor vehicle proclamation covers 439 subheadings and $19.3 billion, accounting for nearly all of the roughly $20 billion the US Trade Representative attributed to the three actions combined. The duties stack on existing tariffs, apply whether or not goods qualify under USMCA, and exclude only articles already subject to Section 232 duties or the World Trade Organization civil aircraft agreement.",
+          "why": "Section 338 has been law since 1930, has no implementing regulations, and has no record of a president using it to impose a tariff. The notice period is 30 days, the statutory minimum, and there is no USMCA exemption to plan around.",
+          "url": "https://www.federalregister.gov/documents/2026/07/23/2026-14992/imposing-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united",
+          "link_label": "Read at the Federal Register",
+          "landscape": {
+            "tag": "civic",
+            "t": "t11",
+            "src_short": "Fed. Register · Jul 23",
+            "gloss": "First tariff ever imposed under Section 338: dairy is 52 lines and $97.2M, motor vehicles 439 lines and $19.3B.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
