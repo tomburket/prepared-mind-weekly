@@ -431,9 +431,36 @@ def load_local(name, required=True):
         die(f"Could not find {name} in ~/Downloads, the current folder, or next to this script.")
     return None
 
+def fetch_repo(path):
+    """Read a file from the repo's CANONICAL state, not from the CDN.
+
+    v1.3 (Aug 7, 2026). raw.githubusercontent is a cache and can serve a copy
+    that is minutes stale. Building on a stale corpus is undetectable
+    downstream -- every pre-commit check passes, because the build is
+    internally consistent with whatever was read. That is how t11 was
+    activated during Ed 19 and silently overwritten by the next deploy.
+
+    The authenticated Contents API is not CDN-cached, and the token is already
+    loaded for the commit step. Without a token (a --dry-run on a machine that
+    has none) this falls back to raw with a cache-busting nonce: weaker, but
+    strictly better than the bare CDN read it replaces.
+    """
+    tok = None
+    p = Path.home() / ".pmwr_token"
+    if p.exists():
+        tok = p.read_text().strip() or None
+    if tok:
+        status, body = gh("GET", f"{API}/{path}?ref=main", tok)
+        if status == 200 and isinstance(body, dict) and body.get("content"):
+            if body.get("encoding") == "base64":
+                return base64.b64decode(body["content"]).decode("utf-8")
+            return body["content"]
+        print(f"  note: API read of {path} returned HTTP {status} -- falling back to raw+nonce")
+    return fetch(f"{RAW}/{path}?nocache={int(time.time() * 1000)}")
+
 def get_repo_or_local(path, local_name):
     try:
-        return fetch(f"{RAW}/{path}"), "repo"
+        return fetch_repo(path), "repo"
     except urllib.error.HTTPError:
         t = load_local(local_name)
         return t, "local"
@@ -597,12 +624,13 @@ def weekly(dry, edition_path=None):
     corpus = json.loads(corpus_text)
     template, tsrc = get_repo_or_local("pipeline/template_v2.html", "template_v2.html")
     print(f"Corpus ............. {len(corpus['cards'])} cards ({src}) | template ({tsrc})")
+    print(f"Active threads ..... {corpus.get('active_threads')}")
     if ed["edition"] != corpus["current_edition"] + 1:
         die(f"Edition {ed['edition']} but corpus current_edition is {corpus['current_edition']} — sequence mismatch.")
-    live_root = fetch(f"{RAW}/index.html")
-    live_land = fetch(f"{RAW}/landscape/index.html")
-    live_foot = fetch(f"{RAW}/landscape/footlines.js")
-    live_edix = fetch(f"{RAW}/editions/index.html")
+    live_root = fetch_repo("index.html")
+    live_land = fetch_repo("landscape/index.html")
+    live_foot = fetch_repo("landscape/footlines.js")
+    live_edix = fetch_repo("editions/index.html")
     print(f"Live fetched ....... root {len(live_root)}B, landscape {len(live_land)}B, "
           f"footlines {len(live_foot)}B, editions index {len(live_edix)}B")
 
