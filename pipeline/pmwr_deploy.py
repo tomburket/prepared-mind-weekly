@@ -321,34 +321,73 @@ def verify_built(root, landscape, footlines, ed_index, corpus, ed):
         die("Pre-commit verification failed — see FAIL lines above.")
 
 def verify_live(ed, corpus):
-    print("\nWaiting for Vercel rebuild ", end="", flush=True)
-    deadline = time.time() + 240
-    while time.time() < deadline:
+    """Wait until the CDN edge actually serves the new files, then verify.
+
+    v1.2 (Aug 7, 2026): the previous gate polled the root page for `edition: N`
+    and broke as soon as it appeared. On a REPUBLISH of an edition that is
+    already live, that string is already present -- so the gate never waited,
+    and the corpus-size checks compared the new corpus against stale landscape
+    and footlines files still cached at the edge. The gate now polls the actual
+    invariant (every file agreeing with the corpus), and every fetch carries a
+    timestamp nonce so no URL can be answered from a warm cache key.
+    """
+    want = len(corpus["cards"])
+    E = ed["edition"]
+    n_cards = sum(len(s["cards"]) for s in ed["sections"])
+
+    def _count(text, anchor, label, key=None):
+        # non-fatal parse: parse_js -> die() -> SystemExit while polling a
+        # half-propagated file must not abort the run.
         try:
-            root = fetch(f"{SITE}/?nocache={int(time.time())}")
-            if f"edition: {ed['edition']}\n" in root:
+            v = parse_js(text, anchor, label)
+        except (SystemExit, Exception):
+            return None
+        if key is not None:
+            v = v.get(key) if isinstance(v, dict) else None
+        return None if v is None else len(v)
+
+    def _agrees(root, land, foot):
+        return (f"edition: {E}\n" in root
+                and f"const CURRENT_EDITION={E}" in land
+                and _count(land, "const CARDS=", "live CARDS") == want
+                and _count(foot, "var D=", "live D", "cards") == want)
+
+    print("\nWaiting for Vercel rebuild ", end="", flush=True)
+    deadline = time.time() + 300
+    root = land = foot = ""
+    ready = False
+    while True:
+        try:
+            q = int(time.time() * 1000)
+            root = fetch(f"{SITE}/?nocache={q}")
+            land = fetch(f"{SITE}/landscape/index.html?nocache={q}")
+            foot = fetch(f"{SITE}/landscape/footlines.js?nocache={q}")
+            if _agrees(root, land, foot):
+                ready = True
                 break
         except Exception:
             pass
+        if time.time() >= deadline:
+            break
         print(".", end="", flush=True)
         time.sleep(10)
-    else:
-        die("Live site did not show the new edition within 4 minutes. Check Vercel dashboard; repo commits ARE in place.")
-    print(" live.")
-    n = sum(len(s["cards"]) for s in ed["sections"])
-    land = fetch(f"{SITE}/landscape/index.html?nocache={int(time.time())}")
-    foot = fetch(f"{SITE}/landscape/footlines.js?v={ed['edition']}")
+
+    print(" live." if ready else " timed out.")
+    if not ready:
+        print("  (5 minutes without full agreement -- reporting the last read below)")
+
     checks = [
-        ("live root: card count", len(re.findall(r'class="item-card"', root)) == n),
-        (f"live landscape: CURRENT_EDITION={ed['edition']}", f"const CURRENT_EDITION={ed['edition']}" in land),
-        ("live landscape: corpus size", len(parse_js(land, "const CARDS=", "live CARDS")) == len(corpus["cards"])),
-        ("live footlines: corpus size", len(parse_js(foot, "var D=", "live D")["cards"]) == len(corpus["cards"])),
+        ("live root: card count", len(re.findall(r'class="item-card"', root)) == n_cards),
+        (f"live landscape: CURRENT_EDITION={E}", f"const CURRENT_EDITION={E}" in land),
+        ("live landscape: corpus size", _count(land, "const CARDS=", "live CARDS") == want),
+        ("live footlines: corpus size", _count(foot, "var D=", "live D", "cards") == want),
     ]
-    ok = True
+    ok = all(p for _, p in checks)
     for name, passed in checks:
         print(f"  {'PASS' if passed else 'FAIL'}  {name}")
-        ok = ok and passed
-    print("\nDEPLOY " + ("VERIFIED — edition is live and consistent." if ok else "COMPLETED WITH FAILURES — tell Claude."))
+    print("\nDEPLOY " + ("VERIFIED -- edition is live and consistent."
+                         if ok else
+                         "COMPLETED WITH FAILURES -- the commits ARE in the repo; tell Claude."))
 
 # ============================= GitHub API =============================
 
