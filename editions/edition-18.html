@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 18
+date: July 31, 2026
+cards: 9
+sections: AI & Ops, CEO Market Intel, Board & Governance, The Workforce, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; July 31, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">July 31, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">9 Items &nbsp;&bull;&nbsp; AI, Leadership, Governance, Workforce, Trade, Culture</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#ai">AI &amp; Ops</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#board">Board &amp; Governance</a>
+<a href="#workforce">The Workforce</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Thomson Reuters is cutting up to 500 engineering roles and hiring more than 250 senior, &ldquo;AI-native&rdquo; ones</div>
+</div>
+<div class="item-source">Reuters &middot; July 13, 2026</div>
+<div class="item-summary">Thomson Reuters told a technology all-hands on July 13 that it was cutting a &ldquo;small number&rdquo; of engineering roles as it deploys artificial intelligence across its legal, tax and regulatory products. An employee who attended, speaking anonymously because the meeting was not public, told Reuters the figure could reach 500 &mdash; about 5.2 percent of the 9,400-person operations and technology unit. A spokesperson said the company expects to hire more than 250 net-new engineering roles globally over the next two years, &ldquo;the large majority senior and AI-native.&rdquo; Thomson Reuters owns Reuters News, which reported the cuts.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The company is not retraining the engineers it has; it is exchanging one cohort for a smaller and more senior one. The 500 figure came from an employee. The 250 came from the company.</div>
+</div>
+<a class="item-link" href="https://www.reuters.com/legal/litigation/thomson-reuters-cut-small-number-engineering-jobs-2026-07-13/" target="_blank" rel="noopener">Read at Reuters &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Albertsons is consolidating 11 divisions into four and targeting $200 million in run-rate savings by fiscal 2027</div>
+</div>
+<div class="item-source">Store Brands &middot; July 23, 2026</div>
+<div class="item-summary">Albertsons reported first-quarter fiscal 2026 results July 23, with identical sales down 0.8 percent, and announced an operating realignment it calls ACI Edge: 11 operating divisions consolidated into four geographic regions &mdash; California, West, South and East &mdash; with center-store merchandising centralized under a single enterprise team, targeting $200 million in annual run-rate savings by fiscal 2027. Adjusted earnings per share guidance fell to a range of $1.75 to $1.85 from $2.22 to $2.32, and shares slumped as much as 24.5 percent. On the same earnings call Chief Executive Susan Morris said the company is deploying an AI technology stack across its 2,244 stores in partnership with Google, OpenAI and Microsoft, and described the technology as the foundation of ACI Edge rather than a separate initiative. President and Chief Financial Officer Sharon McCollam announced her retirement the same morning, with a successor search underway.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Eleven divisions to four moves merchandising judgment from the region toward the center, and the company says the technology is what lets the smaller structure hold. The realignment, the guidance cut and the chief financial officer&rsquo;s retirement were announced the same morning.</div>
+</div>
+<a class="item-link" href="https://storebrands.com/albertsons-unveils-aci-edge-operating-model-cuts-11-divisions-4-regions" target="_blank" rel="noopener">Read at Store Brands &#8599;</a>
+</div>
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Conagra is eliminating the chief operating officer role. CEO John Brase held that title at J.M. Smucker until February</div>
+</div>
+<div class="item-source">SEC EDGAR &middot; July 28, 2026</div>
+<div class="item-summary">Conagra Brands disclosed in an 8-K filed July 28 that Executive Vice President and Chief Operating Officer Thomas McGough notified the company July 24 of his decision to retire no later than September 4, and that the company will eliminate the chief operating officer position upon his retirement. McGough had been with Conagra nearly two decades. Noelle O&rsquo;Mara, president of Refrigerated and Frozen, and Jill Dexter, president of Grocery and Snacks, will report directly to President and Chief Executive John Brase, and Burke Raine becomes executive vice president and chief growth officer over Foodservice, International and research and development. Brase became chief executive June 1, succeeding Sean Connolly after more than a decade; until February he was president and chief operating officer of J.M. Smucker.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The layer being removed is the one Brase occupied at his previous company. Conagra said the change is meant to put business unit leaders closer to the customer.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/0000023217/000002321726000028/tmb-20260724x8k.htm" target="_blank" rel="noopener">Read at SEC EDGAR &#8599;</a>
+</div>
+</section>
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">New Jersey&rsquo;s surveillance-pricing law lets shoppers sue directly, and pauses new electronic shelf labels</div>
+</div>
+<div class="item-source">New Jersey Monitor &middot; July 23, 2026</div>
+<div class="item-summary">Gov. Mikie Sherrill signed the Fair Price Protection Act on July 23 at a grocery store in Newark, barring retailers and third-party delivery platforms from using a shopper&rsquo;s purchase history, online activity, real-time location, biometric or genetic data or demographic inferences to charge that person a different price than other customers pay for identical items. New Jersey is the third state to outlaw surveillance pricing and the first to put the claim in the consumer&rsquo;s hands, through a private right of action under the state Consumer Fraud Act, rather than reserving enforcement to the attorney general. The law takes effect February 1, 2027, carries a $10,000 penalty per violation with treble damages available for willful breaches, and imposes a moratorium on new electronic shelf label installations. The Chamber of Progress said the bill as written would also strip out everyday discounts unless the Legislature amends it later this year.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Enforcement moved from a state regulator to the individual shopper. The shelf-label moratorium sits inside a pricing-privacy law.</div>
+</div>
+<a class="item-link" href="https://newjerseymonitor.com/2026/07/23/nj-ban-surveillance-pricing-grocery/" target="_blank" rel="noopener">Read at New Jersey Monitor &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">Diageo&rsquo;s chair is seeking directors with drinks experience. One non-executive on the board has run a spirits company</div>
+</div>
+<div class="item-source">Reuters &middot; July 21, 2026</div>
+<div class="item-summary">The Financial Times reported July 21 that Diageo chair John Manzoni is seeking new non-executive directors with commercial experience in drinks or drinks distribution, citing three people familiar with the matter. Reuters, relaying the report, said it could not immediately verify it. The FT noted that the only non-executive director with senior leadership experience at a spirits company is Val&eacute;rie Chapoulaud-Floquet, former chief executive of R&eacute;my Cointreau, and that Manzoni and Chief Executive Dave Lewis both came to Diageo from outside the drinks trade. A Diageo spokesperson said the board has relevant consumer experience and that Manzoni supports the current board, and Lewis is scheduled to give a strategy update with full-year results August 6.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The stated criterion is sector experience, not board experience generally. Reuters could not verify the report, and the company disputes the premise.</div>
+</div>
+<a class="item-link" href="https://www.reuters.com/sustainability/boards-policy-regulation/diageo-chair-plans-board-shake-up-ft-reports-2026-07-21/" target="_blank" rel="noopener">Read at Reuters &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Twenty-six Meta workers say an AI ranking flagged them while they were on leave. The layoffs proceeded July 22</div>
+</div>
+<div class="item-source">Reuters &middot; July 17, 2026</div>
+<div class="item-summary">US District Judge William Orrick in Oakland denied a temporary restraining order July 17 sought by 26 Meta employees who allege the company&rsquo;s AI-assisted tools selected them for layoff because they have disabilities or took medical leave, Reuters reported. According to the complaint, the ranking drew on productivity data, keystroke activity and employees&rsquo; own use of AI tools, so that time away from work registered as missing output. Orrick found the workers had not shown the irreparable harm required for an emergency order and sent the merits to private arbitration, but wrote that the case raises &ldquo;serious questions going to the merits&rdquo; and ordered Meta to explain why four plaintiffs holding employment visas were included. The layoffs are part of a roughly 8,000-person reduction, about 10 percent of Meta&rsquo;s workforce, announced in April; a preliminary injunction hearing is set for August 24.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Meta says people, not software, made every decision. The claim is that absence from work and low performance produced the same signal.</div>
+</div>
+<a class="item-link" href="https://finance.yahoo.com/technology/ai/articles/us-judge-wont-block-meta-174240547.html" target="_blank" rel="noopener">Read at Reuters &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">FIFA and the WTO projected $30.5 billion in US impact. Host agreements assign security, transit and stadium costs to the cities</div>
+</div>
+<div class="item-source">US News &middot; July 15, 2026</div>
+<div class="item-summary">FIFA and the World Trade Organization projected in a March 2025 joint study that the 2026 World Cup would generate about $80 billion in gross global economic impact, $30.5 billion of it in the United States. As the tournament neared its July 19 close, Bank of America reported card spending across the 16 host cities up 6.3 percent year over year, with spending by non-locals up 16.7 percent. Victor Matheson, a sports economist at the College of the Holy Cross, told US News that ticket revenue does not stay where matches are played, and FIFA&rsquo;s host agreements assign security, transportation, stadium retrofits and fan zones to the cities while retaining ticketing, sponsorship and media revenue. Matheson and Robert Baade of Lake Forest College estimated that the 1994 tournament&rsquo;s impact fell $5.5 billion to $9.3 billion short of pre-tournament projections.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The projection reported a single number. The revenue and the costs sat on separate ledgers.</div>
+</div>
+<a class="item-link" href="https://www.usnews.com/news/u-s-news-decision-points/articles/2026-07-15/will-the-world-cup-bring-an-economic-boost-to-host-cities" target="_blank" rel="noopener">Read at US News &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">06</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Roman concrete is still sealing its own cracks after 1,900 years. The same reaction rusts the steel in modern concrete</div>
+</div>
+<div class="item-source">Smithsonian &middot; July 14, 2026</div>
+<div class="item-summary">Researchers led by Xiaohong Zhu and Paulo J. M. Monteiro of the University of California, Berkeley sampled concrete from beneath the toilet seats of a communal latrine in the Canopus substructures at Hadrian&rsquo;s Villa, about 17 miles east of Rome, and published the analysis in Science Advances on July 8. Using synchrotron tomography and multi-scale spectroscopy, they found that calcite &mdash; calcium carbonate formed as atmospheric carbon dioxide reacted with lime over centuries &mdash; was the primary binding mineral, growing fibrous crystals outward from the volcanic aggregate and bridging microcracks. They chose the latrine because it had never been restored, unlike the temples and aqueducts repaired for centuries: &ldquo;Nobody restores a latrine,&rdquo; Monteiro told Scientific American. Monteiro also noted that the same carbonation lowers the pH of modern concrete, stripping the alkalinity that shields reinforcing steel from rust.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Modern concrete usually degrades within about 100 years. Roman concrete carries no reinforcing steel, and the reaction that has been sealing it since Hadrian is the one that corrodes ours.</div>
+</div>
+<a class="item-link" href="https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/" target="_blank" rel="noopener">Read at Smithsonian &#8599;</a>
+</div>
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">A 1930 statute was used to impose tariffs for the first time. The dairy proclamation covers 52 tariff lines and $97.2 million of trade</div>
+</div>
+<div class="item-source">Federal Register &middot; July 23, 2026</div>
+<div class="item-summary">President Trump signed three proclamations July 20 under Section 338 of the Tariff Act of 1930, imposing an additional 50 percent ad valorem duty &mdash; the statutory maximum &mdash; on Canadian dairy, alcoholic beverages and motor vehicles, effective 12:01 a.m. Eastern time August 19. The dairy proclamation, published in the Federal Register as Proclamation 11047, finds that Canada grants European Union exporters more favorable access to its cheese import quotas than US exporters receive; it covers 52 HTSUS subheadings, under which the United States imported $97.2 million from Canada in 2024. The motor vehicle proclamation covers 439 subheadings and $19.3 billion, accounting for nearly all of the roughly $20 billion the US Trade Representative attributed to the three actions combined. The duties stack on existing tariffs, apply whether or not goods qualify under USMCA, and exclude only articles already subject to Section 232 duties or the World Trade Organization civil aircraft agreement.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Section 338 has been law since 1930, has no implementing regulations, and has no record of a president using it to impose a tariff. The notice period is 30 days, the statutory minimum, and there is no USMCA exemption to plan around.</div>
+</div>
+<a class="item-link" href="https://www.federalregister.gov/documents/2026/07/23/2026-14992/imposing-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united" target="_blank" rel="noopener">Read at the Federal Register &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+July 31, 2026 &middot; Edition No. 18
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=18" defer></script>
+
+</body>
+</html>
