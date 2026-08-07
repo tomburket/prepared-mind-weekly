@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 18,
+ "current_edition": 19,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -19,7 +19,8 @@
   "15": "July 10",
   "16": "July 17",
   "17": "July 24",
-  "18": "July 31"
+  "18": "July 31",
+  "19": "August 7"
  },
  "active_threads": [
   "s1",
@@ -31,7 +32,6 @@
   "t8",
   "t9",
   "t10",
-  "t11",
   "t12",
   "t13",
   "t14"
@@ -1974,6 +1974,144 @@
    "t": "t11",
    "s": "First tariff ever imposed under Section 338: dairy is 52 lines and $97.2M, motor vehicles 439 lines and $19.3B.",
    "url": "https://www.federalregister.gov/documents/2026/07/23/2026-14992/imposing-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of-the-united",
+   "img": null
+  },
+  {
+   "id": "e19c1",
+   "ed": 19,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "Kroger put an AI assistant in front of every banner at once. It reads a photo of a handwritten list and builds the cart.",
+   "src": "Kroger · Jul 28",
+   "t": "s1",
+   "t2": "t10",
+   "s": "A grocer ships a customer-facing AI assistant to every banner on the same day.",
+   "url": "https://ir.kroger.com/news/news-details/2026/Kroger-Helps-Families-Simplify-Back-to-Routine-Season-with-Fresh-Convenient-Meals-and-a-Smarter-Way-to-Shop/default.aspx",
+   "img": null
+  },
+  {
+   "id": "e19c2",
+   "ed": 19,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "A freight broker hit its mid-cycle margin targets in the trough of the cycle. Its CEO says productivity was the second goal, not the first.",
+   "src": "C.H. Robinson · Jul 29",
+   "t": "s1",
+   "t2": "t9",
+   "s": "A logistics operator credits AI for 60 percent productivity gains and names the headcount consequence out loud.",
+   "url": "https://www.chrobinson.com/en-us/about-us/newsroom/news/2026/q2-2026-earnings-summary/",
+   "img": null
+  },
+  {
+   "id": "e19c3",
+   "ed": 19,
+   "sec": "AI & Ops",
+   "tag": "data",
+   "h": "Sysco put a number on AI in its forward guidance. It is about $100 million.",
+   "src": "Sysco · Aug 4",
+   "t": "s1",
+   "t2": "s2",
+   "s": "FY27 guidance carries roughly $100M of AI-attributed efficiency improvements as a committed line.",
+   "url": "https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546",
+   "img": null
+  },
+  {
+   "id": "e19c4",
+   "ed": 19,
+   "sec": "AI & Ops",
+   "tag": "data",
+   "h": "Three quarters of retail and CPG executives call AI a top priority. One in six can say what it returned. More than half handed the strategy to someone who does not own the P&L.",
+   "src": "Deloitte · Jun 18",
+   "t": "s1",
+   "t2": "s2",
+   "s": "A 200-executive survey finds AI strategy owned by technology leaders rather than P&L owners, and returns largely unquantified.",
+   "url": "https://www.deloitte.com/us/en/industries/consumer/articles/state-of-ai-adoption-in-retail-cpg-executive-survey.html",
+   "img": null
+  },
+  {
+   "id": "e19c5",
+   "ed": 19,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "Hershey took 12 points of price and gave back 8 percent of volume. It is spending more on brands in the second half.",
+   "src": "SEC · Jul 30",
+   "t": "t10",
+   "t2": "s2",
+   "s": "A confectioner posts a beat built on price while volumes fall, and raises brand spending.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000047111/000162828026050769/exhibit991_2026xq2.htm",
+   "img": null
+  },
+  {
+   "id": "e19c6",
+   "ed": 19,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "Hormel named the date of its CEO handoff 14 months in advance, dissolved the search committee, and hit the date.",
+   "src": "Hormel · Jul 28",
+   "t": "s2",
+   "s": "A CPG company runs a pre-announced 15-month interim CEO term and installs the permanent successor on the stated date.",
+   "url": "https://www.hormelfoods.com/newsroom/press-releases/hormel-foods-names-john-ghingo-next-chief-executive-officer/",
+   "img": null
+  },
+  {
+   "id": "e19c7",
+   "ed": 19,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "A specialty distributor grew net sales 12.9 percent in the same week its two largest peers made their cases on scale and on AI.",
+   "src": "GlobeNewswire · Jul 29",
+   "t": "s2",
+   "t2": "s1",
+   "s": "A specialty distributor posts double-digit sales growth on penetration and case volume rather than on acquisition or automation.",
+   "url": "https://www.globenewswire.com/news-release/2026/07/29/3335072/15197/en/the-chefs-warehouse-reports-second-quarter-2026-financial-results.html",
+   "img": null
+  },
+  {
+   "id": "e19c8",
+   "ed": 19,
+   "sec": "Board & Governance",
+   "tag": "moves",
+   "h": "P&G put the chairman and CEO titles back in one pair of hands and retired the executive who had held them separately.",
+   "src": "SEC · Jul 29",
+   "t": "s2",
+   "s": "A CPG board recombines chairman and CEO as the executive chairman retires.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000094/moellerpressrelease.htm",
+   "img": null
+  },
+  {
+   "id": "e19c9",
+   "ed": 19,
+   "sec": "Board & Governance",
+   "tag": "data",
+   "h": "S&P 500 boards added directors at the slowest rate in a decade, and 37 percent of the ones they added were CEOs.",
+   "src": "Corp. Counsel · Aug 2026",
+   "t": "s2",
+   "s": "Board refreshment slows to a decade low as CEOs take 37 percent of new S&P 500 seats.",
+   "url": "https://www.thecorporatecounsel.net/blog/2026/08/board-composition-board-refreshment-slows-among-sp-500-companies.html",
+   "img": null
+  },
+  {
+   "id": "e19c10",
+   "ed": 19,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Employers paid 3.3 percent more. Workers took home 0.4 percent less. Health benefits rose 6 percent.",
+   "src": "BLS · Jul 31",
+   "t": "s5",
+   "s": "Employer labor costs rise while real wages fall, with health benefits the fastest-moving line.",
+   "url": "https://www.bls.gov/news.release/archives/eci_07312026.htm",
+   "img": null
+  },
+  {
+   "id": "e19c11",
+   "ed": 19,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Second Canadian airline in a year to strike over the same question: whether boarding the plane is work.",
+   "src": "AP · Aug 3",
+   "t": "s5",
+   "s": "A second Canadian carrier settles a strike over pay for ground duties inside twelve months.",
+   "url": "https://apnews.com/article/strike-westjet-flights-airline-attendants-travel-canada-68ba35ff5f5335eb77023748bc534b3d",
    "img": null
   }
  ]
