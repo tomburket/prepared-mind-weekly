@@ -194,7 +194,7 @@ body{
 <script>
 "use strict";
 /* ===================== DATA ===================== */
-const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25",14:"July 2",15:"July 10",16:"July 17",17:"July 24",18:"July 31",19:"August 7"};
+const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25",14:"July 2",15:"July 10",16:"July 17",17:"July 24",18:"July 31",19:"August 7",20:"August 14"};
 
 const THREADS={
   s1:{name:"AI is an operating discipline, not a model",short:"AI Ops Discipline",tier:"spine",color:"#d2a857",
@@ -227,7 +227,7 @@ const THREADS={
 
 /* Which threads are switched on. Drop t10/t11 = their cards fall to the curious half.
    Add 't10','t11' here to run them. */
-const ACTIVE=new Set(["s1","s2","s3","s4","s5","t7","t8","t9","t10","t11","t12","t13","t14"]);
+const ACTIVE=new Set(["s1","s2","s3","s4","s5","t7","t8","t9","t10","t12","t13","t14"]);
 
 const CARDS=[
  /* ---- Edition 1 ---- */
@@ -420,11 +420,23 @@ const CARDS=[
  {id:"e19c8",ed:19,sec:"CEO Market Intel",tag:"data",h:"Sysco grew sales 4.7 percent last quarter. A specialty distributor a fraction of its size grew 12.9 percent over almost exactly the same weeks.",src:"GlobeNewswire \u00b7 Jul 29",t:"s2",t2:"s1",s:"A specialty distributor grows 12.9 percent on penetration and case volume over the same weeks Sysco grew 4.7 percent.",url:"https://www.globenewswire.com/news-release/2026/07/29/3335072/15197/en/the-chefs-warehouse-reports-second-quarter-2026-financial-results.html"},
  {id:"e19c9",ed:19,sec:"Board & Governance",tag:"moves",h:"P&G put the chairman and CEO titles back in one pair of hands and retired the executive who had held them separately.",src:"SEC \u00b7 Jul 29",t:"s2",s:"A CPG board recombines chairman and CEO as the executive chairman retires.",url:"https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000094/moellerpressrelease.htm"},
  {id:"e19c10",ed:19,sec:"Board & Governance",tag:"data",h:"S&P 500 boards added directors at the slowest rate in a decade, and 37 percent of the ones they added were CEOs.",src:"Corp. Counsel \u00b7 Aug 2026",t:"s2",s:"Board refreshment slows to a decade low as CEOs take 37 percent of new S&P 500 seats.",url:"https://www.thecorporatecounsel.net/blog/2026/08/board-composition-board-refreshment-slows-among-sp-500-companies.html"},
+ /* ---- Edition 20 ---- */
+ {id:"e20c1",ed:20,sec:"The Workforce",tag:"data",h:"Global employee engagement fell to 20 percent. Manager engagement fell further, from 31 percent in 2022 to 22 percent in 2025.",src:"Gallup \u00b7 Apr 2026",t:"s5",s:"Global engagement falls to 20 percent, with the steepest decline among managers.",url:"https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx"},
+ {id:"e20c2",ed:20,sec:"The Workforce",tag:"labor",h:"Heineken cut about 3,000 positions in six months, half of a two-year target, and beat profit expectations",src:"Reuters \u00b7 Aug 5",t:"s5",s:"A global brewer removes 3,000 roles in six months, half its two-year target, while beating profit expectations.",url:"https://www.rte.ie/news/business/2026/0805/1586519-heineken-first-half-results/"},
+ {id:"e20c3",ed:20,sec:"The Workforce",tag:"data",h:"Productivity rose 1.4 percent. Labor's share of output fell to 52.9 percent, the lowest reading since the series began in 1947",src:"BLS \u00b7 Aug 6",t:"s5",s:"Labor's share of output hits a 79-year low as productivity rises.",url:"https://www.bls.gov/news.release/archives/prod2_08062026.htm"},
+ {id:"e20c4",ed:20,sec:"Board & Governance",tag:"signal",h:"The facility tied to 9,481 illnesses last saw an FDA inspector in 2019. The visit before that came during a 2013 outbreak",src:"Gray News \u00b7 Aug 13",t:"s2",s:"The facility at the center of a 9,481-case outbreak went seven years without an FDA inspection, against a mandate the agency meets at 5 percent.",url:"https://www.wcax.com/2026/08/13/farm-linked-diarrhea-lettuce-cyclosporiasis-outbreak-hadnt-been-inspected-7-years-report-says/"},
+ {id:"e20c5",ed:20,sec:"Board & Governance",tag:"moves",h:"Six days after recombining its chairman and chief executive roles, P&G agreed to buy Thorne for $3.8 billion in cash",src:"Reuters \u00b7 Aug 4",t:"s2",s:"P&G buys a supplements platform from L Catterton for $3.8 billion days after consolidating its chair.",url:"https://www.reuters.com/legal/transactional/pg-is-acquiring-supplements-maker-thorne-ceo-jejurikar-tells-cnbc-2026-08-04/"},
+ {id:"e20c6",ed:20,sec:"CEO Market Intel",tag:"moves",h:"B&G Foods announced its next chief executive five days before it could name him. He was already on the board",src:"Business Wire \u00b7 Aug 10",t:"s2",s:"A packaged-food company names a sitting board member and former retail technology officer as CEO.",url:"https://www.businesswire.com/news/home/20260810956603/en/BG-Foods-Appoints-Robert-D.-Mills-as-President-and-Chief-Executive-Officer"},
+ {id:"e20c7",ed:20,sec:"CEO Market Intel",tag:"data",h:"Repeat public-company chief executives took 34 percent of new S&P 500 appointments in the first half, against 22 percent a year earlier",src:"Fortune \u00b7 Aug 7",t:"s2",s:"One in three new S&P 500 CEOs has run a public company before, up from one in five.",url:"https://fortune.com/2026/08/07/retired-ceos-succession-planning/"},
+ {id:"e20c8",ed:20,sec:"AI & Ops",tag:"moves",h:"Target created a chief AI officer and hired the job out of Lowe's. Walmart does not have the title",src:"Fast Company \u00b7 Aug 11",t:"s1",t2:"s2",s:"A mass retailer creates its first chief AI officer role and fills it from home-improvement retail.",url:"https://www.fastcompany.com/91588065/target-names-first-chief-ai-officer-exclusive"},
+ {id:"e20c9",ed:20,sec:"AI & Ops",tag:"signal",h:"A reporter requested his own data from McDonald's and received 515 pages. The file scored his attrition risk at zero",src:"WIRED \u00b7 Aug 12",t:"s1",s:"A data access request returns a 515-page loyalty file with purchase predictions and an attrition score.",url:"https://www.wired.com/story/mcdonalds-built-a-515-page-dossier-on-me-it-says-ill-never-leave/"},
+ {id:"e20c10",ed:20,sec:"Cultural Signal",tag:"culture",h:"Before Google, the web had no dominant search engine and Yahoo's directory was assembled by hand",src:"Ars Technica \u00b7 Aug 7",t:"curious",s:"A retrospective on the mid-1990s web, when a dozen search engines competed and Yahoo's directory was built by hand.",url:"https://arstechnica.com/gadgets/2026/08/remembering-the-pre-google-web-when-search-was-an-experiment/"},
+ {id:"e20c11",ed:20,sec:"Oddly Interesting",tag:"science",h:"Divers recovered Bronze Age storage vessels from an Italian lake with the grain still inside them",src:"HeritageDaily \u00b7 Aug 10",t:"curious",s:"Bronze Age storage jars recovered from an Italian lake still hold preserved spelt.",url:"https://www.heritagedaily.com/2026/08/3000-year-old-spelt-and-pottery-discovered-in-sunken-settlement-beneath-italian-lake/158895"},
 ];
 
 /* drop duplicate markers */
 const CORPUS=CARDS.filter(c=>c.t!=="dup");
-const CURRENT_EDITION=19;
+const CURRENT_EDITION=20;
 
 /* ---- derived ---- */
 function effectiveThread(c){ return (c.t!=="curious" && ACTIVE.has(c.t)) ? c.t : null; }
