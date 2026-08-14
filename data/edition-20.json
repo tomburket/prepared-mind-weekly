@@ -1,0 +1,237 @@
+{
+  "edition": 20,
+  "date_long": "August 14, 2026",
+  "topics": "Workforce, Governance, Food Safety, Leadership, AI, Culture",
+  "sections": [
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Global employee engagement fell to 20 percent. Manager engagement fell further, from 31 percent in 2022 to 22 percent in 2025.",
+          "source": "Gallup · April 2026",
+          "summary": "Gallup's State of the Global Workplace, published in April 2026 on data collected through December 2025, reports global employee engagement at 20 percent, the lowest reading since 2020. Manager engagement fell from 31 percent in 2022 to 22 percent in 2025, and Gallup attributes the bulk of the overall decline to that drop. United States engagement stands at 32 percent. Gallup estimates the cost of disengagement at $10 trillion in lost productivity, equivalent to about 9 percent of global GDP.",
+          "why": "The layer that transmits every operating decision to the floor disengaged faster than the floor did. Gallup locates the overall decline there rather than at the front line.",
+          "url": "https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx",
+          "link_label": "Read at Gallup",
+          "landscape": {
+            "tag": "data",
+            "t": "s5",
+            "src_short": "Gallup · Apr 2026",
+            "gloss": "Global engagement falls to 20 percent, with the steepest decline among managers.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Heineken cut about 3,000 positions in six months, half of a two-year target, and beat profit expectations",
+          "source": "Reuters via RTÉ · August 5, 2026",
+          "summary": "Heineken reported first-half 2026 results on August 5: organic operating profit up 6.7 percent to €2.17 billion, against analyst consensus of roughly 3.3 percent growth. The company cut approximately 3,000 full-time positions in the half, half of a two-year plan to eliminate up to 6,000. Chief financial officer Harold van den Broek said the reductions were enterprise-wide, across breweries, supply chain, head office and individual markets. Gross savings are tracking toward the upper end of a €400 million to €500 million target. Full-year guidance of 2 to 6 percent organic operating profit growth was maintained.",
+          "why": "The reduction is running ahead of the savings target and the profit beat arrived in the same release. The company describes the cuts as spread across every function rather than concentrated in one.",
+          "url": "https://www.rte.ie/news/business/2026/0805/1586519-heineken-first-half-results/",
+          "link_label": "Read at RTÉ",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "Reuters · Aug 5",
+            "gloss": "A global brewer removes 3,000 roles in six months, half its two-year target, while beating profit expectations.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Productivity rose 1.4 percent. Labor's share of output fell to 52.9 percent, the lowest reading since the series began in 1947",
+          "source": "Bureau of Labor Statistics · August 6, 2026",
+          "summary": "The Bureau of Labor Statistics released preliminary second-quarter productivity and costs on August 6. Nonfarm business productivity rose 1.4 percent at an annual rate, output rose 1.7 percent and hours rose 0.3 percent. Unit labor costs rose 1.3 percent and hourly compensation 2.7 percent, while real hourly compensation fell 3.1 percent. Measured against the second quarter of 2025, productivity rose 2.2 percent and real hourly compensation fell 0.1 percent. The labor share — the percentage of output paid to workers as compensation — was 52.9 percent, which the release identifies as the lowest in a series beginning in the first quarter of 1947. Manufacturing productivity rose 1.9 percent, on output up 4.6 percent against hours up 2.6 percent.",
+          "why": "Output grew faster than hours and the workers producing it took the smallest cut in 79 years of measurement. Edition 19 ran the same quarter from the cost side, where employers paid 3.3 percent more.",
+          "url": "https://www.bls.gov/news.release/archives/prod2_08062026.htm",
+          "link_label": "Read at the BLS",
+          "landscape": {
+            "tag": "data",
+            "t": "s5",
+            "src_short": "BLS · Aug 6",
+            "gloss": "Labor's share of output hits a 79-year low as productivity rises.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "The facility tied to 9,481 illnesses last saw an FDA inspector in 2019. The visit before that came during a 2013 outbreak",
+          "source": "Gray News · August 13, 2026",
+          "summary": "The CDC raised its count in the cyclospora outbreak linked to Taylor Farms de Mexico iceberg lettuce to 9,481 confirmed illnesses across 17 states, adding 3,123 patients in a week, with 398 hospitalizations and two deaths in Michigan. The agency notes that up to 83 infections can go undiagnosed for every confirmed case. Taylor Farms recalled the lettuce July 17 and said on August 7 that it is not responsible, citing roughly $200 million spent on food safety, about 3 percent of its $7 billion in annual revenue. CBS News then reported that the company's Guanajuato facility had not been inspected by the FDA in seven years. Its last inspection was in 2019; the one before that came in 2013, when the facility was under investigation for an earlier cyclosporiasis outbreak. Federal law directs the agency to conduct nearly 20,000 foreign food safety inspections a year. It completed just under 1,000 in 2025 and has not reached 10 percent of the mandate in a decade, citing budget and staffing.",
+          "why": "The agency told CBS that the statutory target is unrealistic on its current budget. Every operator importing produce is verifying suppliers against a federal inspection regime that reached about 5 percent of its requirement last year.",
+          "url": "https://www.wcax.com/2026/08/13/farm-linked-diarrhea-lettuce-cyclosporiasis-outbreak-hadnt-been-inspected-7-years-report-says/",
+          "link_label": "Read at Gray News",
+          "landscape": {
+            "tag": "signal",
+            "t": "s2",
+            "src_short": "Gray News · Aug 13",
+            "gloss": "The facility at the center of a 9,481-case outbreak went seven years without an FDA inspection, against a mandate the agency meets at 5 percent.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Six days after recombining its chairman and chief executive roles, P&G agreed to buy Thorne for $3.8 billion in cash",
+          "source": "Reuters · August 4, 2026",
+          "summary": "Procter & Gamble agreed on August 4 to acquire supplements maker Thorne from L Catterton for $3.8 billion in cash, deepening the company's position in health and wellness. Chief executive Shailesh Jejurikar disclosed the transaction to CNBC, and L Catterton confirmed the sale in its own announcement. P&G had announced on July 29 that Jejurikar would add the chairman title effective August 1 as executive chairman Jon Moeller retired after 38 years — the transaction that ran in Edition 19.",
+          "why": "The consolidated chair made its first major capital commitment inside a week. On the other side, a sponsor exited a platform to a strategic buyer rather than to another fund or to the public market.",
+          "url": "https://www.reuters.com/legal/transactional/pg-is-acquiring-supplements-maker-thorne-ceo-jejurikar-tells-cnbc-2026-08-04/",
+          "link_label": "Read at Reuters",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Reuters · Aug 4",
+            "gloss": "P&G buys a supplements platform from L Catterton for $3.8 billion days after consolidating its chair.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "B&G Foods announced its next chief executive five days before it could name him. He was already on the board",
+          "source": "Business Wire · August 10, 2026",
+          "summary": "B&G Foods said on August 5 that Casey Keller would retire as president and chief executive on August 7 after five years, and that a successor had been selected but could not be named because he held a senior leadership position at another public company. The company named Robert D. Mills president and chief executive on August 10. Mills has served on B&G's board since March 2018 and spent more than 12 years at Tractor Supply Company, most recently as executive vice president and chief technology, digital commerce and pet specialty officer. Stated priorities are portfolio reshaping, margin improvement and debt reduction. B&G sold its Green Giant US frozen vegetable business, halved its dividend, and posted net losses in fiscal 2025 and the first quarter of fiscal 2026.",
+          "why": "A packaged-food company working through debt and declining sales filled the chair from its own boardroom with a technology and digital commerce executive out of farm retail. The five-day gap is a disclosure requirement meeting a sitting officer's notice period.",
+          "url": "https://www.businesswire.com/news/home/20260810956603/en/BG-Foods-Appoints-Robert-D.-Mills-as-President-and-Chief-Executive-Officer",
+          "link_label": "Read at Business Wire",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Business Wire · Aug 10",
+            "gloss": "A packaged-food company names a sitting board member and former retail technology officer as CEO.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Repeat public-company chief executives took 34 percent of new S&P 500 appointments in the first half, against 22 percent a year earlier",
+          "source": "Fortune · August 7, 2026",
+          "summary": "Russell Reynolds Associates data reported by Fortune on August 7 shows that 34 percent of chief executives appointed by S&P 500 companies in the first half of 2026 had previously led a public company, up from 22 percent in the same period a year earlier. Fortune reported average chief executive tenure at nine years in 2026 against 6.6 in 2025, and external hires at 33 percent of S&P 500 appointments in 2025 against 18 percent in 2024. Cracker Barrel executed the pattern on August 10, appointing David Deno — 69, former chief executive of Bloomin' Brands — and adding him to the board as Julie Masino stepped down. His agreement sets a $1 million base salary, a 125 percent annual bonus target and long-term equity at 360 percent of base. Shawn Cole of Cowen Partners said the approach \"feels like the easy button\" and amounts to \"kicking the can down the road\" on internal development.",
+          "why": "Boards are buying a shorter learning curve at the price of a shorter runway. The recruiter quoted in the same story names the cost, which is that nobody inside the company is being developed for the seat.",
+          "url": "https://fortune.com/2026/08/07/retired-ceos-succession-planning/",
+          "link_label": "Read at Fortune",
+          "landscape": {
+            "tag": "data",
+            "t": "s2",
+            "src_short": "Fortune · Aug 7",
+            "gloss": "One in three new S&P 500 CEOs has run a public company before, up from one in five.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Target created a chief AI officer and hired the job out of Lowe's. Walmart does not have the title",
+          "source": "Fast Company · August 11, 2026",
+          "summary": "Target named Chandhu Nair its first chief AI officer, Fast Company reported on August 11 in an exclusive. Nair spent more than six years at Lowe's as senior vice president of stores, data, AI and innovation, nine years at Staples, and founded a data analytics software company. The role covers both employee-facing and customer-facing systems — inventory management, associate tools and online shopping. Target also promoted Purvi Shah to senior vice president from vice president of user experience design; Shah led the company's ChatGPT conversational shopping launch eight months ago. Nair said the measure of success \"won't be how much AI we deploy,\" but the difference it makes to growth, the guest experience and the team's ability to do their best work.",
+          "why": "The title now sits above both the associate tools and the customer interface at one company and does not exist at its largest competitor. The hire came out of home improvement rather than grocery or technology.",
+          "url": "https://www.fastcompany.com/91588065/target-names-first-chief-ai-officer-exclusive",
+          "link_label": "Read at Fast Company",
+          "landscape": {
+            "tag": "moves",
+            "t": "s1",
+            "t2": "s2",
+            "src_short": "Fast Company · Aug 11",
+            "gloss": "A mass retailer creates its first chief AI officer role and fills it from home-improvement retail.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "A reporter requested his own data from McDonald's and received 515 pages. The file scored his attrition risk at zero",
+          "source": "WIRED · August 12, 2026",
+          "summary": "WIRED's Reece Rogers used California's data access law to request his records from McDonald's loyalty program and received a 515-page file through the company's Privacy Rights Center. It logged when, where and what he purchased each time he opened the app, the offers sent to him, his loyalty points, and every code he scanned in the Monopoly sweepstakes along with the prize. The file also carried predictions: 2.16 visits over the next six weeks, $13.49 average spend, $29.15 total. It named a large Diet Coke as his most repeated item and labeled his habits \"Food-Led Afternoon Snack\" and \"On the Go Lunch in a Rush.\" His attrition score was zero. Lorrie Cranor of Carnegie Mellon's CyLab Security and Privacy Institute said the length is \"kind of a wake-up call\" but \"not in a format that people will readily understand.\" A McDonald's spokesperson said the company \"takes data privacy and security seriously\" and, \"like many digital loyalty programs,\" uses past purchases to deliver relevant deals and offers.",
+          "why": "The privacy researchers WIRED consulted called this level of detail standard for large American loyalty programs, not exceptional. Any operator running one holds a comparable file, and in states with an access law any customer can ask to read it.",
+          "url": "https://www.wired.com/story/mcdonalds-built-a-515-page-dossier-on-me-it-says-ill-never-leave/",
+          "link_label": "Read at WIRED",
+          "landscape": {
+            "tag": "signal",
+            "t": "s1",
+            "src_short": "WIRED · Aug 12",
+            "gloss": "A data access request returns a 515-page loyalty file with purchase predictions and an attrition score.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Before Google, the web had no dominant search engine and Yahoo's directory was assembled by hand",
+          "source": "Ars Technica · August 7, 2026",
+          "summary": "Ars Technica published a retrospective on August 7 by Alan Bradley on the mid-1990s search landscape, when the web was growing quickly with no dominant engine and users navigated through a fragmented set of directories, newsgroups and early search tools. Yahoo ran as a human-curated directory, with people reading and categorizing sites by hand. AltaVista and Lycos competed on crawling and indexing. Each engine returned different results for the same query, and choosing among them was part of using the web.",
+          "why": "The category was a dozen competing experiments before it was one utility, and the engines that led it are not the ones that survived it.",
+          "url": "https://arstechnica.com/gadgets/2026/08/remembering-the-pre-google-web-when-search-was-an-experiment/",
+          "link_label": "Read at Ars Technica",
+          "landscape": {
+            "tag": "culture",
+            "t": "curious",
+            "src_short": "Ars Technica · Aug 7",
+            "gloss": "A retrospective on the mid-1990s web, when a dozen search engines competed and Yahoo's directory was built by hand.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Divers recovered Bronze Age storage vessels from an Italian lake with the grain still inside them",
+          "source": "HeritageDaily · August 10, 2026",
+          "summary": "Underwater archaeologists working under Italy's Ministry of Culture recovered Late Bronze Age pottery from Gran Carro di Bolsena, a submerged prehistoric settlement beneath Lake Bolsena in central Italy, HeritageDaily reported on August 10. Ceramic vessels held preserved ears of spelt. The team also documented large wooden structures beneath stones, textile fragments and woven material including what may be a rope or hawser. The pottery provides evidence of a Proto-Villanovan phase, extending the settlement's known chronology from the Bronze Age into the Iron Age. The waterlogged environment preserved organic material that decomposes on dry land. The work involved the Underwater Archaeology Service of the regional Superintendency, L'Anfora Srl and CSR Restauro Beni Culturali.",
+          "why": "Grain sitting in a storage jar is the part of a settlement that almost never survives to be found. The lake kept the contents and the container together.",
+          "url": "https://www.heritagedaily.com/2026/08/3000-year-old-spelt-and-pottery-discovered-in-sunken-settlement-beneath-italian-lake/158895",
+          "link_label": "Read at HeritageDaily",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "HeritageDaily · Aug 10",
+            "gloss": "Bronze Age storage jars recovered from an Italian lake still hold preserved spelt.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
