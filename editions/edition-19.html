@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 19
+date: August 7, 2026
+cards: 10
+sections: The Workforce, AI & Ops, CEO Market Intel, Board & Governance
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; August 7, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">August 7, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">10 Items &nbsp;&bull;&nbsp; AI, Distribution, Leadership, Governance, Workforce, Boards</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#workforce">The Workforce</a>
+<a href="#ai">AI &amp; Ops</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#board">Board &amp; Governance</a>
+</nav>
+
+<main class="content">
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Employers paid 3.3 percent more. Workers took home 0.4 percent less. Health benefits rose 6 percent.</div>
+</div>
+<div class="item-source">Bureau of Labor Statistics &middot; July 31, 2026</div>
+<div class="item-summary">The Bureau of Labor Statistics released the Employment Cost Index for June 2026 on July 31. Compensation costs for private industry workers rose 0.9 percent for the three months ending in June and 3.3 percent over the year, with wages and salaries up 3.1 percent and benefits up 3.8 percent. Inflation-adjusted private-sector wages and salaries fell 0.4 percent over the year. Private-industry health benefit costs rose 6 percent over the year, the largest figure in the release. Within the quarter, retail trade wages and salaries rose 1.1 percent and total compensation 1.2 percent, against 0.5 percent in accommodation and food services.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Both sides of the same transaction ended the year worse off by their own measure. And the fastest-moving cost is benefits, which is money the employer spends that never appears to the employee as a raise.</div>
+</div>
+<a class="item-link" href="https://www.bls.gov/news.release/archives/eci_07312026.htm" target="_blank" rel="noopener">Read at the BLS &#8599;</a>
+</div>
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Two Canadian airlines in twelve months have struck over pay for work done on the ground.</div>
+</div>
+<div class="item-source">The Associated Press &middot; August 3, 2026</div>
+<div class="item-summary">Roughly 4,400 WestJet cabin crew represented by CUPE 8125 walked out at midnight August 2, and the airline cancelled 495 flights Sunday. The two sides reached a tentative agreement August 3, subject to ratification. The dispute centered on how flight attendants are paid for duties performed on the ground &mdash; boarding, safety checks, deplaning. The union said some of that work goes unpaid; the company said staff are compensated through a credit-hour system rather than an hourly rate. Before the walkout WestJet had proposed a 13 percent increase in October, 2.5 percent each January for three years, retroactive pay to January, and additional pay for all hours worked. CUPE 8125 president Alia Hussain said the tentative agreement recognizes more of the work cabin crew are required to perform. Ten thousand Air Canada flight attendants struck in August 2025 in a dispute that also included pay for ground duties.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The dispute was never about the rate. It was about which minutes count as hours. Every operation with a shift that starts before the clock does has the same arithmetic sitting somewhere in it.</div>
+</div>
+<a class="item-link" href="https://apnews.com/article/strike-westjet-flights-airline-attendants-travel-canada-68ba35ff5f5335eb77023748bc534b3d" target="_blank" rel="noopener">Read at the AP &#8599;</a>
+</div>
+</section>
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Three quarters of retail and CPG executives call AI a top priority. One in six can say what it returned. More than half handed the strategy to someone who does not own the P&amp;L.</div>
+</div>
+<div class="item-source">Deloitte &middot; June 18, 2026</div>
+<div class="item-summary">Deloitte published a survey of 200 retail and consumer products executives on June 18. Seventy-five percent called AI a top strategic priority; 16.5 percent could quantify a return. Adoption never exceeds 36 percent outside information technology, and enterprise-wide deployment sits at 7 to 10 percent in both sectors. About half invest less than 0.5 percent of revenue in AI. Eighty-two percent plan to increase investment over the next 12 months, with most of it directed at data and IT infrastructure rather than use cases. Fifty-four percent report that AI strategy ownership sits with technology leaders rather than the P&amp;L owners accountable for results. The authors are Kevin Byrne and Alan Levy.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The survey locates the bottleneck in reporting lines rather than in technology. A strategy owned by the function that installs it, funded into infrastructure, and measured by nobody who carries the number is a description of how pilots stay pilots.</div>
+</div>
+<a class="item-link" href="https://www.deloitte.com/us/en/industries/consumer/articles/state-of-ai-adoption-in-retail-cpg-executive-survey.html" target="_blank" rel="noopener">Read at Deloitte &#8599;</a>
+</div>
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">A freight broker hit its mid-cycle margin targets in the trough of the cycle. Its CEO says productivity was the second goal, not the first.</div>
+</div>
+<div class="item-source">SEC EDGAR &middot; July 29, 2026</div>
+<div class="item-summary">C.H. Robinson reported second-quarter results July 29: total revenues of $4.9 billion, up 19.3 percent, and adjusted earnings of $1.61 per share. Both segments reached mid-cycle operating margin targets &mdash; 40.9 percent in North American Surface Transportation and 33.4 percent in Global Forwarding, excluding restructuring &mdash; while the Cass Freight Shipment Index declined year over year for the 15th consecutive quarter. The company credits its Lean AI strategy with productivity improvements of more than 60 percent since the end of 2022. The earnings deck states the operating model decouples headcount growth from volume growth. President and CEO Dave Bozeman told analysts the strategy &ldquo;isn&rsquo;t just about generating higher productivity. First and foremost, it needs to result in better service to our customers and carriers.&rdquo;</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">A model built to decouple headcount from volume has decided in advance how the next good year gets absorbed. The CEO puts service ahead of productivity in the ordering. The deck puts the decoupling in the highlights.</div>
+</div>
+<a class="item-link" href="https://www.chrobinson.com/en-us/about-us/newsroom/news/2026/q2-2026-earnings-summary/" target="_blank" rel="noopener">Read at C.H. Robinson &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Sysco put a number on AI in its forward guidance. It is about $100 million.</div>
+</div>
+<div class="item-source">Sysco &middot; August 4, 2026</div>
+<div class="item-summary">Sysco reported fourth-quarter and full-year fiscal 2026 results August 4 for the 13-week quarter ended June 27. Sales rose 4.7 percent, U.S. Foodservice volume 2.5 percent and U.S. local volume 2.6 percent. Earnings per share rose 4.5 percent to $1.15 and adjusted earnings per share 3.4 percent to $1.53, absorbing $11 million in higher incentive compensation. The company introduced fiscal 2027 guidance of 6 to 7 percent sales growth and 9 to 11 percent adjusted earnings per share growth on a 53-week basis. Included in that guidance is approximately $100 million of efficiency improvements the company attributes to an artificial-intelligence-driven program.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Most companies describe AI as a capability. This one has entered it as a line item a year ahead of delivering it, in a document analysts will hold it to. The efficiency is now a promise with a date on it.</div>
+</div>
+<a class="item-link" href="https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/08-04-2026-130610546" target="_blank" rel="noopener">Read at Sysco &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Hormel named the date of its CEO handoff 14 months in advance, dissolved the search committee, and hit the date.</div>
+</div>
+<div class="item-source">Hormel Foods &middot; July 28, 2026</div>
+<div class="item-summary">Hormel Foods announced July 28 that its board appointed John Ghingo president and chief executive officer effective October 26, succeeding interim CEO Jeff Ettinger. When Ettinger returned in June 2025, the company announced the interim term as a defined 15-month period, dissolved the CEO search committee that same day, and stated the board planned to install a permanent chief executive in October 2026. Ettinger remains interim CEO through October 25 and stays on the board. Ghingo, 53, spent 15 years at Mondelez International, served as president of Applegate Farms &mdash; a Hormel subsidiary &mdash; from 2018 through 2022, left to run Whisps, and rejoined Hormel in 2024 to lead Retail. Board chairman Bill Newlands said the board is confident Ghingo is the right leader for the company&rsquo;s next chapter.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Most successions are announced when they are decided. This one was announced when it was scheduled, and the schedule held through 15 months of operating results.</div>
+</div>
+<a class="item-link" href="https://www.hormelfoods.com/newsroom/press-releases/hormel-foods-names-john-ghingo-next-chief-executive-officer/" target="_blank" rel="noopener">Read at Hormel Foods &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Hershey grew North America confectionery sales 4.2 percent on roughly 14 points of price. The rest is volume going the other way.</div>
+</div>
+<div class="item-source">SEC EDGAR &middot; July 30, 2026</div>
+<div class="item-summary">Hershey reported second-quarter results July 30: consolidated net sales of $2,787.3 million, up 6.6 percent, with organic constant-currency sales up 3.6 percent. Reported net income was $457.7 million, or $2.26 per diluted share, against $63 million and $0.31 a year earlier. North America Confectionery net sales rose 4.2 percent on approximately 14 points of net price realization. North America Salty Snacks rose 22.9 percent to $387.8 million, including LesserEvil. Adjusted earnings were $1.90 per share against consensus of $1.42. The company narrowed full-year net sales growth guidance to 4.5 to 5 percent from 4 to 5 percent. President and CEO Kirk Tanner said the company enters the second half with momentum and increased investment behind brands, merchandising and innovation.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Price carried the quarter and volume paid for it. The second-half plan spends into the gap rather than waiting to see whether shoppers come back at these prices.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/0000047111/000162828026050769/exhibit991_2026xq2.htm" target="_blank" rel="noopener">Read at SEC EDGAR &#8599;</a>
+</div>
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Sysco grew sales 4.7 percent last quarter. A specialty distributor a fraction of its size grew 12.9 percent over almost exactly the same weeks.</div>
+</div>
+<div class="item-source">GlobeNewswire &middot; July 29, 2026</div>
+<div class="item-summary">The Chefs&rsquo; Warehouse reported second-quarter results July 29 for the quarter ended June 26: net sales of $1.17 billion, up 12.9 percent from $1.03 billion. GAAP net income was $33.8 million, or $0.76 per diluted share, against $21.2 million and $0.49 a year earlier. Adjusted earnings were $0.78 per share against $0.52, and adjusted EBITDA was $88.1 million against $65.4 million. Management attributed market share gains to growth in product penetration, case volume and unique customers, alongside continuing improvement in operational efficiency. The company distributes specialty food products to independent restaurants, hotels, clubs and caterers in the United States, the Middle East and Canada. Sysco&rsquo;s fiscal fourth quarter ended June 27, one day after Chefs&rsquo; Warehouse&rsquo;s.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Two foodservice distributors closed the same weeks and reported different engines. One is buying 166 cash-and-carry stores for $29 billion and guiding to AI efficiency. The other credits more customers and more cases. Neither account requires the other to be wrong.</div>
+</div>
+<a class="item-link" href="https://www.globenewswire.com/news-release/2026/07/29/3335072/15197/en/the-chefs-warehouse-reports-second-quarter-2026-financial-results.html" target="_blank" rel="noopener">Read at GlobeNewswire &#8599;</a>
+</div>
+</section>
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">P&amp;G put the chairman and CEO titles back in one pair of hands and retired the executive who had held them separately.</div>
+</div>
+<div class="item-source">SEC EDGAR &middot; July 29, 2026</div>
+<div class="item-summary">Procter &amp; Gamble announced July 29 that Shailesh Jejurikar was appointed chairman of the board effective August 1, adding the role to his position as president and chief executive officer. Executive Chairman Jon Moeller retired from the board July 31 and leaves the company August 14, ending 38 years during which he served as chief financial officer, chief operating officer, chief executive officer and executive chairman. Jejurikar joined P&amp;G in 1989 and has served on the global leadership team since 2014, with senior roles across Fabric Care and Home Care and across supply chain, information technology and global business services.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The board did not recruit an independent chair into the seat. It folded the seat back into the chief executive&rsquo;s job as the occupant walked out the door.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/0000080424/000008042426000094/moellerpressrelease.htm" target="_blank" rel="noopener">Read at SEC EDGAR &#8599;</a>
+</div>
+<div class="item-card" id="c10">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">S&amp;P 500 boards added directors at the slowest rate in a decade, and 37 percent of the ones they added were CEOs.</div>
+</div>
+<div class="item-source">TheCorporateCounsel.net &middot; August 2026</div>
+<div class="item-summary">The 2026 Spencer Stuart Board Index reports that S&amp;P 500 boards appointed 364 new independent directors out of 5,204 total, the lowest number since 2016. Turnover fell to 0.7 new directors per board from 0.8 a year earlier. Thirty-seven percent of new directors are current or former chief executives, up seven percentage points and the highest share since a peak of 42 percent in 2012. Sixty-four percent of incoming directors bring CEO or financial experience, up from 59 percent. New directors averaged 60.1 years of age, up from 59.1. Fewer first-time directors were appointed, and more companies did not replace directors who left.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Boards facing more complexity are adding fewer people, older people, and people who have already done the job. Every one of those choices narrows the pool the next board will have to choose from.</div>
+</div>
+<a class="item-link" href="https://www.thecorporatecounsel.net/blog/2026/08/board-composition-board-refreshment-slows-among-sp-500-companies.html" target="_blank" rel="noopener">Read at TheCorporateCounsel.net &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+August 7, 2026 &middot; Edition No. 19
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=19" defer></script>
+
+</body>
+</html>
