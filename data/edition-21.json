@@ -1,0 +1,221 @@
+{
+  "edition": 21,
+  "date_long": "August 21, 2026",
+  "topics": "Governance, AI, Automation, Workforce, Leadership, Antiquity",
+  "sections": [
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Sysco's technology committee became an AI committee that meets monthly with management. D. E. Shaw introduced the two new directors.",
+          "source": "GlobeNewswire · August 20, 2026",
+          "summary": "Sysco increased its board to 13 directors effective September 1 and evolved its Technology Committee into the Artificial Intelligence Transformation & Technology Committee, which the company said \"has begun meeting monthly with management to accelerate the adoption of AI-enabled capabilities.\" Jason Murray, co-founder and chief executive of Shipium Corp. and previously 19 years in leadership roles at Amazon, joins the new committee; Thomas Ondrof, former executive vice president and chief financial officer of Aramark Corporation, joins the Audit Committee. Fiscal 2027 guidance announced August 4 includes 6 to 7 percent revenue growth and 9 to 11 percent adjusted earnings per share growth on a 53-week basis, alongside a $100 million cost-savings program enabled by AI-driven process improvements, automation initiatives and operating efficiencies. The D. E. Shaw Group, an investor for more than a decade, facilitated introductions to the director candidates and currently expects to be a participant in the capital raise for the pending Jetro Restaurant Depot acquisition.",
+          "why": "An outside holder supplied the directors, and the committee they sit on now has a standing monthly appointment with management and a nine-figure savings number attached to it. What follows is whether board-level AI oversight is a governance structure or a reporting cadence.",
+          "url": "https://www.globenewswire.com/news-release/2026/08/20/3348320/2867/en/sysco-announces-strategic-board-appointments-and-ai-transformation-initiatives-intended-to-accelerate-growth-long-term-value-creation.html",
+          "link_label": "Read at GlobeNewswire",
+          "landscape": {
+            "tag": "moves",
+            "t": "s3",
+            "t2": "s2",
+            "src_short": "GlobeNewswire · Aug 20",
+            "gloss": "Sysco puts AI oversight into a standing board committee meeting monthly, with directors sourced by a decade-long shareholder.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "The Batista family takes back JBS's chief executive job, then bids six days later for the rest of Pilgrim's Pride",
+          "source": "Food Dive · August 13, 2026",
+          "summary": "JBS said on August 13 that Wesley Batista Filho, head of its North America business, will become global chief executive in January 2027, succeeding Gilberto Tomazoni after eight years; Tomazoni becomes vice chairman of the board and senior adviser. Control returns to the founding family for the first time since brothers Wesley and Joesley were imprisoned over a 2017 scandal involving payments to nearly 2,000 politicians; the brothers were reinstated to the board in 2024. The announcement accompanied a $102 million second-quarter net loss on record revenue, attributed to nonrecurring expenses including an antitrust settlement and higher cattle costs. On August 19, JBS, which owns 82 percent of Pilgrim's Pride, offered 2.1 JBS shares for each Pilgrim's share; the proposal requires approval from Pilgrim's shareholders and from a special committee of independent directors the board is expected to appoint.",
+          "why": "One fortnight returns family control to the operating chair and moves to collapse the minority stake in the chicken business. Whether those are one decision or two gets settled by a committee that does not exist yet.",
+          "url": "https://www.fooddive.com/news/jbs-ceo-batista-beef-brazil/827798/",
+          "link_label": "Read at Food Dive",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Food Dive · Aug 13",
+            "gloss": "Family control returns to JBS's chief executive role, and within a week the parent bids for the Pilgrim's Pride minority.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Target's digital twin simulated its middle-mile network with about 98 percent accuracy. A 63-item food pilot lifted on-shelf availability 2.5 percent.",
+          "source": "Supply Chain Dive · August 14, 2026",
+          "summary": "Target built Proxima, a digital twin of the middle-mile inventory positioning system that determines how goods move between facilities and stores, running on the same data and logic as the live platform. A pilot covering 63 food items produced a 2.5 percent improvement in on-shelf availability. Simulating the Houston Receive Center, a 1.2 million-square-foot facility that is the first of its kind for the retailer and serves six regional distribution centers and one flow center, Proxima predicted inventory movement with about 98 percent accuracy. Target said it intends to scale the system to additional network functions and to explore agentic AI decision support.",
+          "why": "Testing a network decision costs nothing when the network is a simulation. The harder question is which decisions a company keeps making without running them first, and whether that list gets shorter every quarter.",
+          "url": "https://www.supplychaindive.com/news/target-strengthens-inventory-management-with-digital-twins/827910/",
+          "link_label": "Read at Supply Chain Dive",
+          "landscape": {
+            "tag": "framework",
+            "t": "s1",
+            "src_short": "Supply Chain Dive · Aug 14",
+            "gloss": "Target simulates its middle-mile inventory network at about 98 percent accuracy before goods move.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Walmart is putting a 550-pick-per-hour fulfillment system in a store backroom, with 400 more promised on conditions",
+          "source": "Supply Chain Dive · August 14, 2026",
+          "summary": "Symbotic is installing its SymMicro system at a Walmart store, expected to be operational in roughly six months. Each SymMicro station can support 550 picks per hour. According to a Symbotic securities filing, Walmart made a contingent promise to purchase 400 automated systems. Richard Cohen, Symbotic's president and chief executive, said of the first installation: \"We have a second site that will follow shortly after that. And then that should trigger a bunch more sites once Walmart actually sees the system working.\" Symbotic announced in 2025 that it would acquire Walmart's advanced systems and robotics business, with Walmart funding deployment of pickup and delivery centers in store backrooms.",
+          "why": "The commitment is contingent and the vendor is the party describing the pipeline. What is not contingent is the location: fulfillment capacity is moving into the back of stores that already exist, on real estate already paid for.",
+          "url": "https://www.supplychaindive.com/news/walmart-equipping-a-store-with-symbotic-fulfillment-system/827794/",
+          "link_label": "Read at Supply Chain Dive",
+          "landscape": {
+            "tag": "framework",
+            "t": "s1",
+            "t2": "t9",
+            "src_short": "Supply Chain Dive · Aug 14",
+            "gloss": "Walmart installs a Symbotic micro-fulfillment system rated at 550 picks per hour, with 400 more contingent.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Albertsons put numbers on what AI does to a grocery basket: about 10 percent on standard searches, 26 on complex ones",
+          "source": "Supermarket News · August 17, 2026",
+          "summary": "Albertsons reported that standard conversational searches lift average basket size about 10 percent, and more complex searches about 26 percent, according to a Wall Street Journal report summarized by Supermarket News. The company is consolidating three customer-facing tools, Ask AI, Plan AI and Buy AI, into a single service. Jill Pavlovich, senior vice president of digital shopping experiences, described the behavioral change: \"All of a sudden they're shopping across categories, across items, not spearfishing.\" Albertsons also tied its ACI Edge program to labor and supply-chain optimization, saying it expects about $200 million in savings across this year and next.",
+          "why": "Most published AI results describe cost taken out. This one describes demand created, which is a different claim and a harder one to hold once competitors buy the same capability.",
+          "url": "https://www.supermarketnews.com/grocery-technology/albertsons-drives-bigger-baskets-using-ai-report",
+          "link_label": "Read at Supermarket News",
+          "landscape": {
+            "tag": "data",
+            "t": "s1",
+            "src_short": "Supermarket News · Aug 17",
+            "gloss": "Albertsons reports conversational search lifting average basket about 10 percent, complex search about 26 percent.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "PepsiCo is keeping its Tulsa plant running and moving 184 warehouse jobs to a third-party logistics provider",
+          "source": "Food Dive · August 14, 2026",
+          "summary": "PepsiCo will permanently lay off 184 warehouse employees at its Pepsi Beverages production facility in Tulsa, Oklahoma, effective November 15, according to a WARN notice filed July 14. The filing itemizes the roles: 63 warehouse persons, 57 forklift operators, 16 checkers, 13 inventory control specialists, 12 lead persons, six supply chain operations associate supervisors, five truck jockeys, three training coordinators and a remainder of manufacturing and supervisory positions. Production continues at the site; warehouse duties shift to a new location in the Tulsa area operated by a third-party logistics provider. A company spokesperson said PepsiCo is \"committed to treating impacted employees with the utmost care, including assistance applying to work with the new logistics provider, pay and benefits continuation based on years of service, transition assistance and career support.\"",
+          "why": "This is a make-or-buy decision rendered in job titles rather than a headcount reduction. The work continues a few miles away for a different employer, and the plant staying open is what makes it legible as a choice.",
+          "url": "https://www.fooddive.com/news/pepsico-to-cease-warehouse-operations-at-oklahoma-production-site/827908/",
+          "link_label": "Read at Food Dive",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "Food Dive · Aug 14",
+            "gloss": "PepsiCo moves 184 Tulsa warehouse jobs to a third-party logistics provider while keeping production on site.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "A Seattle co-op's chief executive is retiring on a turnaround: a $250,000 operating loss became $900,000 in income",
+          "source": "Grocery Dive · August 20, 2026",
+          "summary": "Krish Srinivasan, president and chief executive of PCC Community Markets, will retire January 29, 2027. He became chief executive in early 2022 after serving as chief financial officer from 2018, succeeding Suzy Monford, who departed abruptly in 2021 after less than a year in the role. The co-op moved from an operating loss of roughly $250,000 in 2022 to operating income of more than $900,000 in 2025, with net sales rising from $422 million to approximately $488 million and membership more than doubling. Board chair Joe Rogoff said: \"Krish has been exactly the CEO that PCC Community Markets needed. He brought strong financial acumen, inspired confidence, and crafted a strategic vision. He stabilized our financial foundation, re-engaged members, and made the difficult decisions necessary for the future of the co-op.\" Srinivasan will remain in the role while the board searches for a successor.",
+          "why": "The numbers are small enough to see the entire mechanism, which is rare. A swing of roughly $1.15 million on $488 million in sales is the margin a co-op actually operates on, and it took four years and a predecessor's abrupt exit to produce it.",
+          "url": "https://www.grocerydive.com/news/pcc-community-markets-president-ceo-krish-srinivasan-retire/828380/",
+          "link_label": "Read at Grocery Dive",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Grocery Dive · Aug 20",
+            "gloss": "A Seattle co-op chief retires after moving the business from operating loss to operating income across four years.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "A company still posting a net loss booked 32 pharmaceutical labs on a spacecraft that has not yet flown a reentry",
+          "source": "Redwire · August 6, 2026",
+          "summary": "SpaceMD, a wholly owned subsidiary of Redwire Corporation (NYSE: RDW), signed a contract for a mission on SpaceX's Starfall spacecraft, planned for launch in 2028, carrying up to 32 Pharmaceutical In-Space Laboratory systems. The company calls it \"the largest dedicated commercial microgravity research mission flown to date.\" The units crystallize drug compounds in microgravity to develop improved formulations. Redwire has flown 54 of the units to the International Space Station since November 2023, crystallizing 45 compounds. In results reported August 5, the company posted second-quarter revenue of $117.1 million, up 89.6 percent year over year, gross margin of 27.8 percent against negative 30.9 percent a year earlier, a net loss of $41 million, record contracted backlog of $542.1 million and total liquidity of $607.8 million.",
+          "why": "The mission is booked two years past the company's own guidance horizon, on a vehicle with no flight heritage, funded from a balance sheet rebuilt in the last twelve months rather than from earnings. A gross margin that moved about 58 points in a year is what buys that kind of runway.",
+          "url": "https://rdw.com/newsroom/redwires-spacemd-announces-its-first-commercial-mission-on-spacexs-starfall-spacecraft-to-scale-in-space-pharmaceutical-development/",
+          "link_label": "Read at Redwire",
+          "landscape": {
+            "tag": "space",
+            "t": "t14",
+            "src_short": "Redwire · Aug 6",
+            "gloss": "Redwire books 32 microgravity drug labs for a 2028 flight while still posting a quarterly net loss.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Scandinavian warlords rebuilt what they learned in Roman service: the camp layout, the soldiers' epitaphs, the mustard",
+          "source": "London Review of Books · August 13, 2026",
+          "summary": "Reviewing Dagfinn Skre's \"The Northern Routes to Kingship: A History of Scandinavia AD 180–550,\" Michael Kulikowski describes what the archaeological record shows after the plague-driven manpower crisis of Marcus Aurelius' reign sent Roman recruiters deep into Scandinavia. At Uppåkra in southernmost Sweden, a settlement laid out like a Roman army camp carries adaptations of a praetorium, basilica and sacellum north of the intersection of its main streets, structures with no local precedents in Scandinavia. The Illerup Ådal bog in Jutland holds the armour and weapons of at least 400 warriors, the swords all of Roman make, the gear showing three distinct levels of quality and decoration. Dill, poppy, parsley, cress, carrot, rape and mustard are first attested in Scandinavia at these settlements, and upright stones in the runic futhark script appear in the same period. Kulikowski writes that the transformation happened \"in a window of less than a generation.\"",
+          "why": "There are no written sources for any of it. The account is built from grave goods, seed remains, coin dates and the shape of a levelled rectangle at Hove in Norway, which is also why it took until now to write.",
+          "url": "https://www.lrb.co.uk/the-paper/v48/n14/michael-kulikowski/polar-bears-in-rome",
+          "link_label": "Read at the London Review of Books",
+          "landscape": {
+            "tag": "essay",
+            "t": "curious",
+            "src_short": "LRB · Aug 13",
+            "gloss": "Scandinavian warlords adapt lessons from Roman service — camp layout, soldiers' epitaphs, Mediterranean herbs — within a generation.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "A gateway in Libya carries 626 masons' marks in 27 distinct types, uninterpreted for more than 2,000 years",
+          "source": "HeritageDaily · August 15, 2026",
+          "summary": "Anna Kordas of the University of Warsaw analysed 626 stonemasons' marks preserved on limestone blocks of the Tauchira Gate at Ptolemais, one of the major cities of ancient Cyrenaica on the coast of modern Libya, and identified 27 distinct types. Writing in the European Journal of Archaeology, she proposes that the marks formed part of a system for managing a large Hellenistic construction project, from quarrying and transport through to the final placement of individual blocks, and that a sequence of Greek letters could represent separate construction crews. She suggests the marks may also record labour contributions and payment. The gate was built or rebuilt in the second century BC, possibly during the reign of Ptolemy VIII Physcon.",
+          "why": "The marks were cut to be read by the people doing the work, not by anyone who came after. What survives of the project is the building; what survives of the management is 27 symbols nobody had decoded.",
+          "url": "https://www.heritagedaily.com/2026/08/mysterious-marks-on-ancient-libyan-gateway-finally-deciphered/158951",
+          "link_label": "Read at HeritageDaily",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "HeritageDaily · Aug 15",
+            "gloss": "626 masons' marks in 27 types on a Hellenistic gate in Libya, read as a construction management system.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
