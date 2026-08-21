@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 20,
+ "current_edition": 21,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -21,7 +21,8 @@
   "17": "July 24",
   "18": "July 31",
   "19": "August 7",
-  "20": "August 14"
+  "20": "August 14",
+  "21": "August 21"
  },
  "active_threads": [
   "s1",
@@ -2233,6 +2234,128 @@
    "t": "curious",
    "s": "Bronze Age storage jars recovered from an Italian lake still hold preserved spelt.",
    "url": "https://www.heritagedaily.com/2026/08/3000-year-old-spelt-and-pottery-discovered-in-sunken-settlement-beneath-italian-lake/158895",
+   "img": null
+  },
+  {
+   "id": "e21c1",
+   "ed": 21,
+   "sec": "Board & Governance",
+   "tag": "moves",
+   "h": "Sysco's technology committee became an AI committee that meets monthly with management. D. E. Shaw introduced the two new directors.",
+   "src": "GlobeNewswire · Aug 20",
+   "t": "s3",
+   "t2": "s2",
+   "s": "Sysco puts AI oversight into a standing board committee meeting monthly, with directors sourced by a decade-long shareholder.",
+   "url": "https://www.globenewswire.com/news-release/2026/08/20/3348320/2867/en/sysco-announces-strategic-board-appointments-and-ai-transformation-initiatives-intended-to-accelerate-growth-long-term-value-creation.html",
+   "img": null
+  },
+  {
+   "id": "e21c2",
+   "ed": 21,
+   "sec": "Board & Governance",
+   "tag": "moves",
+   "h": "The Batista family takes back JBS's chief executive job, then bids six days later for the rest of Pilgrim's Pride",
+   "src": "Food Dive · Aug 13",
+   "t": "s2",
+   "s": "Family control returns to JBS's chief executive role, and within a week the parent bids for the Pilgrim's Pride minority.",
+   "url": "https://www.fooddive.com/news/jbs-ceo-batista-beef-brazil/827798/",
+   "img": null
+  },
+  {
+   "id": "e21c3",
+   "ed": 21,
+   "sec": "AI & Ops",
+   "tag": "framework",
+   "h": "Target's digital twin simulated its middle-mile network with about 98 percent accuracy. A 63-item food pilot lifted on-shelf availability 2.5 percent.",
+   "src": "Supply Chain Dive · Aug 14",
+   "t": "s1",
+   "s": "Target simulates its middle-mile inventory network at about 98 percent accuracy before goods move.",
+   "url": "https://www.supplychaindive.com/news/target-strengthens-inventory-management-with-digital-twins/827910/",
+   "img": null
+  },
+  {
+   "id": "e21c4",
+   "ed": 21,
+   "sec": "AI & Ops",
+   "tag": "framework",
+   "h": "Walmart is putting a 550-pick-per-hour fulfillment system in a store backroom, with 400 more promised on conditions",
+   "src": "Supply Chain Dive · Aug 14",
+   "t": "s1",
+   "t2": "t9",
+   "s": "Walmart installs a Symbotic micro-fulfillment system rated at 550 picks per hour, with 400 more contingent.",
+   "url": "https://www.supplychaindive.com/news/walmart-equipping-a-store-with-symbotic-fulfillment-system/827794/",
+   "img": null
+  },
+  {
+   "id": "e21c5",
+   "ed": 21,
+   "sec": "AI & Ops",
+   "tag": "data",
+   "h": "Albertsons put numbers on what AI does to a grocery basket: about 10 percent on standard searches, 26 on complex ones",
+   "src": "Supermarket News · Aug 17",
+   "t": "s1",
+   "s": "Albertsons reports conversational search lifting average basket about 10 percent, complex search about 26 percent.",
+   "url": "https://www.supermarketnews.com/grocery-technology/albertsons-drives-bigger-baskets-using-ai-report",
+   "img": null
+  },
+  {
+   "id": "e21c6",
+   "ed": 21,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "PepsiCo is keeping its Tulsa plant running and moving 184 warehouse jobs to a third-party logistics provider",
+   "src": "Food Dive · Aug 14",
+   "t": "s5",
+   "s": "PepsiCo moves 184 Tulsa warehouse jobs to a third-party logistics provider while keeping production on site.",
+   "url": "https://www.fooddive.com/news/pepsico-to-cease-warehouse-operations-at-oklahoma-production-site/827908/",
+   "img": null
+  },
+  {
+   "id": "e21c7",
+   "ed": 21,
+   "sec": "CEO Market Intel",
+   "tag": "moves",
+   "h": "A Seattle co-op's chief executive is retiring on a turnaround: a $250,000 operating loss became $900,000 in income",
+   "src": "Grocery Dive · Aug 20",
+   "t": "s2",
+   "s": "A Seattle co-op chief retires after moving the business from operating loss to operating income across four years.",
+   "url": "https://www.grocerydive.com/news/pcc-community-markets-president-ceo-krish-srinivasan-retire/828380/",
+   "img": null
+  },
+  {
+   "id": "e21c8",
+   "ed": 21,
+   "sec": "Cultural Signal",
+   "tag": "space",
+   "h": "A company still posting a net loss booked 32 pharmaceutical labs on a spacecraft that has not yet flown a reentry",
+   "src": "Redwire · Aug 6",
+   "t": "t14",
+   "s": "Redwire books 32 microgravity drug labs for a 2028 flight while still posting a quarterly net loss.",
+   "url": "https://rdw.com/newsroom/redwires-spacemd-announces-its-first-commercial-mission-on-spacexs-starfall-spacecraft-to-scale-in-space-pharmaceutical-development/",
+   "img": null
+  },
+  {
+   "id": "e21c9",
+   "ed": 21,
+   "sec": "Cultural Signal",
+   "tag": "essay",
+   "h": "Scandinavian warlords rebuilt what they learned in Roman service: the camp layout, the soldiers' epitaphs, the mustard",
+   "src": "LRB · Aug 13",
+   "t": "curious",
+   "s": "Scandinavian warlords adapt lessons from Roman service — camp layout, soldiers' epitaphs, Mediterranean herbs — within a generation.",
+   "url": "https://www.lrb.co.uk/the-paper/v48/n14/michael-kulikowski/polar-bears-in-rome",
+   "img": null
+  },
+  {
+   "id": "e21c10",
+   "ed": 21,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "A gateway in Libya carries 626 masons' marks in 27 distinct types, uninterpreted for more than 2,000 years",
+   "src": "HeritageDaily · Aug 15",
+   "t": "curious",
+   "s": "626 masons' marks in 27 types on a Hellenistic gate in Libya, read as a construction management system.",
+   "url": "https://www.heritagedaily.com/2026/08/mysterious-marks-on-ancient-libyan-gateway-finally-deciphered/158951",
    "img": null
   }
  ]
