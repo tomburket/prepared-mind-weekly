@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 21
+date: August 21, 2026
+cards: 10
+sections: Board & Governance, AI & Ops, The Workforce, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; August 21, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">August 21, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">10 Items &nbsp;&bull;&nbsp; Governance, AI, Automation, Workforce, Leadership, Antiquity</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#board">Board &amp; Governance</a>
+<a href="#ai">AI &amp; Ops</a>
+<a href="#workforce">The Workforce</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">Sysco's technology committee became an AI committee that meets monthly with management. D. E. Shaw introduced the two new directors.</div>
+</div>
+<div class="item-source">GlobeNewswire &middot; August 20, 2026</div>
+<div class="item-summary">Sysco increased its board to 13 directors effective September 1 and evolved its Technology Committee into the Artificial Intelligence Transformation &amp; Technology Committee, which the company said "has begun meeting monthly with management to accelerate the adoption of AI-enabled capabilities." Jason Murray, co-founder and chief executive of Shipium Corp. and previously 19 years in leadership roles at Amazon, joins the new committee; Thomas Ondrof, former executive vice president and chief financial officer of Aramark Corporation, joins the Audit Committee. Fiscal 2027 guidance announced August 4 includes 6 to 7 percent revenue growth and 9 to 11 percent adjusted earnings per share growth on a 53-week basis, alongside a $100 million cost-savings program enabled by AI-driven process improvements, automation initiatives and operating efficiencies. The D. E. Shaw Group, an investor for more than a decade, facilitated introductions to the director candidates and currently expects to be a participant in the capital raise for the pending Jetro Restaurant Depot acquisition.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">An outside holder supplied the directors, and the committee they sit on now has a standing monthly appointment with management and a nine-figure savings number attached to it. What follows is whether board-level AI oversight is a governance structure or a reporting cadence.</div>
+</div>
+<a class="item-link" href="https://www.globenewswire.com/news-release/2026/08/20/3348320/2867/en/sysco-announces-strategic-board-appointments-and-ai-transformation-initiatives-intended-to-accelerate-growth-long-term-value-creation.html" target="_blank" rel="noopener">Read at GlobeNewswire &#8599;</a>
+</div>
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">The Batista family takes back JBS's chief executive job, then bids six days later for the rest of Pilgrim's Pride</div>
+</div>
+<div class="item-source">Food Dive &middot; August 13, 2026</div>
+<div class="item-summary">JBS said on August 13 that Wesley Batista Filho, head of its North America business, will become global chief executive in January 2027, succeeding Gilberto Tomazoni after eight years; Tomazoni becomes vice chairman of the board and senior adviser. Control returns to the founding family for the first time since brothers Wesley and Joesley were imprisoned over a 2017 scandal involving payments to nearly 2,000 politicians; the brothers were reinstated to the board in 2024. The announcement accompanied a $102 million second-quarter net loss on record revenue, attributed to nonrecurring expenses including an antitrust settlement and higher cattle costs. On August 19, JBS, which owns 82 percent of Pilgrim's Pride, offered 2.1 JBS shares for each Pilgrim's share; the proposal requires approval from Pilgrim's shareholders and from a special committee of independent directors the board is expected to appoint.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">One fortnight returns family control to the operating chair and moves to collapse the minority stake in the chicken business. Whether those are one decision or two gets settled by a committee that does not exist yet.</div>
+</div>
+<a class="item-link" href="https://www.fooddive.com/news/jbs-ceo-batista-beef-brazil/827798/" target="_blank" rel="noopener">Read at Food Dive &#8599;</a>
+</div>
+</section>
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Target's digital twin simulated its middle-mile network with about 98 percent accuracy. A 63-item food pilot lifted on-shelf availability 2.5 percent.</div>
+</div>
+<div class="item-source">Supply Chain Dive &middot; August 14, 2026</div>
+<div class="item-summary">Target built Proxima, a digital twin of the middle-mile inventory positioning system that determines how goods move between facilities and stores, running on the same data and logic as the live platform. A pilot covering 63 food items produced a 2.5 percent improvement in on-shelf availability. Simulating the Houston Receive Center, a 1.2 million-square-foot facility that is the first of its kind for the retailer and serves six regional distribution centers and one flow center, Proxima predicted inventory movement with about 98 percent accuracy. Target said it intends to scale the system to additional network functions and to explore agentic AI decision support.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Testing a network decision costs nothing when the network is a simulation. The harder question is which decisions a company keeps making without running them first, and whether that list gets shorter every quarter.</div>
+</div>
+<a class="item-link" href="https://www.supplychaindive.com/news/target-strengthens-inventory-management-with-digital-twins/827910/" target="_blank" rel="noopener">Read at Supply Chain Dive &#8599;</a>
+</div>
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Walmart is putting a 550-pick-per-hour fulfillment system in a store backroom, with 400 more promised on conditions</div>
+</div>
+<div class="item-source">Supply Chain Dive &middot; August 14, 2026</div>
+<div class="item-summary">Symbotic is installing its SymMicro system at a Walmart store, expected to be operational in roughly six months. Each SymMicro station can support 550 picks per hour. According to a Symbotic securities filing, Walmart made a contingent promise to purchase 400 automated systems. Richard Cohen, Symbotic's president and chief executive, said of the first installation: "We have a second site that will follow shortly after that. And then that should trigger a bunch more sites once Walmart actually sees the system working." Symbotic announced in 2025 that it would acquire Walmart's advanced systems and robotics business, with Walmart funding deployment of pickup and delivery centers in store backrooms.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The commitment is contingent and the vendor is the party describing the pipeline. What is not contingent is the location: fulfillment capacity is moving into the back of stores that already exist, on real estate already paid for.</div>
+</div>
+<a class="item-link" href="https://www.supplychaindive.com/news/walmart-equipping-a-store-with-symbotic-fulfillment-system/827794/" target="_blank" rel="noopener">Read at Supply Chain Dive &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Albertsons put numbers on what AI does to a grocery basket: about 10 percent on standard searches, 26 on complex ones</div>
+</div>
+<div class="item-source">Supermarket News &middot; August 17, 2026</div>
+<div class="item-summary">Albertsons reported that standard conversational searches lift average basket size about 10 percent, and more complex searches about 26 percent, according to a Wall Street Journal report summarized by Supermarket News. The company is consolidating three customer-facing tools, Ask AI, Plan AI and Buy AI, into a single service. Jill Pavlovich, senior vice president of digital shopping experiences, described the behavioral change: "All of a sudden they're shopping across categories, across items, not spearfishing." Albertsons also tied its ACI Edge program to labor and supply-chain optimization, saying it expects about $200 million in savings across this year and next.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Most published AI results describe cost taken out. This one describes demand created, which is a different claim and a harder one to hold once competitors buy the same capability.</div>
+</div>
+<a class="item-link" href="https://www.supermarketnews.com/grocery-technology/albertsons-drives-bigger-baskets-using-ai-report" target="_blank" rel="noopener">Read at Supermarket News &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">PepsiCo is keeping its Tulsa plant running and moving 184 warehouse jobs to a third-party logistics provider</div>
+</div>
+<div class="item-source">Food Dive &middot; August 14, 2026</div>
+<div class="item-summary">PepsiCo will permanently lay off 184 warehouse employees at its Pepsi Beverages production facility in Tulsa, Oklahoma, effective November 15, according to a WARN notice filed July 14. The filing itemizes the roles: 63 warehouse persons, 57 forklift operators, 16 checkers, 13 inventory control specialists, 12 lead persons, six supply chain operations associate supervisors, five truck jockeys, three training coordinators and a remainder of manufacturing and supervisory positions. Production continues at the site; warehouse duties shift to a new location in the Tulsa area operated by a third-party logistics provider. A company spokesperson said PepsiCo is "committed to treating impacted employees with the utmost care, including assistance applying to work with the new logistics provider, pay and benefits continuation based on years of service, transition assistance and career support."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">This is a make-or-buy decision rendered in job titles rather than a headcount reduction. The work continues a few miles away for a different employer, and the plant staying open is what makes it legible as a choice.</div>
+</div>
+<a class="item-link" href="https://www.fooddive.com/news/pepsico-to-cease-warehouse-operations-at-oklahoma-production-site/827908/" target="_blank" rel="noopener">Read at Food Dive &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">A Seattle co-op's chief executive is retiring on a turnaround: a $250,000 operating loss became $900,000 in income</div>
+</div>
+<div class="item-source">Grocery Dive &middot; August 20, 2026</div>
+<div class="item-summary">Krish Srinivasan, president and chief executive of PCC Community Markets, will retire January 29, 2027. He became chief executive in early 2022 after serving as chief financial officer from 2018, succeeding Suzy Monford, who departed abruptly in 2021 after less than a year in the role. The co-op moved from an operating loss of roughly $250,000 in 2022 to operating income of more than $900,000 in 2025, with net sales rising from $422 million to approximately $488 million and membership more than doubling. Board chair Joe Rogoff said: "Krish has been exactly the CEO that PCC Community Markets needed. He brought strong financial acumen, inspired confidence, and crafted a strategic vision. He stabilized our financial foundation, re-engaged members, and made the difficult decisions necessary for the future of the co-op." Srinivasan will remain in the role while the board searches for a successor.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The numbers are small enough to see the entire mechanism, which is rare. A swing of roughly $1.15 million on $488 million in sales is the margin a co-op actually operates on, and it took four years and a predecessor's abrupt exit to produce it.</div>
+</div>
+<a class="item-link" href="https://www.grocerydive.com/news/pcc-community-markets-president-ceo-krish-srinivasan-retire/828380/" target="_blank" rel="noopener">Read at Grocery Dive &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">A company still posting a net loss booked 32 pharmaceutical labs on a spacecraft that has not yet flown a reentry</div>
+</div>
+<div class="item-source">Redwire &middot; August 6, 2026</div>
+<div class="item-summary">SpaceMD, a wholly owned subsidiary of Redwire Corporation (NYSE: RDW), signed a contract for a mission on SpaceX's Starfall spacecraft, planned for launch in 2028, carrying up to 32 Pharmaceutical In-Space Laboratory systems. The company calls it "the largest dedicated commercial microgravity research mission flown to date." The units crystallize drug compounds in microgravity to develop improved formulations. Redwire has flown 54 of the units to the International Space Station since November 2023, crystallizing 45 compounds. In results reported August 5, the company posted second-quarter revenue of $117.1 million, up 89.6 percent year over year, gross margin of 27.8 percent against negative 30.9 percent a year earlier, a net loss of $41 million, record contracted backlog of $542.1 million and total liquidity of $607.8 million.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The mission is booked two years past the company's own guidance horizon, on a vehicle with no flight heritage, funded from a balance sheet rebuilt in the last twelve months rather than from earnings. A gross margin that moved about 58 points in a year is what buys that kind of runway.</div>
+</div>
+<a class="item-link" href="https://rdw.com/newsroom/redwires-spacemd-announces-its-first-commercial-mission-on-spacexs-starfall-spacecraft-to-scale-in-space-pharmaceutical-development/" target="_blank" rel="noopener">Read at Redwire &#8599;</a>
+</div>
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Scandinavian warlords rebuilt what they learned in Roman service: the camp layout, the soldiers' epitaphs, the mustard</div>
+</div>
+<div class="item-source">London Review of Books &middot; August 13, 2026</div>
+<div class="item-summary">Reviewing Dagfinn Skre's "The Northern Routes to Kingship: A History of Scandinavia AD 180&ndash;550," Michael Kulikowski describes what the archaeological record shows after the plague-driven manpower crisis of Marcus Aurelius' reign sent Roman recruiters deep into Scandinavia. At Upp&#229;kra in southernmost Sweden, a settlement laid out like a Roman army camp carries adaptations of a praetorium, basilica and sacellum north of the intersection of its main streets, structures with no local precedents in Scandinavia. The Illerup &#197;dal bog in Jutland holds the armour and weapons of at least 400 warriors, the swords all of Roman make, the gear showing three distinct levels of quality and decoration. Dill, poppy, parsley, cress, carrot, rape and mustard are first attested in Scandinavia at these settlements, and upright stones in the runic futhark script appear in the same period. Kulikowski writes that the transformation happened "in a window of less than a generation."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">There are no written sources for any of it. The account is built from grave goods, seed remains, coin dates and the shape of a levelled rectangle at Hove in Norway, which is also why it took until now to write.</div>
+</div>
+<a class="item-link" href="https://www.lrb.co.uk/the-paper/v48/n14/michael-kulikowski/polar-bears-in-rome" target="_blank" rel="noopener">Read at the London Review of Books &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">06</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c10">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">A gateway in Libya carries 626 masons' marks in 27 distinct types, uninterpreted for more than 2,000 years</div>
+</div>
+<div class="item-source">HeritageDaily &middot; August 15, 2026</div>
+<div class="item-summary">Anna Kordas of the University of Warsaw analysed 626 stonemasons' marks preserved on limestone blocks of the Tauchira Gate at Ptolemais, one of the major cities of ancient Cyrenaica on the coast of modern Libya, and identified 27 distinct types. Writing in the European Journal of Archaeology, she proposes that the marks formed part of a system for managing a large Hellenistic construction project, from quarrying and transport through to the final placement of individual blocks, and that a sequence of Greek letters could represent separate construction crews. She suggests the marks may also record labour contributions and payment. The gate was built or rebuilt in the second century BC, possibly during the reign of Ptolemy VIII Physcon.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The marks were cut to be read by the people doing the work, not by anyone who came after. What survives of the project is the building; what survives of the management is 27 symbols nobody had decoded.</div>
+</div>
+<a class="item-link" href="https://www.heritagedaily.com/2026/08/mysterious-marks-on-ancient-libyan-gateway-finally-deciphered/158951" target="_blank" rel="noopener">Read at HeritageDaily &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+August 21, 2026 &middot; Edition No. 21
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=21" defer></script>
+
+</body>
+</html>
