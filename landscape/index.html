@@ -194,7 +194,7 @@ body{
 <script>
 "use strict";
 /* ===================== DATA ===================== */
-const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25",14:"July 2",15:"July 10",16:"July 17",17:"July 24",18:"July 31",19:"August 7",20:"August 14",21:"August 21"};
+const EDITION_DATES={1:"March 5",2:"March 27",3:"April 3",4:"April 10",5:"April 17",6:"April 24",7:"April 30",8:"May 15",9:"May 22",10:"June 5",11:"June 12",12:"June 19",13:"June 25",14:"July 2",15:"July 10",16:"July 17",17:"July 24",18:"July 31",19:"August 7",20:"August 14",21:"August 21",22:"August 28"};
 
 const THREADS={
   s1:{name:"AI is an operating discipline, not a model",short:"AI Ops Discipline",tier:"spine",color:"#d2a857",
@@ -443,11 +443,21 @@ const CARDS=[
  {id:"e21c8",ed:21,sec:"Cultural Signal",tag:"space",h:"A company still posting a net loss booked 32 pharmaceutical labs on a spacecraft that has not yet flown a reentry",src:"Redwire \u00b7 Aug 6",t:"t14",s:"Redwire books 32 microgravity drug labs for a 2028 flight while still posting a quarterly net loss.",url:"https://rdw.com/newsroom/redwires-spacemd-announces-its-first-commercial-mission-on-spacexs-starfall-spacecraft-to-scale-in-space-pharmaceutical-development/"},
  {id:"e21c9",ed:21,sec:"Cultural Signal",tag:"essay",h:"Scandinavian warlords rebuilt what they learned in Roman service: the camp layout, the soldiers' epitaphs, the mustard",src:"LRB \u00b7 Aug 13",t:"curious",s:"Scandinavian warlords adapt lessons from Roman service \u2014 camp layout, soldiers' epitaphs, Mediterranean herbs \u2014 within a generation.",url:"https://www.lrb.co.uk/the-paper/v48/n14/michael-kulikowski/polar-bears-in-rome"},
  {id:"e21c10",ed:21,sec:"Oddly Interesting",tag:"science",h:"A gateway in Libya carries 626 masons' marks in 27 distinct types, uninterpreted for more than 2,000 years",src:"HeritageDaily \u00b7 Aug 15",t:"curious",s:"626 masons' marks in 27 types on a Hellenistic gate in Libya, read as a construction management system.",url:"https://www.heritagedaily.com/2026/08/mysterious-marks-on-ancient-libyan-gateway-finally-deciphered/158951"},
+ /* ---- Edition 22 ---- */
+ {id:"e22c1",ed:22,sec:"Board & Governance",tag:"civic",h:"A study found every salad dressing labeled avocado oil contained other oils. Texas opened an investigation.",src:"Food Dive \u00b7 Aug 27",t:"s2",s:"A state attorney general opens an inquiry into avocado oil labeling after a university study found adulteration across most tested categories.",url:"https://www.fooddive.com/news/texas-avocado-oil-investigation-pepsico-siete-kraft-heinz-primal-kitchen/828978/"},
+ {id:"e22c2",ed:22,sec:"AI & Ops",tag:"signal",h:"Instacart says one prompt at checkout, asking whether you forgot something, lifts sales nearly 1 percent",src:"Forbes \u00b7 Aug 21",t:"s1",s:"Instacart reports smart-cart scale across 100-plus cities and a checkout prompt it says moves nearly a point of sales.",url:"https://www.forbes.com/sites/bernardmarr/2026/08/21/how-instacart-is-using-physical-ai-to-reinvent-the-grocery-store/"},
+ {id:"e22c3",ed:22,sec:"AI & Ops",tag:"org",h:"Sprouts moved fresh meat into its own distribution centers. Now the network decides where the stores go.",src:"Supply Chain Dive \u00b7 Aug 19",t:"s1",s:"Sprouts routes fresh meat through company-owned DCs to most stores and sites new stores inside a 250-mile distribution radius.",url:"https://www.supplychaindive.com/news/how-sprouts-balances-self-distribution-and-store-growth/827972/"},
+ {id:"e22c4",ed:22,sec:"The Workforce",tag:"labor",h:"A $138 million beef loss, two plants closed, a third for sale, and 2,500 union jobs gone at Joslin",src:"Food Dive \u00b7 Aug 14",t:"s5",s:"Tyson consolidates beef into three plants, closing Joslin and Eagle Mountain and selling Pasco, against a $138 million segment loss.",url:"https://www.fooddive.com/news/tyson-close-beef-plants-cattle-shortage-/827918/"},
+ {id:"e22c5",ed:22,sec:"The Workforce",tag:"data",h:"Minimum wage increases cut employment, hours and earnings for low-wage workers in poor families, a new paper finds",src:"NBER \u00b7 Aug 2026",t:"s5",s:"A working paper using income-to-needs data reports adverse employment and earnings effects for low-wage workers in poor families.",url:"https://www.nber.org/papers/w35628"},
+ {id:"e22c6",ed:22,sec:"CEO Market Intel",tag:"moves",h:"Heritage Grocers filled five C-suite seats at once, including a chief logistics officer it did not have",src:"Grocery Dive \u00b7 Aug 27",t:"t14",s:"A four-banner grocery operator names five C-suite executives at once and creates a chief logistics officer role.",url:"https://www.grocerydive.com/news/heritage-grocers-group-executive-csuite-changes/828878/"},
+ {id:"e22c7",ed:22,sec:"Cultural Signal",tag:"signal",h:"A Panama Canal slot averaged $55,000 before February. One just sold for $5.3 million.",src:"gCaptain \u00b7 Aug 25",t:"curious",s:"A Panama Canal transit auction sets a second August record at $5.3 million against a pre-February median near $55,000.",url:"https://gcaptain.com/panama-canal-auction-hits-new-record-at-5-3-million/"},
+ {id:"e22c8",ed:22,sec:"Cultural Signal",tag:"space",h:"A decade of headlines promised humans on Mars by 2026. No rocket has gone, crewed or uncrewed.",src:"Defector \u00b7 Aug 27",t:"curious",s:"A catalogue of a decade of Mars predictions, assembled in the year most of them named, against a record of no launches.",url:"https://defector.com/lets-remember-some-publications-that-said-we-would-get-to-mars-by-2026"},
+ {id:"e22c9",ed:22,sec:"Oddly Interesting",tag:"culture",h:"An 1,800-year-old shield boss turned up in a Polish scrap yard, still packed with burnt bone",src:"HeritageDaily \u00b7 Aug 23",t:"curious",s:"A 2nd-century iron shield boss recovered from a Polish scrap yard still holds burnt bone the finder declined to remove.",url:"https://www.heritagedaily.com/2026/08/2nd-century-warriors-shield-boss-discovered-in-polish-scrap-yard/159034"},
 ];
 
 /* drop duplicate markers */
 const CORPUS=CARDS.filter(c=>c.t!=="dup");
-const CURRENT_EDITION=21;
+const CURRENT_EDITION=22;
 
 /* ---- derived ---- */
 function effectiveThread(c){ return (c.t!=="curious" && ACTIVE.has(c.t)) ? c.t : null; }
