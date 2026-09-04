@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 22
+date: August 28, 2026
+cards: 9
+sections: Board & Governance, AI & Ops, The Workforce, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; August 28, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">August 28, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">9 Items &nbsp;&bull;&nbsp; Enforcement, AI, Distribution, Workforce, Wages, Leadership, Space, Antiquity</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#board">Board &amp; Governance</a>
+<a href="#ai">AI &amp; Ops</a>
+<a href="#workforce">The Workforce</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">A study found every salad dressing labeled avocado oil contained other oils. Texas opened an investigation.</div>
+</div>
+<div class="item-source">Food Dive &middot; August 27, 2026</div>
+<div class="item-summary">Texas Attorney General Ken Paxton opened an investigation into PepsiCo's Siete Foods, Kraft Heinz-owned Primal Kitchen and mayonnaise and salad dressing manufacturer Chosen Foods over claims their products are made with avocado oil. The inquiry follows a University of California, Davis study finding that 89 percent of processed foods claiming to be made with avocado oil contained other oils, including 93 percent of chips, 71 percent of mayonnaises and 100 percent of the salad dressings tested. Primal Kitchen said it sources "our avocado oil from trusted suppliers who confirm the oil's integrity through independent, third-party laboratory testing." The UC Davis percentages are study findings; the state has opened an inquiry and adjudicated nothing.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The gap under investigation is not between a label and a regulation. It is between a label and a supply chain the brand does not own, verified by the third-party attestation that most food companies rely on and that the study went around.</div>
+</div>
+<a class="item-link" href="https://www.fooddive.com/news/texas-avocado-oil-investigation-pepsico-siete-kraft-heinz-primal-kitchen/828978/" target="_blank" rel="noopener">Read at Food Dive &#8599;</a>
+</div>
+</section>
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Instacart says one prompt at checkout, asking whether you forgot something, lifts sales nearly 1 percent</div>
+</div>
+<div class="item-source">Forbes &middot; August 21, 2026</div>
+<div class="item-summary">Instacart says thousands of its Caper Carts, shopping carts with built-in cameras and screens that identify items as shoppers load them, are now live across more than 100 cities, with that business tripling year over year. David McIntosh, the company's chief connected stores officer, said a personalized "Did you forget?" prompt shown as shoppers approach checkout drove nearly a 1 percent absolute sales lift. Around 600,000 Instacart shoppers can capture shelf imagery using their phones, feeding on-shelf conditions back to a company that has processed more than 1.6 billion lifetime orders. McIntosh also said more than 80 percent of North American shoppers are shopping to a budget. Every figure here is Instacart's own, relayed by one reporter, with no supporting data released.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">A 1 percent absolute lift across grocery volume is a large number reached by a small mechanism: adding one item to the basket of a shopper the same executive describes as working to a budget. Whether that is service or friction depends on who is measuring, and the only party measuring is the one selling the cart.</div>
+</div>
+<a class="item-link" href="https://www.forbes.com/sites/bernardmarr/2026/08/21/how-instacart-is-using-physical-ai-to-reinvent-the-grocery-store/" target="_blank" rel="noopener">Read at Forbes &#8599;</a>
+</div>
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Sprouts moved fresh meat into its own distribution centers. Now the network decides where the stores go.</div>
+</div>
+<div class="item-source">Supply Chain Dive &middot; August 19, 2026</div>
+<div class="item-summary">Around 85 percent of Sprouts Farmers Market stores now carry fresh meat that flows through the company's own distribution centers rather than through outside wholesalers. The chain plans new stores within a 250-mile radius of a distribution center, and is on track to open more than 40 locations this year. In four target cities, a company executive said Sprouts aims to have around 35 stores operating by 2030, enough to warrant planning a distribution center for the region. The 2030 store count is described as an aim rather than a commitment.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Self-distribution is usually argued on cost per case. Here it is setting real estate strategy, with the store footprint drawn to fill the network rather than the network built to chase the footprint.</div>
+</div>
+<a class="item-link" href="https://www.supplychaindive.com/news/how-sprouts-balances-self-distribution-and-store-growth/827972/" target="_blank" rel="noopener">Read at Supply Chain Dive &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">A $138 million beef loss, two plants closed, a third for sale, and 2,500 union jobs gone at Joslin</div>
+</div>
+<div class="item-source">Food Dive &middot; August 14, 2026</div>
+<div class="item-summary">Tyson Foods will close its beef plant in Joslin, Illinois, which the company said will lead to the layoffs of around 2,500 union workers in the region, and will also close a facility in Eagle Mountain, Utah, that Tyson previously said was capable of employing between 800 and 1,200 people. The company is pursuing a sale of a third beef plant, in Pasco, Washington. Production consolidates into three central U.S. locations: Dakota City, Nebraska; Holcomb, Kansas; and Amarillo, Texas. Tyson's beef segment reported an operating loss of $138 million. In a statement, the company said the consolidation will help it "create a more competitive footprint amidst one of the most historic cattle shortages the country has ever experienced"; chief executive Donnie King told an earnings call the move "will not solve the entire gap of beef losses we are currently seeing."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The company's framing puts the cause upstream in the cattle supply, while the cost lands in three towns and one segment's operating line. By the chief executive's own account, the consolidation does not close the gap it was built to close.</div>
+</div>
+<a class="item-link" href="https://www.fooddive.com/news/tyson-close-beef-plants-cattle-shortage-/827918/" target="_blank" rel="noopener">Read at Food Dive &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Minimum wage increases cut employment, hours and earnings for low-wage workers in poor families, a new paper finds</div>
+</div>
+<div class="item-source">NBER &middot; August 2026</div>
+<div class="item-summary">David Neumark and Emma Wohl report what they describe as "the first direct estimates of the effects of minimum wages on low-wage workers in families at different points of the distribution of income-to-needs." Drawing on the Survey of Income and Program Participation, which oversamples low-income families, they find "adverse - rather than beneficial - effects of minimum wages on the employment, hours, and earnings of initially-employed low-wage workers in poor and low-income families." The authors report no gradient, meaning the poorest low-wage workers were not affected more severely than others in the low-income group, and argue the adverse effects "help explain why minimum wages do not reduce poverty." The paper is an NBER working paper and has not been peer reviewed; Neumark has published research skeptical of minimum wage increases for roughly three decades.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The finding lands on exactly the workers the policy names, using survey data built to find them. It is also one working paper from a researcher whose priors are on the record, in a literature that has not converged in thirty years, which is the condition under which operators set wage floors anyway.</div>
+</div>
+<a class="item-link" href="https://www.nber.org/papers/w35628" target="_blank" rel="noopener">Read at NBER &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Heritage Grocers filled five C-suite seats at once, including a chief logistics officer it did not have</div>
+</div>
+<div class="item-source">Grocery Dive &middot; August 27, 2026</div>
+<div class="item-summary">Heritage Grocers Group, which operates four grocery banners including Cardenas Markets, Los Altos Ranch Market and El Rancho Supermercado, announced five C-suite appointments on Wednesday, among them a chief logistics officer in a role the company created. Adrian Castaneda was promoted into the logistics seat, alongside internal promotions for Vince Gambino as chief merchandising officer and Adam Salgado as chief experience officer. The company hired Maria McDonald as chief people officer and Gil Salazar as chief information officer from outside, and named Ryan Adams and Jay Sharrock as division presidents. Heritage said the changes reflect efforts to strengthen its operating model and meet the "unique needs" of each of its banners.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Five seats filled in a single announcement is not a succession, it is a rebuild. The seat that did not previously exist is the one that moves freight, which is a statement about where a four-banner operator thinks its next margin is.</div>
+</div>
+<a class="item-link" href="https://www.grocerydive.com/news/heritage-grocers-group-executive-csuite-changes/828878/" target="_blank" rel="noopener">Read at Grocery Dive &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">A Panama Canal slot averaged $55,000 before February. One just sold for $5.3 million.</div>
+</div>
+<div class="item-source">gCaptain &middot; August 25, 2026</div>
+<div class="item-summary">SK Gas Ltd., a South Korea-based shipper, won the auction to transit the Panama Canal on September 1 aboard the liquefied petroleum gas tanker G. Spirit, paying $5.3 million. The price surpassed a previous high of $4.6 million set earlier the same month, also paid by a South Korean vessel operator, making it the second record in August. Median auction prices before February averaged around $55,000. Vessels that do not reserve a slot are waiting 11 days. The Canal Authority said the results reflect "significantly stronger demand."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The auction is the only part of the canal that moves on price, so it absorbs all of the scarcity the queue creates. What a slot averaged in January and what one shipper paid to skip 11 days are the same commodity priced by different mechanisms.</div>
+</div>
+<a class="item-link" href="https://gcaptain.com/panama-canal-auction-hits-new-record-at-5-3-million/" target="_blank" rel="noopener">Read at gCaptain &#8599;</a>
+</div>
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">A decade of headlines promised humans on Mars by 2026. No rocket has gone, crewed or uncrewed.</div>
+</div>
+<div class="item-source">Defector &middot; August 27, 2026</div>
+<div class="item-summary">Sabrina Imbler catalogued the predictions as their deadline year arrived: the Wall Street Journal in 2011, "Elon Musk: We Can Put A Man On Mars In 10 Years"; Business Insider in 2016 on a plan "to begin colonizing Mars by 2022"; the Los Angeles Times the same year, "SpaceX could send people to Mars in 2024"; CNET, "We'll have people on Mars by 2025"; National Geographic in 2017, "In Seven Years, SpaceX Could Land Humans on Mars." As Imbler writes, "SpaceX has not sent any rockets to Mars, crewed or uncrewed." An earlier venture, Mars One, drew serious coverage from the Guardian, the Washington Post and CNN after MIT researchers calculated that "the first Martian settlers would suffocate and die within the first 68 days of landing on the red planet"; it "dissolved in bankruptcy in 2019." Musk has since pivoted to the Moon on a timeline of less than 10 years. Earlier this month a stray SpaceX rocket segment, off-course for 19 months, crashed into the lunar surface.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Each of those headlines accurately reported what a named source said on a named date. None of the dates held, and the forecasts expired one at a time in outlets that had no mechanism for noticing.</div>
+</div>
+<a class="item-link" href="https://defector.com/lets-remember-some-publications-that-said-we-would-get-to-mars-by-2026" target="_blank" rel="noopener">Read at Defector &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">06</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">An 1,800-year-old shield boss turned up in a Polish scrap yard, still packed with burnt bone</div>
+</div>
+<div class="item-source">HeritageDaily &middot; August 23, 2026</div>
+<div class="item-summary">An iron shield boss, the domed central fitting that shields the hand of whoever carries the shield, was recovered from a scrap yard in Hrubieszow, in eastern Poland. Inside it was dried soil containing burnt bone fragments and crop stubble. The finder, Wlodzimierz Starykiewicz, chose not to remove the material, leaving it intact for museum analysis. Researchers date the piece to roughly the 2nd century AD and theorize it belonged to a warrior of the Przeworsk culture, associated in this context with Vandal communities; heat marks on the iron are consistent with placement near a funeral pyre.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The fitting survived eighteen centuries, a scrap yard, and the ordinary impulse to tip out the dirt. What is inside it has not been analyzed yet.</div>
+</div>
+<a class="item-link" href="https://www.heritagedaily.com/2026/08/2nd-century-warriors-shield-boss-discovered-in-polish-scrap-yard/159034" target="_blank" rel="noopener">Read at HeritageDaily &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+August 28, 2026 &middot; Edition No. 22
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=22" defer></script>
+
+</body>
+</html>
