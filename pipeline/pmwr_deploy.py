@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
-# PMWR pipeline — build + deploy (v1.0, July 6 2026)
+# PMWR pipeline — build + deploy (v1.4, September 4 2026)
 # One command publishes an edition: builds all site files from JSON, runs the
 # duplicate gate, verifies structure, commits to GitHub, verifies live.
 #
-# Weekly:    python3 ~/Downloads/pmwr_deploy.py            (finds newest edition-NN.json in ~/Downloads)
+# Weekly:    python3 ~/Downloads/pmwr_deploy.py            (finds newest PMWR_Ed<N>_edition.json in ~/Downloads)
 # Preview:   python3 ~/Downloads/pmwr_deploy.py --dry-run  (builds + verifies, writes to ~/Downloads/pmwr_build, commits nothing)
 # Bootstrap: python3 ~/Downloads/pmwr_deploy.py --bootstrap (one-time: commits data/ + pipeline/ to the repo)
 #
 # Token: a GitHub fine-grained PAT in ~/.pmwr_token (Contents read/write on this repo only).
+#
+# v1.4 (Sept 4, 2026) — hardening after the Ed 23 ship. All additive.
+#   1. Discovery is prefix-scoped: only PMWR_Ed<N>_edition.json is auto-found, and the number in
+#      the filename must equal the edition field inside. Bare edition-NN.json files in ~/Downloads
+#      belong to other briefings and are never candidates. The explicit path still works.
+#   2. validate_edition() folds the per-edition validator into the run. Nothing to rename or bump.
+#   3. check_authored_text() ported from brm.1 — refuses pre-encoded entities in the JSON.
+#   4. New checks: root masthead date; first headline present in the built AND live root (catches a
+#      wrong-file ship, which every count-based check would pass); Landscape edition header derives
+#      from CURRENT_EDITION (the header was hardcoded to Edition 13 from Ed 14 through Ed 23).
 
 import base64, glob, html as HTML, json, os, re, sys, time, urllib.request, urllib.error
 from pathlib import Path
@@ -18,6 +28,22 @@ API = f"https://api.github.com/repos/{REPO}/contents"
 SITE = "https://prepared-mind-weekly.vercel.app"
 DL = Path.home() / "Downloads"
 BUILD = DL / "pmwr_build"
+
+PREFIX = "PMWR"                                   # edition files: PMWR_Ed<N>_edition.json
+EDITION_GLOB = f"{PREFIX}_Ed*_edition.json"
+EDITION_RE = re.compile(rf"{PREFIX}_Ed(\d+)_edition\.json$")
+LANDSCAPE = True
+CARD_KEYS_OPTIONAL = set()                        # PMWR cards carry no extra keys
+SECTIONS = {  # id -> (title, tag_class). Oddly Interesting is tag-search, Workforce is tag-workforce.
+    "board":     ("Board & Governance", "tag-board"),
+    "ai":        ("AI & Ops", "tag-ai"),
+    "workforce": ("The Workforce", "tag-workforce"),
+    "market":    ("CEO Market Intel", "tag-market"),
+    "culture":   ("Cultural Signal", "tag-culture"),
+    "oddly":     ("Oddly Interesting", "tag-search"),
+}
+LANDSCAPE_TAGS = {"signal", "data", "culture", "essay", "sport", "space", "science",
+                  "civic", "moves", "labor", "churn", "profile", "framework", "org"}
 
 # ============================= shared helpers =============================
 
@@ -302,10 +328,13 @@ def verify_built(root, landscape, footlines, ed_index, corpus, ed):
     checks.append(("root: cache-busted footlines hook", f'src="/landscape/footlines.js?v={ed["edition"]}"' in root))
     checks.append(("root: footer links", "Explore the Landscape" in root and "Past editions" in root))
     checks.append((f"root: metadata edition {ed['edition']}", f"edition: {ed['edition']}\n" in root))
+    checks.append(("root: masthead date", bool(re.search(r'class="masthead-date"[^>]*>\s*' + re.escape(enc(ed["date_long"])), root))))
+    checks.append(("root: first headline present", enc(ed["sections"][0]["cards"][0]["headline"]) in root))
     lc = parse_js(landscape, "const CARDS=", "verify CARDS")
     checks.append(("landscape: CARDS parse == corpus", len(lc) == len(corpus["cards"])))
     checks.append((f"landscape: CURRENT_EDITION={ed['edition']}", f"const CURRENT_EDITION={ed['edition']}" in landscape))
     checks.append(("landscape: EDITION_DATES entries", len(parse_js(landscape, "const EDITION_DATES=", "d")) == ed["edition"]))
+    checks.append(("landscape: edition header dynamic", "Edition '+CURRENT_EDITION+'" in landscape and "EDITION_DATES[CURRENT_EDITION]" in landscape))
     fd = parse_js(footlines, "var D=", "verify D")
     checks.append(("footlines: D.cards == corpus", len(fd["cards"]) == len(corpus["cards"])))
     checks.append(("footlines: threads config preserved", bool(fd.get("threads"))))
@@ -378,6 +407,7 @@ def verify_live(ed, corpus):
 
     checks = [
         ("live root: card count", len(re.findall(r'class="item-card"', root)) == n_cards),
+        ("live root: first headline present", enc(ed["sections"][0]["cards"][0]["headline"]) in root),
         (f"live landscape: CURRENT_EDITION={E}", f"const CURRENT_EDITION={E}" in land),
         ("live landscape: corpus size", _count(land, "const CARDS=", "live CARDS") == want),
         ("live footlines: corpus size", _count(foot, "var D=", "live D", "cards") == want),
@@ -605,17 +635,155 @@ def bootstrap(dry):
         commit_file(tok, path, content, msg)
     print("\nBOOTSTRAP COMPLETE — the repo now carries its own pipeline.")
 
+ENTITY_RE = re.compile(r"&(#\d+|#x[0-9a-fA-F]+|[a-zA-Z]+);")
+
+def check_authored_text(ed):
+    """Refuse pre-encoded HTML entities in authored JSON (ported from brm.1).
+    enc() encodes exactly once. "Board &amp; Governance" in the JSON becomes "&amp;amp;" on the
+    page -- visible "&amp;" -- and still passes the pure-ASCII check because it IS pure ASCII."""
+    bad = []
+    def scan(where, s):
+        if isinstance(s, str):
+            for m in ENTITY_RE.finditer(s):
+                bad.append(f"{where}: {m.group(0)!r} in {s[:70]!r}")
+    scan("topics", ed.get("topics"))
+    scan("date_long", ed.get("date_long"))
+    for s in ed["sections"]:
+        scan(f"section {s['id']} title", s.get("title"))
+        scan(f"section {s['id']} pill", s.get("pill"))
+        for k, c in enumerate(s["cards"], 1):
+            for f in ("tag_label", "headline", "source", "summary", "why", "link_label"):
+                scan(f"section {s['id']} card {k} {f}", c.get(f))
+            L = c.get("landscape") or {}
+            for f in ("gloss", "src_short"):
+                scan(f"section {s['id']} card {k} landscape.{f}", L.get(f))
+    if bad:
+        print("\nPRE-ENCODED ENTITIES in the edition JSON -- these would double-encode:")
+        for b in bad:
+            print("  " + b)
+        die("Write literal characters (&, --, curly quotes) in the JSON. enc() encodes once.")
+    print("Entity guard ....... PASS (no pre-encoded entities in authored text)")
+
+# ============================= edition validation (v1.4 / brm.2) =============================
+# Folded in from the per-edition validator so there is nothing to rename or bump each week.
+# Expected edition number is enforced by the sequence check in weekly(); this covers schema,
+# section/tag_class agreement, headline length, URL discipline, landscape completeness, thread
+# codes and internal duplication.
+#
+# THE TRAP -- do not "fix" this: thread codes validate against active_threads UNION
+# {curious, dup}. Checking active_threads alone falsely rejects `curious`, the largest thread.
+
+CARD_KEYS = {"tag_class", "tag_label", "headline", "source", "summary", "why", "url", "link_label", "landscape"}
+LANDSCAPE_KEYS = {"tag", "t", "src_short", "gloss", "img"}
+BAD_URL_PATTERNS = [
+    r"/topic/[^/]+/?$", r"/editors/[^/]+/?$", r"/tag/[^/]+/?$", r"/category/[^/]+/?$",
+    r"/author/[^/]+/?$", r"/news/?$", r"/latest/?$", r"/newsroom/?$",
+    r"^https?://[^/]+/?$", r"^https?://[^/]+/\d{4}/?$",
+]
+
+def validate_edition(ed, corpus):
+    from difflib import SequenceMatcher
+    errors, notes = [], []
+    err, note = errors.append, notes.append
+    valid_threads = set(corpus.get("active_threads") or []) | {"curious", "dup"}
+    known_tags = LANDSCAPE_TAGS if LANDSCAPE_TAGS is not None else {c.get("tag") for c in corpus["cards"] if c.get("tag")}
+    hard_tags = LANDSCAPE_TAGS is not None
+
+    top = {"edition", "date_long", "topics", "sections"}
+    if set(ed) != top:
+        err(f"top-level keys {sorted(ed)} != {sorted(top)}")
+    for k in ("topics", "date_long"):
+        if not str(ed.get(k) or "").strip():
+            err(f"{k} missing or empty")
+
+    urls, heads, n_cards = [], [], 0
+    for sec in ed.get("sections", []):
+        if set(sec) != {"id", "title", "pill", "cards"}:
+            err(f"section {sec.get('id')!r} keys {sorted(sec)} != ['cards','id','pill','title']")
+        sid = sec.get("id")
+        if sid not in SECTIONS:
+            err(f"unknown section id {sid!r} (known: {sorted(SECTIONS)})")
+            continue
+        want_title, want_tc = SECTIONS[sid]
+        if sec.get("title") != want_title:
+            err(f"section {sid}: title {sec.get('title')!r} != {want_title!r}")
+        for card in sec.get("cards", []):
+            n_cards += 1
+            label = f"{sid}/{(card.get('headline') or '?')[:45]}"
+            missing, extra = CARD_KEYS - set(card), set(card) - CARD_KEYS - CARD_KEYS_OPTIONAL
+            if missing or extra:
+                err(f"{label}: card keys off (missing={sorted(missing)}, extra={sorted(extra)})")
+            for k in ("headline", "source", "summary", "why", "url", "link_label", "tag_class", "tag_label"):
+                if not str(card.get(k) or "").strip():
+                    err(f"{label}: empty field {k!r}")
+            if card.get("tag_class") != want_tc:
+                err(f"{label}: tag_class {card.get('tag_class')!r} != {want_tc!r}")
+            hl = str(card.get("headline") or "")
+            if len(hl.split()) > 22:
+                err(f"{label}: headline {len(hl.split())} words, max 22")
+            heads.append(hl)
+            url = str(card.get("url") or "")
+            if not url.startswith("https://"):
+                err(f"{label}: url not https -- {url}")
+            for pat in BAD_URL_PATTERNS:
+                if re.search(pat, url):
+                    err(f"{label}: url looks like a section front/index, not an article -- {url}")
+                    break
+            urls.append(url)
+            ls = card.get("landscape")
+            if not isinstance(ls, dict):
+                err(f"{label}: landscape block missing -- THIS ABORTS THE DEPLOY RUN")
+                continue
+            extra = set(ls) - LANDSCAPE_KEYS - {"t2"}
+            if extra:
+                err(f"{label}: landscape has unexpected keys {sorted(extra)}")
+            for k in LANDSCAPE_KEYS:
+                if k not in ls:
+                    err(f"{label}: landscape missing {k!r}")
+            if "img" in ls and ls["img"] is not None and not str(ls["img"]).strip():
+                err(f"{label}: landscape.img present but blank -- use null")
+            for key in ("t", "t2"):
+                if key in ls and ls[key] is not None:
+                    if ls[key] not in valid_threads:
+                        err(f"{label}: landscape.{key} {ls[key]!r} not in active_threads U {{curious, dup}}")
+                    elif ls[key] in ("curious", "dup"):
+                        note(f"{label}: landscape.{key}={ls[key]} (expected 'orphaned thread' in deploy output -- by design)")
+            tag = ls.get("tag")
+            if tag not in known_tags:
+                (err if hard_tags else note)(f"{label}: landscape.tag {tag!r} " + ("outside vocabulary" if hard_tags else "not seen in corpus before -- confirm it is intended"))
+
+    for u in set(urls):
+        if urls.count(u) > 1:
+            err(f"duplicate url within edition: {u}")
+    for i in range(len(heads)):
+        for j in range(i + 1, len(heads)):
+            r = SequenceMatcher(None, heads[i].lower(), heads[j].lower()).ratio()
+            if r > 0.72:
+                err(f"headlines {r:.2f} similar:\n      {heads[i]}\n      {heads[j]}")
+
+    for m in notes:
+        print(f"  note: {m}")
+    if errors:
+        print("\nEdition schema ..... FAIL")
+        for e in errors:
+            print(f"  ERROR: {e}")
+        die(f"{len(errors)} schema error(s) in the edition file.")
+    print(f"Edition schema ..... PASS ({n_cards} cards, {len(ed.get('sections', []))} sections, threads/tags/urls/headlines OK)")
+
+
 def weekly(dry, edition_path=None):
     # 1. locate edition file
     if edition_path:
         ep = Path(edition_path)
     else:
-        cands = sorted(glob.glob(str(DL / "edition-*.json")))
-        cands = [c for c in cands if re.search(r"edition-\d+\.json$", c)]
+        cands = [c for c in glob.glob(str(DL / EDITION_GLOB)) if EDITION_RE.search(c)]
         if not cands:
-            die("No edition-NN.json found in ~/Downloads.")
-        ep = Path(max(cands, key=lambda p: int(re.search(r"edition-(\d+)\.json$", p).group(1))))
+            die(f"No {EDITION_GLOB} found in ~/Downloads. Name the file PMWR_Ed<N>_edition.json, or pass the path.")
+        ep = Path(max(cands, key=lambda p: int(EDITION_RE.search(p).group(1))))
     ed = json.loads(ep.read_text())
+    _m = EDITION_RE.search(ep.name)
+    if _m and int(_m.group(1)) != ed["edition"]:
+        die(f"Filename says Edition {_m.group(1)} but the JSON says {ed['edition']} -- wrong file or wrong number.")
     n = sum(len(s["cards"]) for s in ed["sections"])
     print(f"Edition file ....... {ep}  (Edition {ed['edition']}, {n} cards, {len(ed['sections'])} sections)")
 
@@ -627,6 +795,8 @@ def weekly(dry, edition_path=None):
     print(f"Active threads ..... {corpus.get('active_threads')}")
     if ed["edition"] != corpus["current_edition"] + 1:
         die(f"Edition {ed['edition']} but corpus current_edition is {corpus['current_edition']} — sequence mismatch.")
+    check_authored_text(ed)
+    validate_edition(ed, corpus)
     live_root = fetch_repo("index.html")
     live_land = fetch_repo("landscape/index.html")
     live_foot = fetch_repo("landscape/footlines.js")
