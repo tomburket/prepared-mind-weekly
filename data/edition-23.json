@@ -1,0 +1,221 @@
+{
+  "edition": 23,
+  "date_long": "September 4, 2026",
+  "topics": "Litigation, Leadership, AI, Workforce, Consolidation, Attention, Institutions, Procurement",
+  "sections": [
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "One number in the definition of \"Dividend\" was worth $31 million",
+          "source": "Pilgrim's Pride 8-K · August 28, 2026",
+          "summary": "JBS, the Brazilian meatpacker, controls Pilgrim's Pride and has been bidding since August for the shares it does not own. A settlement proposed Aug. 28 prices what that control was worth. JBS would pay $31 million in cash to Pilgrim's Pride, a sum the notice defines as \"the additional payment ... that would result from replacing the $725,000,000 figure contained in the definition of Dividend in the Tax Sharing Agreement with $1,170,000,000.\" Shareholders had to sue in Delaware's Court of Chancery to move that one number, and because the suit is derivative, the money returns to the company rather than to them. Wesley and Joesley Batista are among the named individual defendants. The settlement is proposed, not approved; the court hears it Nov. 20. The special committee JBS said on Aug. 20 it would form to weigh its bid has not appeared in a filing since.",
+          "why": "The suit did not allege a fraud. It contested a definition, and the price of the definition turned out to be $31 million.",
+          "url": "https://www.sec.gov/Archives/edgar/data/802481/000080248126000059/ex991noticeofproposedset.htm",
+          "link_label": "Read the filing",
+          "landscape": {
+            "tag": "civic",
+            "t": "s2",
+            "src_short": "Pilgrim's Pride 8-K · Aug 28",
+            "gloss": "A proposed derivative settlement would have JBS pay $31 million to the company it controls, priced off one figure in a tax-sharing definition.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Kroger went outside for a store operations chief",
+          "source": "Grocery Dive · September 2, 2026",
+          "summary": "Kroger named Mark Ibbotson executive vice president and chief store operations officer on Sept. 2, effective Sept. 14. Grocery Dive reports the company has had nobody in that job since 2021, the outlet's framing rather than Kroger's, whose release never mentions it. Ibbotson was an executive vice president at Walmart running central operations and realty, and he left in 2020. Greg Foran, Kroger's chief executive since February, said in the release: \"Mark has done this work at scale, and he has done it exceptionally well.\" He did it four years ago. The time since went to McKinsey, as a senior advisor.",
+          "why": "Kroger's release does not say the role was vacant; the trade press supplied that. What both agree on is that the man taking it has spent four years advising rather than running stores.",
+          "url": "https://www.grocerydive.com/news/kroger-mark-ibbotson-chief-store-operations/829501/",
+          "link_label": "Read at Grocery Dive",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Grocery Dive · Sep 2",
+            "gloss": "Kroger fills a top store-operations post with a former Walmart executive who spent the last four years in consulting.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Zuckerberg planned to cut some teams 60 percent and let AI do the work. Then the productivity numbers came in.",
+          "source": "Reuters · August 26, 2026",
+          "summary": "Meta's internal code changes rose 220 percent year over year once its engineers were working with AI. The changes that reached users rose 36 percent. That gap is most of the story of Project OT, the \"AI native\" reorganization devised at a January leadership retreat, which would have handed much of the daily work of thousands of employees to AI agents supervised by smaller \"talent-dense\" teams. Internal documents reviewed by Reuters describe scenarios cutting some teams by as much as 60 percent, in two waves. Hours before the first, on the night of May 19, Zuckerberg called off the second. Meta laid off 10 percent of its workforce the next morning. Security and technical incidents rose 40 percent that year; firefighting time rose 70 percent. Every productivity figure here is Meta's own internal reporting, as reviewed by Reuters.",
+          "why": "The output rose and the outcome barely moved. Meta had built the instrumentation to watch for exactly that, and stopped the second round of cuts once it read the result.",
+          "url": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/",
+          "link_label": "Read at Reuters",
+          "landscape": {
+            "tag": "org",
+            "t": "t8",
+            "t2": "s1",
+            "src_short": "Reuters · Aug 26",
+            "gloss": "Internal documents show Meta planned two waves of AI-driven cuts, then cancelled the second as productivity data and staff resistance arrived.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Boeing's engineers and technicians rejected the offers, then authorized a strike by nearly 90 percent",
+          "source": "SPEEA · August 21, 2026",
+          "summary": "The Society of Professional Engineering Employees in Aerospace put Boeing's offers to its two bargaining units on Aug. 21. Both rejected. In the professional unit of about 13,000, 7,238 voted no, or 64.25 percent. In the technical unit of roughly 4,000, 2,795 voted no, or 71.87 percent. On the same ballot they authorized a strike: 87.82 percent and 89.71 percent. Talks resume Sept. 8. Boeing's reply, \"We take that feedback seriously,\" is a company statement with no executive attached, and every vote figure here is the union's own.",
+          "why": "The rejection and the strike authorization sat on the same ballot, so the units voted no and armed the no in a single act. In both, more members authorized a strike than voted against the offer.",
+          "url": "https://speea.org/profs-and-techs-reject-contract-offers/",
+          "link_label": "Read at SPEEA",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "SPEEA · Aug 21",
+            "gloss": "Both SPEEA units at Boeing rejected contract offers and authorized a strike on the same ballot, with talks set to resume Sept. 8.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Sapporo sold the Stone brand in April and kept the brewery. Now it's closing the brewery.",
+          "source": "TheStreet · August 31, 2026",
+          "summary": "Three Stone Brewing sites in Escondido, California, are shutting permanently, ending about 220 jobs. The first 58 go on Oct. 19. Greg Koch and Steve Wagner founded the company in San Marcos in 1996; Sapporo Holdings bought it in 2022 for roughly $165 million in equity value, sold the Stone brand assets to Firestone Walker and Duvel Moortgat USA this April, and kept the Escondido manufacturing out of that deal. The beer itself will now be made in Paso Robles and Kansas City. Craft production fell 4 percent in 2025, to 22 million barrels, and 481 breweries closed against 300 openings.",
+          "why": "The brand and the brewery were separated in April and only one of them was sold. What is closing is the half nobody bought.",
+          "url": "https://www.thestreet.com/retail/stone-brewing-craft-beer-pioneer-closure-layoffs",
+          "link_label": "Read at TheStreet",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "TheStreet · Aug 31",
+            "gloss": "Sapporo closes three Escondido brewing sites and about 220 jobs, months after selling the Stone brand without the plant.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Campbell's cut the dividend 36 percent and set a $500 million target. The layoffs were already finished.",
+          "source": "The Campbell's Company · September 3, 2026",
+          "summary": "Campbell's cut its quarterly dividend from 39 cents to 25 cents on Sept. 3, taking the annual payout from $1.56 to $1. Fourth-quarter sales were $2.1 billion, down 8 percent, but down 1 percent organic, the rest being the comparison against a divested business. Adjusted earnings per share fell 37 percent. The company named a $500 million cost target by fiscal 2030, and the release is careful about what that is: the program \"will include initiatives remaining under\" the prior one. It absorbs the old savings work rather than stacking on it. Mick Beekhuizen, president and chief executive, said performance \"is not where it needs to be.\" The plant closures and workforce reductions the release cites are described as recently completed.",
+          "why": "The dividend, the savings target and the layoffs were announced together, but only the dividend takes effect going forward. The cuts were already made, and the target partly counts work already underway.",
+          "url": "https://www.thecampbellscompany.com/newsroom/press-releases/campbells-reports-fourth-quarter-fiscal-2026-results/",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "org",
+            "t": "s2",
+            "t2": "s5",
+            "src_short": "Campbell's · Sep 3",
+            "gloss": "Campbell's cuts its dividend by 36 percent and names a $500 million savings target that subsumes an existing program.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Hershey changed chief financial officers and kept both men",
+          "source": "Hershey 8-K · September 2, 2026",
+          "summary": "Dave Hulays, 54, became senior vice president and chief financial officer of Hershey on Sept. 2, after 14 years at the company and a year running finance. Steven Voskuil, who held the job before him, stepped down the same day and stays on as senior vice president for strategic projects until he retires in early 2027. The filing gives no reason for the change and sets no conditions. An internal candidate of long standing, a dated handoff, a predecessor kept through the transition: the document is Hershey's own 8-K, signed by general counsel James Turoff, and no outside reporting on the move had appeared when this was written.",
+          "why": "Nothing about the filing is unusual, which is the observation. An internal candidate of 14 years, a named date and a predecessor still on the payroll is what succession looks like when it has been planned rather than triggered.",
+          "url": "https://www.sec.gov/Archives/edgar/data/47111/000162828026060131/hsy-20260902.htm",
+          "link_label": "Read the filing",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Hershey 8-K · Sep 2",
+            "gloss": "Hershey promotes a 14-year insider to chief financial officer and keeps the outgoing CFO on staff through a 2027 retirement.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Putting a Price Tag on Consumer Attention as a Commodity",
+          "source": "All At Once · August 29, 2026",
+          "summary": "Len Necefer has a doctorate in engineering and public policy. In this snarky long-copy read, he discusses his decision to close his Instagram account and poses a question: \"If you audited your attention the way you audit your money, what would you cancel first?\" His focus is consumer attention and what happens when it becomes a commodity, extracted, refined, sold. The infinite scroll, he argues, is a slot machine, and pull-to-refresh is not a metaphor but the lever. He writes: \"Every time you scroll, you are sold at auction hundreds of times a day.\" Then he runs the arithmetic on his own readers, 4,250 of them at 15 to 20 minutes an essay is roughly 1,200 hours, which a feed would need 1.8 million views a week to match. The figures are his own, about the newsletter he is asking readers to pay $5 a month for.",
+          "why": "He is not arguing that attention is scarce. He is arguing it is already priced, and sold in an auction the person being sold never attends.",
+          "url": "https://drlennecefer.substack.com/p/why-i-deleted-my-instagram-and-applied",
+          "link_label": "Read at All At Once",
+          "landscape": {
+            "tag": "essay",
+            "t": "s4",
+            "src_short": "All At Once · Aug 29",
+            "gloss": "A researcher who quit Instagram prices his own readership against feed impressions and argues attention is auctioned, not given.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Japanese students serve their own lunch. Estonian students text the chef. Everywhere, the food must cook in bulk and stay hot.",
+          "source": "Atlas Obscura · May 27, 2024",
+          "summary": "Only five nations serve school lunch free to every student, Estonia, Finland, Sweden, Brazil and India, while Canada, Mexico and Australia run no national program at all, and Greece had none until 2018. Japanese students serve their own lunches and clean their classrooms afterward. Estonian children text feedback to the chefs through a QR code, and one school builds a soup week around several kinds of rye bread. French elementary schools served wine and beer until 1956, and high schools until 1981. What the menus share, Andrew Coletti notes, is not nutrition or taste but a pair of constraints: the food has to be preparable in large quantities and hold its heat for a long time.",
+          "why": "Every country solves the same problem and arrives somewhere different. The constraint that survives translation is not nutritional or cultural but mechanical: volume, and heat.",
+          "url": "https://www.atlasobscura.com/articles/school-lunch-around-the-world",
+          "link_label": "Read at Atlas Obscura",
+          "landscape": {
+            "tag": "culture",
+            "t": "curious",
+            "src_short": "Atlas Obscura · May 2024",
+            "gloss": "A survey of school lunch across a dozen countries finds wide cultural variation and one shared operating constraint.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "The Marine Corps awarded $1.9 billion in food service to a state labor department, under a law from 1936",
+          "source": "U.S. Department of Defense · September 1, 2026",
+          "summary": "The Defense Department's contract list for Sept. 1 records a $1,904,796,810 award to \"The Colorado Department of Labor and Employment Division, Denver, Colorado\" for Marine Corps garrison food services: 46 mess halls and seven satellite facilities, half of it in California, running to September 2031, with an option that would carry the total past $4 billion. The announcement explains itself in a clause. The contract \"was not competitively procured but rather directly negotiated and awarded pursuant to the authorities at 10 U.S. Code 3204(a)(5) and 20 U.S. Code Section 107.\" Title 20, Section 107 is the Randolph-Sheppard Act of 1936, which gives blind vendors priority to run food service on federal property, through each state's licensing agency, in Colorado its labor department. The document cites the number and never uses the name. Fiscal 2026 funds obligated at signing: $10,000.",
+          "why": "A statute written in 1936 for blind vendors now routes a $1.9 billion military contract through a state labor department, and the announcement records it in a single clause. The $10,000 obligated at signing is the whole of what has actually been spent.",
+          "url": "https://www.war.gov/News/Contracts/Contract/Article/4588178/contracts-for-sept-1-2026/",
+          "link_label": "Read the announcement",
+          "landscape": {
+            "tag": "civic",
+            "t": "curious",
+            "src_short": "DoD Contracts · Sep 1",
+            "gloss": "A Marine Corps garrison food contract worth $1.9 billion goes to Colorado's labor department under the 1936 Randolph-Sheppard Act.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
