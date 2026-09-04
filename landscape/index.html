@@ -575,9 +575,9 @@ function buildEdition(){
   const sc=el('<div class="scroll"></div>');
   const head=el(
     '<div class="ed-head">'+
-    '<div class="ed-kicker">Edition 13</div>'+
+    '<div class="ed-kicker">Edition '+CURRENT_EDITION+'</div>'+
     '<h1 class="ed-title">This week\u2019s briefing</h1>'+
-    '<div class="ed-date">June 25, 2026</div>'+
+    '<div class="ed-date">'+(EDITION_DATES[CURRENT_EDITION]||'')+'</div>'+
     '<div class="ed-note">Each entry below shapes the Prepared Mind. Some stand alone. Others connect across a broader landscape with pathways to follow. Explore. Extend. Keep asking the second question.</div>'+
     '<div class="altbar">'+
       '<button class="active" data-alt="points">Points</button>'+
