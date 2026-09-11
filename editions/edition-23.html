@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 23
+date: September 4, 2026
+cards: 10
+sections: Board & Governance, AI & Ops, The Workforce, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; September 4, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">September 4, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">10 Items &nbsp;&bull;&nbsp; Litigation, Leadership, AI, Workforce, Consolidation, Attention, Institutions, Procurement</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#board">Board &amp; Governance</a>
+<a href="#ai">AI &amp; Ops</a>
+<a href="#workforce">The Workforce</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">One number in the definition of "Dividend" was worth $31 million</div>
+</div>
+<div class="item-source">Pilgrim's Pride 8-K &middot; August 28, 2026</div>
+<div class="item-summary">JBS, the Brazilian meatpacker, controls Pilgrim's Pride and has been bidding since August for the shares it does not own. A settlement proposed Aug. 28 prices what that control was worth. JBS would pay $31 million in cash to Pilgrim's Pride, a sum the notice defines as "the additional payment ... that would result from replacing the $725,000,000 figure contained in the definition of Dividend in the Tax Sharing Agreement with $1,170,000,000." Shareholders had to sue in Delaware's Court of Chancery to move that one number, and because the suit is derivative, the money returns to the company rather than to them. Wesley and Joesley Batista are among the named individual defendants. The settlement is proposed, not approved; the court hears it Nov. 20. The special committee JBS said on Aug. 20 it would form to weigh its bid has not appeared in a filing since.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The suit did not allege a fraud. It contested a definition, and the price of the definition turned out to be $31 million.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/802481/000080248126000059/ex991noticeofproposedset.htm" target="_blank" rel="noopener">Read the filing &#8599;</a>
+</div>
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">Kroger went outside for a store operations chief</div>
+</div>
+<div class="item-source">Grocery Dive &middot; September 2, 2026</div>
+<div class="item-summary">Kroger named Mark Ibbotson executive vice president and chief store operations officer on Sept. 2, effective Sept. 14. Grocery Dive reports the company has had nobody in that job since 2021, the outlet's framing rather than Kroger's, whose release never mentions it. Ibbotson was an executive vice president at Walmart running central operations and realty, and he left in 2020. Greg Foran, Kroger's chief executive since February, said in the release: "Mark has done this work at scale, and he has done it exceptionally well." He did it four years ago. The time since went to McKinsey, as a senior advisor.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Kroger's release does not say the role was vacant; the trade press supplied that. What both agree on is that the man taking it has spent four years advising rather than running stores.</div>
+</div>
+<a class="item-link" href="https://www.grocerydive.com/news/kroger-mark-ibbotson-chief-store-operations/829501/" target="_blank" rel="noopener">Read at Grocery Dive &#8599;</a>
+</div>
+</section>
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Zuckerberg planned to cut some teams 60 percent and let AI do the work. Then the productivity numbers came in.</div>
+</div>
+<div class="item-source">Reuters &middot; August 26, 2026</div>
+<div class="item-summary">Meta's internal code changes rose 220 percent year over year once its engineers were working with AI. The changes that reached users rose 36 percent. That gap is most of the story of Project OT, the "AI native" reorganization devised at a January leadership retreat, which would have handed much of the daily work of thousands of employees to AI agents supervised by smaller "talent-dense" teams. Internal documents reviewed by Reuters describe scenarios cutting some teams by as much as 60 percent, in two waves. Hours before the first, on the night of May 19, Zuckerberg called off the second. Meta laid off 10 percent of its workforce the next morning. Security and technical incidents rose 40 percent that year; firefighting time rose 70 percent. Every productivity figure here is Meta's own internal reporting, as reviewed by Reuters.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The output rose and the outcome barely moved. Meta had built the instrumentation to watch for exactly that, and stopped the second round of cuts once it read the result.</div>
+</div>
+<a class="item-link" href="https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/" target="_blank" rel="noopener">Read at Reuters &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Boeing's engineers and technicians rejected the offers, then authorized a strike by nearly 90 percent</div>
+</div>
+<div class="item-source">SPEEA &middot; August 21, 2026</div>
+<div class="item-summary">The Society of Professional Engineering Employees in Aerospace put Boeing's offers to its two bargaining units on Aug. 21. Both rejected. In the professional unit of about 13,000, 7,238 voted no, or 64.25 percent. In the technical unit of roughly 4,000, 2,795 voted no, or 71.87 percent. On the same ballot they authorized a strike: 87.82 percent and 89.71 percent. Talks resume Sept. 8. Boeing's reply, "We take that feedback seriously," is a company statement with no executive attached, and every vote figure here is the union's own.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The rejection and the strike authorization sat on the same ballot, so the units voted no and armed the no in a single act. In both, more members authorized a strike than voted against the offer.</div>
+</div>
+<a class="item-link" href="https://speea.org/profs-and-techs-reject-contract-offers/" target="_blank" rel="noopener">Read at SPEEA &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Sapporo sold the Stone brand in April and kept the brewery. Now it's closing the brewery.</div>
+</div>
+<div class="item-source">TheStreet &middot; August 31, 2026</div>
+<div class="item-summary">Three Stone Brewing sites in Escondido, California, are shutting permanently, ending about 220 jobs. The first 58 go on Oct. 19. Greg Koch and Steve Wagner founded the company in San Marcos in 1996; Sapporo Holdings bought it in 2022 for roughly $165 million in equity value, sold the Stone brand assets to Firestone Walker and Duvel Moortgat USA this April, and kept the Escondido manufacturing out of that deal. The beer itself will now be made in Paso Robles and Kansas City. Craft production fell 4 percent in 2025, to 22 million barrels, and 481 breweries closed against 300 openings.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The brand and the brewery were separated in April and only one of them was sold. What is closing is the half nobody bought.</div>
+</div>
+<a class="item-link" href="https://www.thestreet.com/retail/stone-brewing-craft-beer-pioneer-closure-layoffs" target="_blank" rel="noopener">Read at TheStreet &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Campbell's cut the dividend 36 percent and set a $500 million target. The layoffs were already finished.</div>
+</div>
+<div class="item-source">The Campbell's Company &middot; September 3, 2026</div>
+<div class="item-summary">Campbell's cut its quarterly dividend from 39 cents to 25 cents on Sept. 3, taking the annual payout from $1.56 to $1. Fourth-quarter sales were $2.1 billion, down 8 percent, but down 1 percent organic, the rest being the comparison against a divested business. Adjusted earnings per share fell 37 percent. The company named a $500 million cost target by fiscal 2030, and the release is careful about what that is: the program "will include initiatives remaining under" the prior one. It absorbs the old savings work rather than stacking on it. Mick Beekhuizen, president and chief executive, said performance "is not where it needs to be." The plant closures and workforce reductions the release cites are described as recently completed.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The dividend, the savings target and the layoffs were announced together, but only the dividend takes effect going forward. The cuts were already made, and the target partly counts work already underway.</div>
+</div>
+<a class="item-link" href="https://www.thecampbellscompany.com/newsroom/press-releases/campbells-reports-fourth-quarter-fiscal-2026-results/" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Hershey changed chief financial officers and kept both men</div>
+</div>
+<div class="item-source">Hershey 8-K &middot; September 2, 2026</div>
+<div class="item-summary">Dave Hulays, 54, became senior vice president and chief financial officer of Hershey on Sept. 2, after 14 years at the company and a year running finance. Steven Voskuil, who held the job before him, stepped down the same day and stays on as senior vice president for strategic projects until he retires in early 2027. The filing gives no reason for the change and sets no conditions. An internal candidate of long standing, a dated handoff, a predecessor kept through the transition: the document is Hershey's own 8-K, signed by general counsel James Turoff, and no outside reporting on the move had appeared when this was written.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Nothing about the filing is unusual, which is the observation. An internal candidate of 14 years, a named date and a predecessor still on the payroll is what succession looks like when it has been planned rather than triggered.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/47111/000162828026060131/hsy-20260902.htm" target="_blank" rel="noopener">Read the filing &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Putting a Price Tag on Consumer Attention as a Commodity</div>
+</div>
+<div class="item-source">All At Once &middot; August 29, 2026</div>
+<div class="item-summary">Len Necefer has a doctorate in engineering and public policy. In this snarky long-copy read, he discusses his decision to close his Instagram account and poses a question: "If you audited your attention the way you audit your money, what would you cancel first?" His focus is consumer attention and what happens when it becomes a commodity, extracted, refined, sold. The infinite scroll, he argues, is a slot machine, and pull-to-refresh is not a metaphor but the lever. He writes: "Every time you scroll, you are sold at auction hundreds of times a day." Then he runs the arithmetic on his own readers, 4,250 of them at 15 to 20 minutes an essay is roughly 1,200 hours, which a feed would need 1.8 million views a week to match. The figures are his own, about the newsletter he is asking readers to pay $5 a month for.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">He is not arguing that attention is scarce. He is arguing it is already priced, and sold in an auction the person being sold never attends.</div>
+</div>
+<a class="item-link" href="https://drlennecefer.substack.com/p/why-i-deleted-my-instagram-and-applied" target="_blank" rel="noopener">Read at All At Once &#8599;</a>
+</div>
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Japanese students serve their own lunch. Estonian students text the chef. Everywhere, the food must cook in bulk and stay hot.</div>
+</div>
+<div class="item-source">Atlas Obscura &middot; May 27, 2024</div>
+<div class="item-summary">Only five nations serve school lunch free to every student, Estonia, Finland, Sweden, Brazil and India, while Canada, Mexico and Australia run no national program at all, and Greece had none until 2018. Japanese students serve their own lunches and clean their classrooms afterward. Estonian children text feedback to the chefs through a QR code, and one school builds a soup week around several kinds of rye bread. French elementary schools served wine and beer until 1956, and high schools until 1981. What the menus share, Andrew Coletti notes, is not nutrition or taste but a pair of constraints: the food has to be preparable in large quantities and hold its heat for a long time.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Every country solves the same problem and arrives somewhere different. The constraint that survives translation is not nutritional or cultural but mechanical: volume, and heat.</div>
+</div>
+<a class="item-link" href="https://www.atlasobscura.com/articles/school-lunch-around-the-world" target="_blank" rel="noopener">Read at Atlas Obscura &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">06</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c10">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">The Marine Corps awarded $1.9 billion in food service to a state labor department, under a law from 1936</div>
+</div>
+<div class="item-source">U.S. Department of Defense &middot; September 1, 2026</div>
+<div class="item-summary">The Defense Department's contract list for Sept. 1 records a $1,904,796,810 award to "The Colorado Department of Labor and Employment Division, Denver, Colorado" for Marine Corps garrison food services: 46 mess halls and seven satellite facilities, half of it in California, running to September 2031, with an option that would carry the total past $4 billion. The announcement explains itself in a clause. The contract "was not competitively procured but rather directly negotiated and awarded pursuant to the authorities at 10 U.S. Code 3204(a)(5) and 20 U.S. Code Section 107." Title 20, Section 107 is the Randolph-Sheppard Act of 1936, which gives blind vendors priority to run food service on federal property, through each state's licensing agency, in Colorado its labor department. The document cites the number and never uses the name. Fiscal 2026 funds obligated at signing: $10,000.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">A statute written in 1936 for blind vendors now routes a $1.9 billion military contract through a state labor department, and the announcement records it in a single clause. The $10,000 obligated at signing is the whole of what has actually been spent.</div>
+</div>
+<a class="item-link" href="https://www.war.gov/News/Contracts/Contract/Article/4588178/contracts-for-sept-1-2026/" target="_blank" rel="noopener">Read the announcement &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+September 4, 2026 &middot; Edition No. 23
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=23" defer></script>
+
+</body>
+</html>
