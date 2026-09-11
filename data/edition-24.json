@@ -1,7 +1,7 @@
 {
   "edition": 24,
   "date_long": "September 11, 2026",
-  "topics": "Governance, AI, Genomics, Labor, Leadership, Investment, Mathematics, Archaeology, Procurement",
+  "topics": "Governance, AI, Genomics, Labor, Leadership, Investment, Consumer Demand, Mathematics, Archaeology, Procurement",
   "sections": [
     {
       "id": "board",
@@ -121,8 +121,8 @@
           "tag_label": "CEO Market",
           "headline": "Nestlé will invest CHF 310 million in Brazilian nutrition manufacturing, including a new infant-formula plant",
           "source": "just-food · September 3, 2026",
-          "summary": "Nestlé said Sept. 3 it will invest CHF 310 million in Brazil by 2028, building an infant-formula factory in Ituiutaba and expanding its Araçatuba hub in São Paulo state. The new plant is expected to open in the second quarter of 2028 with about 100 jobs. Jeff Hamilton, chief executive of Nestlé Zone Americas, said nutrition \"accounts for around 20% of Group sales.\" The announcement came two days after Nestlé agreed to sell its mainstream supplements business for $1 billion.",
-          "why": "Within one week Nestlé sold a supplements business and committed capital to infant and medical nutrition. The two moves mark what it treats as core and what it does not.",
+          "summary": "Nestlé said Sept. 3 it will invest CHF 310 million in Brazil by 2028, building an infant-formula factory in Ituiutaba and expanding its Araçatuba hub in São Paulo state, which the company calls its primary Brazilian site for infant, medical and adult nutrition. The new plant is expected to open in the second quarter of 2028 with about 100 jobs. just-food's Shivam Mishra puts the plant's share of the total at CHF 94 million. Nestlé also projects a 15 percent increase in its Brazilian whey production by 2029. Jeff Hamilton, chief executive of Nestlé Zone Americas, said nutrition \"accounts for around 20% of Group sales.\"",
+          "why": "Nestlé is committing capital now against capacity that produces nothing until 2028. The category it is building for accounts for about 20 percent of group sales, by the company's own count.",
           "url": "https://www.just-food.com/news/nestle-brazil-infant-formula-factory/",
           "link_label": "Read at just-food",
           "landscape": {
@@ -130,6 +130,23 @@
             "t": "s2",
             "src_short": "just-food · Sep 3",
             "gloss": "Nestlé commits CHF 310 million to Brazilian nutrition manufacturing, including a new infant-formula plant due in 2028.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Pew finds 78 percent of U.S. adults take a supplement, with protein concentrated among adults under 50",
+          "source": "Pew Research Center · September 10, 2026",
+          "summary": "A Pew Research Center survey of U.S. adults, fielded July 6-12 and published Sept. 10, finds 78 percent currently taking at least one supplement for their health. Vitamins and minerals lead at 67 percent, followed by 35 percent taking something outside the four categories Pew asked about, 31 percent protein, 25 percent omega oils and 19 percent herbals. Age splits the basket: 85 percent of adults 65 and older take a supplement against 67 percent of adults under 30, but protein runs the other way, at 37 percent of adults 18 to 29 and 23 percent of those 65 and older. Upper-income adults take protein at 40 percent against 28 percent of lower-income adults. Among those taking them, 62 percent call vitamins or minerals extremely or very important to their health; for protein the figure is 44 percent. Pew cites an outside estimate putting the global supplement market at $209.5 billion in 2025, and notes that supplements do not require FDA approval before they are marketed.",
+          "why": "Four in five adults are buying into a category that reaches the shelf without premarket approval, and the age and income splits say which shelf. Protein is the young, higher-income end of it; vitamins are the older end, and the two do not merchandise alike.",
+          "url": "https://www.pewresearch.org/short-reads/2026/09/10/about-8-in-10-americans-take-supplements-and-many-see-them-as-important-to-their-health/",
+          "link_label": "Read at Pew Research Center",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "Pew Research · Sep 10",
+            "gloss": "A Pew survey finds 78 percent of U.S. adults take a supplement, with protein skewing young and higher-income.",
             "img": null
           }
         }
