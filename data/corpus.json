@@ -2668,6 +2668,18 @@
   {
    "id": "e24c7",
    "ed": 24,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "Pew finds 78 percent of U.S. adults take a supplement, with protein concentrated among adults under 50",
+   "src": "Pew Research · Sep 10",
+   "t": "t10",
+   "s": "A Pew survey finds 78 percent of U.S. adults take a supplement, with protein skewing young and higher-income.",
+   "url": "https://www.pewresearch.org/short-reads/2026/09/10/about-8-in-10-americans-take-supplements-and-many-see-them-as-important-to-their-health/",
+   "img": null
+  },
+  {
+   "id": "e24c8",
+   "ed": 24,
    "sec": "Cultural Signal",
    "tag": "science",
    "h": "OpenAI claims an unrefereed AI-generated proof on the Navier–Stokes problem, one of math's Millennium Prize problems",
@@ -2678,7 +2690,7 @@
    "img": null
   },
   {
-   "id": "e24c8",
+   "id": "e24c9",
    "ed": 24,
    "sec": "Oddly Interesting",
    "tag": "culture",
@@ -2690,7 +2702,7 @@
    "img": null
   },
   {
-   "id": "e24c9",
+   "id": "e24c10",
    "ed": 24,
    "sec": "Oddly Interesting",
    "tag": "civic",
