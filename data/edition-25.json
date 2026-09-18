@@ -1,0 +1,202 @@
+{
+  "edition": 25,
+  "date_long": "September 18, 2026",
+  "topics": "Antitrust, Governance, Board Composition, Automation, Labor, Capital Investment, Retail Expansion, Brand, Memory, Architecture",
+  "sections": [
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Britain's competition regulator opened a Phase 1 inquiry into McCormick's purchase of most of Unilever's food business",
+          "source": "Competition and Markets Authority · September 16, 2026",
+          "summary": "The U.K. Competition and Markets Authority launched its McCormick / Unilever merger inquiry on Sept. 16 and set a Phase 1 decision deadline of Nov. 11, according to the regulator's own case page. The CMA describes the transaction as McCormick's anticipated acquisition of the majority of the foods business of Unilever plc. Food Dive, reporting Sept. 17, puts the deal at $44.8 billion; the CMA's case page carries no transaction value. The CMA has recorded no undertakings and no remedies. Unilever said in August that it is seeking a buyer for its Colman's mustard brand to address potential competition concerns and has appointed Rothschild to run that process, FoodNavigator reported.",
+          "why": "A Phase 1 deadline is the date by which the regulator decides whether to open a deeper investigation, not the date by which a deal clears.",
+          "url": "https://www.gov.uk/cma-cases/mccormick-slash-unilever-merger-inquiry",
+          "link_label": "Read the CMA case page",
+          "landscape": {
+            "tag": "civic",
+            "t": "s3",
+            "src_short": "CMA · Sep 16",
+            "gloss": "The UK competition regulator opens a Phase 1 inquiry into McCormick's purchase of most of Unilever's food business.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Two-thirds of S&P 500 boards have a director tagged with AI skills; a quarter have three",
+          "source": "Morgan Stanley Institute for Sustainable Investing · August 27, 2026",
+          "summary": "Morgan Stanley's Institute for Sustainable Investing reported Aug. 27 that 68 percent of S&P 500 companies have at least one non-executive director with AI skills and that 24 percent have three or more, drawing on an Institutional Shareholder Services dataset compiled in June 2026. ISS defines an AI skill as prior experience in artificial intelligence, machine learning or a related topic, tagged from company disclosures. By comparison, 96 percent of S&P 500 companies have three or more non-executive directors with technology skills and 80 percent have three or more with information security skills. No company in the dataset's energy sector has three or more directors with AI skills; communication services stands at 15 percent, utilities at 16 percent, information technology at 34 percent and real estate at 32 percent. The report also finds that 62 percent of directors tagged with AI skills were appointed in 2022 or earlier, against 63 percent of the broader director population.",
+          "why": "The figures come from one vendor's tagging of company disclosures as of June, which is the basis on which a board's AI expertise is publicly counted.",
+          "url": "https://www.morganstanley.com/insights/articles/ai-governance-adoption-report-2026",
+          "link_label": "Read at Morgan Stanley",
+          "landscape": {
+            "tag": "data",
+            "t": "s3",
+            "src_short": "Morgan Stanley · Aug 27",
+            "gloss": "Morgan Stanley reports 68 percent of S&P 500 companies have a director tagged with AI skills and 24 percent have three or more.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "UNFI moved a Wisconsin distribution center's volume into Joliet and is adding full-case automation there",
+          "source": "Supply Chain Dive · September 17, 2026",
+          "summary": "United Natural Foods Inc. consolidated a Wisconsin distribution center into its Joliet, Illinois, facility in June and is rolling out full-case automation at Joliet, Supply Chain Dive reported Sept. 17. Chief Executive Sandy Douglas described the consolidation on the company's fourth-quarter fiscal 2026 earnings call Sept. 8. President and Chief Operating Officer Giorgio Tarditi said the move should generate operating efficiencies \"over time\" and acknowledged \"a little bit of growing pains.\" UNFI's own earnings release guides to about $300 million in fiscal 2027 capital and cloud implementation expenditures, a figure covering technology spending generally rather than automation alone. Supply Chain Dive's own reporting of March 26 placed the closing Wisconsin facility in Sturtevant and put the job loss at 443.",
+          "why": "Consolidating volume into fewer automated buildings changes where a supplier's freight is received and how far it moves before it reaches a store.",
+          "url": "https://www.supplychaindive.com/news/unfi-consolidates-midwest-facilities-to-leverage-automation/830616/",
+          "link_label": "Read at Supply Chain Dive",
+          "landscape": {
+            "tag": "org",
+            "t": "s1",
+            "src_short": "Supply Chain Dive · Sep 17",
+            "gloss": "UNFI consolidates a Wisconsin distribution center into Joliet and adds full-case automation, against about $300 million in fiscal 2027 technology spending.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "PepsiCo will end manufacturing at a Maryland bottling plant and keep sales and delivery running there",
+          "source": "Food Dive · September 16, 2026",
+          "summary": "PepsiCo will end manufacturing operations at a bottling plant outside Washington, eliminating 143 positions, Food Dive reported Sept. 16. Maryland's WARN log lists the filing under CB Manufacturing Inc., doing business as Pepsi Beverages, at an address in Hyattsville, with a notice date of Sept. 14 and an effective date of Nov. 13. Food Dive reports that 98 of the 143 positions are union-represented, a breakdown the state log does not carry. The company said sales and delivery operations will continue at the location without interruption. \"This decision was not made lightly,\" a PepsiCo statement in the article said. \"We must continue optimizing and modernizing our network to best serve customers and consumers.\"",
+          "why": "A plant that stops making product while continuing to ship it becomes a distribution point, which changes the site's headcount, its skill mix and its place in the network.",
+          "url": "https://www.fooddive.com/news/pepsico-layoffs-maryland-bottling-plant-manufacturing-operations/830548/",
+          "link_label": "Read at Food Dive",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "Food Dive · Sep 16",
+            "gloss": "PepsiCo ends manufacturing at a Maryland bottling plant, cutting 143 positions while sales and delivery continue at the site.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Coca-Cola and its bottlers plan $10 billion in U.S. plants and distribution through 2030",
+          "source": "Food Dive · September 15, 2026",
+          "summary": "The Coca-Cola Co. and its independent bottling partners, including Coca-Cola Consolidated, announced plans to spend $10 billion on U.S. manufacturing, distribution and office facilities from 2026 through 2030, Food Dive reported Sept. 15. The company's own release frames the figure as a Coca-Cola system total rather than the corporation's capital budget and names sites in California, Colorado, Indiana, Alabama, Michigan, Minnesota, Florida and New York. Food Dive reports that the announcement bundles both newly disclosed and previously announced projects. John Murphy, president and chief financial officer, said the company is \"building on more than a century of impact while reinforcing the resilience of our system and communities across America.\" Two further figures in the release, $85 billion in annual U.S. economic contribution and roughly 1 million jobs supported, are value-chain estimates and are not components of the $10 billion.",
+          "why": "The figure covers both the corporation and independently owned bottlers, and neither the split between them nor the portion previously announced is disclosed.",
+          "url": "https://www.fooddive.com/news/coca-cola-us-manufacturing-10-billion-investment/830468/",
+          "link_label": "Read at Food Dive",
+          "landscape": {
+            "tag": "org",
+            "t": "s2",
+            "src_short": "Food Dive · Sep 15",
+            "gloss": "Coca-Cola and its bottlers announce $10 billion in planned US facility spending through 2030, bundling new and previously announced projects.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Toys R Us will open 120 standalone stores for the holiday season, taking its U.S. total to 160",
+          "source": "Toys\"R\"Us · September 17, 2026",
+          "summary": "Toys\"R\"Us announced Sept. 17 that 120 standalone stores will open across the United States this holiday season in partnership with Go! Retail Group, bringing its standalone total to 160 by the season. The brand's existing U.S. footprint is 40 standalone stores plus shops inside Macy's. Toys\"R\"Us is owned by WHP Global, a brand management firm; Go! Retail Group, a family-owned company based in Austin, Texas, is the operating partner. Neither the release nor the trade coverage states whether the new stores are permanent, and Go! Retail Group describes its own business as \"an extensive network of pop-up stores across six countries, alongside year-round retail locations.\" Gideon Schlessinger, chief executive of Go! Retail Group, said the season is an opportunity to \"create destinations they'll want to come back to throughout the year.\"",
+          "why": "The count is announced, not open. No store among the 120 had opened as of Sept. 18, and the release does not say how long they are meant to stay.",
+          "url": "https://www.prnewswire.com/news-releases/toysrus-announces-major-us-expansion-with-120-new-standalone-stores-opening-this-holiday-season-302882103.html",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "org",
+            "t": "s2",
+            "src_short": "Toys R Us · Sep 17",
+            "gloss": "Toys R Us announces 120 standalone stores opening for the holiday season through Go! Retail Group, with permanence unstated.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Adidas's chief executive discussed the years after the Yeezy partnership ended in a Fast Company session",
+          "source": "Fast Company · September 17, 2026",
+          "summary": "Fast Company published a video Sept. 17 from its Innovation Festival featuring Bjørn Gulden, chief executive of Adidas, and Marc Makowski, senior vice president of innovation. The page asks what is driving Adidas's \"turnaround story\" and says the two executives \"reveal the playbook that put Adidas back at the center of culture and performance.\" Fast Company's summary states that Adidas hit record 2025 revenues \"to the tune of $28.7 billion\"; Adidas itself reported full-year 2025 revenues of 24.811 billion euros in a release dated March 4, 2026. The page carries no byline and no written article, only the video and a single descriptive paragraph.",
+          "why": "The session is the company's own account of its recent history, delivered at a publisher's event, and no transcript accompanies the video.",
+          "url": "https://www.fastcompany.com/video/91609268/how-adidas-found-its-place-in-culture-again",
+          "link_label": "Watch at Fast Company",
+          "landscape": {
+            "tag": "profile",
+            "t": "s2",
+            "src_short": "Fast Company · Sep 17",
+            "gloss": "Adidas's chief executive and innovation head discuss the years since the Yeezy partnership ended, in a Fast Company festival session.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "An essay traces the sense that time is speeding up to the moments that never got stored as memory",
+          "source": "Noema · September 3, 2026",
+          "summary": "Noema published an essay by Mike Mariani on Sept. 3 titled \"Your Perception Of Time Is, In Fact, Warped,\" which argues that the common feeling of accelerating years is better understood as a failure to form memories than as a change in the perception of time itself. Mariani is a journalist and the author of \"What Doesn't Kill Us Makes Us,\" published by Penguin Random House in August 2022. The essay draws on a 2023 Baylor University analysis of Gallup pandemic data, a 2022 study in Time & Society reporting that 80 percent of surveyed Uruguayan students felt time had sped up or slowed down, a 2022 University of Sussex study on brain activity and subjective duration, and TIMED, a European research consortium. None of the studies it cites is new.",
+          "why": "The piece is a synthesis rather than a finding, and the research beneath it dates from 2022 and 2023.",
+          "url": "https://www.noemamag.com/your-perception-of-time-is-in-fact-warped/",
+          "link_label": "Read at Noema",
+          "landscape": {
+            "tag": "essay",
+            "t": "curious",
+            "src_short": "Noema · Sep 3",
+            "gloss": "An essay reframes the feeling that years pass faster as a failure of memory formation rather than of time perception.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "An Oxford mathematician argues the Parthenon contains no optical corrections",
+          "source": "Royal Society Open Science · September 16, 2026",
+          "summary": "Royal Society Open Science published a Perspective by Alain Goriely of Oxford's Mathematical Institute on Sept. 16 titled \"The illusion of illusions: there are no optical corrections in the Parthenon.\" The paper accepts that the building's architectural refinements are real and deliberately executed, but argues that the at least 12 proposed optical corrections offered to explain them are, in its words, \"either unsupported by evidence or too small to have a perceptible effect under typical viewing conditions.\" Goriely traces the correction theory to Vitruvius more than 2,000 years ago and its revival to 19th-century measurements of the building's curved profiles. He declines the common term \"optical refinements\" on the grounds that it attributes a purpose and so reinforces the claim being tested. The paper also reports that free versions of ChatGPT, Gemini and Claude, asked on Sept. 9, 2025, and again on July 3, 2026, what optical refinements in architecture are, each gave the correction theory and cited the Parthenon as its prime example.",
+          "why": "The paper is a Perspective rather than new measurement, and it argues that a widely repeated explanation has no direct historical or experimental evidence behind it.",
+          "url": "https://royalsocietypublishing.org/rsos/article/13/9/rsos260999/483304/The-illusion-of-illusions-there-are-no-optical",
+          "link_label": "Read at Royal Society Open Science",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "R. Soc. Open Sci. · Sep 16",
+            "gloss": "An Oxford mathematician argues the Parthenon's proposed optical corrections are unsupported, and finds three chatbots repeating the claim.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
