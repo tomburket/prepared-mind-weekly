@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 24
+date: September 11, 2026
+cards: 10
+sections: Board & Governance, AI & Ops, The Workforce, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; September 11, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">September 11, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">10 Items &nbsp;&bull;&nbsp; Governance, AI, Genomics, Labor, Leadership, Investment, Consumer Demand, Mathematics, Archaeology, Procurement</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#board">Board &amp; Governance</a>
+<a href="#ai">AI &amp; Ops</a>
+<a href="#workforce">The Workforce</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">Albertsons named Meg Whitman executive chair, a newly created role, at $100,000 salary and $8.9 million in restricted stock</div>
+</div>
+<div class="item-source">Grocery Dive &middot; September 9, 2026</div>
+<div class="item-summary">Albertsons expanded its board from 10 to 11 directors on Sept. 8, appointed Meg Whitman to the new seat and elected her executive chair the same day; Kim Fennebresque moved from chair to lead independent director. The 8-K sets her pay at an annual base salary of $100,000 plus restricted stock units with a grant date value of $8.9 million, vesting in one year. Because she is an employee, the board determined she is not an independent director, and she sits on no committee. Susan Morris, chief executive officer, said: "At this pivotal moment, I'm thrilled Meg is joining our board as Executive Chair."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">An executive chair is a working executive seated above the chief executive, and the role did not exist at Albertsons before Sept. 8. The one-year vest is the horizon the board is paying for.</div>
+</div>
+<a class="item-link" href="https://www.grocerydive.com/news/albertsons-expands-board-names-first-executive-chair-meg-whitman/829895/" target="_blank" rel="noopener">Read at Grocery Dive &#8599;</a>
+</div>
+</section>
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Instacart launched Clementine, an AI assistant that builds a grocery cart from a request, a recipe or a photo of a list</div>
+</div>
+<div class="item-source">Instacart &middot; September 9, 2026</div>
+<div class="item-summary">Instacart introduced Clementine on Sept. 9, available to most U.S. and Canadian customers in its app and on its website. A typed request, a recipe, a dietary preference or a photo of a handwritten list becomes a cart from the shopper's chosen store. Instacart says Clementine orders carry more items than its typical basket and exceed its $115 average, without giving an order count. Food Bazaar, Heritage Grocers Group and Woodman's are already running Cart Assistant, the same engine under the grocer's own name. This is a new product; the Instacart item in Edition 22 was a single checkout prompt that lifted sales nearly 1 percent.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Edition 22's item was one prompt at checkout. This is the full assistant, and the white-label version is already inside three grocers' own apps, which puts Instacart's AI between those retailers and their customers.</div>
+</div>
+<a class="item-link" href="https://company.instacart.com/pressreleases/meet-clementine-instacart-s-ai-shopping-assistant-that-takes-what-s-for-dinner-off-your-plate" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Google DeepMind released predictions for all 9 billion possible single-letter changes in the human genome</div>
+</div>
+<div class="item-source">IEEE Spectrum &middot; September 8, 2026</div>
+<div class="item-summary">DeepMind published the AlphaGenome Atlas on Sept. 8: precomputed predictions for 9 billion single-nucleotide variants, every single-letter substitution possible in the human reference genome, with about 27,000 predictions per variant across hundreds of cell types. The dataset is one petabyte, which DeepMind says is more than 30 times the size of the AlphaFold Database. It is free for academic use, with commercial access through Google Cloud described as coming soon. The accompanying manuscript is a company technical report with no DOI and no peer review.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Running the model once and storing the answers turns genome-scale variant analysis into a lookup. The scores are only as good as the model, and no one outside the company has reviewed either.</div>
+</div>
+<a class="item-link" href="https://spectrum.ieee.org/alphagenome-atlas" target="_blank" rel="noopener">Read at IEEE Spectrum &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Aimbridge launched a labor forecasting tool across its hotels and reported productivity gains without a number</div>
+</div>
+<div class="item-source">Hotel Dive &middot; September 2, 2026</div>
+<div class="item-summary">Aimbridge Hospitality, the Plano, Texas, hotel management company, launched LIFT on Sept. 1, a tool that puts labor forecasting, scheduling and daily execution on one screen for property and finance managers. The company said pilot hotels saw measurable labor productivity gains, largest in housekeeping and laundry, and closer alignment between planned and actual labor. It gave no figure for any of it. Keryn McNamara, chief information officer, said LIFT "directly supports owner profitability."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Housekeeping and laundry are the largest schedulable labor pools in a hotel, so that is where a forecasting tool shows first. What Aimbridge has published is a direction, not a size.</div>
+</div>
+<a class="item-link" href="https://www.hoteldive.com/news/aimbridge-launches-lift-hotel-staffing-platform/829410/" target="_blank" rel="noopener">Read at Hotel Dive &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Inspire Brands' chief executive is on medical leave and Dunkin' president Scott Murphy will run the company in the interim</div>
+</div>
+<div class="item-source">Nation's Restaurant News &middot; September 9, 2026</div>
+<div class="item-summary">Paul Brown, cofounder and chief executive of Inspire Brands, is on medical leave while he recovers from an injury, The Wall Street Journal reported Sept. 9; the company confirmed it by email to Nation's Restaurant News. Scott Murphy, brand president of Dunkin', will serve as interim chief executive. Inspire, owned by Roark Capital, runs Arby's, Dunkin', Buffalo Wild Wings, Sonic, Jimmy John's and Baskin-Robbins and has been planning an initial public offering this year. No effective date, duration or expected return has been given.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">An IPO candidate now has an interim chief executive with no stated term. The company has disclosed less about the change than the newspaper that reported it.</div>
+</div>
+<a class="item-link" href="https://www.nrn.com/restaurant-executives/inspire-brands-ceo-paul-brown-reportedly-taking-a-medical-leave" target="_blank" rel="noopener">Read at Nation's Restaurant News &#8599;</a>
+</div>
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Nestl&eacute; will invest CHF 310 million in Brazilian nutrition manufacturing, including a new infant-formula plant</div>
+</div>
+<div class="item-source">just-food &middot; September 3, 2026</div>
+<div class="item-summary">Nestl&eacute; said Sept. 3 it will invest CHF 310 million in Brazil by 2028, building an infant-formula factory in Ituiutaba and expanding its Ara&#231;atuba hub in S&#227;o Paulo state, which the company calls its primary Brazilian site for infant, medical and adult nutrition. The new plant is expected to open in the second quarter of 2028 with about 100 jobs. just-food's Shivam Mishra puts the plant's share of the total at CHF 94 million. Nestl&eacute; also projects a 15 percent increase in its Brazilian whey production by 2029. Jeff Hamilton, chief executive of Nestl&eacute; Zone Americas, said nutrition "accounts for around 20% of Group sales."</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Nestl&eacute; is committing capital now against capacity that produces nothing until 2028. The category it is building for accounts for about 20 percent of group sales, by the company's own count.</div>
+</div>
+<a class="item-link" href="https://www.just-food.com/news/nestle-brazil-infant-formula-factory/" target="_blank" rel="noopener">Read at just-food &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Pew finds 78 percent of U.S. adults take a supplement, with protein concentrated among adults under 50</div>
+</div>
+<div class="item-source">Pew Research Center &middot; September 10, 2026</div>
+<div class="item-summary">A Pew Research Center survey of U.S. adults, fielded July 6-12 and published Sept. 10, finds 78 percent currently taking at least one supplement for their health. Vitamins and minerals lead at 67 percent, followed by 35 percent taking something outside the four categories Pew asked about, 31 percent protein, 25 percent omega oils and 19 percent herbals. Age splits the basket: 85 percent of adults 65 and older take a supplement against 67 percent of adults under 30, but protein runs the other way, at 37 percent of adults 18 to 29 and 23 percent of those 65 and older. Upper-income adults take protein at 40 percent against 28 percent of lower-income adults. Among those taking them, 62 percent call vitamins or minerals extremely or very important to their health; for protein the figure is 44 percent. Pew cites an outside estimate putting the global supplement market at $209.5 billion in 2025, and notes that supplements do not require FDA approval before they are marketed.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Four in five adults are buying into a category that reaches the shelf without premarket approval, and the age and income splits say which shelf. Protein is the young, higher-income end of it; vitamins are the older end, and the two do not merchandise alike.</div>
+</div>
+<a class="item-link" href="https://www.pewresearch.org/short-reads/2026/09/10/about-8-in-10-americans-take-supplements-and-many-see-them-as-important-to-their-health/" target="_blank" rel="noopener">Read at Pew Research Center &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">OpenAI claims an unrefereed AI-generated proof on the Navier&ndash;Stokes problem, one of math's Millennium Prize problems</div>
+</div>
+<div class="item-source">MIT Technology Review &middot; September 8, 2026</div>
+<div class="item-summary">On Sept. 8 OpenAI said an unnamed model, running as roughly 10,000 concurrent agents, produced a proof that a smooth fluid at rest can develop a singularity in finite time, a result it presents as addressing the Navier&ndash;Stokes problem, one of the Millennium Prize problems in mathematics. The proof was formalized in the Lean proof assistant but has not been reviewed by a journal. Two mathematicians, Tristan Buckmaster of NYU and Levent Alp&#246;ge of Anthropic, had posted a related result on the Euler equations days earlier; OpenAI credits them, and Buckmaster says he is "not accusing anyone of anything." Terence Tao wrote Sept. 3 that AI-produced solutions could inhibit a field's development.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Whether the proof holds is a question for referees, and the company has not submitted it to any. Until it does, the claim rests on OpenAI's word and a formal checker.</div>
+</div>
+<a class="item-link" href="https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/" target="_blank" rel="noopener">Read at MIT Technology Review &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">06</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">After 21 seasons of digging, Iran's Burnt City yielded a 4,600-year-old board game of a type never seen before</div>
+</div>
+<div class="item-source">Tehran Times &middot; September 2, 2026</div>
+<div class="item-summary">Archaeologists in the 21st excavation season at Shahr-i Sokhta, the Bronze Age Burnt City in southeastern Iran, uncovered a 4,600-year-old board game that Rouhollah Shirazi, who heads the team, called "a previously unknown type." Shirazi said the discovery could offer a new perspective on social life and entertainment at the settlement, which was inhabited through the third millennium BC. Excavation at the site began in 1967. The same season produced an engraved bone comb with no known regional counterpart, along with eggshell, textile and leather remains.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Twenty-one seasons and nearly sixty years in, the site is still producing objects its own excavators have never seen. The game's rules are unknown, and the dating is the team's, with laboratory work in progress.</div>
+</div>
+<a class="item-link" href="https://www.tehrantimes.com/news/529622/4-600-year-old-board-game-decorated-bone-comb-unearthed-at-Burnt" target="_blank" rel="noopener">Read at Tehran Times &#8599;</a>
+</div>
+<div class="item-card" id="c10">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">A Louisville food distributor won a DLA fresh produce contract worth up to $497 million over five years</div>
+</div>
+<div class="item-source">U.S. Department of Defense &middot; September 8, 2026</div>
+<div class="item-summary">The Defense Logistics Agency awarded Creation Gardens Inc., doing business as What Chefs Want, of Louisville, Kentucky, a maximum $496,849,673 indefinite-delivery contract for fresh fruits and vegetables on Sept. 8. The five-year contract serves Army, Air Force and Department of Agriculture customers in Illinois and runs to Sept. 7, 2031. The acquisition was competitive and three offers were received.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The announcement gives a ceiling, a term and a bidder count, and nothing about volume or price. Three companies judged five years of produce for three federal customers in one state worth bidding on.</div>
+</div>
+<a class="item-link" href="https://www.war.gov/News/Contracts/Contract/Article/4592905/contracts-for-sept-8-2026/" target="_blank" rel="noopener">Read the announcement &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+September 11, 2026 &middot; Edition No. 24
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=24" defer></script>
+
+</body>
+</html>
