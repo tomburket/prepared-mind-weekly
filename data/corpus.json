@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 24,
+ "current_edition": 25,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -25,7 +25,8 @@
   "21": "August 21",
   "22": "August 28",
   "23": "September 4",
-  "24": "September 11"
+  "24": "September 11",
+  "25": "September 18"
  },
  "active_threads": [
   "s1",
@@ -2711,6 +2712,114 @@
    "t": "curious",
    "s": "A Louisville foodservice distributor takes a $497 million ceiling DLA contract for fresh produce in Illinois against two other bidders.",
    "url": "https://www.war.gov/News/Contracts/Contract/Article/4592905/contracts-for-sept-8-2026/",
+   "img": null
+  },
+  {
+   "id": "e25c1",
+   "ed": 25,
+   "sec": "Board & Governance",
+   "tag": "civic",
+   "h": "Britain's competition regulator opened a Phase 1 inquiry into McCormick's purchase of most of Unilever's food business",
+   "src": "CMA · Sep 16",
+   "t": "s3",
+   "s": "The UK competition regulator opens a Phase 1 inquiry into McCormick's purchase of most of Unilever's food business.",
+   "url": "https://www.gov.uk/cma-cases/mccormick-slash-unilever-merger-inquiry",
+   "img": null
+  },
+  {
+   "id": "e25c2",
+   "ed": 25,
+   "sec": "Board & Governance",
+   "tag": "data",
+   "h": "Two-thirds of S&P 500 boards have a director tagged with AI skills; a quarter have three",
+   "src": "Morgan Stanley · Aug 27",
+   "t": "s3",
+   "s": "Morgan Stanley reports 68 percent of S&P 500 companies have a director tagged with AI skills and 24 percent have three or more.",
+   "url": "https://www.morganstanley.com/insights/articles/ai-governance-adoption-report-2026",
+   "img": null
+  },
+  {
+   "id": "e25c3",
+   "ed": 25,
+   "sec": "AI & Ops",
+   "tag": "org",
+   "h": "UNFI moved a Wisconsin distribution center's volume into Joliet and is adding full-case automation there",
+   "src": "Supply Chain Dive · Sep 17",
+   "t": "s1",
+   "s": "UNFI consolidates a Wisconsin distribution center into Joliet and adds full-case automation, against about $300 million in fiscal 2027 technology spending.",
+   "url": "https://www.supplychaindive.com/news/unfi-consolidates-midwest-facilities-to-leverage-automation/830616/",
+   "img": null
+  },
+  {
+   "id": "e25c4",
+   "ed": 25,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "PepsiCo will end manufacturing at a Maryland bottling plant and keep sales and delivery running there",
+   "src": "Food Dive · Sep 16",
+   "t": "s5",
+   "s": "PepsiCo ends manufacturing at a Maryland bottling plant, cutting 143 positions while sales and delivery continue at the site.",
+   "url": "https://www.fooddive.com/news/pepsico-layoffs-maryland-bottling-plant-manufacturing-operations/830548/",
+   "img": null
+  },
+  {
+   "id": "e25c5",
+   "ed": 25,
+   "sec": "CEO Market Intel",
+   "tag": "org",
+   "h": "Coca-Cola and its bottlers plan $10 billion in U.S. plants and distribution through 2030",
+   "src": "Food Dive · Sep 15",
+   "t": "s2",
+   "s": "Coca-Cola and its bottlers announce $10 billion in planned US facility spending through 2030, bundling new and previously announced projects.",
+   "url": "https://www.fooddive.com/news/coca-cola-us-manufacturing-10-billion-investment/830468/",
+   "img": null
+  },
+  {
+   "id": "e25c6",
+   "ed": 25,
+   "sec": "CEO Market Intel",
+   "tag": "org",
+   "h": "Toys R Us will open 120 standalone stores for the holiday season, taking its U.S. total to 160",
+   "src": "Toys R Us · Sep 17",
+   "t": "s2",
+   "s": "Toys R Us announces 120 standalone stores opening for the holiday season through Go! Retail Group, with permanence unstated.",
+   "url": "https://www.prnewswire.com/news-releases/toysrus-announces-major-us-expansion-with-120-new-standalone-stores-opening-this-holiday-season-302882103.html",
+   "img": null
+  },
+  {
+   "id": "e25c7",
+   "ed": 25,
+   "sec": "Cultural Signal",
+   "tag": "profile",
+   "h": "Adidas's chief executive discussed the years after the Yeezy partnership ended in a Fast Company session",
+   "src": "Fast Company · Sep 17",
+   "t": "s2",
+   "s": "Adidas's chief executive and innovation head discuss the years since the Yeezy partnership ended, in a Fast Company festival session.",
+   "url": "https://www.fastcompany.com/video/91609268/how-adidas-found-its-place-in-culture-again",
+   "img": null
+  },
+  {
+   "id": "e25c8",
+   "ed": 25,
+   "sec": "Cultural Signal",
+   "tag": "essay",
+   "h": "An essay traces the sense that time is speeding up to the moments that never got stored as memory",
+   "src": "Noema · Sep 3",
+   "t": "curious",
+   "s": "An essay reframes the feeling that years pass faster as a failure of memory formation rather than of time perception.",
+   "url": "https://www.noemamag.com/your-perception-of-time-is-in-fact-warped/",
+   "img": null
+  },
+  {
+   "id": "e25c9",
+   "ed": 25,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "An Oxford mathematician argues the Parthenon contains no optical corrections",
+   "src": "R. Soc. Open Sci. · Sep 16",
+   "t": "curious",
+   "s": "An Oxford mathematician argues the Parthenon's proposed optical corrections are unsupported, and finds three chatbots repeating the claim.",
+   "url": "https://royalsocietypublishing.org/rsos/article/13/9/rsos260999/483304/The-illusion-of-illusions-there-are-no-optical",
    "img": null
   }
  ]
