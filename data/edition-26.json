@@ -1,0 +1,195 @@
+{
+  "edition": 26,
+  "date_long": "September 25, 2026",
+  "topics": "Store Operations, Frontline Training, Labor, Delivery, Pricing, Archaeology, Baseball, Geophysics, Papyrology",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Hy-Vee is reworking pharmacy, prepared food and online pickup at stores around Des Moines",
+          "source": "Supermarket News · September 18, 2026",
+          "summary": "Hy-Vee remodeled a West Des Moines, Iowa, store, relocating its pharmacy and expanding prepared foods, and moved online pickup in nearby Waukee from the parking lot into the store, Supermarket News reported Sept. 18. The grocer plans to test a drive-through pharmacy in Waukee, Grimes and Ankeny and to convert its Dollar Fresh Market banner to the full Hy-Vee format with service meat and in-store bakeries. “What we’re really looking at is, ‘How do we continue to move to where the customer wants us to go long term?’” CEO Jeremy Gosch said.",
+          "why": "The changes pull pharmacy, online pickup and prepared food closer together inside the building.",
+          "url": "https://www.supermarketnews.com/grocery-operations/hy-vee-tests-new-initiatives-in-fresh-pharmacy-ecommerce",
+          "link_label": "Read at Supermarket News",
+          "landscape": {
+            "tag": "signal",
+            "t": "t10",
+            "src_short": "Supermarket News · Sep 18",
+            "gloss": "Hy-Vee remodels a West Des Moines store, moves Waukee pickup indoors and plans drive-through pharmacy tests in three Iowa towns.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Every Target store team member completed training this year on three service standards: easy, inspiring and friendly",
+          "source": "Target · September 16, 2026",
+          "summary": "All Target store team members completed additional training this year on three service standards, the company said Sept. 16, covering more than 350,000 people in more than 2,000 stores. Each standard has a floor-level shorthand: “Zoned, in stock, clean and fast”; “Visual presentation and interactions”; and “Greet, help, thank.” Target said it has invested “hundreds of millions of dollars this year in additional payroll” and that guest satisfaction metrics reached three-year highs in the first quarter.",
+          "why": "More than 350,000 people now share one three-part definition of a good store visit, backed by added payroll.",
+          "url": "https://corporate.target.com/press/fact-sheet/2026/09/store-investments",
+          "link_label": "Read the fact sheet",
+          "landscape": {
+            "tag": "framework",
+            "t": "s5",
+            "src_short": "Target · Sep 16",
+            "gloss": "Target trains all store team members on three service standards and adds hundreds of millions of dollars in store payroll.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "Teamsters at a Kemps dairy plant in Minnesota ratified a contract that raises the night shift differential 400 percent",
+          "source": "International Brotherhood of Teamsters · September 17, 2026",
+          "summary": "More than 110 members of Teamsters Local 471 ratified a two-year contract at Kemps’ dairy plant in Farmington, Minn., the union announced Sept. 17; Kemps is a Dairy Farmers of America subsidiary. The deal includes unspecified wage improvements, a 2 percent cut in the health care cap, a 2 percent increase in pension contributions and a 400 percent increase in the night shift differential. The union says more than 70 percent of the bargaining unit benefits from the night shift increase.",
+          "why": "The contract’s largest single change is to night shift pay, which the union says reaches most of the unit.",
+          "url": "https://teamster.org/2026/09/kemps-teamsters-ratify-strong-contract/",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "Teamsters · Sep 17",
+            "gloss": "More than 110 Teamsters ratify a two-year contract at Kemps in Farmington, Minn., with a 400 percent night differential increase.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Instacart will deliver from Dollar General, starting with about 7,000 stores and expanding to about 20,000 this fall",
+          "source": "Instacart and Dollar General · September 23, 2026",
+          "summary": "Instacart and Dollar General announced Sept. 23 that delivery from about 7,000 Dollar General and pOpshelf stores in six states will begin in the coming weeks, with delivery in as little as one hour. The companies said the partnership will expand to about 20,000 stores across 48 states this fall. Dollar General joins more than 2,200 retail banners on the Instacart Marketplace, according to the release.",
+          "why": "If the expansion holds to schedule, Instacart delivery would reach about 20,000 Dollar General stores within one season.",
+          "url": "https://www.prnewswire.com/news-releases/instacart-and-dollar-general-partner-to-deliver-everyday-essentials-302887023.html",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "signal",
+            "t": "t10",
+            "src_short": "Instacart / Dollar General · Sep 23",
+            "gloss": "Instacart adds Dollar General delivery at about 7,000 stores, expanding to about 20,000 across 48 states this fall.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Aldi’s fall price cuts at all U.S. stores come with an estimated $86 million in shopper savings",
+          "source": "Grocery Dive · September 23, 2026",
+          "summary": "Aldi cut prices on produce and other everyday items at all of its more than 2,600 U.S. stores on Sept. 23, holding them through at least Nov. 3, and estimates $86 million in shopper savings, Grocery Dive reported. The grocer also said almost a third of its everyday assortment now costs less than it did in 2025. Stop & Shop and BJ’s Wholesale Club announced temporary promotions the same week, as diesel hit a record above $6 a gallon, according to Grocery Dive.",
+          "why": "Three chains announced temporary price cuts in the same week.",
+          "url": "https://www.grocerydive.com/news/aldi-price-cuts-grocery-food-inflation/831099/",
+          "link_label": "Read at Grocery Dive",
+          "landscape": {
+            "tag": "signal",
+            "t": "t10",
+            "src_short": "Grocery Dive · Sep 23",
+            "gloss": "Aldi cuts prices at all U.S. stores through Nov. 3 and estimates $86 million in shopper savings as Stop & Shop and BJ’s follow.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "A new geophysical survey points to sealed chambers beyond the walls of Tutankhamun’s tomb",
+          "source": "Nature · September 17, 2026",
+          "summary": "A team led by former Egyptian antiquities minister Mamdouh Eldamaty published radar and microgravity data Sept. 17 that it says points to a “hidden complex” of corridors and rooms beyond the walls of Tutankhamun’s tomb, Nature reported. The theory, first proposed in 2015, is that the unexpectedly small tomb conceals further chambers that may hold Nefertiti; outside geophysicists called the new data intriguing but not conclusive. If Egypt’s Supreme Council of Antiquities approves, drilling to send in camera-equipped miniature tractors could begin in November.",
+          "why": "After a decade of conflicting surveys, the question now rests on a permit to drill a few meters and look.",
+          "url": "https://www.nature.com/articles/d41586-026-02621-2",
+          "link_label": "Read at Nature",
+          "landscape": {
+            "tag": "culture",
+            "t": "curious",
+            "src_short": "Nature · Sep 17",
+            "gloss": "A radar and microgravity survey points to sealed chambers beyond Tutankhamun’s tomb; drilling could start in November if Egypt approves.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Justin Verlander will make the 557th and final start of his career Saturday at Comerica Park",
+          "source": "MLB.com · September 22, 2026",
+          "summary": "Justin Verlander, 43, will make the 557th and final start of his career Saturday, Sept. 26, when the Tigers host the Pirates at Comerica Park, MLB.com reported, his first start since hip and hamstring injuries sidelined him after March 30. Over 21 seasons he went 266-159 with a 3.33 ERA and 3,554 strikeouts and won three Cy Young Awards, an MVP and two World Series titles, CBS Sports reported. “What are we saving my arm for?” he said this month.",
+          "why": "Both teams are already eliminated, and Verlander spent the season working back for this one start.",
+          "url": "https://www.mlb.com/news/justin-verlander-to-make-final-start-of-career-at-comerica-park",
+          "link_label": "Read at MLB.com",
+          "landscape": {
+            "tag": "sport",
+            "t": "t12",
+            "src_short": "MLB.com · Sep 22",
+            "gloss": "Justin Verlander, 43, makes his 557th and final start Sept. 26 against the Pirates, his first since March 30.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Gravity pulling on Earth’s inner core mainly drives the decades-long, millisecond-scale swings in the length of a day",
+          "source": "Nature · September 23, 2026",
+          "summary": "Earth’s day lengthens and shortens by a few milliseconds over decades, and a Nature paper published Sept. 23 by Huifeng Zhang and Mathieu Dumberry of the University of Alberta finds the main driver is gravity between dense regions of the inner core and the mantle. The outer core’s flow pulls the inner core out of alignment, and gravity slowly pulls it back, a contest resisted by electromagnetic and topographic forces at the core’s edge. “Before we obtained the result, we didn’t know they are competing with each other,” Zhang told Nature.",
+          "why": "The study assigns the drift in the length of the day to one dominant force, where earlier work had proposed several.",
+          "url": "https://www.nature.com/articles/s41586-026-10999-2",
+          "link_label": "Read at Nature",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "Nature · Sep 23",
+            "gloss": "A Nature paper finds gravity on Earth’s inner core mainly drives millisecond changes in day length over decades.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Researchers burned their own papyrus scroll to test a way to find readable Herculaneum scrolls before scanning them",
+          "source": "PLOS ONE · September 16, 2026",
+          "summary": "In a PLOS ONE paper published Sept. 16, researchers from UC Berkeley, NIST and two British institutions wrote on papyrus with lead-spiked carbon ink and then carbonized the rolled scroll in a low-oxygen furnace. X-ray tomography and virtual unrolling made the words “the children of” legible without enhancement, while lines in plain carbon ink did not show; a handheld analyzer of the kind used to find lead in paint detected lead on the burned scroll. The authors call it “the first confirmed proof of concept” that lead ink would greatly improve the odds of reading Herculaneum’s scrolls.",
+          "why": "The team did not read a real Herculaneum scroll; it tested a cheap screen for deciding which fragile scrolls are worth expensive imaging.",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0353485",
+          "link_label": "Read at PLOS ONE",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "PLOS ONE · Sep 16",
+            "gloss": "Researchers burn a lead-ink papyrus scroll and read it virtually, testing a handheld screen for readable Herculaneum scrolls.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
