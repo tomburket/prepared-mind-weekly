@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 25,
+ "current_edition": 26,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -26,7 +26,8 @@
   "22": "August 28",
   "23": "September 4",
   "24": "September 11",
-  "25": "September 18"
+  "25": "September 18",
+  "26": "September 25"
  },
  "active_threads": [
   "s1",
@@ -2820,6 +2821,114 @@
    "t": "curious",
    "s": "An Oxford mathematician argues the Parthenon's proposed optical corrections are unsupported, and finds three chatbots repeating the claim.",
    "url": "https://royalsocietypublishing.org/rsos/article/13/9/rsos260999/483304/The-illusion-of-illusions-there-are-no-optical",
+   "img": null
+  },
+  {
+   "id": "e26c1",
+   "ed": 26,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "Hy-Vee is reworking pharmacy, prepared food and online pickup at stores around Des Moines",
+   "src": "Supermarket News · Sep 18",
+   "t": "t10",
+   "s": "Hy-Vee remodels a West Des Moines store, moves Waukee pickup indoors and plans drive-through pharmacy tests in three Iowa towns.",
+   "url": "https://www.supermarketnews.com/grocery-operations/hy-vee-tests-new-initiatives-in-fresh-pharmacy-ecommerce",
+   "img": null
+  },
+  {
+   "id": "e26c2",
+   "ed": 26,
+   "sec": "The Workforce",
+   "tag": "framework",
+   "h": "Every Target store team member completed training this year on three service standards: easy, inspiring and friendly",
+   "src": "Target · Sep 16",
+   "t": "s5",
+   "s": "Target trains all store team members on three service standards and adds hundreds of millions of dollars in store payroll.",
+   "url": "https://corporate.target.com/press/fact-sheet/2026/09/store-investments",
+   "img": null
+  },
+  {
+   "id": "e26c3",
+   "ed": 26,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "Teamsters at a Kemps dairy plant in Minnesota ratified a contract that raises the night shift differential 400 percent",
+   "src": "Teamsters · Sep 17",
+   "t": "s5",
+   "s": "More than 110 Teamsters ratify a two-year contract at Kemps in Farmington, Minn., with a 400 percent night differential increase.",
+   "url": "https://teamster.org/2026/09/kemps-teamsters-ratify-strong-contract/",
+   "img": null
+  },
+  {
+   "id": "e26c4",
+   "ed": 26,
+   "sec": "CEO Market Intel",
+   "tag": "signal",
+   "h": "Instacart will deliver from Dollar General, starting with about 7,000 stores and expanding to about 20,000 this fall",
+   "src": "Instacart / Dollar General · Sep 23",
+   "t": "t10",
+   "s": "Instacart adds Dollar General delivery at about 7,000 stores, expanding to about 20,000 across 48 states this fall.",
+   "url": "https://www.prnewswire.com/news-releases/instacart-and-dollar-general-partner-to-deliver-everyday-essentials-302887023.html",
+   "img": null
+  },
+  {
+   "id": "e26c5",
+   "ed": 26,
+   "sec": "CEO Market Intel",
+   "tag": "signal",
+   "h": "Aldi’s fall price cuts at all U.S. stores come with an estimated $86 million in shopper savings",
+   "src": "Grocery Dive · Sep 23",
+   "t": "t10",
+   "s": "Aldi cuts prices at all U.S. stores through Nov. 3 and estimates $86 million in shopper savings as Stop & Shop and BJ’s follow.",
+   "url": "https://www.grocerydive.com/news/aldi-price-cuts-grocery-food-inflation/831099/",
+   "img": null
+  },
+  {
+   "id": "e26c6",
+   "ed": 26,
+   "sec": "Cultural Signal",
+   "tag": "culture",
+   "h": "A new geophysical survey points to sealed chambers beyond the walls of Tutankhamun’s tomb",
+   "src": "Nature · Sep 17",
+   "t": "curious",
+   "s": "A radar and microgravity survey points to sealed chambers beyond Tutankhamun’s tomb; drilling could start in November if Egypt approves.",
+   "url": "https://www.nature.com/articles/d41586-026-02621-2",
+   "img": null
+  },
+  {
+   "id": "e26c7",
+   "ed": 26,
+   "sec": "Cultural Signal",
+   "tag": "sport",
+   "h": "Justin Verlander will make the 557th and final start of his career Saturday at Comerica Park",
+   "src": "MLB.com · Sep 22",
+   "t": "t12",
+   "s": "Justin Verlander, 43, makes his 557th and final start Sept. 26 against the Pirates, his first since March 30.",
+   "url": "https://www.mlb.com/news/justin-verlander-to-make-final-start-of-career-at-comerica-park",
+   "img": null
+  },
+  {
+   "id": "e26c8",
+   "ed": 26,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Gravity pulling on Earth’s inner core mainly drives the decades-long, millisecond-scale swings in the length of a day",
+   "src": "Nature · Sep 23",
+   "t": "curious",
+   "s": "A Nature paper finds gravity on Earth’s inner core mainly drives millisecond changes in day length over decades.",
+   "url": "https://www.nature.com/articles/s41586-026-10999-2",
+   "img": null
+  },
+  {
+   "id": "e26c9",
+   "ed": 26,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Researchers burned their own papyrus scroll to test a way to find readable Herculaneum scrolls before scanning them",
+   "src": "PLOS ONE · Sep 16",
+   "t": "curious",
+   "s": "Researchers burn a lead-ink papyrus scroll and read it virtually, testing a handheld screen for readable Herculaneum scrolls.",
+   "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0353485",
    "img": null
   }
  ]
