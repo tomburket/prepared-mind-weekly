@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 26
+date: September 25, 2026
+cards: 9
+sections: AI & Ops, The Workforce, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; September 25, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">September 25, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">9 Items &nbsp;&bull;&nbsp; Store Operations, Frontline Training, Labor, Delivery, Pricing, Archaeology, Baseball, Geophysics, Papyrology</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#ai">AI &amp; Ops</a>
+<a href="#workforce">The Workforce</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">Hy-Vee is reworking pharmacy, prepared food and online pickup at stores around Des Moines</div>
+</div>
+<div class="item-source">Supermarket News &middot; September 18, 2026</div>
+<div class="item-summary">Hy-Vee remodeled a West Des Moines, Iowa, store, relocating its pharmacy and expanding prepared foods, and moved online pickup in nearby Waukee from the parking lot into the store, Supermarket News reported Sept. 18. The grocer plans to test a drive-through pharmacy in Waukee, Grimes and Ankeny and to convert its Dollar Fresh Market banner to the full Hy-Vee format with service meat and in-store bakeries. &ldquo;What we&rsquo;re really looking at is, &lsquo;How do we continue to move to where the customer wants us to go long term?&rsquo;&rdquo; CEO Jeremy Gosch said.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The changes pull pharmacy, online pickup and prepared food closer together inside the building.</div>
+</div>
+<a class="item-link" href="https://www.supermarketnews.com/grocery-operations/hy-vee-tests-new-initiatives-in-fresh-pharmacy-ecommerce" target="_blank" rel="noopener">Read at Supermarket News &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Every Target store team member completed training this year on three service standards: easy, inspiring and friendly</div>
+</div>
+<div class="item-source">Target &middot; September 16, 2026</div>
+<div class="item-summary">All Target store team members completed additional training this year on three service standards, the company said Sept. 16, covering more than 350,000 people in more than 2,000 stores. Each standard has a floor-level shorthand: &ldquo;Zoned, in stock, clean and fast&rdquo;; &ldquo;Visual presentation and interactions&rdquo;; and &ldquo;Greet, help, thank.&rdquo; Target said it has invested &ldquo;hundreds of millions of dollars this year in additional payroll&rdquo; and that guest satisfaction metrics reached three-year highs in the first quarter.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">More than 350,000 people now share one three-part definition of a good store visit, backed by added payroll.</div>
+</div>
+<a class="item-link" href="https://corporate.target.com/press/fact-sheet/2026/09/store-investments" target="_blank" rel="noopener">Read the fact sheet &#8599;</a>
+</div>
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">Teamsters at a Kemps dairy plant in Minnesota ratified a contract that raises the night shift differential 400 percent</div>
+</div>
+<div class="item-source">International Brotherhood of Teamsters &middot; September 17, 2026</div>
+<div class="item-summary">More than 110 members of Teamsters Local 471 ratified a two-year contract at Kemps&rsquo; dairy plant in Farmington, Minn., the union announced Sept. 17; Kemps is a Dairy Farmers of America subsidiary. The deal includes unspecified wage improvements, a 2 percent cut in the health care cap, a 2 percent increase in pension contributions and a 400 percent increase in the night shift differential. The union says more than 70 percent of the bargaining unit benefits from the night shift increase.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The contract&rsquo;s largest single change is to night shift pay, which the union says reaches most of the unit.</div>
+</div>
+<a class="item-link" href="https://teamster.org/2026/09/kemps-teamsters-ratify-strong-contract/" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Instacart will deliver from Dollar General, starting with about 7,000 stores and expanding to about 20,000 this fall</div>
+</div>
+<div class="item-source">Instacart and Dollar General &middot; September 23, 2026</div>
+<div class="item-summary">Instacart and Dollar General announced Sept. 23 that delivery from about 7,000 Dollar General and pOpshelf stores in six states will begin in the coming weeks, with delivery in as little as one hour. The companies said the partnership will expand to about 20,000 stores across 48 states this fall. Dollar General joins more than 2,200 retail banners on the Instacart Marketplace, according to the release.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">If the expansion holds to schedule, Instacart delivery would reach about 20,000 Dollar General stores within one season.</div>
+</div>
+<a class="item-link" href="https://www.prnewswire.com/news-releases/instacart-and-dollar-general-partner-to-deliver-everyday-essentials-302887023.html" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Aldi&rsquo;s fall price cuts at all U.S. stores come with an estimated $86 million in shopper savings</div>
+</div>
+<div class="item-source">Grocery Dive &middot; September 23, 2026</div>
+<div class="item-summary">Aldi cut prices on produce and other everyday items at all of its more than 2,600 U.S. stores on Sept. 23, holding them through at least Nov. 3, and estimates $86 million in shopper savings, Grocery Dive reported. The grocer also said almost a third of its everyday assortment now costs less than it did in 2025. Stop &amp; Shop and BJ&rsquo;s Wholesale Club announced temporary promotions the same week, as diesel hit a record above $6 a gallon, according to Grocery Dive.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Three chains announced temporary price cuts in the same week.</div>
+</div>
+<a class="item-link" href="https://www.grocerydive.com/news/aldi-price-cuts-grocery-food-inflation/831099/" target="_blank" rel="noopener">Read at Grocery Dive &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">A new geophysical survey points to sealed chambers beyond the walls of Tutankhamun&rsquo;s tomb</div>
+</div>
+<div class="item-source">Nature &middot; September 17, 2026</div>
+<div class="item-summary">A team led by former Egyptian antiquities minister Mamdouh Eldamaty published radar and microgravity data Sept. 17 that it says points to a &ldquo;hidden complex&rdquo; of corridors and rooms beyond the walls of Tutankhamun&rsquo;s tomb, Nature reported. The theory, first proposed in 2015, is that the unexpectedly small tomb conceals further chambers that may hold Nefertiti; outside geophysicists called the new data intriguing but not conclusive. If Egypt&rsquo;s Supreme Council of Antiquities approves, drilling to send in camera-equipped miniature tractors could begin in November.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">After a decade of conflicting surveys, the question now rests on a permit to drill a few meters and look.</div>
+</div>
+<a class="item-link" href="https://www.nature.com/articles/d41586-026-02621-2" target="_blank" rel="noopener">Read at Nature &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Justin Verlander will make the 557th and final start of his career Saturday at Comerica Park</div>
+</div>
+<div class="item-source">MLB.com &middot; September 22, 2026</div>
+<div class="item-summary">Justin Verlander, 43, will make the 557th and final start of his career Saturday, Sept. 26, when the Tigers host the Pirates at Comerica Park, MLB.com reported, his first start since hip and hamstring injuries sidelined him after March 30. Over 21 seasons he went 266-159 with a 3.33 ERA and 3,554 strikeouts and won three Cy Young Awards, an MVP and two World Series titles, CBS Sports reported. &ldquo;What are we saving my arm for?&rdquo; he said this month.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Both teams are already eliminated, and Verlander spent the season working back for this one start.</div>
+</div>
+<a class="item-link" href="https://www.mlb.com/news/justin-verlander-to-make-final-start-of-career-at-comerica-park" target="_blank" rel="noopener">Read at MLB.com &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Gravity pulling on Earth&rsquo;s inner core mainly drives the decades-long, millisecond-scale swings in the length of a day</div>
+</div>
+<div class="item-source">Nature &middot; September 23, 2026</div>
+<div class="item-summary">Earth&rsquo;s day lengthens and shortens by a few milliseconds over decades, and a Nature paper published Sept. 23 by Huifeng Zhang and Mathieu Dumberry of the University of Alberta finds the main driver is gravity between dense regions of the inner core and the mantle. The outer core&rsquo;s flow pulls the inner core out of alignment, and gravity slowly pulls it back, a contest resisted by electromagnetic and topographic forces at the core&rsquo;s edge. &ldquo;Before we obtained the result, we didn&rsquo;t know they are competing with each other,&rdquo; Zhang told Nature.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The study assigns the drift in the length of the day to one dominant force, where earlier work had proposed several.</div>
+</div>
+<a class="item-link" href="https://www.nature.com/articles/s41586-026-10999-2" target="_blank" rel="noopener">Read at Nature &#8599;</a>
+</div>
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Researchers burned their own papyrus scroll to test a way to find readable Herculaneum scrolls before scanning them</div>
+</div>
+<div class="item-source">PLOS ONE &middot; September 16, 2026</div>
+<div class="item-summary">In a PLOS ONE paper published Sept. 16, researchers from UC Berkeley, NIST and two British institutions wrote on papyrus with lead-spiked carbon ink and then carbonized the rolled scroll in a low-oxygen furnace. X-ray tomography and virtual unrolling made the words &ldquo;the children of&rdquo; legible without enhancement, while lines in plain carbon ink did not show; a handheld analyzer of the kind used to find lead in paint detected lead on the burned scroll. The authors call it &ldquo;the first confirmed proof of concept&rdquo; that lead ink would greatly improve the odds of reading Herculaneum&rsquo;s scrolls.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The team did not read a real Herculaneum scroll; it tested a cheap screen for deciding which fragile scrolls are worth expensive imaging.</div>
+</div>
+<a class="item-link" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0353485" target="_blank" rel="noopener">Read at PLOS ONE &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+September 25, 2026 &middot; Edition No. 26
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=26" defer></script>
+
+</body>
+</html>
