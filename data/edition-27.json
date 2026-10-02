@@ -1,0 +1,189 @@
+{
+  "edition": 27,
+  "date_long": "October 2, 2026",
+  "topics": "Pricing, Retail Results, Expansion, Inventory Costs, Spaceflight, Faith, Topology, Zoology",
+  "sections": [
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI & Ops",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "A third of McDonald’s franchisees ignored the under-$3 guidance. Top-down AI pricing weighs in",
+          "source": "Reuters · September 29, 2026",
+          "summary": "CEO Chris Kempczinski used the August earnings call to call out store owners who hadn’t followed the chain’s under-$3 menu guidance, about a third of all franchisees, Reuters reported Sept. 29. Behind the guidance is a pricing engine that analyzes millions of daily transactions across nearly 14,000 restaurants, sends recommendations at least three times a year and, per a June franchisee document, records each owner’s deviations in detail. Five franchisees said the company pressured them to use it; McDonald’s called the portal “a tool, not a mandate.”",
+          "why": "Price guidance from a central engine into stores someone else owns is the wholesaler-retailer problem in a franchise wrapper, and the antitrust line Reuters raises is that franchisees are, legally, competitors.",
+          "url": "https://www.reuters.com/business/inside-mcdonalds-push-have-ai-price-your-big-mac-2026-09-29/",
+          "link_label": "Read at Reuters",
+          "landscape": {
+            "tag": "signal",
+            "t": "s1",
+            "t2": "t8",
+            "src_short": "Reuters · Sep 29",
+            "gloss": "Reuters details McDonald’s AI pricing engine, the deviations it logs and the third of franchisees who ignored under-$3 guidance.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Costco’s fiscal fourth quarter posted a 6.7% adjusted comp and a 19.5% digital comp on $93.9 billion in sales",
+          "source": "Costco · September 24, 2026",
+          "summary": "Costco reported Sept. 24 that net sales for the 16-week quarter ended Aug. 30 rose 11.2% to $93.9 billion, with comparable sales up 9.4%, or 6.7% excluding gas and foreign exchange, and U.S. comps up 7.2% on the same basis. Digitally enabled comps rose 19.5%, and net income was $2.998 billion, $6.75 a share, including a 15-cent nonrecurring benefit from tariff refunds. The company operates 939 warehouses, 647 of them in the United States and Puerto Rico.",
+          "why": "A 7.2% adjusted U.S. comp at that scale is share taken from somewhere, and Grocery Dive’s read of the quarter is that bakery and meat led the fresh departments.",
+          "url": "https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "Costco · Sep 24",
+            "gloss": "Costco’s Q4: net sales $93.9 billion, adjusted comps 6.7%, U.S. 7.2%, digital 19.5%, 939 warehouses.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Aldi will spend a record £900 million in Britain next year on more than 40 stores and its distribution network",
+          "source": "Retail Gazette · September 29, 2026",
+          "summary": "Aldi UK and Ireland said this week it will invest a record £900 million in 2027, up from £370 million on new stores this year, after 2025 sales rose 5% to £19 billion and pretax profit slipped £2.6 million to £433 million, Retail Gazette reported Sept. 29. The chain runs 1,092 stores and is aiming for 1,500. Chief executive Giles Hurley said, “We could probably grow faster but we need to find the right sites in the right locations.”",
+          "why": "Aldi is funding expansion out of flat profit while cutting prices, the same trade-off its U.S. arm made with last week’s fall price cuts.",
+          "url": "https://www.retailgazette.co.uk/blog/2026/09/aldi-to-invest-record-900m-as-it-plots-40-new-uk-stores/",
+          "link_label": "Read at Retail Gazette",
+          "landscape": {
+            "tag": "signal",
+            "t": "t10",
+            "src_short": "Retail Gazette · Sep 29",
+            "gloss": "Aldi UK plans a record £900 million in 2027 for 40-plus stores and distribution; 1,092 stores now, 1,500 the target.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Manufacturers’ prices index jumped to 77.9 in September as customers’ inventories ran “too low” for a 24th month",
+          "source": "Institute for Supply Management · October 1, 2026",
+          "summary": "ISM’s September manufacturing index came in at 54.5, with the prices index up 6.8 points to 77.9, supplier deliveries slowing for a 10th month and customers’ inventories at 41.6, in “too low” territory for a 24th straight month, the institute reported Oct. 1. A food, beverage and tobacco respondent wrote that “fuel costs are still affecting transportation costs and the overall cost of goods,” and diesel, freight and fuel all appear on ISM’s list of commodities up in price. The August Logistics Managers’ Index had already put inventory costs at 78.6 against inventory levels at 52.8, nearly double the usual gap, with transportation prices at 90.0.",
+          "why": "Companies are paying more to carry the same inventory, and the gap the LMI measures between the cost of stock and the amount of stock is running at nearly twice its average.",
+          "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/",
+          "link_label": "Read the report",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "ISM · Oct 1",
+            "gloss": "ISM’s September prices index jumps to 77.9 with customers’ inventories too low a 24th month; LMI shows inventory costs far outrunning levels.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Starship reached orbit on its 14th flight, deployed 26 Starlink satellites and came home seven hours early after an engine quit",
+          "source": "The Register · September 29, 2026",
+          "summary": "SpaceX’s Starship reached orbit for the first time Sept. 28 from Starbase, Texas, and released 26 Starlink V3 satellites at about 269 kilometers, Reuters and The Register reported. One of the ship’s three vacuum Raptor engines shut down during ascent, and SpaceX cut the planned 10-hour, six-orbit flight to about three hours before a controlled splashdown in the Pacific. The Super Heavy booster lost engines on descent and splashed down in the Gulf rather than returning to the tower.",
+          "why": "Three years and 14 flights after the first full-stack launch, the vehicle NASA is counting on for Artemis has an orbital flight and an engine problem on the same day.",
+          "url": "https://www.theregister.com/offbeat/2026/09/29/starship-finally-makes-orbit-but-engine-trouble-cuts-the-victory-lap-short/5299708",
+          "link_label": "Read at The Register",
+          "landscape": {
+            "tag": "space",
+            "t": "t14",
+            "src_short": "The Register · Sep 29",
+            "gloss": "Starship reaches orbit on Flight 14, deploys 26 Starlink V3s, then comes home early after a Raptor shuts down.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Crew-13 reached the station 7 hours, 55 minutes after launch Oct. 1, the fastest trip by a U.S. spacecraft",
+          "source": "NASA · October 1, 2026",
+          "summary": "NASA’s SpaceX Crew-13 lifted off at 11:10 a.m. EDT Oct. 1 from Cape Canaveral’s Space Launch Complex 40 and docked at the station’s Harmony module at 7:05 p.m., 7 hours and 55 minutes later, which NASA called the fastest launch-to-docking by a U.S. spacecraft in station history. Commander Jessica Watkins, pilot Luke Delaney, Canada’s Joshua Kutryk and Russia’s Sergey Teteryatnikov begin a six-month mission. The overall record is a Soyuz at 3 hours, 3 minutes in 2020.",
+          "why": "The record is a scheduling result as much as a flight result; SpaceX said the station happened to be in the right spot.",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/dragon-docks-bringing-spacex-crew-13-to-station/",
+          "link_label": "Read at NASA",
+          "landscape": {
+            "tag": "space",
+            "t": "t14",
+            "src_short": "NASA · Oct 1",
+            "gloss": "Crew-13 docks 7 hours, 55 minutes after its Oct. 1 launch, the fastest trip to the station by a U.S. spacecraft.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Assisi marks 800 years since Francis died on Oct. 3, and Italy takes Oct. 4 off for the first time since 1977",
+          "source": "OSV News · October 1, 2026",
+          "summary": "Francis of Assisi died the night of Oct. 3, 1226, and the Franciscan jubilee year marking it runs Jan. 10, 2026 to Jan. 10, 2027, OSV News reported Oct. 1. Assisi observes the Transitus on Oct. 3, and a papal legate and President Sergio Mattarella attend the Oct. 4 Mass at the Basilica of St. Francis. The exposition of the saint’s remains in February and March drew nearly 400,000 pilgrims, and Oct. 4 is Italy’s first St. Francis national holiday since 1977, restored by a law passed last October.",
+          "why": "Assisi has asked churches worldwide to ring their bells at 11:59 p.m. on Oct. 3, the hour Francis died.",
+          "url": "https://www.osvnews.com/assisi-to-mark-800-years-since-st-francis-death-during-yearlong-jubilee-celebration/",
+          "link_label": "Read at OSV News",
+          "landscape": {
+            "tag": "culture",
+            "t": "t7",
+            "src_short": "OSV News · Oct 1",
+            "gloss": "Assisi marks the 800th anniversary of Francis’ death Oct. 3–4, with Italy’s first St. Francis holiday since 1977.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Quanta’s The Joy of Why asks what the fourth dimension looks like, with a topologist who draws it as a flip-book",
+          "source": "Quanta Magazine · October 1, 2026",
+          "summary": "The Joy of Why, Quanta Magazine’s podcast hosted by Steven Strogatz and Janna Levin, released an Oct. 1 episode with Maggie Miller of the University of Texas at Austin on four-dimensional topology. Miller explains why four is the lowest dimension mathematicians still do not fully understand, and why every knot comes undone in 4D while spheres can become knotted. She pictures 4D space as a reel of three-dimensional snapshots. “I would really like to draw a six- or maybe seven-dimensional picture where one of the dimensions is you turn the page,” she said.",
+          "why": "The show runs about 53 minutes an episode and ranges across math and science; this one is representative of what it covers.",
+          "url": "https://www.quantamagazine.org/what-does-the-fourth-dimension-actually-look-like-20261001/",
+          "link_label": "Read at Quanta Magazine",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "Quanta · Oct 1",
+            "gloss": "Quanta’s The Joy of Why podcast hosts topologist Maggie Miller on picturing four-dimensional space as a reel of 3D snapshots.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Scientists named the first new living cat species in more than 100 years, a house-cat-size tiger cat from Bolivia’s Yungas",
+          "source": "Science News · September 24, 2026",
+          "summary": "Leopardus tilcayo, described Sept. 17 in Current Biology and reported by Science News Sept. 24, is the first new living cat species named since the Uruguayan pampas cat in 1923. Jonas Lescroart of the University of Antwerp and colleagues sequenced 38 Leopardus individuals, including eight museum specimens, and found the Bolivian cat split from its relatives about 1.4 million years ago. The description rests on two animals, a female released to the wild and a male named Tigrino at a sanctuary. “I did not at all expect attention at this scale,” Lescroart said.",
+          "why": "The paper is two weeks old and ran because the previous entry on this list dates to 1923; the same study split the tiger cats into five species.",
+          "url": "https://www.sciencenews.org/article/new-living-tiger-cat-species-100-years",
+          "link_label": "Read at Science News",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "Science News · Sep 24",
+            "gloss": "Leopardus tilcayo, a tiger cat from Bolivia’s Yungas, is the first new living cat species named since 1923.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
