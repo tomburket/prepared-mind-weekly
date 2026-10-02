@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 26,
+ "current_edition": 27,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -27,7 +27,8 @@
   "23": "September 4",
   "24": "September 11",
   "25": "September 18",
-  "26": "September 25"
+  "26": "September 25",
+  "27": "October 2"
  },
  "active_threads": [
   "s1",
@@ -2929,6 +2930,115 @@
    "t": "curious",
    "s": "Researchers burn a lead-ink papyrus scroll and read it virtually, testing a handheld screen for readable Herculaneum scrolls.",
    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0353485",
+   "img": null
+  },
+  {
+   "id": "e27c1",
+   "ed": 27,
+   "sec": "AI & Ops",
+   "tag": "signal",
+   "h": "A third of McDonald’s franchisees ignored the under-$3 guidance. Top-down AI pricing weighs in",
+   "src": "Reuters · Sep 29",
+   "t": "s1",
+   "t2": "t8",
+   "s": "Reuters details McDonald’s AI pricing engine, the deviations it logs and the third of franchisees who ignored under-$3 guidance.",
+   "url": "https://www.reuters.com/business/inside-mcdonalds-push-have-ai-price-your-big-mac-2026-09-29/",
+   "img": null
+  },
+  {
+   "id": "e27c2",
+   "ed": 27,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "Costco’s fiscal fourth quarter posted a 6.7% adjusted comp and a 19.5% digital comp on $93.9 billion in sales",
+   "src": "Costco · Sep 24",
+   "t": "t10",
+   "s": "Costco’s Q4: net sales $93.9 billion, adjusted comps 6.7%, U.S. 7.2%, digital 19.5%, 939 warehouses.",
+   "url": "https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx",
+   "img": null
+  },
+  {
+   "id": "e27c3",
+   "ed": 27,
+   "sec": "CEO Market Intel",
+   "tag": "signal",
+   "h": "Aldi will spend a record £900 million in Britain next year on more than 40 stores and its distribution network",
+   "src": "Retail Gazette · Sep 29",
+   "t": "t10",
+   "s": "Aldi UK plans a record £900 million in 2027 for 40-plus stores and distribution; 1,092 stores now, 1,500 the target.",
+   "url": "https://www.retailgazette.co.uk/blog/2026/09/aldi-to-invest-record-900m-as-it-plots-40-new-uk-stores/",
+   "img": null
+  },
+  {
+   "id": "e27c4",
+   "ed": 27,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "Manufacturers’ prices index jumped to 77.9 in September as customers’ inventories ran “too low” for a 24th month",
+   "src": "ISM · Oct 1",
+   "t": "t10",
+   "s": "ISM’s September prices index jumps to 77.9 with customers’ inventories too low a 24th month; LMI shows inventory costs far outrunning levels.",
+   "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/",
+   "img": null
+  },
+  {
+   "id": "e27c5",
+   "ed": 27,
+   "sec": "Cultural Signal",
+   "tag": "space",
+   "h": "Starship reached orbit on its 14th flight, deployed 26 Starlink satellites and came home seven hours early after an engine quit",
+   "src": "The Register · Sep 29",
+   "t": "t14",
+   "s": "Starship reaches orbit on Flight 14, deploys 26 Starlink V3s, then comes home early after a Raptor shuts down.",
+   "url": "https://www.theregister.com/offbeat/2026/09/29/starship-finally-makes-orbit-but-engine-trouble-cuts-the-victory-lap-short/5299708",
+   "img": null
+  },
+  {
+   "id": "e27c6",
+   "ed": 27,
+   "sec": "Cultural Signal",
+   "tag": "space",
+   "h": "Crew-13 reached the station 7 hours, 55 minutes after launch Oct. 1, the fastest trip by a U.S. spacecraft",
+   "src": "NASA · Oct 1",
+   "t": "t14",
+   "s": "Crew-13 docks 7 hours, 55 minutes after its Oct. 1 launch, the fastest trip to the station by a U.S. spacecraft.",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/dragon-docks-bringing-spacex-crew-13-to-station/",
+   "img": null
+  },
+  {
+   "id": "e27c7",
+   "ed": 27,
+   "sec": "Cultural Signal",
+   "tag": "culture",
+   "h": "Assisi marks 800 years since Francis died on Oct. 3, and Italy takes Oct. 4 off for the first time since 1977",
+   "src": "OSV News · Oct 1",
+   "t": "t7",
+   "s": "Assisi marks the 800th anniversary of Francis’ death Oct. 3–4, with Italy’s first St. Francis holiday since 1977.",
+   "url": "https://www.osvnews.com/assisi-to-mark-800-years-since-st-francis-death-during-yearlong-jubilee-celebration/",
+   "img": null
+  },
+  {
+   "id": "e27c8",
+   "ed": 27,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Quanta’s The Joy of Why asks what the fourth dimension looks like, with a topologist who draws it as a flip-book",
+   "src": "Quanta · Oct 1",
+   "t": "curious",
+   "s": "Quanta’s The Joy of Why podcast hosts topologist Maggie Miller on picturing four-dimensional space as a reel of 3D snapshots.",
+   "url": "https://www.quantamagazine.org/what-does-the-fourth-dimension-actually-look-like-20261001/",
+   "img": null
+  },
+  {
+   "id": "e27c9",
+   "ed": 27,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Scientists named the first new living cat species in more than 100 years, a house-cat-size tiger cat from Bolivia’s Yungas",
+   "src": "Science News · Sep 24",
+   "t": "curious",
+   "s": "Leopardus tilcayo, a tiger cat from Bolivia’s Yungas, is the first new living cat species named since 1923.",
+   "url": "https://www.sciencenews.org/article/new-living-tiger-cat-species-100-years",
    "img": null
   }
  ]
