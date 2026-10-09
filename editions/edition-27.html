@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 27
+date: October 2, 2026
+cards: 9
+sections: AI & Ops, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; October 2, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">October 2, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">9 Items &nbsp;&bull;&nbsp; Pricing, Retail Results, Expansion, Inventory Costs, Spaceflight, Faith, Topology, Zoology</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">AI &amp; Ops</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#ai">AI &amp; Ops</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- AI & OPS -->
+<section id="ai">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">AI &amp; Ops</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-ai">AI &middot; Ops</span>
+<div class="item-headline">A third of McDonald&rsquo;s franchisees ignored the under-$3 guidance. Top-down AI pricing weighs in</div>
+</div>
+<div class="item-source">Reuters &middot; September 29, 2026</div>
+<div class="item-summary">CEO Chris Kempczinski used the August earnings call to call out store owners who hadn&rsquo;t followed the chain&rsquo;s under-$3 menu guidance, about a third of all franchisees, Reuters reported Sept. 29. Behind the guidance is a pricing engine that analyzes millions of daily transactions across nearly 14,000 restaurants, sends recommendations at least three times a year and, per a June franchisee document, records each owner&rsquo;s deviations in detail. Five franchisees said the company pressured them to use it; McDonald&rsquo;s called the portal &ldquo;a tool, not a mandate.&rdquo;</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Price guidance from a central engine into stores someone else owns is the wholesaler-retailer problem in a franchise wrapper, and the antitrust line Reuters raises is that franchisees are, legally, competitors.</div>
+</div>
+<a class="item-link" href="https://www.reuters.com/business/inside-mcdonalds-push-have-ai-price-your-big-mac-2026-09-29/" target="_blank" rel="noopener">Read at Reuters &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Costco&rsquo;s fiscal fourth quarter posted a 6.7% adjusted comp and a 19.5% digital comp on $93.9 billion in sales</div>
+</div>
+<div class="item-source">Costco &middot; September 24, 2026</div>
+<div class="item-summary">Costco reported Sept. 24 that net sales for the 16-week quarter ended Aug. 30 rose 11.2% to $93.9 billion, with comparable sales up 9.4%, or 6.7% excluding gas and foreign exchange, and U.S. comps up 7.2% on the same basis. Digitally enabled comps rose 19.5%, and net income was $2.998 billion, $6.75 a share, including a 15-cent nonrecurring benefit from tariff refunds. The company operates 939 warehouses, 647 of them in the United States and Puerto Rico.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">A 7.2% adjusted U.S. comp at that scale is share taken from somewhere, and Grocery Dive&rsquo;s read of the quarter is that bakery and meat led the fresh departments.</div>
+</div>
+<a class="item-link" href="https://investor.costco.com/news/news-details/2026/Costco-Wholesale-Corporation-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Operating-Results/default.aspx" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Aldi will spend a record &#163;900 million in Britain next year on more than 40 stores and its distribution network</div>
+</div>
+<div class="item-source">Retail Gazette &middot; September 29, 2026</div>
+<div class="item-summary">Aldi UK and Ireland said this week it will invest a record &#163;900 million in 2027, up from &#163;370 million on new stores this year, after 2025 sales rose 5% to &#163;19 billion and pretax profit slipped &#163;2.6 million to &#163;433 million, Retail Gazette reported Sept. 29. The chain runs 1,092 stores and is aiming for 1,500. Chief executive Giles Hurley said, &ldquo;We could probably grow faster but we need to find the right sites in the right locations.&rdquo;</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Aldi is funding expansion out of flat profit while cutting prices, the same trade-off its U.S. arm made with last week&rsquo;s fall price cuts.</div>
+</div>
+<a class="item-link" href="https://www.retailgazette.co.uk/blog/2026/09/aldi-to-invest-record-900m-as-it-plots-40-new-uk-stores/" target="_blank" rel="noopener">Read at Retail Gazette &#8599;</a>
+</div>
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Manufacturers&rsquo; prices index jumped to 77.9 in September as customers&rsquo; inventories ran &ldquo;too low&rdquo; for a 24th month</div>
+</div>
+<div class="item-source">Institute for Supply Management &middot; October 1, 2026</div>
+<div class="item-summary">ISM&rsquo;s September manufacturing index came in at 54.5, with the prices index up 6.8 points to 77.9, supplier deliveries slowing for a 10th month and customers&rsquo; inventories at 41.6, in &ldquo;too low&rdquo; territory for a 24th straight month, the institute reported Oct. 1. A food, beverage and tobacco respondent wrote that &ldquo;fuel costs are still affecting transportation costs and the overall cost of goods,&rdquo; and diesel, freight and fuel all appear on ISM&rsquo;s list of commodities up in price. The August Logistics Managers&rsquo; Index had already put inventory costs at 78.6 against inventory levels at 52.8, nearly double the usual gap, with transportation prices at 90.0.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Companies are paying more to carry the same inventory, and the gap the LMI measures between the cost of stock and the amount of stock is running at nearly twice its average.</div>
+</div>
+<a class="item-link" href="https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/" target="_blank" rel="noopener">Read the report &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Starship reached orbit on its 14th flight, deployed 26 Starlink satellites and came home seven hours early after an engine quit</div>
+</div>
+<div class="item-source">The Register &middot; September 29, 2026</div>
+<div class="item-summary">SpaceX&rsquo;s Starship reached orbit for the first time Sept. 28 from Starbase, Texas, and released 26 Starlink V3 satellites at about 269 kilometers, Reuters and The Register reported. One of the ship&rsquo;s three vacuum Raptor engines shut down during ascent, and SpaceX cut the planned 10-hour, six-orbit flight to about three hours before a controlled splashdown in the Pacific. The Super Heavy booster lost engines on descent and splashed down in the Gulf rather than returning to the tower.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Three years and 14 flights after the first full-stack launch, the vehicle NASA is counting on for Artemis has an orbital flight and an engine problem on the same day.</div>
+</div>
+<a class="item-link" href="https://www.theregister.com/offbeat/2026/09/29/starship-finally-makes-orbit-but-engine-trouble-cuts-the-victory-lap-short/5299708" target="_blank" rel="noopener">Read at The Register &#8599;</a>
+</div>
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Crew-13 reached the station 7 hours, 55 minutes after launch Oct. 1, the fastest trip by a U.S. spacecraft</div>
+</div>
+<div class="item-source">NASA &middot; October 1, 2026</div>
+<div class="item-summary">NASA&rsquo;s SpaceX Crew-13 lifted off at 11:10 a.m. EDT Oct. 1 from Cape Canaveral&rsquo;s Space Launch Complex 40 and docked at the station&rsquo;s Harmony module at 7:05 p.m., 7 hours and 55 minutes later, which NASA called the fastest launch-to-docking by a U.S. spacecraft in station history. Commander Jessica Watkins, pilot Luke Delaney, Canada&rsquo;s Joshua Kutryk and Russia&rsquo;s Sergey Teteryatnikov begin a six-month mission. The overall record is a Soyuz at 3 hours, 3 minutes in 2020.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The record is a scheduling result as much as a flight result; SpaceX said the station happened to be in the right spot.</div>
+</div>
+<a class="item-link" href="https://www.nasa.gov/blogs/spacestation/2026/10/01/dragon-docks-bringing-spacex-crew-13-to-station/" target="_blank" rel="noopener">Read at NASA &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Assisi marks 800 years since Francis died on Oct. 3, and Italy takes Oct. 4 off for the first time since 1977</div>
+</div>
+<div class="item-source">OSV News &middot; October 1, 2026</div>
+<div class="item-summary">Francis of Assisi died the night of Oct. 3, 1226, and the Franciscan jubilee year marking it runs Jan. 10, 2026 to Jan. 10, 2027, OSV News reported Oct. 1. Assisi observes the Transitus on Oct. 3, and a papal legate and President Sergio Mattarella attend the Oct. 4 Mass at the Basilica of St. Francis. The exposition of the saint&rsquo;s remains in February and March drew nearly 400,000 pilgrims, and Oct. 4 is Italy&rsquo;s first St. Francis national holiday since 1977, restored by a law passed last October.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Assisi has asked churches worldwide to ring their bells at 11:59 p.m. on Oct. 3, the hour Francis died.</div>
+</div>
+<a class="item-link" href="https://www.osvnews.com/assisi-to-mark-800-years-since-st-francis-death-during-yearlong-jubilee-celebration/" target="_blank" rel="noopener">Read at OSV News &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Quanta&rsquo;s The Joy of Why asks what the fourth dimension looks like, with a topologist who draws it as a flip-book</div>
+</div>
+<div class="item-source">Quanta Magazine &middot; October 1, 2026</div>
+<div class="item-summary">The Joy of Why, Quanta Magazine&rsquo;s podcast hosted by Steven Strogatz and Janna Levin, released an Oct. 1 episode with Maggie Miller of the University of Texas at Austin on four-dimensional topology. Miller explains why four is the lowest dimension mathematicians still do not fully understand, and why every knot comes undone in 4D while spheres can become knotted. She pictures 4D space as a reel of three-dimensional snapshots. &ldquo;I would really like to draw a six- or maybe seven-dimensional picture where one of the dimensions is you turn the page,&rdquo; she said.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The show runs about 53 minutes an episode and ranges across math and science; this one is representative of what it covers.</div>
+</div>
+<a class="item-link" href="https://www.quantamagazine.org/what-does-the-fourth-dimension-actually-look-like-20261001/" target="_blank" rel="noopener">Read at Quanta Magazine &#8599;</a>
+</div>
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Scientists named the first new living cat species in more than 100 years, a house-cat-size tiger cat from Bolivia&rsquo;s Yungas</div>
+</div>
+<div class="item-source">Science News &middot; September 24, 2026</div>
+<div class="item-summary">Leopardus tilcayo, described Sept. 17 in Current Biology and reported by Science News Sept. 24, is the first new living cat species named since the Uruguayan pampas cat in 1923. Jonas Lescroart of the University of Antwerp and colleagues sequenced 38 Leopardus individuals, including eight museum specimens, and found the Bolivian cat split from its relatives about 1.4 million years ago. The description rests on two animals, a female released to the wild and a male named Tigrino at a sanctuary. &ldquo;I did not at all expect attention at this scale,&rdquo; Lescroart said.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The paper is two weeks old and ran because the previous entry on this list dates to 1923; the same study split the tiger cats into five species.</div>
+</div>
+<a class="item-link" href="https://www.sciencenews.org/article/new-living-tiger-cat-species-100-years" target="_blank" rel="noopener">Read at Science News &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+October 2, 2026 &middot; Edition No. 27
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=27" defer></script>
+
+</body>
+</html>
