@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "current_edition": 27,
+ "current_edition": 28,
  "edition_dates": {
   "1": "March 5",
   "2": "March 27",
@@ -28,7 +28,8 @@
   "24": "September 11",
   "25": "September 18",
   "26": "September 25",
-  "27": "October 2"
+  "27": "October 2",
+  "28": "October 9"
  },
  "active_threads": [
   "s1",
@@ -3039,6 +3040,128 @@
    "t": "curious",
    "s": "Leopardus tilcayo, a tiger cat from Bolivia’s Yungas, is the first new living cat species named since 1923.",
    "url": "https://www.sciencenews.org/article/new-living-tiger-cat-species-100-years",
+   "img": null
+  },
+  {
+   "id": "e28c1",
+   "ed": 28,
+   "sec": "Board & Governance",
+   "tag": "moves",
+   "h": "General Mills elected COO Dana McNabb chief executive effective Jan. 1, four months after naming her to the operating job",
+   "src": "General Mills · Sep 30",
+   "t": "s2",
+   "s": "General Mills names COO Dana McNabb CEO effective Jan. 1, 2027; Harmening stays as executive chair; the 8-K prices both seats.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000040704/000162828026063892/gis-20260929.htm",
+   "img": null
+  },
+  {
+   "id": "e28c2",
+   "ed": 28,
+   "sec": "Board & Governance",
+   "tag": "civic",
+   "h": "Southern Glazer’s will pay independents 1.5 times any price gap a monitor finds, for six years, to settle the FTC’s Robinson-Patman case",
+   "src": "FTC · Oct 2",
+   "t": "s3",
+   "t2": "s2",
+   "s": "FTC’s proposed Southern Glazer’s order: six-year monitor on paired sales in 26 states, 1.5 times any price gap paid to the independent.",
+   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+   "img": null
+  },
+  {
+   "id": "e28c3",
+   "ed": 28,
+   "sec": "The Workforce",
+   "tag": "labor",
+   "h": "UFCW 3000 will bargain Kroger and Albertsons for 30,000 Washington and North Idaho grocery workers at one table, starting Dec. 9",
+   "src": "UFCW 3000 · Oct 7",
+   "t": "s5",
+   "s": "UFCW 3000 sets Dec. 9 in Spokane as the first unified Pacific Northwest bargaining session with Kroger and Albertsons, about 30,000 workers.",
+   "url": "https://ufcw3000.org/news/2026/10/7/pacific-northwest-grocery-stores-first-bargaining-date-set",
+   "img": null
+  },
+  {
+   "id": "e28c4",
+   "ed": 28,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "PepsiCo’s beverages sold 3% fewer units at 3% higher prices, its snacks 0.5% more at 1% lower, and the EPS outlook fell",
+   "src": "PepsiCo · Oct 8",
+   "t": "t10",
+   "s": "PepsiCo Q3: beverages volume down 3% on 3% pricing, foods volume up 0.5% on pricing down 1%; core EPS outlook cut; 4 points of profit from tariff refunds.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000077476/000007747626000050/q320268-kxexhibit991.htm",
+   "img": null
+  },
+  {
+   "id": "e28c5",
+   "ed": 28,
+   "sec": "CEO Market Intel",
+   "tag": "data",
+   "h": "Logistics costs hit their highest reading since April 2022 as warehouse capacity contracted at the fastest pace in four years",
+   "src": "LMI · Oct 6",
+   "t": "t10",
+   "s": "September LMI 70.2; transportation prices 92.7; warehousing capacity down 14.2 to 39.3; aggregate costs 246.1, highest since April 2022; diesel $6.199 after a record $6.529.",
+   "url": "https://www.the-lmi.com/september-2026-logistics-managers-index.html",
+   "img": null
+  },
+  {
+   "id": "e28c6",
+   "ed": 28,
+   "sec": "Cultural Signal",
+   "tag": "culture",
+   "h": "Anne Carson, a Canadian classicist reached in Iceland, won the Nobel Prize in Literature for work in dialogue with the ancients",
+   "src": "Nobel Prize · Oct 8",
+   "t": "curious",
+   "s": "Anne Carson, classicist and poet, wins the 2026 Nobel in Literature; reached in Iceland; Autobiography of Red and Nox.",
+   "url": "https://www.nobelprize.org/prizes/literature/2026/press-release/",
+   "img": null
+  },
+  {
+   "id": "e28c7",
+   "ed": 28,
+   "sec": "Cultural Signal",
+   "tag": "space",
+   "h": "Crew-12 splashed down after 237 days, the mission that launched early because its predecessors came home on a medical evacuation",
+   "src": "NASA · Oct 8",
+   "t": "t14",
+   "s": "Crew-12 splashes down Oct. 8 after 237 days; it launched early after Crew-11’s medical evacuation in January; four spacewalks.",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/",
+   "img": null
+  },
+  {
+   "id": "e28c8",
+   "ed": 28,
+   "sec": "Cultural Signal",
+   "tag": "essay",
+   "h": "A report on the boundaries between silicon-based and biology-based tech. Can robots fly like pigeons?",
+   "src": "Singularity Hub · Oct 9",
+   "t": "curious",
+   "s": "Singularity’s Living Tech report, from 2024 interviews with five scientists, frames biology and technology as a feedback loop; its epilogue is PigeonBot II flying on real feathers.",
+   "url": "https://singularityhub.com/2026/10/09/weve-always-copied-nature-now-we-can-search-it/",
+   "img": null
+  },
+  {
+   "id": "e28c9",
+   "ed": 28,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Two chemists won the Nobel for making a reaction pick one mirror image, something only life itself had done",
+   "src": "Nobel Prize · Oct 7",
+   "t": "curious",
+   "s": "Chemistry Nobel to Kagan, 95, and Soai, 76, for nonlinear effects and autocatalysis; Soai’s 2003 reaction made only one mirror image.",
+   "url": "https://www.nobelprize.org/prizes/chemistry/2026/press-release/",
+   "img": null
+  },
+  {
+   "id": "e28c10",
+   "ed": 28,
+   "sec": "Oddly Interesting",
+   "tag": "science",
+   "h": "Three MIT mathematicians posted a 95-page proof three days after hearing OpenAI had claimed a bigger one",
+   "src": "Quanta · Oct 7",
+   "t": "curious",
+   "t2": "s3",
+   "s": "Minzer, Fei and Wang post a 95-page 4-to-1 games proof three days after rumors of OpenAI’s Unique Games claim; OpenAI releases 700-plus AI manuscripts Oct. 6.",
+   "url": "https://www.quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007/",
    "img": null
   }
  ]
