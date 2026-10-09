@@ -1,0 +1,214 @@
+{
+  "edition": 28,
+  "date_long": "October 9, 2026",
+  "topics": "Succession, Price Discrimination, Bargaining, Pricing, Logistics Costs, Literature, Spaceflight, Biomimicry, Chemistry, Mathematics",
+  "sections": [
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "General Mills elected COO Dana McNabb chief executive effective Jan. 1, four months after naming her to the operating job",
+          "source": "General Mills 8-K · September 30, 2026",
+          "summary": "General Mills’ board unanimously elected Dana McNabb, 50, chief executive effective Jan. 1, 2027, with Jeff Harmening retiring as CEO and staying on as executive chair, the company said Sept. 30, before this edition’s window. McNabb joined in 1999 and ran U.S. Cereal, Europe and Australia, strategy and North America Retail before becoming chief operating officer in June. The 8-K sets her base at $1.35 million with a 180% cash target and a $2.1 million incremental long-term award, and reduces Harmening’s base to $1.1 million with a 125% target.",
+          "why": "McNabb’s first line was “Returning the company to profitable growth is the priority, and we know how we’ll get there,” and the filing, which prices both seats in one document, sets no end date for the chair role.",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000040704/000162828026063892/gis-20260929.htm",
+          "link_label": "Read the filing",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "General Mills · Sep 30",
+            "gloss": "General Mills names COO Dana McNabb CEO effective Jan. 1, 2027; Harmening stays as executive chair; the 8-K prices both seats.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Southern Glazer’s will pay independents 1.5 times any price gap a monitor finds, for six years, to settle the FTC’s Robinson-Patman case",
+          "source": "Federal Trade Commission · October 2, 2026",
+          "summary": "The FTC proposed an order Oct. 2, before this edition’s window, resolving its December 2024 suit accusing the largest U.S. wine and spirits distributor of charging independent retailers more than chains such as Total Wine, Walmart and Kroger. For six years a monitor paid by Southern will compare paired sales to a small and a large retailer in 26 states; where the gap exceeds a cost-based threshold, Southern can resolve it by paying the independent 1.5 times the difference, or double if the FTC sues and prevails. The vote was 2-0, Southern denies wrongdoing and a federal judge must sign the order.",
+          "why": "The National Grocers Association called it a demonstration of why Robinson-Patman enforcement matters, and Chairman Andrew Ferguson, who dissented from the 2024 complaint, said, “If Southern obeys the law, its compliance costs are low.”",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "civic",
+            "t": "s3",
+            "src_short": "FTC · Oct 2",
+            "gloss": "FTC’s proposed Southern Glazer’s order: six-year monitor on paired sales in 26 states, 1.5 times any price gap paid to the independent.",
+            "img": null,
+            "t2": "s2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "UFCW 3000 will bargain Kroger and Albertsons for 30,000 Washington and North Idaho grocery workers at one table, starting Dec. 9",
+          "source": "UFCW 3000 · October 7, 2026",
+          "summary": "Grocery workers from across Washington and North Idaho met Sept. 29 to plan a single bargaining campaign against Kroger and Albertsons, and the union set the first joint session for Dec. 9 in Spokane, UFCW 3000 said Oct. 7. The 2027 cycle covers stores from Forks to Coeur d’Alene and Richland to Blaine, about 30,000 members by the union’s count, after the regional contracts were realigned in 2025 to expire in the same year. The member bargaining team comes from Fred Meyer, QFC, Safeway, Albertsons and independent Town & Country stores.",
+          "why": "Puget Sound, Spokane and the northern counties have bargained at separate tables until now, and the union calls Sept. 29 “the first time in history” the regions planned together.",
+          "url": "https://ufcw3000.org/news/2026/10/7/pacific-northwest-grocery-stores-first-bargaining-date-set",
+          "link_label": "Read the announcement",
+          "landscape": {
+            "tag": "labor",
+            "t": "s5",
+            "src_short": "UFCW 3000 · Oct 7",
+            "gloss": "UFCW 3000 sets Dec. 9 in Spokane as the first unified Pacific Northwest bargaining session with Kroger and Albertsons, about 30,000 workers.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "PepsiCo’s beverages sold 3% fewer units at 3% higher prices, its snacks 0.5% more at 1% lower, and the EPS outlook fell",
+          "source": "PepsiCo · October 8, 2026",
+          "summary": "PepsiCo reported Oct. 8 that third-quarter net revenue rose 5.6% to $25.3 billion, with organic volume up 0.5% and pricing up 3%, but its two North American divisions moved in opposite directions: beverages lost 3% of organic volume on 3% pricing, while foods gained 0.5% on pricing down 1% and core operating profit down 12%. Full-year organic growth is now about 3% and core EPS growth was cut to 2.5% to 3.5% from the low end of 5% to 7%. Quarterly core operating profit rose 3%, of which 4 percentage points came from tariff refunds.",
+          "why": "Laguarta’s release promises to act “with urgency to sustainably improve our performance in North America,” and the salty-snack line shows what buying volume with price looks like on the profit line.",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000077476/000007747626000050/q320268-kxexhibit991.htm",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "PepsiCo · Oct 8",
+            "gloss": "PepsiCo Q3: beverages volume down 3% on 3% pricing, foods volume up 0.5% on pricing down 1%; core EPS outlook cut; 4 points of profit from tariff refunds.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Logistics costs hit their highest reading since April 2022 as warehouse capacity contracted at the fastest pace in four years",
+          "source": "Logistics Managers’ Index · October 6, 2026",
+          "summary": "The September Logistics Managers’ Index, released Oct. 6, rose 3.6 points to 70.2, with transportation prices at 92.7, over 90 for the fifth time in six months, transportation capacity contracting for a 10th straight month and warehousing capacity down 14.2 points to 39.3. Aggregate logistics costs reached 246.1, the highest since April 2022, as inventory costs rose to 79.9. Retail diesel averaged $6.199 a gallon Oct. 5, down 33 cents in two weeks from a record $6.529 but $2.49 above a year ago, and DAT put van linehaul rates 34% above last year.",
+          "why": "The index’s authors write, “These high costs are putting significant pressure on supply chains and consumers alike,” and the Cass August data behind last week’s ISM card showed freight spending rising nine times faster than shipments.",
+          "url": "https://www.the-lmi.com/september-2026-logistics-managers-index.html",
+          "link_label": "Read the report",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "LMI · Oct 6",
+            "gloss": "September LMI 70.2; transportation prices 92.7; warehousing capacity down 14.2 to 39.3; aggregate costs 246.1, highest since April 2022; diesel $6.199 after a record $6.529.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Anne Carson, a Canadian classicist reached in Iceland, won the Nobel Prize in Literature for work in dialogue with the ancients",
+          "source": "Nobel Prize · October 8, 2026",
+          "summary": "The Swedish Academy awarded the 2026 literature prize Oct. 8 to Anne Carson, 76, a Toronto-born classicist who taught at McGill and Princeton, citing an oeuvre that creates new forms for contemporary literature out of a playful dialogue with the classical tradition. Permanent Secretary Ingrid Carlberg reached her in Iceland, and she told the Academy she was taken by surprise. Her best-known works are Autobiography of Red, a 1998 verse novel built from Stesichoros’ fragments about the red monster Geryon, and Nox, a 2010 elegy for her brother printed as an accordion fold in a box.",
+          "why": "Asked by the Globe and Mail why the classics are relevant, she said they aren’t: “I don’t think I’m interested in relevance. I’m interested in us being relevant to them.”",
+          "url": "https://www.nobelprize.org/prizes/literature/2026/press-release/",
+          "link_label": "Read the announcement",
+          "landscape": {
+            "tag": "culture",
+            "t": "curious",
+            "src_short": "Nobel Prize · Oct 8",
+            "gloss": "Anne Carson, classicist and poet, wins the 2026 Nobel in Literature; reached in Iceland; Autobiography of Red and Nox.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Crew-12 splashed down after 237 days, the mission that launched early because its predecessors came home on a medical evacuation",
+          "source": "NASA · October 8, 2026",
+          "summary": "The Dragon carrying Jessica Meir, Jack Hathaway, ESA’s Sophie Adenot and Roscosmos’ Andrey Fedyaev splashed down off Los Angeles at 11:34 a.m. EDT Oct. 8, ending 237 days at the station, NASA said. The crew launched Feb. 13 after NASA brought Crew-11 home in January, about a month early, when one astronaut had a medical situation the agency has not described, leaving a single NASA astronaut on the U.S. segment until Crew-12 arrived. Meir now has 440 days in space, in NASA’s top 10, and the crew made four spacewalks, including the first by a French woman.",
+          "why": "NASA’s Amit Kshatriya in January: “As Dr. Polk mentioned, it’s the first time we’ve done a controlled medical evacuation from the vehicle, so that is unusual.”",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/",
+          "link_label": "Read at NASA",
+          "landscape": {
+            "tag": "space",
+            "t": "t14",
+            "src_short": "NASA · Oct 8",
+            "gloss": "Crew-12 splashes down Oct. 8 after 237 days; it launched early after Crew-11’s medical evacuation in January; four spacewalks.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "A report on the boundaries between silicon-based and biology-based tech. Can robots fly like pigeons?",
+          "source": "Singularity Hub · October 9, 2026",
+          "summary": "Singularity published Living Tech: The Convergence of Biology and Innovation, a 90-page report by Aaron Frank and Alix Rübsaam from December 2024 interviews with five scientists, and promoted it Oct. 9 with a sponsored Singularity Hub post. Robert Suarez, who works on regenerative ecosystems, circularity and humane tech, says in it, “Biology—small ‘b’ biology—is probably the largest dataset that has ever existed,” and the authors’ frame is a loop in which brain-modeled neural networks are turned back on biology to model proteins. The epilogue carries the book: Stanford and Groningen’s PigeonBot II flew stably without a vertical stabilizer only after the team glued on real pigeon feathers, because no synthetic material matched them.",
+          "why": "The authors’ reading is that feathers have properties we do not yet know how to replicate, and they close on the orcas of Puget Sound, who in 1987 began wearing salmon as hats and have never explained why.",
+          "url": "https://singularityhub.com/2026/10/09/weve-always-copied-nature-now-we-can-search-it/",
+          "link_label": "Read at Singularity Hub",
+          "landscape": {
+            "tag": "essay",
+            "t": "curious",
+            "src_short": "Singularity Hub · Oct 9",
+            "gloss": "Singularity’s Living Tech report, from 2024 interviews with five scientists, frames biology and technology as a feedback loop; its epilogue is PigeonBot II flying on real feathers.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "oddly",
+      "title": "Oddly Interesting",
+      "pill": "Oddly\nInteresting",
+      "cards": [
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Two chemists won the Nobel for making a reaction pick one mirror image, something only life itself had done",
+          "source": "Nobel Prize · October 7, 2026",
+          "summary": "The Royal Swedish Academy of Sciences awarded the chemistry prize Oct. 7 to Henri Kagan, 95, of Université Paris-Sud and Kenso Soai, 76, of Tokyo University of Science, for discovering nonlinear effects and autocatalysis in asymmetric synthesis. Amino acids come in mirror-image pairs and living things use only one, a puzzle because laboratory reactions produced both in equal measure; Kagan showed in 1986 how to amplify a small excess, Soai designed a self-catalyzing reaction in 1995 and in 2003 produced only one mirror image. Soai was out shopping when the committee called, Nature reported.",
+          "why": "The Academy’s line on the 2003 result is the one to keep: “Other than life itself, no one had previously achieved this feat.”",
+          "url": "https://www.nobelprize.org/prizes/chemistry/2026/press-release/",
+          "link_label": "Read the announcement",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "Nobel Prize · Oct 7",
+            "gloss": "Chemistry Nobel to Kagan, 95, and Soai, 76, for nonlinear effects and autocatalysis; Soai’s 2003 reaction made only one mirror image.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-search",
+          "tag_label": "Oddly Interesting",
+          "headline": "Three MIT mathematicians posted a 95-page proof three days after hearing OpenAI had claimed a bigger one",
+          "source": "Quanta Magazine · October 7, 2026",
+          "summary": "MIT’s Dor Minzer and graduate students Yumou Fei and Shuo Wang had worked since 2025 on a variant of Subhash Khot’s 2002 Unique Games Conjecture and had a proof by April, Quanta reported Oct. 7. On Sept. 11 Minzer’s phone filled with texts that OpenAI had proved the full conjecture; three days later the trio posted 95 pages with a note that the manuscript was mathematically complete but not in the shape they had wished to share. On Oct. 6 OpenAI published its claimed proof among more than 700 AI-written manuscripts on GitHub, with no human editing or independent review.",
+          "why": "Princeton’s Mark Braverman, asked about the rumors in September: “Math by press release is not that healthy for math.”",
+          "url": "https://www.quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007/",
+          "link_label": "Read at Quanta Magazine",
+          "landscape": {
+            "tag": "science",
+            "t": "curious",
+            "src_short": "Quanta · Oct 7",
+            "gloss": "Minzer, Fei and Wang post a 95-page 4-to-1 games proof three days after rumors of OpenAI’s Unique Games claim; OpenAI releases 700-plus AI manuscripts Oct. 6.",
+            "img": null,
+            "t2": "s3"
+          }
+        }
+      ]
+    }
+  ]
+}
