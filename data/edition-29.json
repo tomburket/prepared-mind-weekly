@@ -1,0 +1,234 @@
+{
+  "edition": 29,
+  "date_long": "October 30, 2026",
+  "topics": "Succession, Activists, Prospectus, Restructuring, Agents, Valuation, Transactions, Targets, Food Prices, Spaceflight, Baseball",
+  "sections": [
+    {
+      "id": "board",
+      "title": "Board & Governance",
+      "pill": "Board &\nGovernance",
+      "cards": [
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Clorox hired Unilever’s Fabian Garcia as CEO on a $100,000 salary, with the rest of the package paid in stock",
+          "source": "Clorox 8-K · October 29, 2026",
+          "summary": "Clorox’s board appointed Fabian Garcia, 66, a Unilever business group president, chief executive effective Jan. 5, 2027, replacing Linda Rendle, who steps down as CEO and chair and advises the company through April 2 at her current $1,350,000 salary, an 8-K filed Oct. 29 says. His offer letter sets a $100,000 base, a $2,000,000 target bonus paid in shares, an $11,000,000 sign-on grant and a $9,100,000 annual equity target from September 2027. Because the salary is nominal, Clorox will size his severance off a “peer median salary,” initially $1,250,000.",
+          "why": "A board brought in an outside CEO at a $100,000 salary and then had to invent a reference salary so its own severance math would still work.",
+          "url": "https://www.sec.gov/Archives/edgar/data/21076/000120677426000586/clx4708451-8k.htm",
+          "link_label": "Read the filing",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Clorox 8-K · Oct 29",
+            "gloss": "Clorox names Unilever’s Fabian Garcia CEO effective Jan. 5, 2027: $100,000 base, $2M bonus in shares, $11M sign-on; Rendle advises to April 2; a “peer median salary” of $1.25M sizes severance.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-board",
+          "tag_label": "Board · Governance",
+          "headline": "Red Robin’s two investor-designated directors resigned and waived replacement seats, and the board will shrink from eight to six",
+          "source": "Red Robin 8-K · October 28, 2026",
+          "summary": "James Pappas, managing member of JCP Investment Management, and Chris Martin, managing director of Jumana Capital, resigned from Red Robin’s board and all committees Oct. 23, the company said in an 8-K filed Oct. 28; both were seated under a December 2024 cooperation agreement. Their firms waived the right to name replacements, and the board intends to go from eight directors to six, five of them independent. JCP holds about 10.3% of the stock and Jumana about 9.3%, per their Oct. 27 13D amendment, and the exit follows a $115 million JPMorgan-led refinancing.",
+          "why": "Activists seated in a 2024 settlement step off once the refinancing closes and keep roughly a fifth of the stock between them.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1171759/000095014226002871/eh260848407_8k.htm",
+          "link_label": "Read the filing",
+          "landscape": {
+            "tag": "moves",
+            "t": "s2",
+            "src_short": "Red Robin 8-K · Oct 28",
+            "gloss": "Red Robin’s two activist-era directors (JCP, Jumana) resign Oct. 23 and waive replacement seats; board 8 to 6; the firms keep about 19.6% combined after a $115M refinancing.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "CEO Market Intel",
+      "pill": "CEO Market\nIntel",
+      "cards": [
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "The case for Anthropic’s S-1: revenue up fourteenfold, two dollars per compute dollar and 250 customers paying $10 million a year",
+          "source": "Anthropic S-1 · October 26, 2026",
+          "summary": "Anthropic’s S-1, filed Oct. 26 to list on Nasdaq as “ANT,” reports $16.3 billion of revenue for the first half of 2026 against $1.2 billion a year earlier, and Fortune’s Jeremy Kahn calculates the company took in more than two dollars of revenue for every dollar it spent on compute. The filing counts more than 11,900 customers spending at least $100,000 a year, more than 1,900 at $1 million and roughly 250 at $10 million, CNBC’s Ashley Capoot reported Oct. 27. NYU’s Aswath Damodaran values the equity at $1.475 trillion, “at the lower end of the offer pricing range.”",
+          "why": "The bulls’ case is that the buyers are already there, 250 of them at Fortune 500 procurement scale, and that the unit economics turned before the IPO rather than after it.",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+          "link_label": "Read the prospectus",
+          "landscape": {
+            "tag": "data",
+            "t": "s3",
+            "t2": "t10",
+            "src_short": "Anthropic S-1 · Oct 26",
+            "gloss": "The bull case on Anthropic’s S-1: H1 revenue $16.3B vs $1.2B; >$2 revenue per compute dollar (Kahn); 11,900 customers at $100K+, 250 at $10M+ (Capoot); Damodaran $1.475T.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "The case against Anthropic’s S-1: fixed costs, customers who can leave in an afternoon and a board the public can’t touch",
+          "source": "Los Angeles Times · October 28, 2026",
+          "summary": "The S-1 Anthropic filed Oct. 26 commits it to about $265.6 billion in fixed compute spending while its customers, five of whom supply about a quarter of revenue, can cut back at will, the Los Angeles Times’ Michael Hiltzik wrote Oct. 28. Maryland’s Siva Viswanathan, in commentary distributed by his business school, put the switching risk in a line: “Switching model providers can take an afternoon, not the years often required to migrate cloud infrastructure.” NYU’s Aswath Damodaran wrote that a trust electing the board majority and a founder share carrying 50.1% of the vote “effectively emasculates public investors.”",
+          "why": "The bears’ case is structural, not cyclical: the costs are locked, the customers are not, and the shareholders being asked to fund it cannot change the board.",
+          "url": "https://www.latimes.com/business/story/2026-10-28/anthropic-says-its-goal-is-to-help-humanity-but-you-may-not-want-to-believe-it",
+          "link_label": "Read the column",
+          "landscape": {
+            "tag": "signal",
+            "t": "s2",
+            "t2": "s3",
+            "src_short": "LA Times · Oct 28",
+            "gloss": "The bear case on Anthropic’s S-1: $265.6B fixed compute vs. customers free to switch (Hiltzik, Viswanathan); LTBT board majority and 50.1% founder vote (Damodaran: “effectively emasculates public investors”).",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Chipotle posted a third straight quarter of transaction growth, with comparable sales up 2.1% and restaurant margin down to 23.3%",
+          "source": "Chipotle · October 28, 2026",
+          "summary": "Chipotle’s comparable restaurant sales rose 2.1% in the third quarter, made up of a 1.3% increase in average check and a 0.8% increase in transactions, the third consecutive quarter of positive transaction growth, per its Oct. 28 release. Restaurant-level margin (non-GAAP) fell to 23.3% from 24.5%; labor rose to 25.7% of revenue from 25.2% and other operating costs to 16.0% from 15.0%, while food, beverage and packaging fell to 29.5% from 30.0%. Revenue grew 9.6% to $3.3 billion, and 53 of 84 new restaurants included a Chipotlane.",
+          "why": "Chipotle is adding customers again, three quarters running, while labor and other operating costs take the margin back.",
+          "url": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000103/cmg-20261028xex991.htm",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "Chipotle · Oct 28",
+            "gloss": "Chipotle Q3: comps +2.1% (check +1.3%, transactions +0.8%, third straight positive quarter); restaurant margin 23.3% from 24.5%; labor 25.7% of revenue.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "Kroger set a 2029 comp target of about 3% and swapped its shareholder-return goal for an earnings-growth goal",
+          "source": "Kroger investor release · October 20, 2026",
+          "summary": "Kroger told investors on Oct. 20, nine days before this edition, that it targets roughly 3% comparable sales growth excluding fuel and pharmacy in 2029, 3% to 6% adjusted EBITDA growth and 7% to 11% adjusted EPS growth a year through 2029, excluding the pending Giant Eagle acquisition, its own release says. The EPS target “replaces the previous 8%-11% total shareholder return target, which included the dividend yield, and implies a stronger earnings outlook.” CEO Greg Foran called the plan “making value more visible and focusing resources closer to the customer where we see the highest returns.”",
+          "why": "Kroger’s new three-year frame measures earnings alone, strips out the dividend and the pending acquisition, and names the savings that are supposed to pay for the customer investment.",
+          "url": "https://ir.kroger.com/news/news-details/2026/Kroger-Outlines-Plan-to-Build-Americas-Favorite-Grocer-and-Introduces-New-Long-Term-Financial-Targets/default.aspx",
+          "link_label": "Read the release",
+          "landscape": {
+            "tag": "framework",
+            "t": "t10",
+            "t2": "s2",
+            "src_short": "Kroger · Oct 20",
+            "gloss": "Kroger’s Oct. 20 investor update: ~3% comps in 2029, 3-6% EBITDA and 7-11% EPS CAGR through 2029 ex-Giant Eagle; EPS target replaces the 8-11% TSR target.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-market",
+          "tag_label": "CEO Market",
+          "headline": "USDA forecast food-at-home prices up 2.3% in 2026 and 1.0% in 2027, with a 2027 range from -5.2% to 7.5%",
+          "source": "USDA Economic Research Service · October 23, 2026",
+          "summary": "USDA’s Economic Research Service forecast Oct. 23 that all food prices will rise 2.8% in 2026, with food-at-home prices up 2.3% and food-away-from-home prices up 3.5%. For 2027 it forecasts food at home up 1.0%, inside a 95% forecast interval of -5.2% to 7.5%, and all food up 1.7%. Beef and veal lead 2026 categories at 8.7%, and eggs are forecast to fall 29.3%; in September, food prices were 2.5% above a year earlier, against 3.7% for all items.",
+          "why": "The government’s own 2027 grocery forecast is close to flat, and its range runs from a 5% drop to a 7.5% rise.",
+          "url": "https://www.ers.usda.gov/data-products/food-price-outlook/summary-findings",
+          "link_label": "Read the outlook",
+          "landscape": {
+            "tag": "data",
+            "t": "t10",
+            "src_short": "USDA ERS · Oct 23",
+            "gloss": "ERS October outlook: 2026 all food +2.8%, at home +2.3%, away +3.5%; first 2027 forecast puts food at home at +1.0% with a -5.2% to +7.5% interval.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "workforce",
+      "title": "The Workforce",
+      "pill": "The\nWorkforce",
+      "cards": [
+        {
+          "tag_class": "tag-workforce",
+          "tag_label": "The Workforce",
+          "headline": "The Andersons eliminated its chief human resources officer’s position in an HR restructuring and named no successor",
+          "source": "The Andersons 8-K · October 23, 2026",
+          "summary": "The Andersons told Sarah J. Zibbel, executive vice president and chief human resources officer, on Oct. 21 that it had decided to eliminate her position as part of a restructuring of the human resources department, an 8-K filed Oct. 23 says. Her employment will end Oct. 31, and she is entitled to benefits under the company’s Change in Control and Severance Policy, which pays one year of base salary for a qualifying termination; her base was $400,000 at year-end 2025, per the proxy. The filing names no successor or new reporting line for HR.",
+          "why": "An agribusiness cut the CHRO seat itself rather than replace the person, and said nothing about who runs HR now.",
+          "url": "https://www.sec.gov/Archives/edgar/data/821026/000082102626000134/ande-20261021.htm",
+          "link_label": "Read the filing",
+          "landscape": {
+            "tag": "org",
+            "t": "s5",
+            "t2": "s2",
+            "src_short": "Andersons 8-K · Oct 23",
+            "gloss": "The Andersons eliminates the CHRO position in an HR restructuring; Zibbel leaves Oct. 31 under the severance policy; no successor named.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI & Ops",
+      "pill": "AI &\nOps",
+      "cards": [
+        {
+          "tag_class": "tag-ai",
+          "tag_label": "AI · Ops",
+          "headline": "Walmart wrote the rules for AI agents that shop for its customers: separate profiles, spending caps and “we price products, not people”",
+          "source": "Walmart corporate news · October 21, 2026",
+          "summary": "Walmart said in an Oct. 21 post on its own corporate site, eight days before this edition, that it will introduce Agent Profiles “in the next month,” letting a customer authorize each AI agent separately and cap it at a limit such as “$50, $100 or $200,” which the post compares to “adding someone as a cardholder on your credit card.” A Walmart Agent Gateway, opening as a developer beta, will let agents shop through what the post calls “an MCP (model text protocol)” rather than pages built for people. Its terms state that “agents that do not follow these terms will be blocked.”",
+          "why": "Walmart has published, in its own words, the permission structure for a shopper who is software, down to the spending limit and the promise that the agent sees the same price a person does.",
+          "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+          "link_label": "Read the post",
+          "landscape": {
+            "tag": "framework",
+            "t": "s1",
+            "t2": "t9",
+            "src_short": "Walmart · Oct 21",
+            "gloss": "Walmart’s Agent Profiles, Agent Gateway and terms for AI agents: per-agent authorization, spending limits, agents see the same prices as people, rule-breakers blocked.",
+            "img": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Cultural Signal",
+      "pill": "Cultural\nSignal",
+      "cards": [
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "The space station’s seventh roll-out solar array unfurled itself Oct. 29, mounted in front of the old wings",
+          "source": "NASA · October 29, 2026",
+          "summary": "NASA’s Anil Menon and the Canadian Space Agency’s Joshua Kutryk installed the seventh roll-out solar array on the International Space Station’s 2A power channel Oct. 29 in a 7-hour, 11-minute spacewalk, NASA’s station blog reported; the eighth goes up Nov. 5, raising station power from 160 kilowatts to about 215. Each array arrives rolled like a snap bracelet and opens on its own on energy stored in carbon-fiber booms, with its cables connected only in Earth’s shadow, Spaceflight Now’s Houston Harwood reported Oct. 28. Rather than replace the original wings, NASA mounted the new arrays in front of them so the unshaded portions keep producing.",
+          "why": "The upgrade that will power the station to its 2030 deorbit was done by putting new arrays in front of the old ones, not by taking the old ones down.",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/spacewalkers-install-roll-out-solar-arrays-for-power-generation/",
+          "link_label": "Read at NASA",
+          "landscape": {
+            "tag": "space",
+            "t": "t14",
+            "src_short": "NASA · Oct 29",
+            "gloss": "Seventh IROSA installed Oct. 29 in a 7:11 spacewalk (U.S. spacewalk 100); eighth Nov. 5; station power 160 to ~215 kW; arrays self-unroll on stored boom energy, mounted ahead of the original wings.",
+            "img": null
+          }
+        },
+        {
+          "tag_class": "tag-culture",
+          "tag_label": "Culture",
+          "headline": "Milwaukee won its first World Series on a bottom-half payroll, and its owner credited succession planning, not spending",
+          "source": "ESPN · October 28, 2026",
+          "summary": "The Brewers beat Tampa Bay in five games, closing it out Oct. 28 at Tropicana Field for the franchise’s first title, after a record 103 wins and an 11-2 postseason, ESPN’s Bradford Doolittle reported. It was the first World Series since 1991 between two bottom-half payrolls, Milwaukee 19th and the Rays 25th, five weeks before the labor agreement expires Dec. 1 with owners proposing a $245.3 million cap, AP’s Ronald Blum reported. Owner Mark Attanasio: “If you study businesses and organizations, you want to have good succession planning. Before you even get to Matt [Arnold] and Pat Murphy, you had David Stearns and Craig Counsell.”",
+          "why": "Baseball’s smallest market won on the 19th-ranked payroll and the owner’s explanation was continuity in the front office, while the commissioner says the same result argues for a cap.",
+          "url": "https://www.espn.com/mlb/story/_/id/50294394/world-series-brewers-champions-franchise-first-title",
+          "link_label": "Read at ESPN",
+          "landscape": {
+            "tag": "sport",
+            "t": "curious",
+            "src_short": "ESPN · Oct 28",
+            "gloss": "Brewers win the World Series in five, first title since 1970 arrival, 103 wins; 19th payroll vs Rays 25th; CBA expires Dec. 1 with a $245.3M cap proposed; Attanasio credits succession planning.",
+            "img": null
+          }
+        }
+      ]
+    }
+  ]
+}
