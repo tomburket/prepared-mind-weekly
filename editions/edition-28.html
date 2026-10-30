@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+EDITION METADATA
+edition: 28
+date: October 9, 2026
+cards: 10
+sections: Board & Governance, The Workforce, CEO Market Intel, Cultural Signal, Oddly Interesting
+template_version: v2.1
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prepared Mind, Weekly Reader &mdash; October 9, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--ink: #111111; --ink-mid: #3a3a3a; --ink-light: #666666;
+--rule: #d8d8d8; --accent: #c0392b; --accent-dark: #8b1a13;
+--bg: #f9f8f5; --card: #ffffff;
+--tag-ai: #dce8ff; --tag-ai-text: #0d3f8f;
+--tag-people: #d6f0d8; --tag-people-text: #1a5c1e;
+--tag-market: #fdecd0; --tag-market-text: #8b4400;
+--tag-board: #ecdff5; --tag-board-text: #4a0e7a;
+--tag-search: #fad9e3; --tag-search-text: #8b0033;
+--tag-culture: #cff0ec; --tag-culture-text: #004d43;
+--tag-workforce: #e2e0f3; --tag-workforce-text: #3b2f7a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; font-size: 19px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+.masthead { background: #1a1a1a; color: white; padding: 28px 20px 24px; }
+.masthead-date { font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: #f0c040; margin-bottom: 8px; }
+.masthead-title { font-family: 'Libre Baskerville', serif; font-size: 22px; font-weight: 700; line-height: 1.15; color: white; margin-bottom: 8px; }
+.masthead-meta { font-size: 13px; color: #bbbbbb; font-weight: 400; }
+.summary-strip { background: #2a2a2a; padding: 16px 20px; display: flex; gap: 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.summary-strip::-webkit-scrollbar { display: none; }
+.summary-pill { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.summary-pill-num { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: #f0c040; line-height: 1; }
+.summary-pill-label { font-size: 11px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: #cccccc; line-height: 1.3; }
+.section-nav { background: var(--card); border-bottom: 1px solid var(--rule); padding: 12px 20px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.section-nav::-webkit-scrollbar { display: none; }
+.section-nav a { font-size: 12px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink-light); text-decoration: none; padding: 5px 10px; border: 1px solid var(--rule); border-radius: 3px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s, color 0.15s; }
+.section-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
+.content { max-width: 740px; margin: 0 auto; padding: 40px 20px 72px; }
+section { margin-bottom: 8px; }
+.section-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding-top: 44px; }
+.section-number { font-family: 'Libre Baskerville', serif; font-size: 13px; color: var(--ink-light); flex-shrink: 0; }
+.section-title { font-family: 'Libre Baskerville', serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.2px; }
+.section-rule { border: none; border-top: 1px solid var(--rule); margin: 0; }
+.item-card { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 24px 22px 20px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.item-header { margin-bottom: 6px; }
+.item-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; border-radius: 2px; margin-bottom: 10px; }
+.tag-ai { background: var(--tag-ai); color: var(--tag-ai-text); }
+.tag-board { background: var(--tag-board); color: var(--tag-board-text); }
+.tag-culture { background: var(--tag-culture); color: var(--tag-culture-text); }
+.tag-search { background: var(--tag-search); color: var(--tag-search-text); }
+.tag-market { background: var(--tag-market); color: var(--tag-market-text); }
+.tag-people { background: var(--tag-people); color: var(--tag-people-text); }
+.tag-workforce { background: var(--tag-workforce); color: var(--tag-workforce-text); }
+.item-headline { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--ink); margin-bottom: 8px; }
+.item-source { font-size: 12px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-light); text-transform: uppercase; margin-bottom: 14px; }
+.item-summary { font-size: 17px; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.implication-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 18px; }
+.implication-label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.implication-text { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.item-link { display: inline-block; font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; letter-spacing: 0.2px; }
+.item-link:hover { text-decoration: underline; }
+.back-to-top { display: block; text-align: center; margin-top: 48px; font-size: 13px; font-weight: 500; color: var(--ink-light); text-decoration: none; letter-spacing: 0.5px; }
+.back-to-top:hover { color: var(--ink); }
+.footer { background: #1a1a1a; color: #999; padding: 28px 20px; font-size: 14px; font-weight: 400; text-align: center; line-height: 1.8; }
+.footer strong { color: white; font-weight: 500; }
+@media (min-width: 640px) {
+.masthead { padding: 40px 32px 32px; }
+.masthead-title { font-size: 28px; }
+.content { padding: 48px 28px 72px; }
+.item-card { padding: 28px 28px 24px; }
+.item-headline { font-size: 22px; }
+.item-summary { font-size: 18px; }
+.implication-text { font-size: 18px; }
+}
+</style>
+</head>
+<body id="top">
+
+<header class="masthead">
+<div class="masthead-date">October 9, 2026</div>
+<div class="masthead-title">The Prepared Mind, Weekly Reader</div>
+<div class="masthead-meta">10 Items &nbsp;&bull;&nbsp; Succession, Price Discrimination, Bargaining, Pricing, Logistics Costs, Literature, Spaceflight, Biomimicry, Chemistry, Mathematics</div>
+</header>
+
+<div class="summary-strip" aria-label="Coverage summary">
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Board &amp;<br>Governance</div></div>
+<div class="summary-pill"><div class="summary-pill-num">1</div><div class="summary-pill-label">The<br>Workforce</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">CEO Market<br>Intel</div></div>
+<div class="summary-pill"><div class="summary-pill-num">3</div><div class="summary-pill-label">Cultural<br>Signal</div></div>
+<div class="summary-pill"><div class="summary-pill-num">2</div><div class="summary-pill-label">Oddly<br>Interesting</div></div>
+</div>
+
+<nav class="section-nav" aria-label="Jump to section">
+<a href="#board">Board &amp; Governance</a>
+<a href="#workforce">The Workforce</a>
+<a href="#market">CEO Market Intel</a>
+<a href="#culture">Cultural Signal</a>
+<a href="#oddly">Oddly Interesting</a>
+</nav>
+
+<main class="content">
+
+<!-- BOARD & GOVERNANCE -->
+<section id="board">
+<div class="section-header"><span class="section-number">01</span><span class="section-title">Board &amp; Governance</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c01">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">General Mills elected COO Dana McNabb chief executive effective Jan. 1, four months after naming her to the operating job</div>
+</div>
+<div class="item-source">General Mills 8-K &middot; September 30, 2026</div>
+<div class="item-summary">General Mills&rsquo; board unanimously elected Dana McNabb, 50, chief executive effective Jan. 1, 2027, with Jeff Harmening retiring as CEO and staying on as executive chair, the company said Sept. 30, before this edition&rsquo;s window. McNabb joined in 1999 and ran U.S. Cereal, Europe and Australia, strategy and North America Retail before becoming chief operating officer in June. The 8-K sets her base at $1.35 million with a 180% cash target and a $2.1 million incremental long-term award, and reduces Harmening&rsquo;s base to $1.1 million with a 125% target.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">McNabb&rsquo;s first line was &ldquo;Returning the company to profitable growth is the priority, and we know how we&rsquo;ll get there,&rdquo; and the filing, which prices both seats in one document, sets no end date for the chair role.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/0000040704/000162828026063892/gis-20260929.htm" target="_blank" rel="noopener">Read the filing &#8599;</a>
+</div>
+<div class="item-card" id="c02">
+<div class="item-header">
+<span class="item-tag tag-board">Board &middot; Governance</span>
+<div class="item-headline">Southern Glazer&rsquo;s will pay independents 1.5 times any price gap a monitor finds, for six years, to settle the FTC&rsquo;s Robinson-Patman case</div>
+</div>
+<div class="item-source">Federal Trade Commission &middot; October 2, 2026</div>
+<div class="item-summary">The FTC proposed an order Oct. 2, before this edition&rsquo;s window, resolving its December 2024 suit accusing the largest U.S. wine and spirits distributor of charging independent retailers more than chains such as Total Wine, Walmart and Kroger. For six years a monitor paid by Southern will compare paired sales to a small and a large retailer in 26 states; where the gap exceeds a cost-based threshold, Southern can resolve it by paying the independent 1.5 times the difference, or double if the FTC sues and prevails. The vote was 2-0, Southern denies wrongdoing and a federal judge must sign the order.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The National Grocers Association called it a demonstration of why Robinson-Patman enforcement matters, and Chairman Andrew Ferguson, who dissented from the 2024 complaint, said, &ldquo;If Southern obeys the law, its compliance costs are low.&rdquo;</div>
+</div>
+<a class="item-link" href="https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-secures-settlement-protects-small-businesses-illegal-price-discrimination" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+</section>
+
+<!-- THE WORKFORCE -->
+<section id="workforce">
+<div class="section-header"><span class="section-number">02</span><span class="section-title">The Workforce</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c03">
+<div class="item-header">
+<span class="item-tag tag-workforce">The Workforce</span>
+<div class="item-headline">UFCW 3000 will bargain Kroger and Albertsons for 30,000 Washington and North Idaho grocery workers at one table, starting Dec. 9</div>
+</div>
+<div class="item-source">UFCW 3000 &middot; October 7, 2026</div>
+<div class="item-summary">Grocery workers from across Washington and North Idaho met Sept. 29 to plan a single bargaining campaign against Kroger and Albertsons, and the union set the first joint session for Dec. 9 in Spokane, UFCW 3000 said Oct. 7. The 2027 cycle covers stores from Forks to Coeur d&rsquo;Alene and Richland to Blaine, about 30,000 members by the union&rsquo;s count, after the regional contracts were realigned in 2025 to expire in the same year. The member bargaining team comes from Fred Meyer, QFC, Safeway, Albertsons and independent Town &amp; Country stores.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Puget Sound, Spokane and the northern counties have bargained at separate tables until now, and the union calls Sept. 29 &ldquo;the first time in history&rdquo; the regions planned together.</div>
+</div>
+<a class="item-link" href="https://ufcw3000.org/news/2026/10/7/pacific-northwest-grocery-stores-first-bargaining-date-set" target="_blank" rel="noopener">Read the announcement &#8599;</a>
+</div>
+</section>
+
+<!-- CEO MARKET INTEL -->
+<section id="market">
+<div class="section-header"><span class="section-number">03</span><span class="section-title">CEO Market Intel</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c04">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">PepsiCo&rsquo;s beverages sold 3% fewer units at 3% higher prices, its snacks 0.5% more at 1% lower, and the EPS outlook fell</div>
+</div>
+<div class="item-source">PepsiCo &middot; October 8, 2026</div>
+<div class="item-summary">PepsiCo reported Oct. 8 that third-quarter net revenue rose 5.6% to $25.3 billion, with organic volume up 0.5% and pricing up 3%, but its two North American divisions moved in opposite directions: beverages lost 3% of organic volume on 3% pricing, while foods gained 0.5% on pricing down 1% and core operating profit down 12%. Full-year organic growth is now about 3% and core EPS growth was cut to 2.5% to 3.5% from the low end of 5% to 7%. Quarterly core operating profit rose 3%, of which 4 percentage points came from tariff refunds.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Laguarta&rsquo;s release promises to act &ldquo;with urgency to sustainably improve our performance in North America,&rdquo; and the salty-snack line shows what buying volume with price looks like on the profit line.</div>
+</div>
+<a class="item-link" href="https://www.sec.gov/Archives/edgar/data/0000077476/000007747626000050/q320268-kxexhibit991.htm" target="_blank" rel="noopener">Read the release &#8599;</a>
+</div>
+<div class="item-card" id="c05">
+<div class="item-header">
+<span class="item-tag tag-market">CEO Market</span>
+<div class="item-headline">Logistics costs hit their highest reading since April 2022 as warehouse capacity contracted at the fastest pace in four years</div>
+</div>
+<div class="item-source">Logistics Managers&rsquo; Index &middot; October 6, 2026</div>
+<div class="item-summary">The September Logistics Managers&rsquo; Index, released Oct. 6, rose 3.6 points to 70.2, with transportation prices at 92.7, over 90 for the fifth time in six months, transportation capacity contracting for a 10th straight month and warehousing capacity down 14.2 points to 39.3. Aggregate logistics costs reached 246.1, the highest since April 2022, as inventory costs rose to 79.9. Retail diesel averaged $6.199 a gallon Oct. 5, down 33 cents in two weeks from a record $6.529 but $2.49 above a year ago, and DAT put van linehaul rates 34% above last year.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The index&rsquo;s authors write, &ldquo;These high costs are putting significant pressure on supply chains and consumers alike,&rdquo; and the Cass August data behind last week&rsquo;s ISM card showed freight spending rising nine times faster than shipments.</div>
+</div>
+<a class="item-link" href="https://www.the-lmi.com/september-2026-logistics-managers-index.html" target="_blank" rel="noopener">Read the report &#8599;</a>
+</div>
+</section>
+
+<!-- CULTURAL SIGNAL -->
+<section id="culture">
+<div class="section-header"><span class="section-number">04</span><span class="section-title">Cultural Signal</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c06">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Anne Carson, a Canadian classicist reached in Iceland, won the Nobel Prize in Literature for work in dialogue with the ancients</div>
+</div>
+<div class="item-source">Nobel Prize &middot; October 8, 2026</div>
+<div class="item-summary">The Swedish Academy awarded the 2026 literature prize Oct. 8 to Anne Carson, 76, a Toronto-born classicist who taught at McGill and Princeton, citing an oeuvre that creates new forms for contemporary literature out of a playful dialogue with the classical tradition. Permanent Secretary Ingrid Carlberg reached her in Iceland, and she told the Academy she was taken by surprise. Her best-known works are Autobiography of Red, a 1998 verse novel built from Stesichoros&rsquo; fragments about the red monster Geryon, and Nox, a 2010 elegy for her brother printed as an accordion fold in a box.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Asked by the Globe and Mail why the classics are relevant, she said they aren&rsquo;t: &ldquo;I don&rsquo;t think I&rsquo;m interested in relevance. I&rsquo;m interested in us being relevant to them.&rdquo;</div>
+</div>
+<a class="item-link" href="https://www.nobelprize.org/prizes/literature/2026/press-release/" target="_blank" rel="noopener">Read the announcement &#8599;</a>
+</div>
+<div class="item-card" id="c07">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">Crew-12 splashed down after 237 days, the mission that launched early because its predecessors came home on a medical evacuation</div>
+</div>
+<div class="item-source">NASA &middot; October 8, 2026</div>
+<div class="item-summary">The Dragon carrying Jessica Meir, Jack Hathaway, ESA&rsquo;s Sophie Adenot and Roscosmos&rsquo; Andrey Fedyaev splashed down off Los Angeles at 11:34 a.m. EDT Oct. 8, ending 237 days at the station, NASA said. The crew launched Feb. 13 after NASA brought Crew-11 home in January, about a month early, when one astronaut had a medical situation the agency has not described, leaving a single NASA astronaut on the U.S. segment until Crew-12 arrived. Meir now has 440 days in space, in NASA&rsquo;s top 10, and the crew made four spacewalks, including the first by a French woman.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">NASA&rsquo;s Amit Kshatriya in January: &ldquo;As Dr. Polk mentioned, it&rsquo;s the first time we&rsquo;ve done a controlled medical evacuation from the vehicle, so that is unusual.&rdquo;</div>
+</div>
+<a class="item-link" href="https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/" target="_blank" rel="noopener">Read at NASA &#8599;</a>
+</div>
+<div class="item-card" id="c08">
+<div class="item-header">
+<span class="item-tag tag-culture">Culture</span>
+<div class="item-headline">A report on the boundaries between silicon-based and biology-based tech. Can robots fly like pigeons?</div>
+</div>
+<div class="item-source">Singularity Hub &middot; October 9, 2026</div>
+<div class="item-summary">Singularity published Living Tech: The Convergence of Biology and Innovation, a 90-page report by Aaron Frank and Alix R&#252;bsaam from December 2024 interviews with five scientists, and promoted it Oct. 9 with a sponsored Singularity Hub post. Robert Suarez, who works on regenerative ecosystems, circularity and humane tech, says in it, &ldquo;Biology&mdash;small &lsquo;b&rsquo; biology&mdash;is probably the largest dataset that has ever existed,&rdquo; and the authors&rsquo; frame is a loop in which brain-modeled neural networks are turned back on biology to model proteins. The epilogue carries the book: Stanford and Groningen&rsquo;s PigeonBot II flew stably without a vertical stabilizer only after the team glued on real pigeon feathers, because no synthetic material matched them.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The authors&rsquo; reading is that feathers have properties we do not yet know how to replicate, and they close on the orcas of Puget Sound, who in 1987 began wearing salmon as hats and have never explained why.</div>
+</div>
+<a class="item-link" href="https://singularityhub.com/2026/10/09/weve-always-copied-nature-now-we-can-search-it/" target="_blank" rel="noopener">Read at Singularity Hub &#8599;</a>
+</div>
+</section>
+
+<!-- ODDLY INTERESTING -->
+<section id="oddly">
+<div class="section-header"><span class="section-number">05</span><span class="section-title">Oddly Interesting</span></div>
+<hr class="section-rule">
+
+<div class="item-card" id="c09">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Two chemists won the Nobel for making a reaction pick one mirror image, something only life itself had done</div>
+</div>
+<div class="item-source">Nobel Prize &middot; October 7, 2026</div>
+<div class="item-summary">The Royal Swedish Academy of Sciences awarded the chemistry prize Oct. 7 to Henri Kagan, 95, of Universit&eacute; Paris-Sud and Kenso Soai, 76, of Tokyo University of Science, for discovering nonlinear effects and autocatalysis in asymmetric synthesis. Amino acids come in mirror-image pairs and living things use only one, a puzzle because laboratory reactions produced both in equal measure; Kagan showed in 1986 how to amplify a small excess, Soai designed a self-catalyzing reaction in 1995 and in 2003 produced only one mirror image. Soai was out shopping when the committee called, Nature reported.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">The Academy&rsquo;s line on the 2003 result is the one to keep: &ldquo;Other than life itself, no one had previously achieved this feat.&rdquo;</div>
+</div>
+<a class="item-link" href="https://www.nobelprize.org/prizes/chemistry/2026/press-release/" target="_blank" rel="noopener">Read the announcement &#8599;</a>
+</div>
+<div class="item-card" id="c10">
+<div class="item-header">
+<span class="item-tag tag-search">Oddly Interesting</span>
+<div class="item-headline">Three MIT mathematicians posted a 95-page proof three days after hearing OpenAI had claimed a bigger one</div>
+</div>
+<div class="item-source">Quanta Magazine &middot; October 7, 2026</div>
+<div class="item-summary">MIT&rsquo;s Dor Minzer and graduate students Yumou Fei and Shuo Wang had worked since 2025 on a variant of Subhash Khot&rsquo;s 2002 Unique Games Conjecture and had a proof by April, Quanta reported Oct. 7. On Sept. 11 Minzer&rsquo;s phone filled with texts that OpenAI had proved the full conjecture; three days later the trio posted 95 pages with a note that the manuscript was mathematically complete but not in the shape they had wished to share. On Oct. 6 OpenAI published its claimed proof among more than 700 AI-written manuscripts on GitHub, with no human editing or independent review.</div>
+<div class="implication-block">
+<div class="implication-label">Why it matters</div>
+<div class="implication-text">Princeton&rsquo;s Mark Braverman, asked about the rumors in September: &ldquo;Math by press release is not that healthy for math.&rdquo;</div>
+</div>
+<a class="item-link" href="https://www.quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007/" target="_blank" rel="noopener">Read at Quanta Magazine &#8599;</a>
+</div>
+</section>
+
+<a class="back-to-top" href="#top">&uarr; Back to top</a>
+
+</main>
+
+<footer class="footer">
+<strong>The Prepared Mind, Weekly Reader</strong><br>
+Prepared for Tony Sarsam by Tom Burket, word/cairn<br>
+October 9, 2026 &middot; Edition No. 28
+<br><a href="/landscape/" style="color:#f0c040;text-decoration:none;font-size:13px;">Explore the Landscape &rarr;</a>
+&nbsp;&nbsp;<a href="/editions/" style="color:#f0c040;text-decoration:none;font-size:13px;">Past editions &rarr;</a>
+</footer>
+
+<script src="/landscape/footlines.js?v=28" defer></script>
+
+</body>
+</html>
